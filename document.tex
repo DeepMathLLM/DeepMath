@@ -1,0 +1,583 @@
+\documentclass[CJK,aspectratio=169]{beamer}  %aspectratio控制页面的宽高比，16：9充满屏幕
+%\documentclass[CJK,aspectratio=43]{beamer}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{ctex} %中文字体设置
+\usepackage[labelfont=bf]{caption}
+\usepackage{amsthm}
+\usepackage{subcaption}
+\usepackage[export]{adjustbox}
+\usepackage{svg}
+\usepackage{sidecap}
+%%%%%%%%%%%%%%%主题网站 https://hartwork.org/beamer-theme-matrix/
+\usetheme{CambridgeUS} %对应网站的行
+\usecolortheme{dove} %对应网站的列
+\newtheorem{conjecture}{Conjecture}
+
+\begin{document}
+	
+	\title{报告题目}
+	\subtitle{子题目}
+	\author{同济大学}
+	\date{\today}
+	
+	\begin{frame}
+		\vspace{0.5cm}
+		\titlepage 
+		\hypertarget{beginning}{}
+	\end{frame}
+	\begin{frame}
+		\frametitle{人工智能和神经网络}
+		\begin{itemize}
+			\item 人工智能(Artificial Intelligence):让机器具有人类的智能
+			\item 人工智能诞生的标志性事件：1956年的达特茅斯（Dartmouth）会议。在这次会议上，“人工智能”被提出并作为本研究领域的名称。
+			
+		\end{itemize}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.4]{29.png}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\begin{itemize}
+			\item 人工神经网络(Artificial Neural Network):基于生物学中神经网络的基本原理，在理解和抽象了人脑结构和外界刺激响应机制后，以网络拓扑知识为理论基础，模拟人脑的神经系统对复杂信息的处理机制的一种数学模型。
+			\item 神经元结构：
+			$$a=f(\sum_{d=1}^{D}w_dx_d+b)$$
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.4]{35.png}
+			\end{figure}
+			
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\begin{theorem}
+			\textbf{通用近似定理 (Universal Approximation Theorem )} [Cybenko, 1989; Hornik et al., 1989]: 令 $\phi(\cdot)$ 是一个非常数、有界、单调递增 的连续函数, $\mathcal{J}_D$ 是一个 $D$ 维的单位超立方体 $[0,1]^D, C\left(\mathcal{J}_D\right)$ 是定义在 $\mathcal{J}_D$ 上 的连续函数集合. 对于任意给定的一个函数 $f \in C\left(\mathcal{J}_D\right)$, 存在一个整数 $M$, 和一组实数 $v_m, b_m \in \mathbb{R}$ 以及实数向量 $\boldsymbol{w}_m \in \mathbb{R}^D, m=1, \cdots, M$, 以至于我 们可以定义函数
+			$$
+			F(\boldsymbol{x})=\sum_{m=1}^M v_m \phi\left(\boldsymbol{w}_m^{\top} \boldsymbol{x}+b_m\right)
+			$$
+			作为函数 $f$ 的近似实现, 即
+			$$
+			|F(\boldsymbol{x})-f(\boldsymbol{x})|<\epsilon, \forall \boldsymbol{x} \in \mathcal{J}_D,
+			$$
+			其中 $\epsilon>0$ 是一个很小的正数.
+		\end{theorem}
+	\end{frame}
+	\begin{frame}
+		\frametitle{大语言模型的训练}
+		路线：\textbf{语言模型预训练$\rightarrow$有监督指令微调$\rightarrow$奖励模型训练$\rightarrow$ 强化学习}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.4]{30.png}
+			
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{计算机辅助证明}
+		\begin{itemize}
+			\item \textbf{$Four\ Color\ THeorem:$}任何平面上的地图只需要使用最多四种颜色来进行着色，以确保相邻的地区颜色不同。
+			\item \textbf{$Kepler\ conjecture:$}在三维空间中，无法找到一种方法，将单位半径的球体以一种更紧密的方式堆积起来，使得每个球体都与邻近的六个球体相接触
+		\end{itemize}
+		\begin{figure}
+			\begin{minipage}[t]{0.48\textwidth}
+				\centering
+				\includegraphics[scale=0.25]{8.png}
+			\end{minipage}
+			\begin{minipage}[t]{0.48\textwidth}
+				\centering
+				\includegraphics[scale=0.2]{9.png}
+			\end{minipage}
+		\end{figure}
+	\end{frame}
+	\begin{frame} \transblindshorizontal<1>  %百叶窗效果
+		\frametitle{图编码}
+		\begin{figure}
+			\begin{minipage}[t]{0.24\textwidth}
+				\centering
+				\vspace{-4cm} 
+				\includegraphics[scale=0.5]{2.png}
+				\caption{graph embedding}
+			\end{minipage}
+			\begin{minipage}[t]{0.48\textwidth}
+				\centering
+				\includegraphics[scale=0.3]{prufer code.png}
+				\caption{$Pr\ddot{u}fer\ codes$}
+			\end{minipage}
+		\end{figure}
+		
+		
+		%		\begin{figure}[h]
+			%			\centering
+			%			\includegraphics[scale=0.3]{prufer code.png}
+			%			\caption{$Pr\ddot{u}fer\ codes$}
+			%		\end{figure} 
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{生成图}
+		\begin{figure}
+			\begin{minipage}[t]{0.48\textwidth}
+				\centering
+				\includegraphics[scale=0.4]{4.jpg}
+				\captionsetup{font=tiny}
+				\caption{初始化图对应的0-1序列的第一个位置，将其作为神经网络的输入，得到序列下一个位置的分类分布，进行采样得到序列下一个位置的取值，重复这一过程得到一个完整图编码。}
+			\end{minipage}
+			\begin{minipage}[t]{0.48\textwidth}
+				\centering
+				\vspace{-4cm} 
+				\setlength{\abovedisplayskip}{0pt}
+				
+				\setlength{\belowdisplayskip}{50pt}
+				\includegraphics[scale=0.27]{1.png}
+				\captionsetup{font=tiny}
+				\captionsetup{position=bottom, skip=50pt}
+				\caption{这是生成图的一个示例，神经网络已经生成了对应编号1、2、3、6的四条边，4、5两条边不连接，对应的0-1序列为111001，将此编码作为神经网络的输入，将得到下一条边是否连接的概率分布。}
+			\end{minipage}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{环境反馈}
+		\begin{itemize}
+			\item 每次生成一个完整的图编码后奖励函数$r(x)$计算图编码的奖励给予神经网络反馈。
+			\item 生成图编码的中间过程中神经网络不会获得环境反馈。
+			\item 整个过程中神经网络没有先验知识，不知道解决的是什么问题。
+			\item 针对不同的问题，$r(x)$是独特的。比如：
+			\begin{itemize}
+				\item 当要构造一个有比较大的第三特征值的图时，$r(x)$可以是第三特征值。
+				\item 当要构造一个尽量大的反链时，$r(x)$可以是其中元素的数量减去可比较元素对的数量。
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{策略优化}
+		\begin{itemize}
+			\item 在生成的样本中筛选表现好的部分
+			\item 最小化选择的样本与相应预测动作概率之间的交叉熵损失调整神经网络的权重参数
+			\item 将这部分样本保留到下一次迭代中
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Example: the sum of matching number and largest eigenvalue of graphs}
+		\begin{conjecture}
+			Let $G$ be a connected graph on $n \geq 3$ vertices,with largest eigenvalue $\lambda_1$ and matching number $\mu$.Then
+			$$\lambda_1+\mu\geq\sqrt{n-1}+1.$$
+		\end{conjecture}
+		$$r(x)=-(\lambda_1+\mu)$$
+		\begin{itemize}
+			\item 对于$n\leq 18$,结论是成立的,考虑$n=19$。
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\begin{figure}
+			\includegraphics[scale=0.4]{6.png}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\begin{figure}
+			\begin{minipage}[b]{0.48\textwidth}
+				\centering
+				\includegraphics[scale=0.4]{5.png}
+				\captionsetup{font=tiny}
+				\caption{每次迭代前10$\%$样本的$\lambda_1+\mu$的平均值随迭代次数下降的情况.在5000次的迭代后，$\lambda_1+\mu$的平均值略微小于猜想中的$\sqrt{19-1}+1$,即构造出一个反例。}
+			\end{minipage}
+			\begin{minipage}[t]{0.48\textwidth}
+				\centering
+				\vspace{-4cm}
+				\includegraphics[scale=0.27]{7.png}
+				\captionsetup{font=tiny}
+				
+				\caption*{$\lambda_1+\mu=\sqrt{10}+2<\sqrt{n-1}+1=\sqrt{19-1}+1$}
+			\end{minipage}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\begin{itemize}
+			\item \textbf{\Large{如何使学习到的模型具有可解释性？}}
+			\begin{itemize}
+				\item 在自然科学（比如物理学）中，从第一原理导出的数学模型可以以深度神经网络等预测模型无法实现的方式推理潜在现象。
+				\item 在医疗保健等关键学科中，可能永远不会允许部署不可解释的模型，无论它们有多准确。
+				
+				
+			\end{itemize}
+			\item \large{如果模型的输入和输出之间的关系可以以简洁的方式在逻辑上或数学上追踪，则该模型是可解释的。}
+			\item \textbf{符号回归}:一种从数据寻找符号数学表达式的机器学习方法。
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\frametitle{符号回归问题}
+		\begin{itemize}
+			\item \textbf{数据}：$D=\{(x_i,y_i)\}_{i=1}^{n}$, $x_i\in \mathbb{R}^d$是输入向量，$y_i\in \mathbb{R}$是标量。
+			\item \textbf{函数类}：$F$是包含映射$f:\mathbb{R}^d\rightarrow \mathbb{R}$的函数类。可以将$F$指定为一个初等算术运算和数学函数和变量的库，元素$f\in F$是库中可以通过函数组合获得的所有函数的集合。
+			\item \textbf{损失函数}：对于函数类中的每一个函数，定义损失函数：
+			$$L(f):=\sum_{i=1}^{n}L(f(x_i),y_i)$$
+			一个常见的选择是衡量预测值和输出之间的平方差，$L(f):=\sum_{i=1}(y_i-f(x_i))^2.$
+			\item \textbf{优化}: 优化的目标找出一个函数，使得损失函数最小，即：
+			$$f^*=\arg\min_{f\in F} L(f).$$
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\frametitle{表达式}
+		\begin{itemize}
+			\item 一元-二元表达式树
+			\item 波兰表示法：1920年，波兰科学家扬$\cdot$武卡谢维奇（Jan ukasiewicz）发明了一种不需要括号的计算表达式的表示法将操作符号写在操作数之前，也就是前缀表达式，即波兰式（Polish Notation, PN）
+			
+		\end{itemize}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.4]{10.png}
+			\captionsetup{font=tiny}
+			\caption{$(a)$是表达式$f(x)=x_1x_2-2x_3$的一元-二元表达式树；$(b)$是$f(x)=x_1x_2-2x_3$的波兰表达式}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{符号回归方法}
+		\begin{figure}
+			\centering 
+			\includegraphics[scale=0.4]{11.png}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\begin{figure}
+			\centering 
+			\includegraphics[scale=0.5]{12.png}
+			\captionsetup{font=tiny}
+			\caption{各类方法的数学工具，表达式，参数集和搜索空间}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{线性符号回归}
+		\begin{itemize}
+			\item \textbf{一维情形}
+			\begin{itemize}
+				\item \textbf{单变量}
+				\begin{itemize}
+					\item 数据集：$D=\{x_i\in \mathbb{R},y_i=f(x_i)\}.$
+					\item 搜素库：一些数学运算符组成使得数据集的维数大于库矩阵的维数
+					\\
+					将系数$\theta_j$分配给库中的候选函数$f_j\in F$,使得$y=\sum_{j}\theta_jf_j(x)$,则有:
+				\end{itemize}
+				\begin{figure}
+					\begin{minipage}[b]{0.43\textwidth}
+						\centering
+						\includegraphics[scale=0.5]{13.png}
+					\end{minipage}
+					\begin{minipage}[t]{0.43\textwidth}
+						\centering
+						\includegraphics[scale=0.5]{14.png}
+					\end{minipage}
+				\end{figure}
+				\item \textbf{多变量}
+				\begin{itemize}
+					\item 数据集：$D=\{x_i\in \mathbb{R}^d,y_i=f(x_1,x_2,\cdots,x_d)\}.$
+					\item 搜索库:$\{1,x_1,x_2,x_1^2,x_1x_2,x_2^2,\sin(x_1),\sin(x_2),\cdots\}.$
+				\end{itemize}
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\begin{itemize}
+			\item \textbf{多维情形}
+			\begin{itemize}
+				\item 目标表达式有$m$个组成部分，即$Y=[ y_1,y_2,\cdots,y_m]$,每一部分可以表示为：
+				$$y_j=f_j(x)=\sum_{k}\theta_{jk}h_k(x).$$
+				\item 优化的目标是学习每个线性表达式的系数.
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\frametitle{非线性符号回归}
+		\begin{itemize}
+			\item 将深度神经网络中的激活函数替换成数学算子，从数据中学习数学表达式。
+			$$z^{[l]}=W^{[l]}a^{[l-1]}+b^{[l]}$$
+			$$a_i^{[l-1]}=f_i(z_I^{[l]}).$$
+			\item 为了克服基于神经网络的架构的可解释性限制，并促进简单而非复杂的解决方案作为描述物理过程的典型公式，通过向$l_2$损失函数添加正则化项$l_1$来强制稀疏性:
+			$$l=\frac{1}{N}\sum_{i=1}^{N}\|\hat{y}(x_i)-y_i\|^2+\lambda_1\sum_{l=1}^{L}|W^{[l]}|_1$$
+			
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\begin{figure}
+			\centering 
+			\includegraphics[scale=0.5]{15.png}
+			\captionsetup{font=tiny}
+			\caption{$(a)$是标准的神经网络，$(b)$是符号回归中的神经网络.}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{树表达式}
+		\begin{itemize}
+			\item 遗传编程
+			\begin{itemize}
+				\item 随机初始化由树表达式构成的集合，遗传编程使用一组在树空间上定义的进化“转换规则”$\{r_i: f\rightarrow f | i\in \mathbb{N}\}$改进初始化的集合,“转移规则”包含：
+				\begin{itemize}
+					\item 变异：通过用另一棵随机生成的子树替换一个子树来向个体引入随机变化
+					\item 交叉：在集合中两个个体之间交换内容
+					\item 选择：选择当前群体集合中的哪些个体继续存在到下一个群体集合中
+				\end{itemize}
+				\item 使用遗传编程算法进行迭代，在每次迭代时进行一下操作：
+				\begin{itemize}
+					\item 将转换规则应用到当前的函数集合中的元素；
+					\item 评估当前函数集合的损失函数；
+					\item 为下一次迭代选择一组精英个体.
+				\end{itemize}
+				\item 迭代直到达到设定精度
+				
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\begin{itemize}
+			\item $Transformers$
+			\begin{itemize}
+				\item 将数据$D=\{(x_i,y_i)|x_i\in \mathbb{R}^d,y_i\in \mathbb{R}\}$和数学表达式编码。
+				\item 利用$transformer$建立数值和符号序列之间以及符号序列之间的依赖关系。
+				\\比如，考虑表达式$f(x,y,z)=\sin(x/y)-\sin(z)$,可以表示成：
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.5]{16.png}
+				\end{figure}
+				将每一个符号编码：
+				$$x_1:-\quad x_2:\sin \quad x_3:\div \quad x_4:x \quad x_5:y \quad x_6:\sin \quad x_7:z$$
+				对于$(x_7:z)$,注意力机制将为二元运算符$(x_1 : −)$赋予比变量$(x_5 : y)$ 或除法运算符 $(x_3 : \div)$ 更高的权重.
+				\item $Transformers$神经网络由一个编码器和解码器组成，每块包含一个自注意力层和前馈神经网络。以编码序列$\{x_i\}$为输入，输出一个“上下文依赖”的编码序列$\{y_i\}$。每次采样一个符号时，都以之前采样的符号和隐藏序列为条件。
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\begin{itemize}
+			\item 强化学习
+			\begin{itemize}
+				\item 智能体:神经网络
+				\item 环境：树表达式的父节点和同级节点
+				\item 动作：预测树表达式的下一个节点
+				\item 奖励函数
+			\end{itemize}
+		\end{itemize}
+		\begin{figure}
+			\centering 
+			\includegraphics[scale=0.4]{17.png}
+			
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{基于强化学习的符号回归方法：深度符号回归}
+		\begin{itemize}
+			\item 智能体(深度神经网络)生成树表达式
+			\begin{itemize}
+				\item 沿前序遍历利用深度神经网络生成关于节点的分类分布并采样，直到生成表达式树的节点
+				\item 每次生成节点时，将之前已经生成的节点作为当前状态
+			\end{itemize}
+			\begin{figure}
+				\centering 
+				\includegraphics[scale=0.3]{18.png}
+			\end{figure}
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\begin{itemize}
+			\item 约束搜索空间及优化常数
+			\begin{itemize}
+				\item 对于符号表达式作约束：
+				\begin{itemize}
+					\item 限制表达式长度
+					\item 表达式中不能全是常数
+					\item 一元运算符不能与它的逆结合，比如：$\log(\exp(x))$
+					\item 不出现三角函数算子复合，比如：$\sin(x+\cos(x))$
+				\end{itemize}
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.35]{19.png}
+				\end{figure}
+				\item 在训练深度神经网络之前，对每个采样表达式执行非线性优化算法进行内部循环优化
+				\begin{figure}
+					\centering
+					\includegraphics[scale=0.35]{20.png}
+				\end{figure}
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\begin{itemize}
+			\item 奖励函数
+			\begin{itemize}
+				\item 通过均方根误差引入有界奖励函数：
+				$$NRMSE=\frac{1}{\sigma_y}\sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i-\hat{y_i})^2},\hat{y_i}\text{是生成的表达式的预测值},\sigma_y\text{是目标值$y_i$的标准差}$$
+				\item 转换成有界函数:
+				$$R(\tau)=\frac{1}{1+NRMSE},\tau\text{为表达式树}$$
+				\item 加入复杂度惩罚项：
+				$$R(\tau)=\frac{1}{1+NRMSE}-\lambda_c|\tau|,|\tau|\text{为表达式树中的节点数}$$
+			\end{itemize}
+		\end{itemize}
+	\end{frame} 
+	\begin{frame}
+		\begin{itemize}
+			\item 策略优化
+			\begin{itemize}
+				\item 标准策略梯度:
+				\begin{itemize}
+					\item 使用梯度上升最大化策略模型(生成表达式树的深度神经网络)的期望奖励:
+					$$
+					\begin{aligned}
+						\nabla_\theta J_{\text {std }}(\theta) & =\nabla_\theta \mathbb{E}_{\tau \sim p(\tau \mid \theta)}[R(\tau)] \\
+						& =\mathbb{E}_{\tau \sim p(\tau \mid \theta)}\left[R(\tau) \nabla_\theta \log p(\tau \mid \theta)\right]
+					\end{aligned}
+					$$
+					$p(\tau \mid \theta)\text{是生成表达式$\tau$的概率}$。
+					\item 用样本估计期望：$\nabla_\theta J_{\text {std }}(\theta) \approx \frac{1}{N} \sum_{i=1}^N R\left(\tau^{(i)}\right) \nabla_\theta \log p\left(\tau^{(i)} \mid \theta\right)$
+					\item 防止较大方差，引入基准函数b:$\nabla_\theta J_{\text {std }}(\theta) \approx \frac{1}{N} \sum_{i=1}^N\left[R\left(\tau^{(i)}\right)-b\right] \nabla_\theta \log p\left(\tau^{(i)} \mid \theta\right)$
+				\end{itemize}
+				\item 风险搜寻策略梯度：
+				\begin{itemize}
+					\item 在符号回归中，模型性能通过在训练过程中发现的表现好的样本来衡量，因此只专注于提高生成最佳样本的策略。
+					\item 取每批次样本中表现前$\epsilon$的样本优化生成策略：
+					$$
+					R_{\varepsilon}(\theta) \doteq \inf \{R(\tau): \operatorname{CDF}(R(\tau) \mid \theta) \leq 1-\varepsilon\}
+					$$
+					$$\begin{aligned} \nabla_\theta J_{\text {risk }}(\theta ; \varepsilon)=\mathbb{E}_{\tau \sim p(\tau \mid \theta)}\left[\left(R(\tau)-R_{\varepsilon}(\theta)\right)\right. \\ \left.\nabla_\theta \log p(\tau \mid \theta) \mid R(\tau) \geq R_{\varepsilon}(\theta)\right]\end{aligned}$$
+				\end{itemize}
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\frametitle{物理启发的深度符号回归方法}
+		\begin{itemize}
+			\item 物理量纲约束：在物理背景下要求得到的方程必须在物理量纲方面保持平衡。
+			
+		\end{itemize}
+		\begin{figure}
+			\centering 
+			\includegraphics[scale=0.3]{26.png}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\begin{figure}
+			\centering 
+			\includegraphics[scale=0.2]{27.png}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{例：粒子的相对论能量}
+		\begin{itemize}
+			\item 相对论能量表达式：$E=\frac{m c^2}{\sqrt{1-\frac{v^2}{c^2}}}$
+			\item 设置搜索库$\{m,v,c\}$,c是自由常数
+			\item 物理量纲约束的深度符号回归
+		\end{itemize}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.35]{28.png}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{大语言模型的思维链推理}
+		\begin{itemize}
+			\item 奖励模型的训练：结果+\textbf{过程}
+		\end{itemize}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.4]{31.png}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{形式化的自动定理证明}
+		\begin{itemize}
+			\item Lean:交互式定理证明系统
+			\begin{itemize}
+				\item 交互式证明
+				\item 形式化表示
+				\item 推理过程精确
+			\end{itemize}
+		\end{itemize}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.35]{33.png}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\begin{itemize}
+			\item \textbf{LeanDojo}
+			\begin{itemize}
+				\item 提取数据
+				\item 与Lean进行交互
+			\end{itemize}
+		\end{itemize}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.4]{34.png}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{AI辅助建立扭结不变量间的联系}
+		\begin{itemize}
+			\item 扭结：$\mathbb{R}^3$空间中的简单闭合曲线，如果两个扭结之间存在保定向的同胚则这两个扭结是等价的。
+			\item 扭结不变量：任何两个等价纽结具有的相同的代数、几何或数值量。
+			\item 扭结多项式：多项式形式的扭结不变量
+		\end{itemize}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.4]{22.png}
+		\end{figure}
+		%    \begin{theorem}
+			%    	存在
+			%    \end{theorem}
+	\end{frame}
+	\begin{frame}
+		\begin{itemize}
+			\item \textbf{监督学习}
+			\item \textbf{归因技术}
+		\end{itemize}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.5]{25.png}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{AI发现矩阵乘法新算法}
+		\begin{itemize}
+			\item $Strassen's\ algorithm$
+			\item 矩阵乘法问题的张量表征
+			\item 矩阵乘法算法$\leftrightarrow$张量低秩分解
+			\\一种3维张量的分解方法（一组矩阵）就唯一确定了一个矩阵乘法的算法流程
+			$$\tau_{n,n,n}=\sum_{r=1}^{R}U^{(r)}\bigotimes V^{(r)}\bigotimes W^{(r)},\tau_{n,n,n}\text{表示$n^2$阶矩阵相乘的张量表征}$$
+			\item 定理：\textbf{张量分解的秩越小，导出的矩阵乘法算法中的乘法次数越少}
+			\\目标：搜寻秩尽量小的张量分解
+		\end{itemize}
+		\begin{columns}
+			\begin{column}{0.48\textwidth}
+				\includegraphics[scale=0.4]{23.png}
+			\end{column}
+			\begin{column}{0.48\textwidth}
+				\centering
+				\captionsetup{font=tiny}
+				\captionof{figure}{Strassen's algorithm示意图，其中图a是三维情形的矩阵乘法的张量表征，$a_i,b_i,c_i$构成一个size为(4,4,4)的三维张量;图b展示了Strassen's algorithm中使用的7个乘法;图c展示了将张量分解为7个秩为1的项的和}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\begin{frame}
+		\frametitle{AI发现基本常数}
+		\begin{itemize}
+			\item 常数的连分数表示
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{36.png}
+			\end{figure}
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\begin{itemize}
+			\item 算法
+			\begin{itemize}
+				\item \textbf{中间相遇算法($The\ MITM-RF\ algorithm$)}:寻找多项式连分数
+				\\搜索关于基本常数c的多项式连分式表示，形式如下:
+				$$\frac{\gamma(c)}{\delta(c)}=f_i(\operatorname{PCF}(\alpha, \beta))$$
+				$\alpha, \beta, \gamma$, $\delta$是四个整系数多项式, $\left\{f_i\right\}$是函数集,比如:$f_1(x)=x, f_2(x)=\frac{1}{x}, \cdots$;$\operatorname{PCF}(\alpha, \beta)$表示连分数里的分子是$a_n=\alpha(n)$分母是 $b_n=\beta(n)$.
+				\item \textbf{下降$\&$排斥算法($The Descent\&Repel\ algorithm$)}:优化
+				$$
+				\min _{\alpha, \beta, \gamma, \delta} \mathcal{L}=\left\|\frac{\gamma(\pi)}{\delta(\pi)}-\operatorname{PCF}(\alpha, \beta)\right\| ,\{\alpha, \beta, \gamma, \delta\} \subset \mathbb{Z}[x]
+				$$
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+\end{document}
+
+
