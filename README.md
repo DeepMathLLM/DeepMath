@@ -71,7 +71,6 @@ DeepMath 是一个由同济大学数学科学学院 DeepMath 团队发起的开�
 
 本论文所使用的 **DeepMath-Creative** 数据集已开源，位于本项目的 [`DeepMath/DeepMath-Creative/`](./DeepMath/DeepMath-Creative/) 文件夹中，包含以下内容：
 
-- 基础评测集
 - 创新评测集
 - 开放问题集
 
