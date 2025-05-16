@@ -61,7 +61,7 @@ DeepMath 是一个由同济大学数学科学学院 DeepMath 团队发起的开�
 
 ### 论文标题
 
-[**DeepMath-Creative: A Benchmark for Evaluating Mathematical Creativity of Large Language Models**](https://arxiv.org/abs/2505.08744))
+[**DeepMath-Creative: A Benchmark for Evaluating Mathematical Creativity of Large Language Models**](https://arxiv.org/abs/2505.08744)
 
 ### 摘要概述
 
