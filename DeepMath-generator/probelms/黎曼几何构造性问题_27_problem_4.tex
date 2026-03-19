@@ -1,0 +1,41 @@
+problem:  
+Let \((X,d_X,\mu_X)\) be a compact \(\mathrm{RCD}(K,N)\) space (\(K\in\mathbb{R}\), \(1<N<\infty\)) whose singular set \(\Sigma\) has Hausdorff codimension at least \(2\). Assume each tangent cone \(\mathrm{Tan}_p X\) at \(p\in\Sigma\) is a metric cone \(C(Z_p)\) over a compact \(\mathrm{RCD}(N-1,N-1)\) space \(Z_p\).  
+Let \((Y,d_Y)\) be a compact \(\mathrm{CAT}(0)\) space, and let \(f:X\to Y\) be an energy-minimizing harmonic map in the Korevaar–Schoen sense.
+
+For each \(r>0\) and \(p\in X\), define the *energy density*
+\[
+\theta_f(p,r) = r^{2-N}\int_{B_r(p)}|\nabla f|^2\,d\mu_X,
+\]
+and the *energy concentration set*  
+\[
+\mathcal{S}_\varepsilon = \left\{p\in X:\ \limsup_{r\to 0}\theta_f(p,r) \ge \varepsilon\right\}.
+\]
+
+**Question:**  
+Does there exist a universal estimate on the Hausdorff dimension of \(\mathcal{S}_\varepsilon\) depending only on \(N\) (possibly of the form \(\dim_{\mathcal H}(\mathcal{S}_\varepsilon)\le N-3\))?  
+More precisely, can one show that for every \(\varepsilon>0\),
+\[
+\dim_{\mathcal H}(\mathcal{S}_\varepsilon) \le \dim_{\mathcal H}(\Sigma)-1
+\]
+holds universally for all harmonic maps \(f:X\to Y\)?  
+In other words, does the presence of lower Ricci curvature bounds in the \(\mathrm{RCD}(K,N)\) setting rigidify harmonic maps so that their analytic singularities occur at least one codimension deeper than the geometric singularities of the domain?
+
+Why is it a "good" problem:  
+This formulation resolves the weaknesses of the previous version and crystallizes a precise, rigorous, and impactful open direction:
+
+1. **Precisely formulated analytic object:**  
+   The energy density function \(\theta_f(p,r)\) is a classical quantitative tool, well-defined for Korevaar–Schoen maps on \(\mathrm{RCD}\) spaces. The singular set \(\mathcal{S}_\varepsilon\) is defined dynamically by quantitative failure of energy decay, mirroring the Cheeger–Naber stratification framework in a synthetic context.
+
+2. **Clear and motivated dimension target:**  
+   The proposed inequality \(\dim_{\mathcal H}(\mathcal{S}_\varepsilon)\le \dim_{\mathcal H}(\Sigma)-1\) is natural: it bridges analytic and geometric stratifications and asks whether one codimension gap separates intrinsic domain singularities from analytic ones induced by harmonicity. This generalizes the Schoen–Uhlenbeck \(n-3\)-estimate to synthetic curvature settings.
+
+3. **Bridge between analysis and geometry:**  
+   Solving this would connect quantitative PDE techniques (monotonicity, blow‑up, stratification) with the fundamentally geometric machinery of rectifiable decomposition of \(\mathrm{RCD}\) spaces. It demands both analytic and metric measure tools.
+
+4. **Deep yet simply stated:**  
+   The core question—“Do harmonic maps from \(\mathrm{RCD}\) spaces develop analytic singularities of strictly smaller dimension than the space’s geometric singularities?”—is conceptually easy to state but profoundly difficult to resolve. It would push the boundary of quantitative regularity theory into the synthetic world.
+
+5. **Potentially transformative:**  
+   A positive resolution would establish a foundational *synthetic partial regularity theorem*, showing that curvature bounds impose codimension‑one suppression of analytic defects relative to geometric ones. This would influence harmonic map theory, quantitative stratification, and the structure of analysis on singular spaces.
+
+Hence the problem is now mathematically sound, rigorously anchored in known frameworks, yet remains a challenging, open, and conceptually lucid research problem at the intersection of geometric measure theory and synthetic curvature analysis.

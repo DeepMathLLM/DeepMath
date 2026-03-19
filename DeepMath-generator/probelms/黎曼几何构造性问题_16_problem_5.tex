@@ -1,0 +1,53 @@
+problem:  
+Let \(M^k \subset \mathbb{H}^{n+1}\) be a complete, properly embedded minimal submanifold with smooth, closed asymptotic boundary \(\Lambda = \partial_\infty M \subset S^n_\infty\).  
+In the Fefferman–Graham compactification \((\bar{\mathbb{H}}^{n+1}, g_{\mathbb{H}^{n+1}} = \rho^{-2}(d\rho^2 + h_{S^n}))\), \(M\) can be described near infinity by a normal graph \(u(\theta,\rho)\) over the asymptotic cone \(C_\Lambda\)\!,
+\[
+u(\theta,\rho) = \rho\, u_1(\theta) + \rho^2 u_2(\theta) + \cdots,
+\]
+so that the induced metric on \(M\) takes the asymptotic form
+\[
+g_M = \rho^{-2}\big(h_0 + \rho^2 h_2 + \cdots + \rho^k h_k + \mathcal{O}(\rho^{k+1})\big),
+\]
+where \(h_0\) is the induced metric on \(\Lambda\).
+
+The coefficients \(h_{2j}\) in this *ambient extension* are recursively determined by the intrinsic and extrinsic curvatures of \(\Lambda\), except that at order \(k\) a formally undetermined, trace-free tensor \(h^{(k)}\) appears—the analogue of the holographic “obstruction tensor.”
+
+**Conjecture (Asymptotic Obstruction Energy):**  
+For each integer \(k\ge2\), define a *boundary energy* functional on smooth, closed submanifolds \(\Lambda \subset S^n\) by
+\[
+\mathcal{E}_k(\Lambda) := \int_{\Lambda} \!\! \langle h^{(k)}_{\text{TF}},\, h^{(k)}_{\text{TF}} \rangle_{h_0} \, d\mu_{h_0},
+\]
+where \(h^{(k)}_{\text{TF}}\) is the trace-free part of the formally undetermined coefficient in the expansion above.
+
+Then:
+
+1. **(Existence)** \(\mathcal{E}_k(\Lambda)\) is finite for any smooth closed \(\Lambda\subset S^n\) bounding a properly embedded minimal \(M\subset \mathbb{H}^{n+1}\);  
+2. **(Independence)** if \(M_1\) and \(M_2\) are two minimal submanifolds with the same asymptotic boundary \(\Lambda\), then \(\mathcal{E}_k(\Lambda)\) computed from either agrees;  
+3. **(Characterization)** \(\mathcal{E}_k(\Lambda) = 0\) if and only if \(\Lambda\) is a minimal submanifold of \(S^n_\infty\);  
+4. **(Conformal invariance)** under conformal transformations of \(S^n_\infty\), \(\mathcal{E}_k(\Lambda)\) transforms with a universal scaling, defining a conformally invariant quadratic form on the moduli of boundary embeddings.
+
+Equivalently, does the tensor \(h^{(k)}_{\text{TF}}\) give a canonical geometric measure of the asymptotic obstruction to total geodesicity of \(M\), yielding a natural *renormalized curvature energy* on the boundary \(\Lambda\)?
+
+---
+
+Why it is a “good” problem:  
+
+1. **Structurally rooted:**  
+   Unlike ad hoc energy definitions, this conjecture draws directly from the *known formal expansion structure* of minimal submanifolds in hyperbolic space—precisely where an undetermined asymptotic term \(h^{(k)}\) first appears, reflecting the intrinsic–extrinsic obstruction in the Fefferman–Graham recursion.  
+   Extending the scalar “obstruction tensor” phenomenon from ambient metric theory to submanifold geometry aligns perfectly with the established analytic machinery, making the problem intrinsically grounded.
+
+2. **Analytic and geometric bridge:**  
+   The conjecture seeks to connect PDE asymptotics of the minimal surface equation (analysis of the obstruction term) with *conformal geometric invariants* on the boundary, paralleling how the ambient obstruction tensor connects Poincaré–Einstein metrics to conformal curvature quantities.  
+   It thereby unites geometric analysis, conformal geometry, and holographic renormalization in a precise mathematical statement.
+
+3. **Clarity and attainability:**  
+   Each ingredient—formal expansions, the leading undetermined tensor, trace-free decomposition—already has a well-defined meaning. The open question is whether this data yields a *geometrically natural, filling-independent energy*. This is a concrete, plausible research conjecture with testable predictions (vanishing ⇔ boundary minimality).
+
+4. **Simplicity with profound implications:**  
+   The statement is conceptually simple: the first undetermined term in the expansion of a hyperbolic minimal submanifold should encode a canonical conformal energy on the boundary. Its resolution would illuminate the analytic structure controlling boundary regularity and potentially define new conformally invariant geometrical energies beyond the Willmore functional.
+
+5. **Potential for field integration:**  
+   Solving or even partially understanding this would likely require harmonic analysis, variational methods, and representation theory of curvature tensors within ambient conformal geometry—precisely the kind of cross-disciplinary integration that typifies important advances in modern geometric analysis.
+
+In summary, this problem is mathematically coherent, logically consistent, and conceptually aligned with existing structures while posing a genuinely open and deep conjectural link between two major domains—*minimal submanifold asymptotics and conformal boundary geometry*.  
+It thus satisfies the criteria of a “good,” research-level mathematical problem.

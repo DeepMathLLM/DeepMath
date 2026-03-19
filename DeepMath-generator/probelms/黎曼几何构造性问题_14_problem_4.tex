@@ -1,0 +1,44 @@
+problem:  
+Let \( (M^{2n}, g, J, \omega) \) be a simply connected complex space form of constant holomorphic sectional curvature \(c>0\), for example \(M = \mathbb{C}P^n_c\).  
+Let \(L^n \subset M\) be a compact, embedded **minimal Lagrangian submanifold**.  
+A smooth one‑parameter family of Lagrangian immersions \(F_t: L \to M\) is called a **Hamiltonian deformation** if there exists a family of smooth functions \(f_t \in C^\infty(L)\) such that
+\[
+\frac{dF_t}{dt} = J(\nabla f_t) \circ F_t .
+\]
+Let \(L_f := \exp_L(J\nabla f)\) denote the Lagrangian obtained by the small Hamiltonian graph with potential \(f\).
+
+Let \(L_f(t)\) denote the **Lagrangian mean curvature flow** (LMCF) solution starting at \(L_f(0)=L_f\):
+\[
+\frac{\partial F_f(x,t)}{\partial t} = H(x,t), \qquad F_f(\cdot,0) = L_f.
+\]
+Write \(L_0=L\) for the original minimal Lagrangian.
+
+---
+
+**Conjectural Problem (Dynamic Hamiltonian Stability Conjecture):**  
+
+> Suppose \( L \subset \mathbb{C}P^n_c \) is **Hamiltonian stable**, i.e. the second variation of volume is nonnegative under all Hamiltonian deformations (equivalently, the operator \(\mathcal{L}_L = \Delta + nc\) is nonnegative).  
+> 
+> Does it follow that there exists \(\varepsilon_n>0\) such that whenever \(f\) satisfies \(\|f\|_{C^2}\le \varepsilon_n\), the Lagrangian mean curvature flow \(L_f(t)\) exists for all \( t \ge 0 \) and converges smoothly (modulo ambient holomorphic isometries) to \(L\)?
+> 
+> In particular, is every compact Hamiltonian–stable minimal Lagrangian submanifold in \(\mathbb{C}P^n_c\) **nonlinearly stable** under Lagrangian mean curvature flow for small Hamiltonian perturbations?
+
+---
+
+Why is it a "good" problem:  
+
+1. **Bridging variational and dynamical stability:**  
+   This conjecture directly connects *Hamiltonian stability*, a variational (elliptic) phenomenon governed by the operator \(\Delta + nc\), with *dynamical stability* under the nonlinear Lagrangian mean curvature flow (a parabolic evolution). The link between the spectral positivity of the Jacobi operator and convergence of the flow is completely open in this symplectic–Kähler context.
+
+2. **Analytic depth and potential general principles:**  
+   In analogy with minimal surface theory, where positive index implies nonlinear stability of mean curvature flow near stable equilibria, this problem proposes a Lagrangian counterpart, but subject to Hamiltonian constraints—introducing a delicate coupling between elliptic spectral theory and fully nonlinear parabolic dynamics.
+
+3. **Faithful geometric setting:**  
+   All objects—the minimal Lagrangian \(L\), the Hamiltonian variation field \(J\nabla f\), and the LMCF itself—are completely natural in Kähler–Einstein geometry. The statement depends purely on intrinsic structures of \( (\mathbb{C}P^n,g_{\mathrm{FS}},\omega_{\mathrm{FS}}) \), avoiding artifacts like external weights or noncompact models.
+
+4. **Predicts rigidity of symmetric models:**  
+   If true, the totally geodesic real form \( \mathbb{R}P^n \subset \mathbb{C}P^n \) would exemplify a dynamically stable center of the LMCF among Lagrangian Hamiltonian perturbations, while unstable directions (if any) would correspond to negative eigenvalues of \(\mathcal{L}_L\). This would provide a dynamical characterization of the symmetric real form among minimal Lagrangians.
+
+5. **Simplicity with deep implications:**  
+   The question can be stated succinctly—*does Hamiltonian stability imply nonlinear flow stability?*—yet answering it would require merging analysis of the Hamiltonian Jacobi operator, nonlinear parabolic PDE on evolving Lagrangians, and symplectic geometry.  
+   This elegant simplicity combined with analytic depth exemplifies a “narrow‑entrance, profound‑depth’’ research problem.

@@ -1,0 +1,36 @@
+problem:  
+Let \((M^m,g_M)\) be a complete Riemannian manifold satisfying \(\mathrm{Ric}_M \ge 0\) and polynomial volume growth  
+\[
+\mathrm{Vol}(B_R(x_0)) \simeq R^d, \qquad d \le m,
+\]
+and assume that \(M\) supports the sharp Euclidean-type Sobolev inequality  
+\[
+\|v\|_{L^{2d/(d-2)}}^2 \le S_M\,\|\nabla v\|_{L^2}^2, \qquad v\in C_c^\infty(M).
+\]
+
+Let \((N^n,g_N)\) be a simply connected Cartan–Hadamard manifold whose sectional curvature satisfies  
+\[
+K_N(x) \le -\frac{C}{(1+r(x))^2(\log(2+r(x)))^{\beta}}, \qquad r(x)=d_N(p,x),
+\]
+for constants \(C>0\) and real parameter \(\beta\).
+
+Let \(u:M\to N\) be a harmonic map with finite energy  
+\[
+E(u) = \frac{1}{2}\int_M |\nabla u|^2 < \infty.
+\]
+For \(\beta=0\) (pure quadratic decay), the balance between the curvature term in the Bochner formula and the critical Sobolev inequality on \(M\) is asymptotically scale‐invariant; this hints that logarithmic perturbations could break or preserve rigidity, just as in borderline Hardy inequalities.
+
+**Question:**  
+Does there exist a *sharp logarithmic threshold* \(\beta_c = \beta_c(d)\) such that
+
+1. if \(\beta < \beta_c\), every finite-energy harmonic map \(u:M\to N\) is constant;  
+2. if \(\beta > \beta_c\), there exist \((M,N)\) satisfying the above assumptions that admit nonconstant finite-energy harmonic maps?
+
+In particular, does the Bochner–Sobolev balance that enforces rigidity at quadratic decay remain stable under logarithmic weakening, or can such subcritical \(\log\)-corrections permit nontrivial harmonic maps?
+
+Why is it a "good" problem:  
+This refined problem directly targets the *borderline analytical geometry* underlying sharp vanishing theorems for harmonic maps. The quadratic curvature decay corresponds to the precise scale at which the Bochner term \(\langle \mathrm{Riem}_N(\nabla u,\nabla u),u\rangle\) matches the critical Sobolev inequality governing \(|\nabla u|\); the addition of a logarithmic factor probes whether this analytic equilibrium is genuinely sharp.  
+
+The dependence on \(d\) reflects that the Sobolev critical exponent—and hence the analytic rigidity—changes with the effective dimension of \(M\). This question thus unifies geometry, analysis, and asymptotic potential theory: it asks whether geometric rigidity governed by a curvature bound survives when the curvature decays *just barely faster* via logarithmic damping.  
+
+Mathematically, it represents the geometric analog of determining whether the Hardy inequality remains critical under log corrections—a core theme in sharp analysis on manifolds. Conceptually simple yet deeply technical, resolving it would illuminate how small asymptotic perturbations in curvature affect the global analytic rigidity of harmonic maps, bridging the gap between geometric curvature decay and functional analytic thresholds in PDE theory.

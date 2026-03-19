@@ -1,0 +1,53 @@
+problem:  
+Let \((M^n,g)\) be a complete Riemannian manifold with nonnegative Ricci curvature, and let \((N^m,h)\) be a compact manifold of nonpositive sectional curvature.  
+Suppose \(f:(M,g)\to(N,h)\) is a finite‑energy harmonic map.  
+
+Denote by \(\sigma_1(x)\ge\sigma_2(x)\ge \dots \ge\sigma_{r(x)}(x)>0\) the nonzero singular values of \(df_x\), where \(r(x)=\operatorname{rank}(df_x)\), and let  
+\[
+\delta(x)=\frac{\sigma_1(x)}{\sigma_{r(x)}(x)}.
+\]
+Define the **rank‑deficiency set**
+\[
+Z_\epsilon=\{x\in M:\,|df_x|<\epsilon\}.
+\]
+
+Assume that there exist functions \(\varepsilon(R)\to0\) and \(\eta(R)\to0\) such that for some base point \(p\in M\),
+\[
+\sup_{x\in B(p,R)\setminus Z_{\eta(R)}}\bigl(\delta(x)-1\bigr)\le \varepsilon(R)
+\quad\text{and}\quad
+\frac{\mathrm{Vol}(Z_{\eta(R)}\cap B(p,R))}{\mathrm{Vol}(B(p,R))}\to0.
+\]
+That is, away from a vanishing‑volume subset where the differential of \(f\) degenerates, \(df_x\) is asymptotically conformal on its image directions.
+
+> **Question:**  
+> (1) Under these conditions, does it follow that  
+> \[
+> \exists\,r_0\text{ such that }\lim_{R\to\infty}\frac{\mathrm{Vol}\{x\in B(p,R):\, r(x)\ne r_0\}}{\mathrm{Vol}(B(p,R))}=0?
+> \]
+> In other words, does asymptotic conformality together with negligible degeneration enforce asymptotic constancy of differential rank?  
+>  
+> (2) If such an asymptotic constant rank \(r_0\) exists, can one describe the large‑scale geometry of \((M,g)\) in terms of a corresponding harmonic foliation—e.g., does there exist a family of almost‑parallel submanifolds tangent to \(\ker df\) or \(\mathrm{Im}(df^*)\) revealing an emergent splitting in the Cheeger–Colding sense?
+
+Why is it a "good" problem:  
+This revised problem is now technically consistent, quantitatively nonvacuous, and highlights a delicate frontier between analytic control of harmonic maps and global geometric structure.
+
+1. **Quantitative precision and nontriviality.**  
+   The dual assumptions simultaneously ensure:  
+   - \(df\) is *asymptotically conformal* where it is non‑degenerate (\(\delta(x)\to1\) uniformly outside small sets), and  
+   - the measure of points where \(df\) is tiny becomes negligible.  
+   Together these give a genuine large‑scale isotropy condition rather than a vacuous bound, but they do not trivially fix the rank.
+
+2. **Analytic–geometric motivation.**  
+   The Bochner formula for harmonic maps indicates that equality in certain energy identities corresponds precisely to conformality of \(df\). Investigating what happens *asymptotically near this equality* under nonnegative Ricci curvature tests the robustness of these formulas at the borderline of rigidity, connecting PDE estimates to global geometric patterns.
+
+3. **Conceptual goal: bridging analysis and geometry.**  
+   The main question is whether analytic isotropy at infinity translates into geometric rank rigidity—analogous in spirit to how Cheeger–Gromoll’s splitting theorem converts linear growth harmonic functions into geometric lines. A partial affirmative answer would uncover a new “harmonic‑map splitting mechanism,” while any counterexample would uncover new kinds of flexibility in the Ric ≥ 0 setting.
+
+4. **Cross‑field resonance.**  
+   The problem draws on and would influence:
+   - **Geometric analysis:** refined control of \(df\) through Bochner and monotonicity formulas;  
+   - **Ricci‑limit geometry:** asymptotic volume and splitting structures;  
+   - **Geometric measure theory:** measuring how rank‑deficient regions concentrate.  
+
+5. **Simplicity, depth, and balance.**  
+   Stated succinctly—does large‑scale conformality with negligible degeneration force rank rigidity?—the question is accessible yet demands new interplay between curvature bounds, harmonic map regularity, and measure convergence. It exemplifies the “narrow entrance, profound depth” ideal: conceptually simple, technically formidable, and capable of launching sustained research activity.

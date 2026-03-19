@@ -1,0 +1,35 @@
+problem:  
+Let \( (M^{m}, \omega, g_M) \) be a compact Kähler manifold with bounded geometry---that is, there exist constants \( \kappa, D, V > 0 \) such that 
+\[
+\mathrm{Ric}(g_M) \ge -\kappa g_M, \quad \mathrm{diam}(M) \le D, \quad \mathrm{Vol}(M) = V.
+\]
+Let \( (N,g_N) \) be a simply connected Riemannian manifold whose sectional curvature satisfies
+\[
+ -b^2 \le K_N \le -a^2 < 0.
+\]
+Suppose \( f: M \to N \) is a **nonconstant pluriharmonic map** minimizing energy in its homotopy class (so \( \nabla^{1,0}\overline{\partial} f = 0 \)).  
+
+Let \( J_f \) denote the Jacobi operator of the second variation of the energy,
+\[
+J_f v = \nabla^*\nabla v + \mathrm{R}^N(v, df(e_i))\,df(e_i),
+\]
+acting on sections \(v \in \Gamma(f^*TN)\).  
+Let \( \lambda_1^+(J_f) \) be the smallest **positive** eigenvalue of \(J_f\) on the orthogonal complement of its kernel (which always contains tangent directions corresponding to infinitesimal deformations along \(f\)’s image).
+
+**Problem (Curvature–complex spectral gap conjecture):**  
+Assume the above geometric bounds are fixed.  
+Is there a constant \( \Phi = \Phi(a,b,\kappa, D, V, m) > 0 \) such that for every such pluriharmonic, energy-minimizing \( f \),
+\[
+\lambda_1^+(J_f) \ge \Phi(a,b,\kappa, D, V, m)?
+\]
+
+Equivalently, does uniformly pinched negative curvature of the target, together with controlled domain geometry, enforce a universal lower bound on the first nonzero eigenvalue of the harmonic map Jacobi operator in the Kähler setting?  
+
+If this fails, can one construct a sequence of such data \((M_k,\omega_k, g_{M_k}, f_k: M_k \to N_k)\) satisfying fixed curvature and geometry bounds, yet with \( \lambda_1^+(J_{f_k}) \to 0 \)?  
+
+Why is it a "good" problem:  
+This problem precisely targets the deep interplay between Kähler complex geometry, curvature pinching, and spectral analysis of harmonic-map stability. Unlike the classical convexity and uniqueness results for harmonic maps, it asks whether *uniform geometric control* of both domain and target suffices to enforce a spectral gap, i.e. quantitative stability.  
+
+A positive answer would link stability theory and complex differential geometry through an analytic invariant of the harmonic map functional, revealing a universal curvature–geometry interaction law. A counterexample would expose delicate degenerations even within bounded geometric regimes, challenging our understanding of how curvature and complex structure constrain analytic stability.  
+
+Mathematically clean and self-contained—yet pointing toward a major analytic unknown—it sits exactly at the meeting point of harmonic map theory, Kähler geometry, and spectral analysis, satisfying the hallmarks of a “good” research-level problem: compact statement, profound depth, and potential to reshape understanding across multiple areas.

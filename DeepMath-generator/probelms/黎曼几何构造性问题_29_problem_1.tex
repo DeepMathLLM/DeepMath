@@ -1,0 +1,38 @@
+problem:  
+Let \( (M^m,g) \) be a compact Riemannian manifold with nonnegative Ricci curvature, and let \( (N^{2n},J,h) \) be a compact Kähler manifold whose holomorphic bisectional curvature tensor \( R^N \) satisfies the **strongly seminegative** condition in the sense of Siu (Invent. Math. 1978):  
+\[
+R^N(X,\overline{X},Y,\overline{Y}) \le 0
+\]
+for all \( X,Y \in T^{1,0}N \), and equality for some nonzero \( X \) implies  
+\[
+R^N(X,\overline{X},Z,\overline{Z}) = 0
+\quad \text{and} \quad
+R^N(X,\overline{Z},Z,\overline{X})=0
+\ \text{for all } Z .
+\]  
+Let \( f:M \to N \) be a harmonic map minimizing energy in its homotopy class.  
+
+At each \( q \in N \), define the **curvature nullity subspace**
+\[
+\mathcal{N}_q := \{ X \in T^{1,0}_q N \mid R^N(X,\overline{X},Y,\overline{Y})=0 \ \text{for all } Y \in T^{1,0}_q N \}.
+\]
+Assume that \(\mathcal{N}\) defines a \(J\)-invariant integrable distribution on an open dense subset of \(N\), so that its maximal integral leaves \(S_\alpha\) are complex totally geodesic submanifolds.
+
+**Conjectural problem:**  
+Under the above hypotheses, must every energy-minimizing harmonic map \(f:(M,g)\to(N,J,h)\) satisfy  
+\[
+df(T_p M) \subset \mathcal{N}_{f(p)} \quad \text{for all } p\in M,
+\]
+so that \(f(M)\) is contained in one of the totally geodesic complex leaves \(S_\alpha\)?  
+Equivalently, do the analytic vanishing properties forced by Siu’s Bochner identity under strong seminegativity imply that the **metric-nullity distribution** of \(N\), whenever integrable, captures the image of all minimizing harmonic maps from manifolds with nonnegative Ricci curvature?
+
+Why is it a "good" problem:  
+This version sharpens and clarifies the central geometric mechanism behind the Siu–Sampson rigidity theorems. Known results establish that harmonic maps into Kähler manifolds of nonpositive curvature are pluriharmonic or holomorphic under suitable conditions, but they do not fully describe where such maps land when curvature degeneracy occurs. The conjecture above isolates a precise, untested frontier: whether *analytic rigidity (via Bochner vanishing)* forces *geometric rigidity (factorization through nullity leaves)* under strong seminegativity.  
+
+It is a "good" problem because:  
+
+1. **Conceptual clarity:** It asks a simple question—does analytic vanishing dictate geometric image structure?—formulated via the natural curvature-nullity distribution.  
+2. **Bridge between fields:** The conjecture connects non-linear PDE analysis (harmonic maps), Kähler curvature geometry, and foliation/rigidity theory, demanding techniques across multiple domains.  
+3. **Potential significance:** A positive answer would unify known holomorphic rigidity theorems with curvature-degeneracy geometry and provide a precise geometric description of harmonic images; a counterexample would reveal the limits of Bochner–type methods under curvature degeneracy.  
+
+Thus, the statement is both mathematically sound and capable of provoking substantial new research directions in complex differential geometry and geometric analysis.

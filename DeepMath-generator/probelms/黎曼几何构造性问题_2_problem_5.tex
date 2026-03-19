@@ -1,0 +1,45 @@
+problem:  
+Let \(B_r^n \subset \mathbb{S}^n\) denote the geodesic ball of radius \(r < \pi/2\).  
+For a compact, embedded, smooth, free boundary minimal submanifold \(\Sigma^k \subset B_r^n\) (i.e. \(H_\Sigma \equiv 0\), \(\partial\Sigma \subset \partial B_r^n\), and \(\Sigma\) meets \(\partial B_r^n\) orthogonally), define the *Steklov spectrum* \(\{\sigma_j(\Sigma)\}_{j\ge1}\) as the eigenvalues of the boundary value problem
+\[
+\begin{cases}
+\Delta_\Sigma u = 0 &\text{in } \Sigma,\\[4pt]
+\frac{\partial u}{\partial \eta} = \sigma u &\text{on } \partial\Sigma,
+\end{cases}
+\]
+where \(\eta\) is the outward conormal along \(\partial\Sigma\).
+
+For the totally geodesic free boundary disk \(D_r^k = B_r^n \cap \mathbb{S}^k\), denote its Steklov spectrum by \(\{\sigma_j^*\}\).  
+It is known that the coordinate restrictions \(x_1,\dots,x_{k+1}\) are Steklov eigenfunctions with eigenvalue \(\sigma_1^* = \tan r\).
+
+Define the normalized spectral gap
+\[
+\Gamma(\Sigma) = \frac{\sigma_2(\Sigma) - \sigma_1(\Sigma)}{\sigma_1(\Sigma)} .
+\]
+
+**Problem (Spherical Free Boundary Steklov Gap Rigidity Conjecture):**  
+Is it true that for every compact, embedded free boundary minimal submanifold \(\Sigma^k\subset B_r^n\),
+\[
+\Gamma(\Sigma) \ge \Gamma(D_r^k),
+\]
+with equality if and only if \(\Sigma\) is congruent to \(D_r^k\)?  
+Alternatively, does there exist a universal lower bound \(c(n,k,r)>0\) such that whenever \(\Sigma\) is not totally geodesic,
+\[
+\Gamma(\Sigma) - \Gamma(D_r^k) \ge c(n,k,r)\, \mathrm{dist}^2_{C^1}(\Sigma, D_r^k) ?
+\]
+
+Why is it a "good" problem:  
+
+1. **Bridges geometry and spectral analysis.**  
+   This problem links the theory of free boundary minimal submanifolds directly with spectral geometry—the Steklov problem being a natural eigenvalue problem for harmonic functions with geometric boundary conditions. It tests whether the totally geodesic disk is rigidly extremal not only geometrically but also spectrally, revealing a deep bridge between minimal surface theory, boundary spectral problems, and shape analysis.
+
+2. **Naturally original and uncharted.**  
+   While analogues for Euclidean balls (Fraser–Schoen, Brendle) relate Steklov eigenvalues and minimal surfaces, the *spherical* free boundary case remains essentially unexplored, especially at the level of **spectral gap rigidity**. No known theorem provides even a conjectured lower bound in this curved-boundary context, making this a genuine research frontier.
+
+3. **Conceptually simple, analytically profound.**  
+   The question reduces to comparing the second and first Steklov eigenvalue of a minimal submanifold—an elementary spectral datum—but resolving it may require developing a new intersection of techniques: deformation analysis of Steklov spectra, curvature comparison principles, and analytic perturbation theory for boundary operators coupled to geometric PDEs.
+
+4. **Deep potential impact.**  
+   A positive resolution would produce a new **spectral characterization** of the totally geodesic free boundary disk: the unique minimizer of the Steklov gap. Such a result would open paths toward geometric inverse problems and spectral rigidity phenomena for minimal surfaces in curved ambient spaces, paralleling how spectral gaps characterize stability in quantum systems.
+
+Thus, the **Spherical Free Boundary Steklov Gap Rigidity Conjecture** is mathematically simple yet conceptually powerful—uniting minimal geometry and spectral theory through a concrete and unexplored invariant whose rigidity would illuminate the analytic structure of free boundary minimal submanifolds.

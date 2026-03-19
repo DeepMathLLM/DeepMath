@@ -1,0 +1,39 @@
+problem:  
+Let \( (M, \omega_0, g_0) \) be a compact Kähler manifold and \( (N,g_N) \) a complete simply connected Riemannian manifold of sectional curvature  
+\[
+K_N \le -a^2 < 0.
+\]
+For a smooth Kähler potential perturbation \( \phi_t \) with \( \phi_0 = 0 \) and \( \omega_t = \omega_0 + i\partial\bar{\partial}\phi_t \), let \( g_t(\cdot,\cdot) = \omega_t(\cdot,J\cdot) \).  
+
+Let \(f_t : (M,g_t)\to (N,g_N)\) be the unique harmonic map in a fixed homotopy class which depends smoothly on \(t\), assuming \(f_0\) is nondegenerate (Jacobi operator invertible modulo infinitesimal isometries).  
+Define 
+\[
+E(t) = \tfrac{1}{2}\int_M |df_t|^2_{g_t,g_N}\,\mathrm{dvol}_{g_t}.
+\]
+
+**Problem (complex-geodesic convexity conjecture for harmonic energy):**  
+Let \(\Phi(s)\) be a *Mabuchi geodesic* (a geodesic in the space of Kähler potentials for the fixed class \([\omega_0]\)) such that \(\Phi(0)=0\) and \(\dot\Phi(0)=\psi\) is a real-valued function with zero mean. Setting \( \omega_t = \omega_0 + i\partial\bar{\partial}\Phi(t)\), consider \( f_t \) and \(E(t)\) as above.  
+
+**Conjecture:**  
+If \( (N,g_N) \) has uniformly negative sectional curvature and \(f_0\) is nonconstant and nondegenerate, then along any *Mabuchi geodesic* \(t\mapsto \omega_t\),
+\[
+\left.\frac{d^2}{dt^2}\right|_{t=0} E(t) \ge 0,
+\]
+and in fact
+\[
+\left.\frac{d^2}{dt^2}\right|_{t=0} E(t) > 0
+\]
+unless \( \dot\Phi(0) \) arises from a holomorphic vector field on \(M\).  
+
+Equivalently: are energy-minimizing harmonic maps into negatively curved targets strictly stable along geodesic directions in the Kähler metric moduli, except for isometric deformations?  
+
+If false, exhibit or characterize a mechanism (analytic or geometric) by which a direction in the Mabuchi tangent space produces energy concavity even though \(K_N<0\).
+
+Why is it a "good" problem:  
+This version introduces a precise geometric variation—**Mabuchi geodesics** in the space of Kähler metrics—where convexity is analytically meaningful and directly parallels known convexity phenomena (e.g. convexity of the K-energy functional). This connects **Kähler geometry** (through geodesics and potentials) and **harmonic map theory** (through domain–target curvature interactions).  
+
+The conjecture now has a well-defined second variation and clear nondegeneracy assumptions. It asks whether negative target curvature enforces *variational convexity* along natural geometric directions, a property not encompassed by existing Siu–Sampson rigidity or Bochner-type arguments.  
+
+A positive result would uncover a new structural bridge between the geometry of Kähler potential spaces and analytic stability of harmonic maps, possibly leading to a “convex” energy landscape over moduli of Kähler metrics. A counterexample would expose subtle instabilities driven by the complex geometry of the domain.  
+
+Thus, the problem—simple to state yet demanding deep analysis at the meeting point of Kähler geometry, infinite-dimensional Riemannian geometry, and harmonic map theory—satisfies all hallmarks of a “good” modern research problem.

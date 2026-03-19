@@ -1,0 +1,48 @@
+problem:  
+Let \(S^{n+1}\) (\(n \ge 7\)) be the unit sphere, and let \(\mathcal{M}_n\) denote the space of smooth Riemannian metrics on \(S^{n+1}\) endowed with the \(C^3\)-topology.  
+For \(g \in \mathcal{M}_n\), denote by \(\mathcal{A}(g)\) the class of area-minimizing boundaries mod 2 in \((S^{n+1}, g)\) (in the sense of Almgren–Federer).  
+
+Suppose for some \(\Sigma = \partial E \in \mathcal{A}(g)\) and \(x \in \mathrm{Sing}(\Sigma)\), the tangent cone \(C_x\Sigma\) is **unique** and area-minimizing in \(\mathbb{R}^{n+1}\).  
+Let the associated link \(\Gamma_x = C_x\Sigma \cap S_x^n\) be viewed as a stationary integral varifold on the unit sphere \(S_x^n \subset T_xS^{n+1}\), endowed with the standard round metric \(g_{\mathrm{round}}\).  
+
+Define on the regular part \(\Gamma_x^{\mathrm{reg}}\) the **Jacobi operator**  
+\[
+L_{\Gamma_x} = -\Delta_{\Gamma_x} - (|A_{\Gamma_x}|^2 + n-1),
+\]
+acting on \(C_c^\infty(\Gamma_x^{\mathrm{reg}})\).  
+Let \(L_{\Gamma_x}^{\mathrm{Fr}}\) be its Friedrichs extension as a self‑adjoint operator on \(L^2(\Gamma_x)\), with the assumption (standard in spectral analysis on singular spaces) that this extension has **compact resolvent**, hence discrete spectrum \(\mathrm{Spec}(L_{\Gamma_x}^{\mathrm{Fr}})\).
+
+> **Problem:**  
+> Does there exist a comeager subset \(\mathcal{G} \subset \mathcal{M}_n\) such that for all \(g \in \mathcal{G}\), and for every area‑minimizing boundary \(\Sigma \in \mathcal{A}(g)\) whose singular points \(x\) admit unique tangent cones \(C_x\Sigma\) with links \(\Gamma_x\) satisfying the above spectral assumption, one has
+> \[
+> 0 \notin \mathrm{Spec}(L_{\Gamma_x}^{\mathrm{Fr}})?
+> \]
+>  
+> Equivalently, do **generic metrics** on \(S^{n+1}\) preclude the appearance of zero‑eigenvalue (Jacobi field) degeneracies in the links of all unique tangent cones of minimizing hypersurfaces?
+
+---
+
+Why is it a "good" problem:  
+
+1. **Analytic and geometric precision:**  
+   The spectral framework is now completely specified—the Jacobi operator, its Friedrichs extension, and the spectral compactness assumption are standard in analysis on singular manifolds. This ensures logical consistency without default reliance on unproven spectral properties.
+
+2. **Conceptual focus:**  
+   The problem examines whether singular minimal cones arising as tangent models of area‑minimizing hypersurfaces are generically **spectrally nondegenerate** under perturbation of the ambient metric. It is the singular counterpart of the smooth “bumpy metric” phenomenon, and targeting this transition represents high conceptual refinement.
+
+3. **Bridge between disciplines:**  
+   The question unifies:
+   - **Geometric measure theory:** local blow‑up analysis and uniqueness of tangent cones.  
+   - **Spectral theory:** properties of elliptic operators on singular spaces.  
+   - **Genericity and transversality:** Baire category methods in infinite‑dimensional metric spaces.  
+   A solution would demand creative synthesis of ideas across these areas.
+
+4. **Simplicity vs. depth:**  
+   The core statement—“For generic metrics, zero does not occur in the Jacobi spectrum for links of unique tangent cones”—is succinct yet probes deep analytic and geometric mechanisms underlying singular regularity and stability.
+
+5. **Potential importance:**  
+   - A **positive resolution** would show that tangent cone models of singularities are spectrally rigid—isolated and structurally stable under perturbation.  
+   - A **negative resolution** would instead reveal intrinsic spectral degeneracy of singular minimal cones, exposing a fundamental rigidity of high‑dimensional minimizers.  
+   Either case would significantly advance the understanding of metric dependence and singular geometric structure in minimal surface theory.
+
+Thus the problem is precise, original, and deeply connected to central open questions in geometric analysis—embodying the criteria of a “good” research‑level mathematical problem.

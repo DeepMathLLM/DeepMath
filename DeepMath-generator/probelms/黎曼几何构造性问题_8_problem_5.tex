@@ -1,0 +1,22 @@
+problem:  
+Let \( M^m \hookrightarrow (\mathbb{S}^n, g_{\mathrm{std}}) \) be a **nondegenerate** compact minimal submanifold, meaning its Jacobi operator \(J_M\) on normal vector fields is invertible.  
+For every smooth mean‑zero function \(u \in C^\infty(\mathbb{S}^n)\), consider the one‑parameter family of conformal metrics \( g_t = e^{2tu} g_{\mathrm{std}} \).  
+By the implicit function theorem, there is a unique smooth family of immersions \( i_t: M \to \mathbb{S}^n \) such that \(M_t = i_t(M)\) is minimal with respect to \(g_t\), and \(i_0 = i\).  
+
+Let \( \mathcal{A}_t = \operatorname{Vol}(M_t, g_t)\) denote the area functional of the corresponding minimal submanifold in the deformed geometry. The first and second derivatives of \(\mathcal{A}_t\) at \(t=0\) are determined by the conformal–minimal first and second variations, and \( \ddot{\mathcal{A}}_0 \) represents the coupled stability quadratic form previously studied.  
+
+Define the *third‑order conformal–minimal response*  
+\[
+\mathcal{C}_M(u) := \left.\frac{d^3}{dt^3}\right|_{t=0} \mathcal{A}_t ,
+\]
+which, under nondegeneracy, is a well-defined cubic functional depending on \(u\), \(J_M^{-1}\), and the second fundamental form of \(M\).  
+
+**Problem:**  
+Does there exist a non‑totally‑geodesic minimal submanifold \( M \subset \mathbb{S}^n \) for which \( \mathcal{C}_M(u) \equiv 0 \) for all mean‑zero \( u \)?  
+Equivalently, are totally geodesic submanifolds characterized as the only minimal submanifolds whose minimal volume is stationary up to third order under all conformal ambient variations?  
+If not, what geometric conditions on \(M\) (e.g. symmetries, specific eigenfunction interactions of \(J_M\)) could enforce the vanishing of \(\mathcal{C}_M(u)\)?  
+
+Why is it a "good" problem:  
+This problem corrects the degeneracy and well‑posedness issues by assuming nondegeneracy, ensuring a unique analytic branch of minimal immersions under small conformal change. It introduces the first higher‑order (beyond the classical second variation) obstruction to conformal rigidity by defining a precise and intrinsic cubic functional \(\mathcal{C}_M(u)\).  
+At the conceptual level, the problem probes whether “third‑order conformal neutrality” exists: that is, whether minimal submanifolds can remain volume‑stationary through three levels of conformal perturbation without being totally geodesic. Resolving this would connect analytic perturbation theory (through expansions of \(J_M^{-1} F_u\)), conformal geometry (behavior under Möbius transformations), and geometric rigidity.  
+It thereby provides a clear, rigorous, and deep question—simple to state but tapping into uncharted territory at the intersection of geometric analysis and conformal invariance—making it an authentically good research‑level problem.

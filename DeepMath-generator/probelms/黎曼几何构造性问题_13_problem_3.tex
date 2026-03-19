@@ -1,0 +1,47 @@
+problem:  
+Let $\phi:(M^{m},g)\to (N^{n},h)$ be a Riemannian submersion with compact minimal fibers, so that $\phi$ is a harmonic morphism.  
+Let $F_0:\Sigma^k\to M$ be a smooth horizontal $g$-minimal immersion (the differential of $\phi\circ F_0$ is injective).  
+For $t>0$, let $F_t:\Sigma\to M$ evolve by the usual mean curvature flow in $(M,g)$:  
+\[
+\frac{\partial F_t}{\partial t}=H_{F_t}^g,
+\]
+and set $u_t=\phi\circ F_t:\Sigma\to N$.  
+For any immersion $F:\Sigma\to M$, recall the composition formula
+\[
+\tau_h(\phi\circ F) = d\phi(H_F^g) + \mathcal{R}_{\phi,F}(A,T),
+\]
+where $\mathcal{R}_{\phi,F}(A,T)$ encodes the O’Neill curvature–torsion terms coupling horizontal and vertical directions.  
+
+**Problem:**  
+Assume that $F_t$ is horizontal at $t=0$ and that this horizontality is instantaneously preserved to first order by the mean curvature flow (so the vertical component of $H_{F_t}^g$ vanishes at $t=0$).  
+Ask whether, under these circumstances, one can find:  
+- a nontrivial basic conformal deformation $\tilde g=e^{2f}g$ preserving the harmonic morphism property of $\phi$, and  
+- a horizontal minimal immersion $F_0$,  
+
+such that the projected maps $u_t=\phi\circ F_t$ satisfy, to first order in $t$, the harmonic map flow equation on $(\Sigma,g_\Sigma)$:
+\[
+\left.\frac{\partial u_t}{\partial t}\right|_{t=0} 
+= \tau_h(u_0),
+\]
+that is,
+\[
+d\phi(H_{F_0}^{\tilde g})+\mathcal{R}_{\phi,F_0}(A,T) = \tau_h(\phi\circ F_0).
+\]
+Equivalently, under what geometric conditions on $(M,g,\phi)$ and the chosen conformal deformation does the infinitesimal generator of the mean curvature flow project exactly to the tension field of the corresponding harmonic map flow?
+
+Characterize these compatibility conditions—if any—in terms of the O’Neill tensors $(A,T)$, curvature of $(N,h)$, and the basic conformal factor $f$.  
+Determine whether nontrivial examples exist, or whether the only possible cases are those with integrable horizontal distribution (i.e. local Riemannian product structures).  
+
+Why is it a "good" problem:  
+1. **Profound Insight:**  
+   This version isolates a concrete infinitesimal test for the dynamic geometric compatibility between two nonlinear parabolic evolutions. It questions whether the analytic evolution of harmonic maps can appear as a natural *projection* of the geometric mean curvature evolution through a harmonic morphism—turning the static reduction principle into its infinitesimal flow analogue.  
+
+2. **Bridge Between Fields:**  
+   The problem couples geometric analysis (harmonic map flow, mean curvature flow) with submersion geometry (O’Neill tensors, curvature decomposition). Successfully formulating or resolving the conditions would require integrating knowledge from partial differential equations, Riemannian geometry, and the geometry of fibered manifolds.  
+
+3. **Extreme Simplicity:**  
+   Though it involves heavy machinery, the conceptual picture is succinct: *When does mean curvature flow upstairs yield harmonic map flow downstairs?*  The flow-reduction perspective is simple to state yet probes profound geometric structure.  
+
+4. **Open and Non‑trivial:**  
+   Existing rigidity results for harmonic morphisms give no classification encompassing such dynamic correspondences. Understanding whether only integrable (product) cases allow the first‑order projection equivalence would represent either a new rigidity theorem or a starting point for a new kind of flow‑adapted reduction method.  
+   The problem is thus open, mathematically well‑posed to first order, and lies squarely at the intersection of several deep analytic and geometric theories.

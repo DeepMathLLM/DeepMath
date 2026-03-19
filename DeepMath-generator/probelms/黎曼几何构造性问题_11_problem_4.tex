@@ -1,0 +1,50 @@
+problem:  
+Let \(M^m \subset \mathbb{S}^{m+k}(1)\) be a compact, properly biharmonic submanifold, i.e. an isometric immersion whose mean curvature vector field \(H\) satisfies
+\[
+\Delta^\perp H + \operatorname{trace} B(A_H(\cdot),\cdot) - mH = 0.
+\]
+The **second variation of the bienergy functional**
+\[
+E_2(\phi) = \frac12 \int_M \|\tau(\phi)\|^2 \, dV
+\]
+has been computed by Jiang and later by Oniciuc and others: for normal variations \(\eta \in \Gamma(\nu(M))\), the quadratic form is
+\[
+Q(\eta,\eta) = \int_M \left( \|\Delta^\perp \eta - \operatorname{trace} B(A_H(\cdot),\cdot)\|^2 
+- m\,\|\nabla^\perp \eta\|^2 - \langle \mathcal{R}(H,\eta)H, \eta \rangle \right)dV,
+\]
+and the corresponding elliptic fourth-order self-adjoint operator \(\mathcal{J}\) satisfies
+\[
+Q(\eta,\eta) = \int_M \langle \mathcal{J}(\eta), \eta\rangle.
+\]
+
+For known properly biharmonic submanifolds of \(\mathbb{S}^{m+1}(1)\), such as the small hypersphere \(\mathbb{S}^m(1/\sqrt{2})\) and the Clifford torus  
+\(\mathbb{S}^{p}(1/\sqrt{2})\times \mathbb{S}^{m-p}(1/\sqrt{2}),\)
+the operator \(\mathcal{J}\) can be computed explicitly, though its spectral structure is not yet completely understood.
+
+---
+
+**Research Problem (Precise version, two parts):**
+
+1. (**Model-spectrum problem**)  
+Compute explicitly the spectrum of the second-variation operator \(\mathcal{J}\) for the standard properly biharmonic hypersphere \(\mathbb{S}^m(1/\sqrt{2})\subset \mathbb{S}^{m+1}(1)\).  
+Determine whether the smallest eigenvalue is zero and describe its eigenspace (expected to correspond to ambient isometries).
+
+2. (**Open conjecture: spectral gap rigidity**)  
+Assuming the operator \(\mathcal{J}\) is elliptic with discrete spectrum on \(\Gamma(\nu(M))\), is there a dimensional constant \(\varepsilon_m>0\) such that every compact properly biharmonic submanifold \(M^m \subset \mathbb{S}^{m+k}(1)\) with  
+\(\lambda_1(\mathcal{J}) > 0\) satisfies
+\[
+\lambda_1(\mathcal{J}) \ge \varepsilon_m,
+\]
+and equality \( \lambda_1(\mathcal{J}) = 0 \) can occur only for the canonical standard models above?  
+
+That is—does a **spectral stability gap** exist for properly biharmonic submanifolds of the unit sphere, independent of the codimension?
+
+---
+
+Why is it a "good" problem:  
+- **Foundational precision and depth:** It first asks for an explicit spectrum computation in the simplest known models—a concrete and technically demanding task combining classical spectral geometry and the explicit form of the biharmonic operator. Then it extends to a conjectural rigidity phenomenon describing when equality can fail.  
+- **Bridging disciplines:** This problem forces interaction between **geometric analysis** (through the biharmonic equation), **spectral theory** (eigenvalues of a fourth‑order operator on the normal bundle), and **Riemannian submanifold theory** (shape operators and curvature identities). Each component enriches the others.  
+- **Conceptual simplicity hiding real depth:** At heart, the question is straightforward to state — “What is the low spectrum of the biharmonic stability operator and is there a universal gap?” — but tackling it demands new analytic techniques for high-order geometric elliptic operators tied to immersion geometry.  
+- **Predictive foresight:** A positive answer would parallel the classical rigidity of minimal submanifolds via their Jacobi operators, revealing a higher‑order rigidity structure for biharmonic submanifolds that is not yet understood. Even the model‑spectrum computation could lay a basis for new comparative tools.  
+
+Thus, this refined problem isolates two linked, mathematically rigorous and open directions: one computational and one structural—together defining a clear research program on the spectral geometry of biharmonic submanifolds in spheres.

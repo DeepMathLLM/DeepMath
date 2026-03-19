@@ -1,0 +1,17 @@
+problem:  
+Let \( M^m \hookrightarrow (\mathbb{S}^n, g_{\mathrm{std}}) \) be a compact *nondegenerate* minimal submanifold, i.e. its Jacobi operator \(J_M\) on normal vector fields satisfies that \(\ker(J_M)=\{0\}\).  
+For any smooth function \(u\) on \(\mathbb{S}^n\) with zero mean value, consider the one‑parameter conformal deformation of the ambient metric \(g_t = e^{2t u} g_{\mathrm{std}}\). By the implicit function theorem, there exists (for small \(t\)) a smooth family of immersions \(i_t: M \to \mathbb{S}^n\) such that each \(M_t=i_t(M)\) is minimal under \(g_t\), and \(i_0=i\) is the original immersion.  
+
+Denote by \(\mathcal A_t = \operatorname{Vol}(M_t,g_t)\).  
+The **coupled conformal–minimal second variation** is  
+\[
+Q_M(u) = \left.\frac{d^2}{dt^2}\right|_{t=0} \mathcal A_t ,
+\]
+which depends quadratically on \(u\) through both the deformation of the ambient metric and the corresponding infinitesimal normal variation \(\dot i_0\) solving \(J_M(\dot i_0)=F_u\), where \(F_u\) encodes the variation of mean curvature induced by \(u\).  
+
+**Problem:**  
+Determine whether there exists a non–totally–geodesic minimal submanifold \(M^m \subset \mathbb{S}^n\) for which \(Q_M(u)\ge 0\) for all smooth mean‑zero \(u\). Equivalently, does the sphere’s round metric impose that conformal–minimal second variation stability occurs only for totally geodesic submanifolds? If not, classify all exceptions (if any).  
+
+Why is it a "good" problem:  
+This formulation precisely couples deformation theory of minimal immersions with conformal geometry of the ambient space. It asks whether Simons‑type rigidity persists when the *ambient metric itself* varies conformally, which forces one to analyze how conformal curvature changes propagate through the Jacobi operator. The existence of the coupled operator \(J_M^{-1}\!F_u\) ties analysis (spectral properties of \(J_M\)), conformal geometry (variation of scalar and ambient curvature), and global differential geometry (rigidity of submanifolds in space forms).  
+The statement is accessible and clean — “Are totally geodesic submanifolds the only ones stable under all conformal–minimal ambient deformations?” — yet solving it would require new interaction principles between extrinsic curvature, the conformal Laplacian, and perturbative minimal immersion theory. This clear, profound link between classical minimal surface rigidity and conformal analysis makes it a genuinely good research problem.

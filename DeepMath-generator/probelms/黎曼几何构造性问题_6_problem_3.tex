@@ -1,0 +1,41 @@
+problem:  
+Let \( M_i^n \subset S^{n+k} \) be a sequence of smooth, compact, **minimal submanifolds** in the unit sphere satisfying  
+\[
+\|A_{M_i}\|_{L^n(M_i)} \le C, \qquad \mathrm{Vol}(M_i)\le V_0.
+\]  
+Assume (after subsequence) the varifold convergence \(M_i \rightharpoonup M_\infty\) to a stationary integral varifold \(V_\infty\), with smooth convergence away from finitely many points \( \Sigma = \{p_1, \dots, p_\ell\} \subset S^{n+k}\).
+
+Consider the **Jacobi operator**
+\[
+L_{M_i} = \Delta_{M_i}^{\perp} + |A_{M_i}|^2 + n,
+\]
+acting on smooth normal sections of \(M_i\), and denote by  
+\[
+\operatorname{ind}(M_i) = \#\{\text{negative eigenvalues of }L_{M_i}\}
+\]
+the **Morse index** of \(M_i\).
+
+**Question (Morse index compactness under critical curvature bound):**  
+Under the above \(L^n\)-curvature and volume bounds, is the Morse index \(\operatorname{ind}(M_i)\) **upper semicontinuous** under varifold convergence, up to finitely many bubble contributions?  
+
+That is, can one find finitely many complete minimal submanifolds (bubbles) \(\Sigma_j^\ast \subset \mathbb{R}^{n+k}\), arising as blow-up limits at each \(p_j \in \Sigma\), such that
+\[
+\limsup_{i\to\infty}\operatorname{ind}(M_i) \le \operatorname{ind}(M_\infty) + \sum_{j=1}^\ell \operatorname{ind}(\Sigma_j^\ast)?
+\]
+
+Equivalently, does **index quantization** hold at the critical curvature threshold—so that all loss of index along a convergent sequence of \(L^n\)-bounded minimal submanifolds is captured exactly by bubbling phenomena at singular points?
+
+If not, can one construct counterexamples in which the Morse index diverges even though curvature and volume stay uniformly bounded?
+
+Why is it a "good" problem:  
+This problem directly targets the unresolved interface between **analytic stability theory** and **geometric compactness** for minimal submanifolds. The Morse index measures how many independent destabilizing directions are available under area variations; understanding its behavior under geometric degeneration is fundamental to the structure of the moduli space of minimal submanifolds.
+
+The question tests whether analytic stability behaves continuously under **critical curvature compactness**. It unifies three deep themes:
+
+1. **Geometric measure theory:** convergence and bubbling for minimal submanifolds with curvature concentration.
+2. **Spectral theory of elliptic operators:** semicontinuity of the number of negative eigenvalues in degenerating families.
+3. **Analytic thresholds:** the \(L^n\) bound is precisely the minimal integrability ensuring weak compactness of curvature and scale invariance of curvature energy.
+
+If index quantization holds, it would extend the bubble-tree structure for minimal submanifolds by incorporating not only geometric but also spectral data, yielding a bridge between geometric compactness and spectral stability—a result paralleling index quantization in harmonic map and Yang–Mills theories.
+
+The statement is simple—how does the Morse index behave in \(L^n\)-bounded minimal geometry?—yet profound, striking at the analytic core of compactness and stability in differential geometry.

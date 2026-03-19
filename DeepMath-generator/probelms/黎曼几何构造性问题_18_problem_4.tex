@@ -1,0 +1,43 @@
+problem:  
+Let \(G\subset \mathrm{SO}(n+1)\) act by isometries on the round sphere \(S^{n}\) with cohomogeneity one.  Let the orbit types be \(G/H\) (principal) and \(G/K_\pm\) (singular) so that \(S^{n}/G \simeq [0,L]\) and the metric takes the standard \(G\)-invariant warped form  
+\[
+g = dt^{2} + \sum_{i=1}^{r} a_i(t)^{2}\, g_i,
+\]
+where each \(g_i\) is the \(G\)-invariant metric on an irreducible \(H\)-submodule \(V_i\subset T(G/H)\).
+
+If \(\gamma\!:\!(0,L)\to (0,\infty)\) represents a \(G\)-invariant hypersurface (so that \(M_\gamma = G\cdot \gamma(t)\)\!), the Hsiang–Lawson reduction yields a functional for the area:
+\[
+\mathcal{A}(\gamma)=\int_0^L \Psi(t)\,\sqrt{1+\dot{\gamma}(t)^{2}}\, dt,\quad 
+\Psi(t)=\prod_{i} a_i(t)^{m_i}.
+\]
+For the mean–curvature–penalized variant introduce
+\[
+\mathcal{F}_{\lambda}(\gamma)=\int_0^L \Psi(t)
+\big( \sqrt{1+\dot{\gamma}(t)^{2}}  + \lambda\, |H_\gamma(t)|^{2}\sqrt{1+\dot{\gamma}(t)^{2}}\big)\, dt,
+\qquad \lambda>0.
+\]
+Here \(H_\gamma(t)\) is the mean curvature expressed in terms of \(a_i,\dot{a}_i,\dot{\gamma},\ddot{\gamma}\).  
+Near a singular orbit (say \(t=0\)) one has \(a_1(t)\!\sim\! t\), while the other \(a_i(0)\!\ne\!0\). Hence \(\Psi(t)\sim t^{m_1}\) and the Euler–Lagrange equation for \(\mathcal{F}_\lambda\) becomes a fourth‑order *singular* ODE with weight \(t^{m_1}\).
+
+---
+
+**Problem (Degenerate‑weight compactness for equivariant curvature energies):**  
+For fixed small \(\lambda>0\), study the boundary‑value problem given by the Euler–Lagrange equation of \(\mathcal{F}_\lambda\) with smooth \(G\)-invariant hypersurface boundary conditions near \(t=0,L\).  
+
+**Question:**  
+Can the degeneracy of the weight \(\Psi(t)\) near \(t=0\) lead to *infinitely many* mutually non‑congruent \(G\)-invariant stationary hypersurfaces \(M_{\gamma_k}\subset S^{n}\), whose profile functions \(\gamma_k\) exhibit an increasing number of oscillations in \((0,\varepsilon)\) and cluster (in Hausdorff or varifold sense) onto the singular orbit \(G/K_-\)?  
+If such accumulation cannot occur for any compact cohomogeneity‑one action on a sphere, determine the analytic obstruction—e.g., show that the weighted fourth‑order ODE admits a discrete, non‑accumulating set of regular fixed‑energy solutions.
+
+---
+
+Why is it a "good" problem:  
+This problem now formulates explicitly the reduced functional including profile derivatives and the orbit‑space weight, and highlights a mathematically sharp issue:  
+do curvature‑regularized variational ODEs with *singular weight coefficients* support an infinite sequence of symmetric stationary geometries, or does degeneracy fail to produce bubbling‑type behavior familiar from higher‑dimensional PDEs?
+
+It lies at the intersection of:
+- **Representation‑theoretic geometry:** the asymptotics of \(\Psi(t)\) encode how isotropy representations degenerate at singular orbits.  
+- **Geometric analysis and singular ODE theory:** the fourth‑order weighted Euler–Lagrange equation tests the extension of compactness principles from regular to degenerate settings.  
+- **Variational and stability theory:** the problem probes the landscape of equivariant critical points and the mechanism preventing or enabling their accumulation.
+
+The statement is compact and conceptually clear—asking whether degeneracy near the singular orbit can destroy compactness—and any resolution would yield new insights.  
+A positive answer would reveal a novel “equivariant oscillation cascade’’ phenomenon; a negative answer would isolate a fundamental compactness principle for curvature‑regularized symmetric energies.  Either outcome would connect geometry, analysis, and group actions in a way both deep and potentially field‑shaping, thus satisfying the criteria for a truly *good* research problem.

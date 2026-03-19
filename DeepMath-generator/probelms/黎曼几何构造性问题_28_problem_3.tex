@@ -1,0 +1,25 @@
+problem:  
+Let \((M^{2n}, g, J)\) be a compact Kähler manifold with **strictly positive scalar curvature** \(\mathrm{Scal}_M>0\).  
+Let \((N,h)\) be a compact Riemannian manifold of **nonpositive sectional curvature**, and let \(u:(M,g)\to (N,h)\) be a smooth harmonic map.  
+
+The Bochner formula reads:
+\[
+\frac{1}{2}\Delta |du|^2 = |\nabla du|^2 + \mathrm{Ric}_M(du,du) - \langle R_N(du,du)du,du\rangle.
+\]
+When \(\mathrm{Ric}_M>0\), Eells–Sampson rigidity implies \(u\) is constant.  
+When only \(\mathrm{Scal}_M>0\), rigidity is unknown.  
+
+Define the **traceless Ricci tensor** \(\mathrm{Ric}_0 := \mathrm{Ric}_M - \frac{\mathrm{Scal}_M}{2n} g\), which measures deviation from being Kähler–Einstein.  Even with \(\mathrm{Scal}_M>0\), \(\mathrm{Ric}_0\) may change sign pointwise, preventing a direct Bochner argument.
+
+**Question (precise form):**  
+Suppose \((M,g,J)\) is compact Kähler with \(\mathrm{Scal}_M>0\) and \(\|\mathrm{Ric}_0\|_{L^2}\) sufficiently small (so \(M\) is “almost” Kähler–Einstein).  
+Is there a uniform \(\varepsilon > 0\) such that if 
+\[
+\|\mathrm{Ric}_0\|_{L^2} < \varepsilon\, \mathrm{Scal}_{\min}(M),
+\]
+then every harmonic map \(u:(M,g)\to(N,h)\) into a nonpositively curved target must be **constant**?
+
+Equivalently: does *approximate Kähler–Einstein geometry* together with *positive scalar curvature* ensure harmonic rigidity, i.e. prevent nonconstant harmonic maps into any Hadamard manifold?
+
+Why is it a "good" problem:  
+This problem is mathematically sound, natural, and open. It precisely targets the boundary between known rigidity (Ricci-positive case) and unknown terrain (scalar-positive case) through a quantitatively controlled deviation—the \(L^2\)-norm of the traceless Ricci tensor—arising directly in curvature decompositions.  Unlike the Ricci-positive assumption, smallness of \(\mathrm{Ric}_0\) reflects a near-Einstein Kähler structure, providing a bridge between global geometric analysis (Bochner identities, elliptic estimates) and complex differential geometry (Kähler curvature decomposition). Resolving the conjecture would reveal whether mere proximity to Ricci positivity—rather than full positivity—already enforces harmonic rigidity. The question is simple to state but deeply connected to stability of curvature conditions, rigidity phenomena, and analytic estimates, making it a genuinely “good” research-level problem.

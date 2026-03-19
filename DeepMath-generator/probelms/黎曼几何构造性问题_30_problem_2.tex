@@ -1,0 +1,28 @@
+problem:  
+Let \( (M^m,g) \) be a closed smooth Riemannian manifold, and let \( (N,d,\mu) \) be a compact metric–measure space that is **stratified \(RCD(K,N_{\mathrm{eff}})\)** in the following sense: \(N\) decomposes as \(N = N_{\mathrm{reg}} \cup \Sigma\), where \(N_{\mathrm{reg}}\) is a smooth Riemannian manifold of dimension \(n\), and each connected component of the singular set \( \Sigma_k \subset \Sigma \) has a neighborhood isometric to a metric cone  
+\[
+C(L_k) = \bigl([0,\varepsilon)\times L_k,\, d\rho^2 + \rho^2 h_{L_k},\, \rho^{n_k-1}\,d\rho \, d\mu_{L_k}\bigr)
+\]
+whose link \( (L_k,h_{L_k},\mu_{L_k}) \) is a compact \(RCD(K_k,n_k-1)\) space with a positive spectral gap \( \lambda_1(L_k) > 0 \).  
+Assume each cone \(C(L_k)\) itself is \(RCD(K_k',N_{\mathrm{eff}})\) for some \(K_k'\ge K > -\infty\), so the space \(N\) has globally bounded synthetic Ricci curvature and satisfies a stratified \(RCD\) condition.
+
+For \(u_0 : M \to N_{\mathrm{reg}}\) of finite Korevaar–Schoen energy \(E(u_0)\), denote by  
+\[
+u_t : [0,\infty)\to L^2(M,N)
+\]
+the Ambrosio–Gigli–Savaré \(L^2\)-gradient flow of the Dirichlet energy \(E(u)\); assume such a flow exists (as known for \(RCD\) targets).
+
+**Question:**  
+Does there exist a quantitative constant \( \varepsilon_*(N) > 0 \), depending only on \(K\), \(N_{\mathrm{eff}}\), and the minimal spectral gap \(\min_k \lambda_1(L_k)\), such that the following *energy–repulsion phenomenon* holds?
+
+If \(E(u_0) < \varepsilon_*(N)\) and \(u_0(M)\subset N_{\mathrm{reg}}\) lies in a homotopy class representable entirely in \(N_{\mathrm{reg}}\), then  
+\[
+u_t(M) \subset N_{\mathrm{reg}},\qquad \forall t>0.
+\]
+In other words, does a universal small–energy bound—governed by the synthetic lower curvature of the links—guarantee that the \(RCD\) harmonic map heat flow from a smooth domain never reaches the singular strata of the target?  
+Equivalently, do the curvature–dimension bounds on the links induce enough convexity of the squared distance to the apex in the cone models to force analytic avoidance from the singularities?
+
+Why is it a "good" problem:  
+This question proposes a precise analytic–geometric bridge between **synthetic Ricci lower bounds** and **nonlinear parabolic regularization** in singular spaces.  It asks whether the curvature–dimension structure on the cone links, quantified by their spectral data, provides a parabolic barrier preventing the harmonic map heat flow from encountering the singular strata.  
+
+The problem is simple to state—does small energy imply the flow avoids singularities?—yet pursuing it requires uniting diverse tools: metric–gradient–flow theory, variational calculus in \(RCD\) spaces, spectral geometry of links, and ε–regularity principles from geometric analysis.  Solving it would uncover whether synthetic Ricci positivity manifests dynamically as *curvature-induced repulsion* for energy flows, potentially forming the foundation for a generalized small–energy regularity theory of harmonic map heat flows into stratified \(RCD\) spaces.  Its simplicity of statement, cross-field depth, and potential to deepen the analytic understanding of synthetic curvature make it an excellent and forward-looking research-level problem.

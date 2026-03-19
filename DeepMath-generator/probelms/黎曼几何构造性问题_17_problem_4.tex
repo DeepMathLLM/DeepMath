@@ -1,0 +1,34 @@
+problem:  
+Let $\mathbb{B}^3 \subset \mathbb{R}^3$ be the closed unit ball with boundary $\mathbb{S}^2$.  
+For each smooth Jordan curve $\Gamma \subset \mathbb{S}^2$, suppose there exists a unique **area-minimizing** embedded disk $M_\Gamma \subset \mathbb{B}^3$ with $\partial M_\Gamma = \Gamma$.  
+Let $\nu_\Gamma$ be the unit normal to $M_\Gamma$ and $\nu_{\mathbb{S}^2}$ the outer normal to the sphere along $\Gamma$.  
+
+Define the boundary contact function
+\[
+\alpha(\Gamma) = \max_{p \in \Gamma}\angle(\nu_\Gamma(p),\nu_{\mathbb{S}^2}(p)).
+\]
+
+**Question:**  
+Assume we have a smooth one-parameter family of embedded curves $\{\Gamma_t\}_{t\in[0,1)} \subset \mathbb{S}^2$ such that $\Gamma_t$ converges (in $C^2$) to a round equator $\Gamma_1$ as $t\to 1$.  
+Suppose further that for each $t$, $\Gamma_t$ bounds a unique area-minimizing disk $M_t$ in $\mathbb{B}^3$.  
+
+Is it possible that $\alpha(\Gamma_t)$ is constant in $t$ with  
+\[
+\alpha(\Gamma_t)\equiv\alpha_0\neq \tfrac{\pi}{2},
+\]
+that is, that the family $\{M_t\}$ remains embedded and area-minimizing, meeting $\mathbb{S}^2$ along $\Gamma_t$ at a uniform but non-right contact angle all the way to an equatorial limit?  
+
+Or must any such family necessarily satisfy $\alpha_0 = \tfrac{\pi}{2}$ —i.e., does a rigidity principle force asymptotic orthogonality as $\Gamma_t \to \Gamma_1$?
+
+---
+
+Why is it a "good" problem:  
+This formulation corrects the earlier ambiguities by (i) restricting to **area-minimizing disks**, ensuring uniqueness, (ii) making the question a **rigidity conjecture** rather than an existence claim, and (iii) distinguishing clearly between **Plateau problems** with fixed boundary and **capillary problems** with fixed contact angle.  
+
+The question proposes a potentially deep geometric rigidity phenomenon: that all families of area-minimizing disks in the ball bounded by curves on the sphere flatten asymptotically to the equatorial plane with **forced right-angle contact**, irrespective of how their boundaries approach the equator.  
+If true, this would uncover an *intrinsic geometric constraint* coupling minimality, convex boundary geometry, and boundary regularity; if false, it would yield a new mode of capillary-like minimal embeddings in the ball, currently unknown.  
+
+Its apparent simplicity—“can the contact angle stay non-right as the boundary tends to an equator?”—masks a profound interplay of **boundary regularity theory**, **minimal surface curvature estimates**, and **variational rigidity**.  
+Resolving it would likely require new techniques uniting the boundary behavior of the minimal surface equation, geometric measure theory, and oblique boundary conditions for quasilinear elliptic PDEs.  
+
+Hence, the problem stands as a focused, conceptually simple, yet technically formidable bridge between **Plateau theory**, **capillarity**, and **geometric rigidity**, satisfying all attributes of a “good” research-level mathematical problem.

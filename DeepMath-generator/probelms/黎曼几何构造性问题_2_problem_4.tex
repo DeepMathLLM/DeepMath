@@ -1,0 +1,52 @@
+problem:  
+Let \(B_r^n \subset \mathbb{S}^n\) be the geodesic ball of radius \(r < \pi/2\), and let 
+\[
+D_r^k = B_r^n \cap \mathbb{S}^k
+\]
+be the totally geodesic free-boundary \(k\)-disk.  
+
+Consider the class \(\mathcal{F}_{k,n,r}\) of all smooth, compact, embedded, orientable \(k\)-dimensional free boundary minimal submanifolds \(\Sigma \subset B_r^n\) with \(\partial \Sigma \subset \partial B_r^n\) meeting it orthogonally.  
+Assume that each \(\Sigma\in \mathcal{F}_{k,n,r}\) is two-sided and has uniformly bounded Morse index, say \(\mathrm{Ind}(\Sigma) \le 1\).
+
+Define convergence in \(\mathcal{F}_{k,n,r}\) as **smooth normal-graph convergence modulo isometries**:  
+A sequence \(\Sigma_j\) converges to \(\Sigma_\infty\) if there exists a sequence of isometries \(\varphi_j \in \mathrm{Iso}(B_r^n)\) such that each \(\varphi_j(\Sigma_j)\) can be written as the normal graph of some vector field \(u_j \in C^{2,\alpha}(N\Sigma_\infty)\) with \(u_j \to 0\) in \(C^{2,\alpha}\).
+
+For such a topology, say that a subset \(S \subset \mathcal{F}_{k,n,r}\) is compact *modulo isometries* if every sequence in \(S\) admits a subsequence and \(\varphi_j \in \mathrm{Iso}(B_r^n)\) such that \(\varphi_j(\Sigma_j)\) converges smoothly to some \(\Sigma_\infty \in S\).
+
+**Problem (Compactness and Uniqueness Conjecture for Index-≤1 Free Boundary Minimal Disks):**  
+Suppose \((\Sigma_j) \subset \mathcal{F}_{k,n,r}\) satisfies  
+\[
+\mathrm{Ind}(\Sigma_j) \le 1, 
+\quad \text{and} \quad
+\operatorname{Vol}_k(\Sigma_j) \to \operatorname{Vol}_k(D_r^k).
+\]  
+Is it true that, up to subsequence and ambient isometries of \(B_r^n\),  
+\[
+\Sigma_j \to D_r^k 
+\quad \text{smoothly in the normal graph sense?}
+\]
+Equivalently, does there exist \(\varepsilon = \varepsilon(n,k,r) > 0\) such that every free boundary minimal \(\Sigma \in \mathcal{F}_{k,n,r}\) with  
+\[
+\operatorname{Vol}_k(\Sigma) \le \operatorname{Vol}_k(D_r^k) + \varepsilon
+\quad \text{and} \quad \mathrm{Ind}(\Sigma) \le 1
+\]
+is congruent to \(D_r^k\) under an isometry of \(B_r^n\)?
+
+Why is it a "good" problem:  
+
+1. **Mathematically rigorous yet geometrically simple formulation:**  
+   The question now avoids informal moduli-space distance definitions by adopting standard PDE-geometric convergence notions (normal-graph topology modulo isometries). This makes the conjecture well–posed in the language of geometric analysis while keeping its simple expression: whether nearly volume-minimizing, low–index free boundary minimal submanifolds must be totally geodesic.
+
+2. **Extends beyond known compactness theorems:**  
+   Compactness for sequences of minimal hypersurfaces of bounded index is known in various ambient manifolds (e.g. results by Sharp, Chodosh–Ketover–Maximo), but there is no classification in the **free boundary** and **spherical** setting when both volume proximity and index constraints interact. The problem therefore isolates a boundary–curved analogue of classical “near–equality implies rigidity” principles.
+
+3. **Bridges PDE, spectral theory, and geometry:**  
+   The conjecture integrates nonlinear elliptic PDE techniques (stability and regularity under free boundary conditions), spectral analysis through the Morse index, and nonlinear geometric compactness. Progress would very likely require combining curvature estimates for bounded–index surfaces with novel boundary-monotonicity or blow-up analysis in spherical geometry.
+
+4. **Conceptual depth behind a simple appearance:**  
+   The question states a clear geometric dichotomy—either the minimal free boundary disk is unique up to isometry under small perturbations, or unexpected perturbative families exist. Yet resolving this would immediately deepen understanding of the moduli structure and bifurcation phenomena for extremal submanifolds with boundary.
+
+5. **Potential for broad influence:**  
+   A proof of this compactness-uniqueness principle would complement quantitative rigidity conjectures and spectral stability problems (such as previously accepted ones), and could guide analogous studies in Euclidean, hyperbolic, or warped ambient geometries.
+
+Thus, the **Compactness and Uniqueness Conjecture for Index-≤1 Free Boundary Minimal Disks** stands as a sharply posed, rigorous, and profound open problem: formally coherent, conceptually simple, and deeply connected to ongoing research in geometric analysis and minimal submanifold theory.

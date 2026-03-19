@@ -1,0 +1,32 @@
+problem:  
+Let \(B_r^n \subset \mathbb{S}^n\) be the geodesic ball of radius \(r < \pi/2\), and consider the class of compact, smoothly embedded, free boundary minimal submanifolds \(\Sigma^k \subset B_r^n\) (with \(\partial \Sigma \subset \partial B_r^n\), meeting it orthogonally).  
+
+Define the **deficit functional**  
+\[
+\Delta_r(\Sigma) = \frac{\operatorname{Vol}_k(\Sigma)}{\operatorname{Vol}_k(D_r^k)} - 1 ,
+\]
+where \(D_r^k = B_r^n \cap \mathbb{S}^k\) is a totally geodesic \(k\)-disk.  
+Known rigidity theorems (e.g. Brendle and others) imply \(\Delta_r(\Sigma) \ge 0\), with equality only for \(D_r^k\).
+
+**Problem (Quantitative Spherical Stability Conjecture):**  
+Is there a universal dimensional constant \(C(n,k,r)>0\) such that for all compact, embedded, free boundary minimal submanifolds \(\Sigma^k \subset B_r^n\),
+\[
+\mathrm{dist}_{C^1}(\Sigma, D_r^k) \le C(n,k,r) \, \Delta_r(\Sigma)^{\alpha},
+\]
+for some optimal exponent \(\alpha > 0\), where \(\mathrm{dist}_{C^1}\) denotes the distance in the \(C^1\) topology after optimal congruence in \(\mathbb{S}^n\)?  
+Equivalently, quantify **how close** a free boundary minimal submanifold with almost minimal volume must be to the totally geodesic disk.
+
+Why is it a "good" problem:  
+This problem moves beyond the known rigidity theorem to a **quantitative stability** question, seeking to measure *how strongly* the totally geodesic disk minimizes volume among free boundary minimal submanifolds.  
+
+1. **New Territory Beyond Known Results:**  
+   While the rigidity inequality itself is established, sharp quantitative stability (with explicit exponents or optimal constants) is unknown even for \(k=2\), and there are virtually no results for higher dimensions or codimensions. This is exactly the next frontier after classical qualitative rigidity.
+
+2. **Bridge Across Fields:**  
+   Resolving this question requires ideas from **geometric analysis** (second variation, stability operators, and index theory), **PDE regularity theory** (quantitative control from the minimal surface equation), and **metric geometry** (geometry of nearly minimizing submanifolds). Hence it connects differential geometry, analysis, and geometric measure theory in a unified framework.
+
+3. **Profound Simplicity with Deep Consequences:**  
+   The statement is simple—control \(C^1\)-distance by a volume deficit—but its proof would likely demand major advances in understanding the spectral gap of the Jacobi operator and the nonlinear stability of minimal submanifolds under free boundary conditions.  
+   Success here could inspire analogous quantitative results in Euclidean, hyperbolic, or anisotropic settings, enriching rigidity theory.
+
+Thus, this “Quantitative Spherical Stability Conjecture” is a natural and compelling extension of classical rigidity theorems, combining simplicity of form with profound analytical and geometric depth, making it a genuinely “good” open research problem.

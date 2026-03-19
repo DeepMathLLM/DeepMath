@@ -1,0 +1,43 @@
+problem:  
+Let \((M^n,g)\) be a complete Riemannian manifold with nonnegative Ricci curvature, and let \((N^m,h)\) be a compact Riemannian manifold of nonpositive sectional curvature.  
+Suppose \(f:(M,g)\to (N,h)\) is a smooth finite-energy harmonic map whose image is contained in a compact, strictly geodesically convex domain \(U\subset N\) with smooth, mean-convex boundary \( \partial U\).  
+
+Denote by \(L_f:\Gamma(f^*TN)\to\Gamma(f^*TN)\) the Jacobi (or linearized harmonic map) operator,  
+\[
+L_f(V) = \Delta_f V + R^N(V,df(e_i))\,df(e_i),
+\]
+where \(\{e_i\}\) is a local \(g\)-orthonormal frame and the curvature term uses the convention \(R^N(X,Y)Z = \nabla_X\nabla_Y Z - \nabla_Y\nabla_X Z - \nabla_{[X,Y]}Z.\)
+
+Assume additionally that all allowed variation fields \(V\in \Gamma(f^*TN)\) are compactly supported and satisfy the *tangency constraint*:
+\[
+\langle V, \nu\rangle_h \le 0 \text{ along } f^{-1}(\partial U),
+\]
+where \(\nu\) is the outward unit normal to \(\partial U.\)  (That is, variations point weakly inward where the map touches the boundary.)
+
+> **Question:**  
+> Does it follow that the *only* such variation field \(V\) lying in the kernel of \(L_f\) (that is, satisfying \(L_f V = 0\)) is the trivial field \(V\equiv 0\)?  
+>  
+> In other words, if the domain has \(\mathrm{Ric}\ge 0\) and the target domain of \(f\) is strictly convex with mean-convex boundary inside a nonpositively curved manifold, is **every harmonic map infinitesimally rigid** under convexity-preserving perturbations?  
+>  
+> Equivalently, does the combination of Ricci nonnegativity and mean-convexity of the image domain guarantee *strict positivity* of the second variation of the harmonic map energy at \(f\) for all compactly supported variations satisfying the tangency constraint above?
+
+Why is it a "good" problem:  
+This formulation refines the earlier idea into a precise, variationally natural question about *infinitesimal rigidity* and *stability gap* for harmonic maps.  
+
+1. **Mathematical soundness and generality.**  
+   The problem involves only standard, well‑defined objects: the harmonic map equation, the Jacobi operator, and the second variation formula.  The convexity and mean-convexity assumptions are classical geometric conditions ensuring that curvature and boundary geometry impose directional positivity in the second variation, making this a coherent analytic–geometric question.
+
+2. **Borderline rigidity mechanism.**  
+   For manifolds with \(\mathrm{Ric}_M > 0\) or targets with strictly negative curvature, the kernel of \(L_f\) is known to be trivial by Bochner-type identities.  The nonnegative–nonpositive curvature pairing, however, is the delicate borderline where Bochner methods become inconclusive (since the curvature terms cancel).  The question asks whether convexity of the image can resurrect rigidity in this degenerate case—a fundamentally open and unaddressed direction.
+
+3. **Interdisciplinary significance.**  
+   The problem connects:  
+   - **Geometric analysis** (spectral geometry of second-variation operators),  
+   - **Convex geometry and mean curvature**, and  
+   - **Ricci-limit and curvature‑comparison theory**.  
+   Any progress would elucidate how geometric convexity can substitute for curvature negativity in enforcing analytic rigidity.
+
+4. **Extreme simplicity and depth.**  
+   The statement “Is every harmonic map from a Ric ≥ 0 domain into a strictly convex nonpositively curved domain infinitesimally rigid?” is strikingly simple, yet solving it likely demands developing new inequalities intertwining Ricci curvature, convexity, and the energy Hessian. Whether the kernel of \(L_f\) can be nontrivial despite these constraints touches on the very nature of stability for harmonic maps at the Ricci‑flat boundary.  
+
+Thus, the problem is mathematically well‑posed, conceptually minimal, and probes an uncharted intersection of curvature, convexity, and rigidity—an archetypal “narrow entrance, profound depth” research problem.

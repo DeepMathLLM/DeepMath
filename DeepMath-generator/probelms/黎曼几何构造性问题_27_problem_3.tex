@@ -1,0 +1,46 @@
+problem:  
+Let \((X,d_X,\mu_X)\) be a compact metric measure space satisfying the \(\mathrm{RCD}(K,N)\) condition for some \(K\in\mathbb{R}\), \(1<N<\infty\).  
+By the Mondino–Naber rectifiability theorem, there exists a measurable decomposition  
+\[
+X = \bigcup_{k=1}^{\lfloor N\rfloor} \mathcal{R}_k \cup \Sigma,
+\]
+where each \(\mathcal{R}_k\) consists of \(k\)-regular points whose tangent cones are isometric to \(\mathbb{R}^k\), and \(\Sigma\) is a singular set with \(\mathcal{H}^{N-2}(\Sigma)<\infty\).  
+
+Let \((Y,d_Y)\) be a compact \(\mathrm{CAT}(0)\) space, and let \(f:X\to Y\) be a Korevaar–Schoen energy-minimizing harmonic map with finite energy  
+\[
+E(f)=\int_X |\nabla f|^2\,d\mu_X.
+\]  
+
+**Question:**  
+At a point \(p\in X\) whose tangent cone splits as  
+\[
+\mathrm{Tan}_p X \cong \mathbb{R}^k \times C(Z_p)
+\]
+for some compact \(\mathrm{RCD}(N-k-1,N-k-1)\) space \(Z_p\) of diameter \(<\pi\), does there exist a quantitative relation between \(k\) (the rank of the Euclidean factor) and the local Hölder regularity exponent of \(f\) near \(p\)?  
+More precisely, is there a universal function \(\alpha=\alpha(K,N,k)\in(0,1]\) such that for all such \(p\),
+\[
+d_Y(f(x),f(p)) \le C\, d_X(x,p)^{\alpha}
+\]
+for \(x\) near \(p\), where \(C\) depends on \(f\) but not on \(p\)?  
+Equivalently, can one expect the regularity of harmonic maps from \(\mathrm{RCD}(K,N)\) spaces into \(\mathrm{CAT}(0)\) targets to improve quantitatively with the dimension \(k\) of Euclidean splitting in the tangent cone (viewed as an “analytic rank” of the domain)?  
+
+Why is it a "good" problem:  
+This problem is a refined and rigorously grounded version of the idea that the analytic behavior of harmonic maps on singular spaces should reflect the *order of geometric regularity* encoded in the rectifiable stratification of the underlying \(\mathrm{RCD}\) space. It is “good” for several deep reasons:
+
+1. **Built on well-established structure:**  
+   It replaces speculative smooth stratifications by the precise Mondino–Naber rectifiable decomposition of RCD spaces, ensuring each term (regular set, tangent cone splitting) is rigorously defined and within current theory.
+
+2. **Conceptually simple yet analytically deep:**  
+   The question can be phrased intrinsically: *“Does higher-dimensional Euclidean splitting in the tangent cone enforce stronger regularity for harmonic maps?”*  
+   This simple geometric–analytic relation hides tremendous difficulty, requiring blow-up analysis and quantitative compactness in a very non-smooth setting.
+
+3. **Concrete bridge between geometry and analysis:**  
+   The problem links the metric-measure geometry of tangent cones (a geometric notion) to Hölder exponents of energy-minimizing harmonic maps (an analytic quantity). Solving it would merge tools from synthetic curvature theory, Cheeger–Naber quantitative stratification, and Korevaar–Schoen analysis.
+
+4. **Genuinely open:**  
+   For smooth manifolds or manifolds with isolated conical singularities, partial dimension-regularity results exist, but for general \(\mathrm{RCD}(K,N)\) spaces these estimates are unknown. No theory yet establishes quantitative dependence of map regularity on Euclidean splitting rank.
+
+5. **Potential transformative impact:**  
+   A positive result could yield a nonlinear analogue of Cheeger–Naber’s dimension‐stratification, revealing how analytic regularity aligns with geometric strata. It might give rise to a new “analytic stratification” theory for harmonic maps in nonsmooth curvature-bounded geometry.
+
+Hence, the problem meets all criteria for a “good” research problem: it is mathematically precise, deeply rooted in current theory, conceptually simple to state, but expected to require new ideas bridging geometric measure theory, PDE regularity, and synthetic curvature analysis.

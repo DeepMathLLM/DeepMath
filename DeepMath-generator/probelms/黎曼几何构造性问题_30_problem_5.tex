@@ -1,0 +1,37 @@
+problem:  
+Let \( (M^m,g) \) be a closed smooth Riemannian manifold, and let \( (N,d) \) be a compact stratified metric space whose regular part \(N_{\mathrm{reg}}\) is a smooth Riemannian manifold and whose singular strata \(\Sigma_k\) each have neighborhoods bi-Lipschitz to metric cones  
+\[
+C(L_k) = [0,\varepsilon)\times L_k / \{0\}\times L_k,
+\]
+where each **link** \(L_k\) is a compact smooth Riemannian manifold (not necessarily of constant curvature).  
+Let \(u_t : M\times[0,T) \to N\) be a weak **harmonic map heat flow** in the sense of Korevaar–Schoen, starting from smooth finite-energy data \(u_0:M\to N_{\mathrm{reg}}\).  
+
+We say that a space–time point \((x_*,t_*)\) is a **Type I singularity** if  
+\[
+\sup_{x\in M} (T-t) |\nabla u(x,t)|^2 \le C_*<\infty,\quad \text{for } t \to t_*^{-},
+\]
+and \( \limsup_{t\uparrow t_*} |\nabla u(x_*,t)| = \infty.\)
+
+For a candidate singular point \((x_*,t_*)\) whose images \(u(x_*,t)\) approach a singular stratum \(\Sigma_k\subset N\), consider the rescaled flows  
+\[
+u_i(y,s) = u(\exp_{x_*}(\lambda_i y),\, t_* + \lambda_i^2 s), \qquad \lambda_i\to 0^+,
+\]
+defined for \(s<0\).  Standard parabolic compactness arguments (in the smooth-target case) suggest that a subsequence may converge, in \(W^{1,2}_{\mathrm{loc}}\), to an **ancient solution**
+\[
+U_\infty : \mathbb{R}^m \times (-\infty,0) \longrightarrow C(L_k),
+\]
+called a blow-up profile.
+
+**Question:**  
+For a given link \(L_k\), do **universal Type I blow-up profiles** \(U_{*,L_k}\) exist—i.e. ancient solutions of the harmonic map heat flow into the cone \(C(L_k)\) whose space-time scalings describe *all possible* Type I singularities of flows into stratified targets modeled on \(C(L_k)\)?  
+
+In particular:  
+
+1. Must any blow-up profile \(U_\infty\) be *self-similar*, i.e. \(U_\infty(y,s) = V_{L_k}(y/\sqrt{-s})\) for some stationary map \(V_{L_k}\colon \mathbb{R}^m \to C(L_k)\)?  
+2. If so, does \(V_{L_k}\) necessarily arise from a homogeneous harmonic map determined by a finite combination of eigenmaps of the link Laplacian \(\Delta_{L_k}\), with eigenvalues related to the self-similarity rate (for instance, through \(\lambda_1(L_k)\))?  
+3. Equivalently, is there a one-to-one correspondence between Type I singularities of the heat flow and certain eigenmodes on \(L_k\) generating homogeneous harmonic cone maps, so that \(\lambda_1(L_k)\) governs the simplest (lowest energy) singular profile?
+
+Why is it a "good" problem:  
+This problem seeks to classify **parabolic singularities** of harmonic map heat flow in the analytically new setting of **singular targets**, by asking whether there exist universal blow-up profiles canonically determined by the link geometry of the cone.  It naturally extends the well-known bubbling analysis in smooth targets to stratified metric settings while connecting the **analytic scaling limits** of PDEs to the **spectral structure** of the link manifolds.
+
+The question has extreme simplicity of statement—“are blow-up limits self-similar and spectrally determined?”—yet attacking it would require unifying techniques from geometric analysis, parabolic PDEs, and spectral geometry on singular spaces.  If achieved, it would produce a profound bridge: the **spectral geometry of the links** would dictate the **analytic formation of singularities** in nonlinear heat flows, yielding a new paradigm of “spectral classification of singularities.”  This mix of simplicity, interdisciplinarity, and open depth makes it a genuinely good and forward-looking research problem.

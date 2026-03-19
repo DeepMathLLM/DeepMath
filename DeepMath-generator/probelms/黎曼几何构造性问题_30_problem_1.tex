@@ -1,0 +1,20 @@
+problem:  
+Let \( (M^m, g) \) be a closed smooth Riemannian manifold, and let \( (N,d) \) be a compact Alexandrov space obtained as the metric completion of a smooth manifold \(N_{\mathrm{reg}}\) with singular set \( \Sigma \) of codimension at least \(3\). Assume that near each \( p \in \Sigma \), \(N\) admits a metric cone neighborhood \(C(L_p) = [0,\varepsilon_p) \times L_p / \{0\}\times L_p\), with \(L_p\) a compact smooth Riemannian manifold of dimension \(\ell = \dim N - 1\) and sectional curvature bounded below by \(\kappa_p > -\infty\).  
+
+Consider the harmonic map heat flow in the Korevaar–Schoen sense: for smooth initial data \(u_0 : M \to N_{\mathrm{reg}}\) with finite energy \(E(u_0)\), let \(u_t : M \times [0,T) \to N\) denote an energy-decreasing flow satisfying  
+\[
+\frac{d}{dt}E(u_t) = - \int_M |\partial_t u_t|^2 \, d\mathrm{vol}_M,
+\]
+and \(u_t(\cdot) \to u_0\) as \(t \to 0\).  
+
+**Question:**  
+Is there a universal constant \( \varepsilon_*(N) > 0 \), possibly depending on the spectral gap of the Laplacian on each cone link \(L_p\), such that the following holds?  
+
+If \(E(u_0) < \varepsilon_*(N)\), then the weak harmonic map heat flow \(u_t\) exists globally for all \(t > 0\), avoids the singular set (i.e. \(u_t(M) \subset N_{\mathrm{reg}}\) for all \(t\)), and subconverges as \(t \to \infty\) (in \(W^{1,2}\)) to a smooth harmonic map \(u_\infty : M \to N_{\mathrm{reg}}\).  
+
+In particular, does \( \varepsilon_*(N) \) admit a geometric characterization in terms of the first nonzero eigenvalue \( \lambda_1(L_p) \) of the Laplacian on the links?  
+
+Why is it a "good" problem:  
+This formulation proposes a bridge between the analytic theory of harmonic map flows and the metric geometry of singular spaces. It refines the intuition that small energy should prevent topological or geometric singularities by quantifying how the “local cone geometry” of the singular set might determine an energy threshold. In particular, it asks whether the spectral data of the cone links governs analytic regularity and flow avoidance—extending the classical ε-regularity of Schoen–Uhlenbeck into a regime where the target has intrinsic singularities.  
+
+Its simplicity lies in an apparently modest question—whether a small-energy bound ensures regular flow behavior—yet beneath this is a deep interplay among nonlinear PDE, geometric measure theory, and spectral geometry on singular spaces. Resolving it would illuminate how energy quantization, curvature, and spectral gaps interact in defining analytic stability for flows into stratified targets, and could potentially unify small-energy regularity theory and singular metric geometry under a common analytical framework.

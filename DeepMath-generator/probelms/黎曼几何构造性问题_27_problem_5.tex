@@ -1,0 +1,46 @@
+problem:  
+Let \((X,d_X,\mu_X)\) be a compact metric measure space satisfying the \(\mathrm{RCD}(K,N)\) condition for some \(K\in\mathbb{R}\), \(1 < N < \infty\).  
+Assume that at a point \(p\in X\), the tangent cones \(\mathrm{Tan}_p X\) are *not unique*; that is, there exist distinct tangent cones 
+\[
+\mathrm{Tan}_p^1 X \cong C(Z_1), \quad \mathrm{Tan}_p^2 X \cong C(Z_2)
+\]
+with \(Z_1, Z_2\) compact \(\mathrm{RCD}(N-1,N-1)\) spaces of possibly different geometric types (e.g., diameters, spectral gaps, or Hausdorff dimensions differ).
+
+Let \((Y,d_Y)\) be a compact \(\mathrm{CAT}(0)\) space, and let \(f:X\to Y\) be an energy-minimizing harmonic map in the Korevaar–Schoen sense, with  
+\[
+E(f) = \int_X |\nabla f|^2\,d\mu_X < \infty.
+\]
+For each tangent cone \(\mathrm{Tan}_p^i X = C(Z_i)\), consider rescalings \(f_{r_i}(x) = f(x)\) on \((X, r_i^{-1}d_X,\mu_X/\mu_X(B_{r_i}(p)))\) with \(r_i\to 0\) so that after taking a subsequence,  
+\[
+f_{r_i} \to u_i : C(Z_i) \to C_{f(p)}Y
+\]
+in the \(L^2_\mathrm{loc}\) sense, where each \(u_i\) is an energy-minimizing harmonic map on its limit cone domain.
+
+**Question:**  
+Does the nonuniqueness of tangent cones at \(p\) necessarily manifest in the failure of a unique tangent map for the harmonic map \(f\) at that point?  
+More precisely:  
+- If \(\mathrm{Tan}_p^1 X\neq \mathrm{Tan}_p^2 X\), is it possible that \(u_1\neq u_2\) (as maps into \(C_{f(p)}Y\))?  
+- Conversely, under what geometric conditions on the cross-sections \(Z_i\) (for example, when \(\operatorname{diam}(Z_i)\) or the first eigenvalue \(\lambda_1(Z_i)\) of the Laplacian differ) can one guarantee *analytic stability*, i.e. \(u_1=u_2\) despite geometric nonuniqueness?  
+
+Equivalently, is there a universal geometric or spectral invariant of the tangent cones \(\mathrm{Tan}_p X\) that controls whether harmonic map blow-ups depend continuously on the choice of tangent cone?
+
+Why is it a "good" problem:  
+This revised problem is both mathematically sound and genuinely open—aligned with the known structure theory of \(\mathrm{RCD}(K,N)\) spaces—and it retains the same depth and cross-disciplinary character envisioned initially.
+
+1. **Anchored in established structure:**  
+   Nonunique tangent cones at certain singular points are known to occur in limit spaces with Ricci curvature bounds (see examples discovered by Cheeger–Colding and subsequent works). Thus, the scenario of multiple distinct \(\mathrm{Tan}_p X\) is legitimate within the \(\mathrm{RCD}\) framework. The problem probes exactly this rare yet important phenomenon.
+
+2. **Bridging geometry and analysis:**  
+   It asks whether the *analytic tangent object* (tangent map of a harmonic map) inherits this nonuniqueness—a new link between blow-up analysis in PDE and metric-measure tangent cone geometry. Establishing such a bridge would extend the classical Schoen–Uhlenbeck theory to the synthetic curvature domain and shed light on whether geometric nonuniqueness passes through to analytic nonuniqueness.
+
+3. **Conceptual simplicity, analytic depth:**  
+   The question can be restated simply: *“If the space’s tangent cone isn’t unique, can the harmonic map still have a unique tangent map?”*  
+   This formulation is natural, elegant, and conceptually easy to grasp, while its resolution demands new methods in metric blow-up analysis and stability theory of Korevaar–Schoen minimizers.
+
+4. **Plausible analytic mechanisms:**  
+   The problem suggests examining how energy scales along different blow-up sequences and whether invariants of the cross-sections (diameter, spectral gap, etc.) dictate the stability of analytic limits. This provides a concrete analytic scheme for approaching the question (unlike the prior speculative dichotomy).
+
+5. **Potential major consequences:**  
+   A positive correlation between geometric and analytic tangent stability would yield a *continuity principle* connecting domain geometry and variational analysis on nonsmooth spaces. Conversely, a negative correlation would expose a deep failure of analytic regularity tied to geometric degeneracy. Either outcome would transform understanding of harmonic analysis on singular metric spaces.
+
+Hence, this revised formulation is rigorously grounded, compatible with known theory, clearly open, and promises high-impact insight at the intersection of geometric measure theory, synthetic curvature geometry, and nonlinear analysis.

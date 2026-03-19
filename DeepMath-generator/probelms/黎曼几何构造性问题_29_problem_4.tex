@@ -1,0 +1,48 @@
+problem:  
+Let \((N^{2n},J,h)\) be a complete Kähler manifold whose **holomorphic bisectional curvature is strongly seminegative** in the sense of Siu.  
+For each point \(q\in N\), let
+\[
+\mathcal{N}_q=\{X\in T^{1,0}_qN\mid R^N(X,\overline{X},Y,\overline{Y})=0 \text{ for all }Y\in T_q^{1,0}N\}
+\]
+be the curvature–nullity subspace, and assume that \(\mathcal{N}\subset T^{1,0}N\) extends smoothly as a holomorphic distribution of constant rank whose maximal integral leaves are totally geodesic complex submanifolds.
+
+Let \((M^m,g)\) be a compact Riemannian manifold with nonnegative Ricci curvature.  
+Let \(f:(M,g)\to (N,h)\) be an **energy‑minimizing harmonic map** in its homotopy class, and write
+\[
+df = df^{\mathcal N} + df^{\perp},
+\quad df^{\mathcal N}=\pi_{\mathcal N}\circ df,\;
+df^{\perp}=\pi_{\mathcal N^\perp}\circ df,
+\]
+where \(\pi_{\mathcal N}\) and \(\pi_{\mathcal N^\perp}\) are orthogonal projections determined by \(h\).
+
+**Conjectural problem:**  
+Assume that the curvature of \(N\) satisfies a global bounds condition
+\[
+-C_1\,h(X,\overline{X})\,h(Y,\overline{Y})\le R^N(X,\overline{X},Y,\overline{Y})\le 0.
+\]
+Is there a constant \(\varepsilon=\varepsilon(N,C_1,\dim M)>0\) such that any energy‑minimizing harmonic map \(f:(M,g)\to(N,h)\) satisfies the **domain‑dependent coercivity inequality**
+\[
+E_{\mathcal N^\perp}(f)
+:=\int_M \|df^{\perp}\|^2\,d\mu_g
+\ge \varepsilon\,E(f)
+\]
+unless \(df(TM)\subset\mathcal N\) everywhere?  
+Equivalently: does the combination of strong seminegativity and global curvature bounds enforce that harmonic maps are either entirely contained in the nullity foliation or else stay uniformly “transversal” to it by a quantitative energy ratio depending only on controlled geometric data?
+
+---
+
+Why is it a "good" problem:
+
+1. **Analytically natural refinement:**  
+   The problem proposes a coercivity inequality motivated by Siu’s Bochner identity: the curvature term that normally causes vanishing may, under bounded negative components, yield a lower‑bound control of the non‑nullity part \(df^{\perp}\).  Translating vanishing into energy coercivity is a natural next step beyond known qualitative results in vanishing‑theorem theory.
+
+2. **Balanced and rigorously defined setup:**  
+   The domain‑dependence of \(\varepsilon\) (on curvature bounds and \(\dim M\)) removes the unrealistic universality criticized earlier while keeping the statement quantitatively meaningful.  All geometric quantities (\(\pi_{\mathcal N},\pi_{\mathcal N^\perp}\)) are globally defined under the constant‑rank assumption.
+
+3. **Bridge between analytic and geometric rigidity:**  
+   Establishing such coercivity would relate analytic degeneracy of the harmonic map equation (via the Bochner curvature term) to geometric degeneracy (collapse into nullity leaves).  It connects harmonic map analysis, curvature geometry, and spectral gaps of elliptic operators—distinct areas rarely combined in a quantitative form.
+
+4. **Simple statement, deep implications:**  
+   The question is concise—whether a positive lower‐bound inequality exists—but answering it would clarify how curvature sign and degeneracy interact quantitatively, potentially creating a new analytic paradigm for rigidity theorems in strongly seminegative Kähler geometry.
+
+Thus, the conjecture is conceptually clean, technically precise, and analytically challenging—a good, research‑level problem probing the quantitative frontier of harmonic‑map vanishing theory.

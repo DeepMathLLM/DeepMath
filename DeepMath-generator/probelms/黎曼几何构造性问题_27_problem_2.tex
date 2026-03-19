@@ -1,0 +1,38 @@
+problem:  
+Let \((X,d_X,\mu_X)\) be a compact \(\mathrm{RCD}(K,N)\) metric measure space (\(K \in \mathbb{R}\), \(1<N<\infty\)) that is regular away from a closed singular set \(\Sigma \subset X\) with \(\dim_{\mathcal{H}} \Sigma \le N-2\).  
+Assume that at each singular point \(p\in \Sigma\), the tangent cone \(\mathrm{Tan}_p X\) is unique and isometric to a metric cone \(C(Z_p)\) over a compact \(\mathrm{RCD}(N-1,N-1)\) space \(Z_p\) with \(\operatorname{diam}(Z_p)<\pi\).  
+
+Let \((Y,d_Y)\) be a locally compact Alexandrov space of curvature \(\le 0\).  
+For a continuous \(f_0:X\to Y\) with finite Korevaar–Schoen energy, consider the heat flow \(f_t\) of the energy functional \(E(f)=\int_X |\nabla f|^2\,d\mu_X\) in \(W^{1,2}(X,Y)\), and let \(f_\infty=\lim_{t\to\infty} f_t\) be an energy-minimizing harmonic map.  
+
+Fix \(p\in \Sigma\) and set \(f_r(x)=f_\infty(x)\) on the rescaled Spaces \(X_r=(X, r^{-1}d_X, \mu_X/\mu_X(B_r(p)))\).  
+Suppose that \(X_r \to (C(Z_p),o)\) in pointed measured Gromov–Hausdorff sense, and after selecting a common ultralimit model for \(Y\) one obtains convergence (in \(L^2_{\text{loc}}\))  
+\[
+f_r \to u_\infty : C(Z_p) \to C_{f_\infty(p)}Y,
+\]
+where \(C_{f_\infty(p)}Y\) denotes the metric tangent cone of \(Y\) at \(f_\infty(p)\).  
+
+**Question:**  
+Is each such limit map \(u_\infty\) necessarily a harmonic map minimizing the natural Dirichlet energy on \(C(Z_p)\) with values in \(C_{f_\infty(p)}Y\), and moreover homogeneous of degree \(0\) (that is, \(u_\infty(s\cdot z)=u_\infty(z)\) for all \(s>0\), \(z\in C(Z_p)\))?  
+If not in full generality, do there exist curvature or dimension thresholds \((K_0,N_0)\) such that the statement holds whenever \(K>K_0\) and \(N<N_0\)?  
+
+Why is it a "good" problem:  
+This problem isolates a fundamental unsolved question in synthetic geometric analysis: the infinitesimal structure of harmonic maps at singular points of spaces with curvature bounds.  
+
+1. **Extension of classical tangent-map theory to nonsmooth settings:**  
+   In smooth domains, blow-ups of harmonic maps yield homogeneous tangent maps, revealing the quantitative structure of singularities. Extending this to RCD domains and Alexandrov targets tests whether the Schoen–Uhlenbeck framework survives in the synthetic category and could inaugurate a new regularity theory for nonsmooth curvature-bound geometry.  
+
+2. **Well-defined and analytically meaningful:**  
+   The problem is expressed using standard constructs—tangent cones, Korevaar–Schoen energies, and Gromov–Hausdorff convergence—so each term has a rigorous framework. It asks for properties of legitimate analytical limits rather than measuring undefined quantities.  
+
+3. **Bridging analytic and geometric fields:**  
+   Resolving the question would require blending PDE-like variational techniques with metric-measure compactness and Alexandrov geometry, forging a link between geometric measure theory and synthetic Ricci curvature analysis.  
+
+4. **Simplicity and depth:**  
+   The question can be phrased succinctly: *“Are blow-ups of harmonic maps from RCD spaces into CAT(0) spaces cone-harmonic and homogeneous?”*  
+   This innocent-looking query captures the core of elliptic regularity across curvature singularities—conceptually simple, technically and theoretically profound.  
+
+5. **Potential theoretical consequences:**  
+   A positive result would enable stratification of harmonic-map singularities in RCD spaces and illuminate whether analytic behavior at small scales is governed purely by tangent-cone geometry, potentially reshaping our understanding of map regularity under synthetic curvature.  
+
+Thus the problem stands as a rigorously formulated, conceptually clear, and deeply consequential challenge at the confluence of geometric analysis, metric measure theory, and synthetic curvature geometry.

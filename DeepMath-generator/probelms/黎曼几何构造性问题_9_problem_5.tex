@@ -1,0 +1,41 @@
+problem:  
+Let \(M^n\subset S^{n+p}(1)\) be a compact minimal submanifold with shape operators \(\{A_\alpha\}_{\alpha=1}^p\) and second fundamental form \(B=\{h_{ij}^\alpha\}\).  
+Define
+\[
+\|B\|^2=\sum_{i,j,\alpha}(h_{ij}^\alpha)^2,\qquad 
+\mathcal{K}^\perp=\sum_{\alpha<\beta}\|[A_\alpha,A_\beta]\|^2.
+\]
+The **DDVV inequality** states that for all submanifolds of a space form,
+\[
+\mathcal{K}^\perp \le \tfrac14\,(\|B\|^2)^2,
+\]
+with equality precisely when the family \(\{A_\alpha\}\) satisfies a Clifford-type algebraic relation (i.e., their commutators all have equal norm and satisfy certain orthogonality conditions).  Many homogeneous and isoparametric examples (such as Clifford-type or Cartan-type submanifolds) realize this equality, but the complete equality class is not fully classified.
+
+**Problem (Normalized DDVV Stability Conjecture):**  
+For each \((n,p)\), does there exist \(\varepsilon_{n,p}>0\) such that any compact minimal submanifold \(M^n\subset S^{n+p}(1)\) satisfying the **normalized near-equality condition**
+\[
+1-\frac{4\,\mathcal{K}^\perp}{(\|B\|^2)^2}<\varepsilon_{n,p}
+\quad\text{pointwise on }M
+\]
+must, up to an ambient isometry, have shape-operator system \(\{A_\alpha\}\) algebraically satisfying the exact DDVV equality relations (hence exhibiting the same Clifford-type commutation structure)?  
+
+Equivalently, does there exist a *quantitative gap* away from the maximal normalized commutator energy \(1/4\), so that no “almost-anticommuting’’ system of shape operators corresponding to a minimal immersion in the sphere can exist without actually being fully Clifford-type?
+
+Why is it a "good" problem:  
+
+1. **Nontrivial refinement of a central theorem:**  
+   The DDVV inequality is a sharp algebraic curvature bound, and the equality structure is known but not classified geometrically.  This conjecture asks for a *stability principle*—is the equality locus rigid in the analytic sense?—turning a static inequality into a dynamic rigidity phenomenon.
+
+2. **Structurally natural and dimensionless:**  
+   Using the normalized ratio \(\mathcal{K}^\perp/(\|B\|^2)^2\) makes the condition invariant under scale of \(B\), directly measuring the *proportion* of commutator curvature to total curvature.  This avoids earlier scaling ambiguities and gives the conjecture geometric universality.
+
+3. **Bridges algebra and analysis:**  
+   The quantity \(\mathcal{K}^\perp\) encodes the commutator algebra of the shape operators; near equality implies the operators nearly satisfy Clifford relations.  Showing such “almost Clifford” families must actually be exact would unite analytic curvature pinching with the algebraic geometry of symmetric and isoparametric immersions.
+
+4. **Simple to state, deep to resolve:**  
+   Expressed purely in terms of two scalar invariants, the conjecture is visually and conceptually clear, yet proving it requires controlling nonlinear equations coupling curvature tensors and commutators—squarely placing it at the frontier of minimal submanifold theory.
+
+5. **Strong potential consequences:**  
+   A positive resolution would establish a *universal rigidity gap* for minimal submanifolds near maximal normal curvature, paralleling Simons’ pinching gap for \(\|B\|^2\).  Failure of the conjecture would produce new, structurally “almost-Clifford” minimal submanifolds—objects of immediate geometric interest.
+
+This framing offers the right balance: precise, dimensionless, and algebraically grounded, it transforms an established inequality into a research-level rigidity conjecture at the intersection of geometric analysis and submanifold algebra.

@@ -1,0 +1,25 @@
+problem:  
+Let \( (S^{n+k}, g_{S^{n+k}}) \) be the standard round sphere.  
+Consider a sequence of **Lipschitz** conformal metrics \( g_i = e^{2f_i} g_{S^{n+k}} \) satisfying  
+\[
+\|f_i\|_{C^{0,1}(S^{n+k})} \le C_0,\qquad 
+\int_{S^{n+k}} e^{(n+k)f_i}\, d\mu_{g_{S^{n+k}}}=1,
+\]
+so that the metrics \(g_i\) are uniformly bilipschitz to the round metric but may have unbounded curvature.
+
+Let \(M_i^n\subset (S^{n+k},g_i)\) be a sequence of compact, **embedded minimal submanifolds** of a fixed topological type \(M^n\), each defined in the weak (first-variation) sense as stationary points of area for the metric \(g_i\).  
+Assume that in local coordinate charts (with respect to the round metric), each \(M_i\) is smooth and the second fundamental form \(A_{M_i}^{g_i}\)—defined via weak derivatives of the ambient Levi-Civita connection—satisfies
+\[
+\|A_{M_i}^{g_i}\|_{L^\infty(M_i)}\le C_1, \qquad 
+\mathrm{Vol}_{g_i}(M_i)\le V_0.
+\]
+
+**Question (Compactness of weakly minimal submanifolds under Lipschitz ambient metrics):**  
+Under these conditions, is the sequence \(\{M_i\}\) precompact (up to subsequence and diffeomorphisms) in a \(C^{1,\beta}\) topology for some \(\beta>0\)?  
+Equivalently, does there exist a limiting Lipschitz metric \(g_\infty = e^{2f_\infty} g_{S^{n+k}}\) and a weakly minimal submanifold \(M_\infty \subset (S^{n+k}, g_\infty)\) such that \(M_i \to M_\infty\) in the varifold or \(C^{1,\beta}\) sense?  
+Or can one construct counterexamples where loss of compactness arises—even with uniform \(|A|\) and volume bounds—due solely to oscillations of the Lipschitz ambient metric?
+
+Why is it a "good" problem:  
+This problem makes precise a fundamental open direction in geometric analysis: **how minimal submanifolds behave in rough ambient geometries**. In classical smooth settings, curvature bounds on the ambient space are pivotal for compactness of minimal varieties; here, by dropping regularity to Lipschitz, that analytic machinery collapses. The difficulty lies in whether control of the extrinsic geometry (\(|A|\) and volume) compensates for the absence of curvature control.  
+
+Answering this question would reveal the minimal ambient regularity needed to sustain classical compactness phenomena, bridging smooth Riemannian geometry, geometric measure theory, and the theory of elliptic systems with rough coefficients. It is conceptually simple—testing compactness of minimal structures under Lipschitz perturbations—yet it probes the boundary of known analytic tools and could redefine our understanding of geometric regularity thresholds. This combination of simplicity, cross-field relevance, and potential theoretical impact makes it a "good" and genuinely research-level problem.

@@ -1,0 +1,27 @@
+problem:  
+Let $\mathbb{B}^{n+1}$ be the unit ball in $\mathbb{R}^{n+1}$ with boundary $\mathbb{S}^n$, and fix a smooth $(n-2)$–dimensional embedded submanifold type $\Sigma \subset \mathbb{S}^n$.  
+Let $\mathcal{F}$ denote the space of all smooth embeddings $\Gamma : \Sigma \hookrightarrow \mathbb{S}^n$ that are smoothly isotopic to a fixed reference embedding $\Gamma_0$.  
+
+For each $\Gamma \in \mathcal{F}$, suppose one can form a smooth oriented hypersurface $M_\Gamma \subset \overline{\mathbb{B}}^{n+1}$ with $\partial M_\Gamma = \Gamma$, so that the union $M_\Gamma \cup D_\Gamma$ (where $D_\Gamma \subset \mathbb{S}^n$ is the region of the sphere bounded by $\Gamma$) encloses a well-defined region $\Omega_\Gamma \subset \mathbb{B}^{n+1}$ whose enclosed volume is prescribed to be a fixed number $V_0$.  
+
+Now consider the conformally deformed family of Riemannian metrics on $\overline{\mathbb{B}}^{n+1}$,  
+\[
+g_\phi = e^{2 \phi(x)}\, g_{\mathrm{Euc}}, \qquad \phi \in C^\infty(\overline{\mathbb{B}}^{n+1}),
+\]  
+and, for each such metric, define $M_\Gamma^{\phi}$ to be a hypersurface minimizing the $g_\phi$–area among all competitors with boundary $\Gamma$ and enclosed volume $V_0$.  
+Each such $M_\Gamma^{\phi}$ is known to have constant mean curvature $H_{g_\phi}(M_\Gamma^{\phi}) = \lambda_\Gamma^{\phi}$.  
+
+**Question:**  
+Does there exist a nontrivial conformal factor $\phi$ such that  
+\[
+\lambda_\Gamma^{\phi} = H_*,
+\]
+where $H_*$ is the same constant for all $\Gamma \in \mathcal{F}$?  
+In other words, can one find a conformal deformation of the unit ball that synchronizes the mean curvature of all isotopy classes of volume-constrained Plateau solutions with boundaries of a fixed topological type?
+
+Why is it a "good" problem:  
+This version avoids the earlier inconsistencies by (i) using isotopy classes instead of nontrivial homology on $\mathbb{S}^n$, and (ii) precisely defining the enclosed volume via a spherical cap $D_\Gamma$. The problem investigates whether a single ambient conformal factor can balance the Lagrange multipliers corresponding to a **continuum of constrained Plateau problems**, effectively coupling boundary geometry and constant mean curvature through a global conformal geometry.  
+
+It lies at the frontier of **geometric analysis**, **variational PDE theory**, and **conformal geometry**. Resolving such a question would require understanding how the Yamabe-type scalar curvature equation interacts with the nonlinear map $\Gamma \mapsto \lambda_\Gamma^\phi$ arising from the CMC constraint, potentially introducing new analytic invariants linking conformal structure, volume constraints, and curvature synchronization.  
+
+The statement itself is geometrically simple—“can a single conformal factor make all such constant-mean-curvature boundaries share the same curvature?”—yet any progress demands developing techniques bridging **boundary value problems for nonlinear elliptic PDEs** and **global conformal deformations of metric spaces**. This confluence of concepts from several areas embodies the hallmark of a truly “good” mathematical problem.

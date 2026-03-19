@@ -1,0 +1,27 @@
+problem:  
+Let $\Sigma\subset S^3$ be a smooth, compact, oriented immersed surface of genus $g$.  
+For a small parameter $\varepsilon>0$, consider the *anisotropic Willmore functional*  
+\[
+\mathcal{W}_\varepsilon(\Sigma) = \int_\Sigma \big(|H|^2 + \varepsilon\,\Phi(\nu)\big)\, d\mu,
+\]
+where $H$ denotes the scalar mean curvature, $\nu:\Sigma\to S^2$ is the unit normal, and $\Phi:S^2\to\mathbb{R}$ is a smooth even function satisfying $\int_{S^2}\Phi=0$.  
+
+Assume that for each small $\varepsilon>0$, there exists a family of smooth immersions $\Sigma_\varepsilon$ of fixed genus $g$ that are critical for $\mathcal{W}_\varepsilon$ and that satisfy a uniform energy bound:
+\[
+\sup_{\varepsilon>0}\mathcal{W}_\varepsilon(\Sigma_\varepsilon) < +\infty.
+\]
+Suppose that (up to Möbius transformations) $\Sigma_\varepsilon \to \Sigma_0$ in the varifold sense as $\varepsilon \to 0^+$.  
+
+**Question:**  
+1. Can one find nontrivial $\Phi$ (for instance with prescribed symmetry) and corresponding critical immersions $\Sigma_\varepsilon$ such that the limit $\Sigma_0$ is a Willmore surface in $S^3$ *not Möbius-equivalent to any minimal surface*?  
+2. More sharply, does there exist a local bifurcation of anisotropic critical surfaces from a given minimal surface in $S^3$, controlled by the symmetry of $\Phi$, that in the isotropic limit $\varepsilon\to0$ produces a strictly new Willmore immersion?
+
+Why is it a "good" problem:  
+This reformulation poses a concrete and unresolved bifurcation problem that is both natural and deep. It combines high-order geometric analysis, symmetry breaking, and variational convergence within the classical Willmore framework. The functional $\mathcal{W}_\varepsilon$ slightly breaks conformal invariance by introducing an anisotropic weight $\Phi(\nu)$, yet as $\varepsilon\to0$ the perturbation vanishes, potentially allowing *new* Willmore surfaces to emerge as bifurcation limits.
+
+The problem stands at the intersection of several fields:
+- **Geometric analysis:** it concerns compactness and limiting behavior of critical points for fourth-order nonlinear PDEs;
+- **Bifurcation theory:** it asks whether small anisotropic perturbations of minimal surfaces can generate new branches of Willmore critical points;
+- **Differential geometry:** it probes how conformal and rotational symmetries of $S^3$ interact with the geometry of immersions.
+
+Formally, the question is simple to state—it asks whether anisotropy can seed new conformally invariant critical surfaces—but its resolution would require developing a delicate analytic theory combining spectral analysis of the Willmore operator, asymptotic expansion of perturbed critical equations, and geometric compactness under mean curvature control. A positive answer would yield the first rigorously constructed examples of previously unknown Willmore surfaces via controlled symmetry breaking. Thus, it is an original, precise, and profoundly motivated research-level problem.

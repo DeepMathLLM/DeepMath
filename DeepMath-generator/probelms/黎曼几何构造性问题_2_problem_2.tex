@@ -1,0 +1,53 @@
+problem:  
+Let \(B_r^n \subset \mathbb{S}^n\) be the geodesic ball of radius \(r<\pi/2\), and \(D_r^k = B_r^n \cap \mathbb{S}^k\) the totally geodesic free boundary \(k\)-disk.   
+For each free boundary minimal submanifold \(\Sigma^k\subset B_r^n\), the Jacobi operator acting on normal vector fields \(V\) along \(\Sigma\) under the linearized free boundary condition
+\[
+\frac{D V}{d\eta_{\partial \Sigma}} + \mathrm{II}_{\partial B_r^n}(V,T) = 0 \quad\text{on } \partial\Sigma
+\]
+is
+\[
+L_\Sigma V = \Delta^\perp V + (\operatorname{Ric}_{\mathbb{S}^n}(\nu,\nu) + |A|^2)V,
+\]
+where \(T\) is the unit tangent to \(\partial\Sigma\).  
+At \(D_r^k\), denote by \(\mathcal{K} = \ker L_{D_r^k}\) the Jacobi kernel satisfying the free boundary condition.  
+Elements of \(\mathcal{K}\) correspond to infinitesimal deformations preserving the minimal property to first order, including directions coming from ambient rotations that fix \(B_r^n\).
+
+Equip \(\mathcal{K}\) with the \(L^2\)-inner product
+\[
+\langle V_1, V_2\rangle = \int_{D_r^k} \langle V_1, V_2\rangle\, d\mathrm{Vol}.
+\]
+Let \(\mathcal{K}_0 \subset \mathcal{K}\) be the subspace \(L^2\)-orthogonal to the “ambient rotation” Jacobi fields.
+
+Consider a smooth family of self-adjoint operators \(L_t\) defined as analytic perturbations of \(L_{D_r^k}\) induced either by formal geometric variation in direction \(V \in \mathcal{K}\) or equivalently by analytic deformation theory of elliptic operators in the Kato sense:
+\[
+L_t : = L_{D_r^k} + t\, L^{(1)}_V + \tfrac12 t^2 L^{(2)}_V + o(t^2),
+\]
+where the coefficients \(L^{(j)}_V\) are differential operator perturbations determined by \(V\).  
+Let \(\lambda_1(t)\) denote the lowest eigenvalue of \(L_t\), in the sense of analytic branches of eigenvalues of self-adjoint elliptic families.
+
+**Problem (Precise Quadratic Spectral Rigidity of Totally Geodesic Free Boundary Disks):**  
+Is it true that for every \(V\in \mathcal{K}_0 \setminus \{0\}\),
+\[
+\left.\frac{d\lambda_1(t)}{dt}\right|_{t=0}=0, \qquad 
+\left.\frac{d^2\lambda_1(t)}{dt^2}\right|_{t=0}>0 ?
+\]
+Equivalently, after factoring out ambient symmetries, does the lowest eigenvalue of the Jacobi operator increase quadratically to second order under any nontrivial formally integrable Jacobi deformation?
+
+Why is it a "good" problem:  
+
+1. **Mathematical coherence and precision:**  
+   This formulation precisely defines the spectral perturbation framework using the language of *analytic families of self-adjoint elliptic operators* (Kato theory). It specifies the linearized boundary condition, the inner product defining orthogonality, and the operator expansions needed for the second derivative of the spectrum, thus avoiding previous integrability ambiguities.
+
+2. **Deep analytic–geometric interaction:**  
+   The question demands understanding the second-order variation of an eigenvalue of a geometric operator coupled to a boundary problem. It directly links the deformation theory of minimal submanifolds with spectral perturbation analysis—bridging differential geometry, PDE spectral theory, and functional analysis.
+
+3. **Simple statement, profound implications:**  
+   The succinct question—whether the totally geodesic disk is spectrally strictly stable to second order once symmetries are removed—touches the heart of geometric rigidity. If positive, it would quantify how spectral and geometric uniqueness of the disk persist beyond linear approximation.
+
+4. **Conceptual bridge across fields:**  
+   The problem connects geometric analysis, operator theory, and mathematical physics. The spectral-second variation \(\mathcal{Q}(V)\) functions analogously to a “mass gap” in physical models, providing a geometric measure of stability and rigidity.
+
+5. **Potential influence:**  
+   Proving or disproving this property would sharpen our understanding of the moduli space of free boundary minimal submanifolds in curved spaces, leading to applications in stability theories for geometric flows and in quantitative rigidity methods.
+
+Thus, the **Precise Quadratic Spectral Rigidity Problem** is concise, profound, and integrative—a problem whose solution would deepen the analytical foundations of minimal geometry while bridging spectral theory and differential geometry at a genuinely research-level depth.

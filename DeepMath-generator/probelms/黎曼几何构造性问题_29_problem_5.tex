@@ -1,0 +1,56 @@
+problem:  
+Let \((N^{2n},J,h)\) be a complete Kähler manifold whose holomorphic bisectional curvature is **strongly seminegative** in the sense of Siu.  
+Define at each point \(q\in N\)
+\[
+\mathcal N_q=\{X\in T^{1,0}_qN\mid R^N(X,\overline{X},Y,\overline{Y})=0\text{ for all }Y\in T_q^{1,0}N\}.
+\]
+Assume that \(\mathcal N\subset T^{1,0}N\) is a smooth, holomorphic, integrable distribution of constant rank (the **curvature‑nullity distribution**).  
+Let \(\mathcal Q=\mathcal N^\perp\) be the orthogonal complement with respect to \(h\).  No parallelism or geodesicity of \(\mathcal N\) or \(\mathcal Q\) is assumed—thus the **twisting tensor**
+\[
+\mathcal A_XY:=\pi_\mathcal Q(\nabla_XY),\qquad X,Y\in\Gamma(\mathcal N),
+\]
+need not vanish.
+
+Let \((M^m,g)\) be a compact Riemannian manifold with nonnegative Ricci curvature, and let \(f:(M,g)\to(N,h)\) be an **energy‑minimizing harmonic map**.  Write
+\[
+df=df^\mathcal N+df^\mathcal Q,
+\quad df^\mathcal N=\pi_\mathcal N\circ df,\;
+df^\mathcal Q=\pi_\mathcal Q\circ df.
+\]
+
+---
+
+**Conjectural problem:**  
+Is there a quantitative *rigidity threshold* for the twisting of the nullity foliation of \(N\), governing whether harmonic maps from nonnegatively curved domains can penetrate \( \mathcal Q\)?  
+
+More precisely, does there exist a constant \(\Lambda(N)>0\) (depending only on bounds for curvature and torsion of \(\mathcal N\)) such that
+\[
+\|\mathcal A\|_{L^\infty}<\Lambda(N)
+\quad\Longrightarrow\quad
+df^\mathcal Q\equiv0
+\ \text{for any energy‑minimizing harmonic }f:(M,g)\to(N,h)?
+\]
+
+Equivalently: Is the Siu–Sampson analytic vanishing phenomenon **stable** under sufficiently small non‑parallel deformations of the curvature‑nullity distribution?
+
+If no such \(\Lambda(N)\) exists, one should produce an explicit family of Kähler manifolds of strongly seminegative curvature whose nullity distributions twist arbitrarily weakly yet support harmonic maps with nontrivial projection \(df^\mathcal Q\).
+
+---
+
+Why is it a "good" problem:  
+
+1. **Fixes the logical issue and introduces genuine uncertainty:**  
+   Unlike earlier versions, \(\mathcal N\) is merely integrable—not assumed totally geodesic—so the twisting tensor \(\mathcal A\) measures an actual geometric freedom.  The problem thereby becomes well‑posed and nontrivial: small but nonzero \(\mathcal A\) may or may not destroy harmonic‑map vanishing, and this threshold behavior is unknown.
+
+2. **Targets a fundamental analytic–geometric stability question:**  
+   Siu–Sampson vanishing is a cornerstone of rigidity theory, yet its *stability* under perturbations of the target geometry has never been quantified.  This problem asks whether the analytic Bochner mechanism tolerates a controlled amount of geometric torsion—probing the boundary between absolute rigidity and flexible degeneracy.
+
+3. **Bridge across fields:**  
+   It connects (i) complex differential geometry of Kähler curvature and holomorphic foliations, (ii) harmonic‑map PDE analysis, and (iii) perturbation theory for geometric structures.  Resolving it might introduce new quantitative tools—for example perturbative Bochner identities or spectral gap estimates—and influence how rigidity theorems are formulated in variable‑curvature settings.
+
+4. **Simple to state, profound in content:**  
+   The conjecture can be summarized in one sentence:  
+   *Does harmonic‑map rigidity survive small geometric twisting of the curvature‑nullity foliation?*  
+   Its answer would delineate a new frontier for how curvature sign interacts with dynamical stability in analytic geometry.
+
+Hence this is a genuinely open, logically coherent, and conceptually deep problem that could reshape our understanding of how analytic vanishing theorems depend on fine geometric structure.
