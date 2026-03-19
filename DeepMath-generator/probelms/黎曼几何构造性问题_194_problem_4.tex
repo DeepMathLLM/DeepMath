@@ -1,0 +1,56 @@
+problem:  
+Let \(G\) be a connected, simply connected, **equiregular Carnot group** with graded Lie algebra  
+\(\mathfrak g = V_1 \oplus \cdots \oplus V_s\) and homogeneous dimension \(Q\).  
+Equip \(V_1\) with a left‑invariant sub‑Riemannian metric \(g_\Delta\) and let \(d_\Delta\) denote the corresponding Carnot–Carathéodory distance.  
+For each integer \(1 \le k < \dim(G)\), define the \(k\)-dimensional **isoperimetric profile**  
+\[
+\mathrm{Iso}_{G,g_\Delta}^{(k)}(r)=
+\inf\Bigl\{
+\mu_{k+1}(T)\;:\;
+\partial T=S,\;
+\mu_k(S)\le r
+\Bigr\},
+\]
+where \(S,T\) are \(k\)- and \((k+1)\)-dimensional metric integral currents in \((G,d_\Delta)\) (Ambrosio–Kirchheim),  
+and \(\mu_j\) denotes the \(j\)-dimensional Hausdorff measure for \(d_\Delta\).
+
+It is known in special Carnot groups (e.g. Heisenberg) that  
+\(\mathrm{Iso}^{(k)}(r)\) admits polynomial asymptotic behavior  
+\(\mathrm{Iso}^{(k)}(r)\simeq C_{k}(G,g_\Delta)\, r^{\alpha(k,G)}\)  
+for some exponent \(\alpha(k,G)\).  
+For general Carnot groups only inequalities of this type are established.
+
+---
+
+**Problem (Algebraic determination of asymptotic isoperimetric profiles):**  
+For each \(k\), let  
+\[
+\mathcal{C}^{*}_k(G,g_\Delta)
+:= \limsup_{r\to \infty} \frac{\mathrm{Iso}^{(k)}_{G,g_\Delta}(r)}{r^{\alpha(k,G)}}
+\in [0,\infty].
+\]
+
+1. Is \(\mathcal{C}^{*}_k(G,g_\Delta)\) determined **up to a universal multiplicative constant** solely by the graded Lie algebra \(\mathfrak g\)?  
+   Equivalently, do two Carnot groups \(G,H\) with isomorphic graded Lie algebras satisfy  
+   \[
+   \mathcal{C}^{*}_k(G,g_\Delta) \asymp \mathcal{C}^{*}_k(H,h_\Delta)
+   \]
+   for all admissible horizontally inner products \(g_\Delta,h_\Delta\) (with constants independent of metric choice)?  
+
+2. If not, can one build a quantitative invariant \(J_k(\mathfrak g,g_\Delta)\) describing how metric deformations of \(V_1\) alter \(\mathcal{C}^{*}_k\)?  
+   In particular, does \(\mathcal{C}^{*}_k\) vary smoothly or discontinuously under changes of the metric shape operator on \(V_1\)?  
+
+---
+
+Why is it a "good" problem:  
+
+- **Profound insight:**  
+  This problem probes whether **asymptotic filling behavior**—a global geometric‑measure invariant—is encoded purely by algebraic layerings of the Lie algebra or whether the analytic choice of horizontal metric genuinely enriches the geometry. A positive answer would establish a striking universality law for all Carnot geometries; a negative one would precisely quantify how analytic anisotropy escapes the algebraic framework.
+
+- **Bridge between fields:**  
+  It interlaces **sub‑Riemannian geometry** (Carnot–Carathéodory metrics and stratified Lie algebras) with **geometric measure theory** (isoperimetric profiles, integral currents) and **asymptotic geometry** (large‑scale invariants). Any advance would force development of analytic tools sensitive to both bracket algebra and large‑scale measure growth.
+
+- **Extreme simplicity:**  
+  The essence can be stated in one line:
+  > “Is the asymptotic isoperimetric profile of a Carnot group determined solely by its Lie algebra?”  
+  Despite its compactness, the question penetrates one of the most fundamental boundaries in modern geometry—the tension between algebraic and analytic determinants of quantitative shape.

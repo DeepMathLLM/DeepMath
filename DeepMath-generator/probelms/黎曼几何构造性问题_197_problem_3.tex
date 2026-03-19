@@ -1,0 +1,30 @@
+problem:  
+Let \((P, \mathcal{H}, g)\) be a compact, connected equiregular sub‑Riemannian manifold endowed with a free, proper, and isometric action of a compact Lie group \(G\) preserving the Popp measure \(\mu_P\). Let \(M = P/G\) be the smooth quotient, endowed with the reduced sub‑Riemannian structure \((\mathcal{H}_{\mathrm{red}}, g_{\mathrm{red}})\) and the induced Popp measure \(\mu_M\).  
+
+Consider the sub‑Laplacian \(\Delta_{\mathcal{H}}\) acting on smooth \(G\)-invariant functions on \(P\), which pushes forward under the quotient map \(\pi: P \to M\) to a second‑order differential operator \(\Delta_{\mathrm{red}}\) on \(M\).  Write their small‑time heat kernel expansions on the diagonal as  
+\[
+p_{\mathcal{H}}(t,x,x) \sim t^{-\frac{Q_P}{2}} \!\sum_{j=0}^{\infty}\! a_j(x)\, t^{j/2}, 
+\qquad
+p_{\mathrm{red}}(t,\pi(x),\pi(x)) \sim t^{-\frac{Q_M}{2}} \!\sum_{j=0}^{\infty}\! b_j(\pi(x))\, t^{j/2},
+\]
+where \(Q_P\) and \(Q_M\) are the Hausdorff dimensions of the respective structures.  The leading coefficients \(a_0,b_0\) are determined by local nilpotent models and Popp measures.
+
+**Open Problem (Second spectral coefficient under sub‑Riemannian reduction):**  
+Does there exist a universal local functional  
+\[
+\Xi_G(\pi(x)) = \Xi_G(\pi,g,\mathcal{H})
+\]
+that depends only on the infinitesimal \(G\)-action (its curvature and horizontal orbit geometry) such that the sub‑leading coefficient \(b_1\) on \(M\) satisfies
+\[
+b_1(\pi(x)) 
+= 
+\frac{1}{\operatorname{Vol}(G)} 
+\int_G\!\! a_1(g\!\cdot\! x)\, d\mu_{\mathrm{Haar}}(g)
++ \Xi_G(\pi(x))
+\]
+for all \(x\in P\)?  
+
+Equivalently, conjecture the existence of a “curvature‑defect” term \(\Xi_G\) governing how the second heat invariant changes under symmetry reduction of sub‑Riemannian structures.  Determine in what geometric conditions (e.g., horizontally homogeneous actions, contact or CR structures, or Heisenberg‑type geometries) \(\Xi_G\) vanishes or can be expressed directly in terms of the orbit horizontal mean curvature or the canonical curvature operator of Agrachev–Zelenko type.
+
+Why is it a "good" problem:  
+This problem refines beyond the leading Weyl asymptotics (which are already understood) to target the *second* sub‑Riemannian heat coefficient, a geometric–spectral quantity sensitive to curvature, torsion, and the nonholonomic structure. It asks how analytic invariants behave under symmetry reduction, extending classical equivariant heat‑kernel comparison results to the non‑elliptic, sub‑Riemannian setting where no Levi–Civita framework exists. Its statement is simple yet profound: identifying the precise “defect” term connects sub‑Riemannian analytic microlocal theory, group‑quotient geometry, and canonical curvature constructions.  A resolution would establish a truly new bridge between hypoelliptic spectral geometry and differential‑geometric reduction, advancing the analytic foundation of nonholonomic geometry in the presence of symmetries.

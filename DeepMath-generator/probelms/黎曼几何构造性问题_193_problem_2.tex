@@ -1,0 +1,39 @@
+problem:  
+Let \((M, \mathcal{H}, g_{\mathcal{H}}, \mu)\) be a complete, equiregular sub-Riemannian manifold of Hausdorff dimension \(Q\), endowed with its Carnot–Carathéodory distance \(d\) and the corresponding Hausdorff measure \(\mu\). For each point \(x \in M\) and each radius \(r > 0\), consider subsets \(E \subset B(x,r)\) of finite horizontal perimeter \(P_{\mathcal{H}}(E; B(x,r))\).  
+
+Define the **localized normalized isoperimetric function**  
+\[
+I_x(V, r) = \inf\Bigg\{ 
+\frac{P_{\mathcal{H}}(E; B(x,r))}{\mu(E\cap B(x,r))^{(Q-1)/Q}} 
+: E \subset B(x,r),\ \mu(E\cap B(x,r)) = V
+\Bigg\}.
+\]
+Let \(C(\mathcal{G}_x)\) denote the sharp isoperimetric constant of the tangent Carnot group at \(x\) (the nilpotentization of \(M\) at \(x\)).  
+
+---
+
+**Open problem (quantitative local-to-tangent sub-Riemannian isoperimetric stability):**  
+Assume that \((M, \mathcal{H}, g_{\mathcal{H}}, \mu)\) satisfies the curvature-dimension condition \(CD(K,Q)\) with \(K \ge 0\).  
+
+Does there exist an exponent \(\alpha > 0\) (possibly depending on the growth vector of \(\mathcal{H}\)) such that for every compact \(K_0 \subset M\) there is a constant \(C_{K_0} > 0\) satisfying, for all \(x \in K_0\),
+\[
+\left| I_x\!\left(\tfrac{1}{2}\mu(B(x,r)), r\right) - C(\mathcal{G}_x) \right|
+\le C_{K_0}\, r^{\alpha} \quad \text{as } r \to 0?
+\]
+Equivalently: *Is the approach of the local isoperimetric profile of a sub-Riemannian manifold to its tangent Carnot-group limit quantitatively governed by curvature, and if so, how does the rate \(\alpha\) reflect geometric data such as the horizontal Ricci lower bound or the step of bracket generation?*
+
+---
+
+Why is it a "good" problem:  
+This problem asks for a **quantitative refinement** of the local sub-Riemannian isoperimetric asymptotics. The qualitative convergence of small-scale geometry to that of the tangent Carnot group is known via Mitchell–Bellaïche’s tangent cone theorem, but *no general quantitative comparison* between the local isoperimetric profile and its Carnot limit is known.  
+
+- **Conceptual significance:** The problem tests whether curvature-dimension information (analytic geometry of the horizontal Laplacian) induces quantitative control on geometric measure quantities like perimeter and volume. It thus unites curvature-dimension theory, geometric measure theory, and nilpotent approximation.  
+
+- **Structural bridge:** A positive resolution would establish a precise analytic–geometric interplay: lower horizontal curvature would not only control asymptotic shape but also the *rate* of convergence of local inequalities toward Carnot symmetry. This connects tools from analysis on metric-measure spaces, such as quantitative differentiation and heat kernel estimates, with geometric measure stability.  
+
+- **Potential consequences:**  
+  - A proof would yield quantitative stability results for Sobolev and isoperimetric inequalities in sub-Riemannian structures.  
+  - It could lead to new curvature invariants detectable via perimeter deficits.  
+  - Failure of such a rate could signal new types of curvature or topological obstructions in non-Riemannian geometries.  
+
+- **Simplicity and depth:** The statement is geometrically concise and conceptually transparent: quantify how fast local isoperimetry recovers its tangent Carnot constant. Yet resolving it would demand a synthesis of several advanced techniques and potentially advance the understanding of geometric measure stability in sub-Riemannian settings.

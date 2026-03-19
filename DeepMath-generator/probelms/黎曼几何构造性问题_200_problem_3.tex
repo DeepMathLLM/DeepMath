@@ -1,0 +1,48 @@
+problem:  
+Let $\mathrm{Imm}(S^{1},\mathbb{R}^{2})$ denote the space of smooth immersed closed planar curves and $\mathcal{S}= \mathrm{Imm}(S^{1},\mathbb{R}^{2})/\mathrm{Diff}(S^{1})$ the shape space.  
+For parameters \(0<\alpha<1\) and \(p>1\), consider the **fractional Sobolev metric**
+\[
+G^{(\alpha,p)}_c(h,k)=\int_{S^{1}}\!\!\left(\langle h,k\rangle + A\,\langle (-\Delta_s)^{\alpha/2}h, (-\Delta_s)^{\alpha/2}k\rangle \right)\,ds,
+\]
+where \(ds=|c'(\theta)|\,d\theta\) and \((-\Delta_s)^{\alpha/2}\) is the spectral fractional Laplacian along the arc‑length parameter of \(c\).  
+This defines a weak Riemannian metric on $\mathrm{Imm}(S^1,\mathbb{R}^2)$ invariant under reparametrizations, hence induces a non‑negative geodesic distance \(d_{\alpha,p}\) on \(\mathcal{S}\).
+
+Let
+\[
+\overline{\mathcal{S}}_{\alpha,p}=\text{metric completion of }(\mathcal{S},d_{\alpha,p}),
+\]
+and let \(\mathcal{C}^{\alpha,p}\) be the space of (possibly nonsmooth) immersed closed curves whose **unit tangent field**
+\(t_c=c'/|c'|\) belongs to \(W^{\alpha,p}(S^1,S^1)\).
+
+---
+
+**Problem (fractional completion regularity threshold):**  
+Fix \(0<\alpha<1\) and \(p>1\).  
+
+1. (**Rectifiability regime**)  
+   If \(\alpha p>1\), does every \(d_{\alpha,p}\)-Cauchy sequence of shapes admit a limit in \(\mathcal{C}^{\alpha,p}\) whose image is a rectifiable closed curve (i.e. of Hausdorff dimension \(1\))?
+
+2. (**Critical regime**)  
+   When \(\alpha p=1\), does there exist a \(d_{\alpha,p}\)–Cauchy sequence whose tangent fields converge weakly in \(W^{\alpha,p}\) but whose limiting image is **non‑rectifiable**, in the sense of having infinite length or failing to admit arc‑length parametrization?
+
+3. (**Characterization question**)  
+   Can one describe \(\overline{\mathcal{S}}_{\alpha,p}\) explicitly in terms of weak limits of tangent fields in \(W^{\alpha,p}\)?  
+   In particular, is the embedding
+   \[
+   \iota_{\alpha,p}:\mathcal{S}\hookrightarrow W^{\alpha,p}(S^{1},S^{1})/\mathrm{Diff}(S^{1}),\qquad [c]\mapsto [t_c],
+   \]
+   isometric (up to normalization) with respect to \(d_{\alpha,p}\), and does its closure coincide with the quotient of \(\mathcal{C}^{\alpha,p}\) by \(\mathrm{Diff}(S^{1})\)?
+
+---
+
+Why is it a "good" problem:  
+1. **Profound insight:**  
+   The problem pinpoints the analytic threshold $\alpha p=1$, reminiscent of the classical Sobolev embedding dividing bounded‑variation from fractal behaviors.  Determining whether this boundary governs rectifiability in the metric completion connects the geometry of nonlinear shape spaces with fine properties of fractional function spaces.
+
+2. **Bridge between fields:**  
+   The question unites **infinite‑dimensional Riemannian geometry**, **fractional Sobolev analysis**, and **geometric measure theory**.  It asks whether analytic control of fractional derivatives ensures geometric compactness of shapes—linking nonlocal analysis to geometric convergence and measure‑theoretic regularity.
+
+3. **Extreme simplicity:**  
+   At heart, it asks:  
+   *“Does fractional Sobolev control of curvature and tangent regularity prevent curves from degenerating into non‑rectifiable limits?”*  
+   The formulation is conceptually clean yet demands development of rigorous machinery for nonlocal reparametrization‑invariant metrics, fractional compactness, and geometric interpretation of completions—representing the archetypal “narrow entrance, profound depth” research problem.

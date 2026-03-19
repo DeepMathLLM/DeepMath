@@ -1,0 +1,43 @@
+problem:  
+Let \( G \) be a compact semisimple Lie group with Lie algebra \( \mathfrak{g} \), and fix a left-invariant, bracket-generating sub-Riemannian structure \( (\Delta,g_\Delta) \) determined by \( \mathfrak{h}\subset \mathfrak{g} \).  
+Let \( H:T^*G\to\mathbb{R} \) be the corresponding normal Hamiltonian, determined by  
+\[
+H(p_g)=\tfrac12\langle p_g,\Pi_{\mathfrak{h}}(p_g)\rangle,
+\]
+where \( \Pi_{\mathfrak{h}} \) is the projection induced by the (negative) Killing form.  
+The cotangent bundle \( T^*G \) carries the canonical symplectic form \(\omega\), and the left \(G\)-action admits the moment map \(\mu_L(g,p_g)=\mathrm{Ad}^*_g p_g\).
+
+Suppose that there exists a **fiber-preserving anti-symplectic involution**  
+\[
+\Psi:T^*G\to T^*G, \quad \Psi^2=\mathrm{id}, \quad \Psi^*\omega=-\omega,
+\]
+such that:
+1. \(\Psi^*H = H\) (the Hamiltonian is invariant under \(\Psi\)); and  
+2. \(\Psi\) is equivariant with respect to the left moment map:  
+   \(\mu_L\circ \Psi = f \circ \mu_L\)  
+   for some smooth involution \(f:\mathfrak{g}^*\to \mathfrak{g}^*\).
+
+Because \(\Psi\) is fiber-preserving, it induces a base diffeomorphism \(\Phi:G\to G\) satisfying \(\pi_G\circ \Psi = \Phi\circ \pi_G\).
+
+**Open problem:**  
+For which non-symmetric (i.e. not Riemannian) sub-Riemannian structures \( (\Delta,g_\Delta) \) on compact semisimple Lie groups does such a \((\Psi,f,\Phi)\) triple exist?  
+Equivalently:  
+> Does there exist a left-invariant sub-Riemannian Hamiltonian system on a compact semisimple \(G\) that admits a nontrivial anti-symplectic, fiber-preserving involution intertwining the coadjoint dynamics via an involutive transformation \(f\) on \(\mathfrak{g}^*\)?  
+
+If it exists, what algebraic constraints must hold among \(\mathfrak{h}\), the Lie bracket, and the coadjoint geometry to allow such a reversing symmetry?  
+If no such involution exists beyond those induced by obvious group automorphisms (such as inversion \(g\mapsto g^{-1}\)), can one characterize the rigidity mechanisms that prevent its existence?
+
+---
+
+Why is it a "good" problem:  
+This formulation corrects and sharpens the underlying conceptual idea: rather than inventing a geometric “self-duality,” it asks for a **sub-Riemannian analogue of time-reversal or mirror symmetry**, rigorously formulated as an *anti-symplectic, Hamiltonian-preserving involution* of \(T^*G\).
+
+It is a “good” research problem because:
+
+* **Grounded in canonical structure:** Anti-symplectic involutions that preserve Hamiltonians capture physical and geometric “reversal” symmetries in mechanics. Asking for such an involution in the left-invariant sub-Riemannian setting—where the dynamics are constrained and highly nonlinear—is both natural and unexplored.  
+* **Bridge between geometry and symmetry:** The condition \(\mu_L\circ\Psi = f\circ\mu_L\) ties the symmetry at the cotangent level to an algebraic transformation on coadjoint variables, linking **symplectic geometry**, **Lie theory**, and **optimal control**.  
+* **Precise yet open:** It has mathematically exact starting data and transformation conditions, but no classification or existence criterion is known. Determining whether such involutions can occur (beyond the trivial reversible Riemannian case) is plausibly deep.  
+* **Potential impact:** Establishing existence (or rigidity) would reveal new invariant structures or constraints on nonholonomic Hamiltonian flows, opening connections to reversible dynamics, geometric quantization symmetry, and momentum map dualities.  
+* **Simplicity with depth:** “When can a left-invariant, nonholonomic Hamiltonian system admit an anti-symplectic symmetry?” is an elementary-sounding question that cuts to the heart of how geometric symmetry survives under nonholonomic constraints.
+
+Thus, this revision yields a logically coherent, structurally grounded, and conceptually profound research-level problem satisfying all good-problem criteria.

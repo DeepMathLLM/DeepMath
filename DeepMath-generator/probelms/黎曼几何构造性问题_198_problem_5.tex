@@ -1,0 +1,47 @@
+problem:  
+Let \((M,\Delta,g)\) be a **compact, equiregular analytic sub-Riemannian manifold** of step \(s\), with analytic orthonormal frame \(\{X_1,\ldots,X_k\}\) for \(\Delta\).  
+Fix \(x_0\in M\). Let \(F_{x_0}:L^2([0,1],\mathbb{R}^k)\to M\) be the analytic **endpoint map**,  
+\[
+F_{x_0}(u)=\gamma_u(1),\quad \dot{\gamma}_u(t)=\sum_i u_i(t)\,X_i(\gamma_u(t)),\quad \gamma_u(0)=x_0.
+\]  
+Denote by \(\mathcal S_{x_0}=\{u:\operatorname{rank}\,dF_{x_0}(u)<n\}\) the set of singular controls and by \(A_{x_0}=F_{x_0}(\mathcal S_{x_0})\) their image in \(M\): the **abnormal endpoint set**.
+
+Endow \(M\) with the **Popp measure** \(\mu_{\mathrm{Popp}}\) and **Carnot–Carathéodory distance** \(d_{CC}\).  
+For each small \(\varepsilon>0\), define  
+\[
+V_{ab}(x_0,\varepsilon):=\mu_{\mathrm{Popp}}\bigl(A_{x_0}\cap B_{CC}(x_0,\varepsilon)\bigr),
+\]
+the Popp-measure volume of abnormal endpoints inside the CC-ball around \(x_0\).
+
+Define the **abnormal volume exponent**
+\[
+\alpha(x_0):=\limsup_{\varepsilon\to0}\frac{\log V_{ab}(x_0,\varepsilon)}{\log \varepsilon},
+\]
+if the limit exists (otherwise use limsup).
+
+---
+
+**Question:**  
+Does \(\alpha(x_0)\) depend only on the graded nilpotent approximation of \((M,\Delta)\) at \(x_0\)?  
+More precisely, for any two analytic equiregular sub-Riemannian structures \((M_1,\Delta_1,g_1)\) and \((M_2,\Delta_2,g_2)\) whose nilpotent approximations at \(x_1\) and \(x_2\) are isomorphic as graded Lie algebras with inner products, is it true that
+\[
+\alpha_{(M_1,\Delta_1,g_1)}(x_1)=\alpha_{(M_2,\Delta_2,g_2)}(x_2)?
+\]
+
+If this fails in general, identify explicit examples or invariants of the nilpotent approximation that control the asymptotic exponent \(\alpha(x_0)\).  
+
+---
+
+Why is it a "good" problem:  
+This formulation now uses **rigorous, standard geometric–measure notions** (Popp measure, CC-balls, limiting logarithmic volume growth) and eliminates all ill-defined asymptotics or arbitrary symbols. It transforms the original heuristic “scaling of abnormal endpoints” into a mathematically precise asymptotic invariant.  
+
+1. **Profound insight:**  
+   It asks whether the *measure-theoretic scaling* of the abnormal endpoint set—the small-scale mass of singular reachability—depends solely on the infinitesimal, graded Lie algebra structure of the distribution. This challenges the frontier understanding of whether nilpotent approximation fully determines not only metric but also *measure–theoretic singular geometry*.  
+
+2. **Bridge between fields:**  
+   The problem unites *geometric control theory* (endpoint mappings and abnormal curves) with *geometric measure theory* and *Carnot group analysis*. Solving it would require new tools from asymptotic analysis of subanalytic sets, blow-up limits, and stratified measures within nilpotent Lie groups.  
+
+3. **Extreme simplicity:**  
+   The statement is short and elementary—“does the small-scale asymptotic volume of abnormal endpoints depend only on the nilpotent model?”—but its depth is vast: it probes the subtle structure of singular reachability in analytic control systems.  
+
+Therefore, this version constitutes a rigorous, conceptually clean, and deeply open research problem, satisfying the criteria of a *good* mathematical problem.

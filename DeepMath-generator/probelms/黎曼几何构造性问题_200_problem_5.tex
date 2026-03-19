@@ -1,0 +1,49 @@
+problem:  
+Let \(\mathrm{Imm}(S^{1},\mathbb{R}^{2})\) denote the Fréchet manifold of smooth immersed closed curves, and let  
+\(\mathcal{S} = \mathrm{Imm}(S^{1},\mathbb{R}^{2}) / \mathrm{Diff}(S^{1})\) be the shape space.  
+For parameters \(\alpha,\beta>0\), consider the **curvature–weighted Sobolev Riemannian metric**
+\[
+G^{(\kappa)}_c(h,k)
+   = \int_{S^{1}}\!
+      \big(\langle h,k\rangle + \alpha\,\langle D_s h, D_s k\rangle\big)
+      (1 + \beta\,|\kappa_c|^{2})\,ds,
+\]
+where \(D_s\) is the arc‑length derivative and \(\kappa_c\) is the curvature of \(c\).  
+Let \(d_{\kappa}\) be the induced geodesic distance on \(\mathcal{S}\), and let \(\overline{\mathcal{S}}_{\kappa}\) be its metric completion.
+
+Given a rectifiable curve \(c:[0,1]\to\mathbb{R}^{2}\) whose unit tangent field \(t_c\) is of bounded variation, define its **generalized curvature measure**
+\[
+\mu_c := dt_c
+\]
+in the sense of vector‑valued measures (so that \(\mu_c\) is a finite Radon measure representing the distributional curvature).
+
+---
+
+**Problem (curvature concentration and metric completion):**
+
+1. (**Existence of curvature‑blow‑up Cauchy sequences**)  
+   Does there exist a sequence of shapes \([c_n]\in \mathcal{S}\) satisfying  
+   \[
+   \sup_{n}\mathrm{Length}(c_n) < \infty,\qquad 
+   \|\kappa_{c_n}\|_{L^2(ds)} \to \infty,
+   \]
+   yet \(\{[c_n]\}\) is \(d_{\kappa}\)‑Cauchy?  
+   In other words, can curvature concentrate to points while the elastic distance between shapes tends to zero?
+
+2. (**Characterization of limits in the metric completion**)  
+   If such curvature‑blow‑up sequences exist, can their \(d_{\kappa}\)‑limits be represented (modulo reparametrization) by rectifiable curves \(c\) whose unit tangent field has bounded variation, i.e. \(t_c\in BV(S^1,S^1)\), equivalently admitting a finite curvature measure \(\mu_c\)?  
+   Conversely, does every such \(BV\)‑curve arise as a limit of smooth immersions that are Cauchy in \(d_{\kappa}\)?
+
+---
+
+Why is it a "good" problem:  
+1. **Profound insight:**  
+   The problem targets the boundary between *smooth* and *weak* geometric structures in the infinite‑dimensional geometry of shapes. It asks whether curvature‑dependent Riemannian metrics can detect or suppress curvature singularities and whether the metric completion naturally includes curves with measure‑valued curvature—mirroring concentration phenomena found in harmonic map and Willmore theory.
+
+2. **Bridge between fields:**  
+   It connects **infinite‑dimensional Riemannian geometry** (Sobolev metrics on immersion spaces) with **geometric measure theory** (BV tangent fields, curvature measures, rectifiable curves). Establishing such a correspondence would create a bridge between shape analysis and measure‑theoretic models of curves, extending curvature‑energy compactness results into the realm of Riemannian shape geometry.
+
+3. **Extreme simplicity:**  
+   The essential question can be stated in one line:  
+   *“Can curvature blow up while the elastic distance between shapes remains small, and do such limits yield curves with bounded‑variation tangents?”*  
+   This formulation is geometrically transparent yet analytically profound—requiring new techniques in Sobolev‑type metric analysis, curvature concentration, and measure‑valued weak convergence. It epitomizes the “narrow entrance, profound depth’’ ideal of a first‑rate research problem.

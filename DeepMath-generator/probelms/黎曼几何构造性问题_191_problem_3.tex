@@ -1,0 +1,47 @@
+problem:  
+Let \((M^{2n+1}, \mathcal{D}, J)\) be a compact strictly pseudoconvex CR manifold that admits a Sasakian structure.  
+Fix the CR structure \((\mathcal{D}, J)\), and consider the **Sasaki cone** \(\mathfrak{t}^+\), consisting of Reeb vector fields \(\xi\) compatible with \((\mathcal{D}, J)\).  
+For each \(\xi \in \mathfrak{t}^+\), let \((\eta_\xi, \xi, \Phi_\xi, g_\xi)\) denote the corresponding Sasakian structure, normalized so that  
+\[
+\int_M \eta_\xi \wedge (d\eta_\xi)^n = 1.
+\]
+
+Define the **CR Yamabe functional**  
+\[
+\mathcal{Y}_\xi(u) = \frac{\int_M \left(a_n |\nabla_b u|_{g_\xi}^2 + R^T_\xi u^2 \right) \, d\mu_\xi}{\left(\int_M |u|^{p_n}\, d\mu_\xi\right)^{2/p_n}},
+\quad p_n = \frac{2(n+1)}{n},
+\]
+where \(R^T_\xi\) denotes the transverse scalar curvature of \(g_\xi\), \(a_n\) is the standard CR Yamabe constant, and \(\nabla_b\) is the horizontal gradient.
+
+Let
+\[
+Y_{\mathrm{CR}}(M, \xi) = \inf_{u > 0} \mathcal{Y}_\xi(u)
+\]
+be the **CR Yamabe invariant** associated with the Reeb field \(\xi\).
+
+**Question:**  
+Suppose \(\{\xi_k\} \subset \mathfrak{t}^+\) is a sequence of *quasi‑regular* Reeb vector fields converging in \(\mathfrak{t}^+\) to an *irregular* Reeb vector field \(\xi_\infty\), whose orbits are dense.  
+Is the map \(\xi \mapsto Y_{\mathrm{CR}}(M, \xi)\) **continuous** (or even lower semicontinuous) at \(\xi_\infty\)?  
+
+Equivalently, can an *irregular* Sasakian structure occur as a strict Yamabe *minimizer* in the closure of the quasi‑regular set, or does CR Yamabe extremality intrinsically enforce quasi‑regularity of the Reeb foliation?
+
+---
+
+Why is it a "good" problem:  
+This problem is conceptually clean and deeply anchored in well‑established analytical and geometric frameworks. It asks whether the **CR Yamabe invariant**, a core scalar functional in pseudo‑Hermitian and sub‑Riemannian geometry, behaves regularly under degeneration of Reeb fields inside the Sasaki cone—a natural deformation space in Sasakian geometry.
+
+It is a “good” problem because:
+
+1. **Bridge between geometry and analysis:**  
+   The CR Yamabe problem connects pseudo‑Hermitian analysis (sub‑elliptic PDEs) with transverse Kähler geometry. Exploring continuity under Reeb degeneration compels one to control solutions of nonlinear sub‑elliptic PDEs as the Reeb flow loses rationality, bridging CR analysis and Reeb dynamics.
+
+2. **Extends known theory to uncharted territory:**  
+   For quasi‑regular Reeb fields, \(Y_{\mathrm{CR}}\) corresponds to the orbifold Kähler–Einstein Yamabe invariant on the quotient. Nothing is yet known about its analytic or variational behavior in irregular limits, where the quotient becomes non‑Hausdorff. Hence the problem genuinely extends classical CR Yamabe theory into the irregular domain.
+
+3. **Simple statement, profound depth:**  
+   The question “Is \(Y_{\mathrm{CR}}\) continuous at irregular Reeb fields?” is easily stated, yet any progress would require entirely new understandings of sub‑elliptic functionals under geometric/dynamical degeneration, possibly involving foliated analysis and ergodic techniques on non‑closed Reeb orbits.
+
+4. **Potentially formative insight:**  
+   A positive result would give analytic stability of the CR Yamabe constant across all Sasaki cones; a counterexample would uncover a deep obstruction tying smooth variational geometry to Reeb arithmetic—offering a new rigidity phenomenon.
+
+Thus this problem naturally intertwines Sasakian geometry, sub‑Riemannian analysis, and foliation dynamics, fulfilling the criteria of a “good” research‑level mathematical problem with a narrow statement and profound depth.

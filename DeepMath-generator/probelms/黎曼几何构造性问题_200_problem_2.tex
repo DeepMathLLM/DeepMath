@@ -1,0 +1,45 @@
+problem:  
+Let $\mathrm{Imm}(S^{1},\mathbb{R}^{2})$ be the space of smooth immersed closed curves in the plane, endowed with the **first‑order Sobolev Riemannian metric**
+\[
+G^{(1)}_c(h,k)=\int_{S^{1}}\!\big(\langle h, k\rangle + A\,\langle D_s h, D_s k\rangle\big)\,ds,\qquad A>0,
+\]
+where \(D_s\) is differentiation with respect to arc length.  Let $\mathcal{S}=\mathrm{Imm}(S^{1},\mathbb{R}^{2})/\mathrm{Diff}(S^{1})$ be the shape space with induced geodesic distance \(d_A\), known to be non‑degenerate, and let \(\overline{\mathcal{S}}\) be its metric completion.
+
+Each immersion \(c\) defines a finite‑mass **1‑current**
+\[
+T_c(\phi)=\int_{S^{1}}\langle \phi(c(\theta)),t_c(\theta)\rangle|c'(\theta)|\,d\theta,\qquad t_c=c'/|c'|.
+\]
+Let \(\mathcal{I}_1^{\mathrm{fin}}(\mathbb{R}^{2})\) denote the space of finite‑mass integral 1‑currents with the weak–$*$ topology, and let \(\mathbf M(T)\) denote the mass.
+
+---
+
+**Problem (Sobolev–current compactness and completion conjecture).**
+
+Let $\{[c_n]\} \subset \mathcal{S}$ be a \(d_A\)-Cauchy sequence of shapes.
+
+1. (**Mass control hypothesis**)  
+   Does every \(d_A\)-Cauchy sequence satisfy a uniform length bound  
+   \[
+   \sup_n \mathbf{M}(T_{c_n}) < +\infty?
+   \]
+   That is, does finite \(d_A\)-energy inherently prevent the total length of curves from diverging?
+
+2. (**Completion–as–currents conjecture**)  
+   Assuming the mass control in (1), does every \(d_A\)-Cauchy sequence admit a subsequence such that \(T_{c_{n_k}}\rightharpoonup T\) weakly in \(\mathcal{I}_1^{\mathrm{fin}}(\mathbb{R}^{2})\) for a rectifiable integral current \(T\)?  
+   Equivalently, is there a canonical continuous embedding
+   \[
+   \iota_A:\overline{\mathcal{S}}\hookrightarrow \mathcal{I}_1^{\mathrm{fin}}(\mathbb{R}^{2}),\qquad \iota_A([c])=T_c,
+   \]
+   such that the image \(\iota_A(\overline{\mathcal{S}})\) consists precisely of rectifiable currents obtained as weak limits of Sobolev‑bounded smooth curves?  
+   If so, can one characterize which rectifiable currents arise (e.g., those with finite curvature measure or controlled turning angle)?
+
+---
+
+Why is it a "good" problem:  
+1. **Profound insight:**  The problem isolates a precise analytic question about how Sobolev‑type elastic energy influences geometric compactness.  If true, it would identify the metric completion of a fundamental infinite‑dimensional Riemannian manifold—the Sobolev shape space—with a concrete and widely studied geometric‑measure space, revealing the intrinsic analytic boundary of smooth shapes.  
+
+2. **Bridge between fields:**  It directly links *infinite‑dimensional Riemannian geometry* (Sobolev metrics and metric completions) with *geometric measure theory* (rectifiable and integral currents).  Establishing this conjecture would unify methods from nonlinear functional analysis, curve geometry, and weak compactness theory, creating an analytic bridge between differential geometry and measure‑theoretic shape descriptions.  
+
+3. **Extreme simplicity:**  The essential question may be succinctly expressed as:  
+   *“Does Sobolev energy control shape length so that geometric limits become rectifiable currents?”*  
+   The statement is clean, intuitive, and geometric, yet resolving it demands delicate analysis of infinite‑dimensional metric structures, weak convergence, and curvature bounds—exemplifying the ideal “narrow entrance, profound depth” of a top‑tier research problem.

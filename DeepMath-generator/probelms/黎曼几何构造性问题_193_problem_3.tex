@@ -1,0 +1,57 @@
+problem:  
+Let \((M, \mathcal{H}, g_{\mathcal{H}}, \mu)\) be a complete, equiregular sub-Riemannian manifold of Hausdorff dimension \(Q\), endowed with its sub-Laplacian \(\Delta_{\mathcal H}\) (sum of squares of an orthonormal frame for \(\mathcal H\)) and corresponding heat semigroup \(P_t\).  
+
+For \(f \in BV_{\mathcal H}(M)\), i.e. functions of bounded horizontal variation, define the horizontal total variation  
+\[
+P_{\mathcal H}(f) := \int_M |\nabla_{\mathcal H} f|\, d\mu.
+\]
+For a set \(E \subset M\) of finite horizontal perimeter, this reduces to \(P_{\mathcal H}(E) = P_{\mathcal H}(\mathbf{1}_E)\).  
+
+Consider the **Carnot-normalized isoperimetric deficit**
+\[
+\delta_{\mathcal H}(E)
+:= \frac{P_{\mathcal H}(E)}{C_*\, \mu(E)^{(Q-1)/Q}} - 1,
+\quad\text{where } C_* = \inf_{x\in M} C(\mathcal{G}_x)
+\]
+and \(C(\mathcal{G}_x)\) is the sharp isoperimetric constant of the tangent Carnot group at \(x\).  
+
+Define the heat-regularized deficit
+\[
+\delta_{\mathcal H}^t(E)
+:= \frac{P_{\mathcal H}(P_t\mathbf{1}_E)}{C_*\, \mu(E)^{(Q-1)/Q}} - 1,
+\]
+where \(P_t\mathbf{1}_E\) is the smooth heat-flow regularization of \(\mathbf{1}_E\).  
+
+---
+
+**Open problem (sub-Riemannian diffusive isoperimetric stability):**  
+Assume that \(M\) satisfies the curvature-dimension condition \(CD(K,Q)\) with \(K \ge 0\).  
+
+Is there an exponent \(\beta>0\) (depending only on \(Q\) and the growth vector of \(\mathcal H\)) and a region-wise constant \(C_{loc}\) such that, for every set \(E\) of finite horizontal perimeter contained in a compact subset of \(M\),
+\[
+\bigl|\,\delta_{\mathcal H}^t(E) - \delta_{\mathcal H}(E)\,\bigr| 
+\le C_{loc}\, t^{\beta} \quad\text{as } t\to0?
+\]
+Equivalently, **does the sub-Riemannian heat flow stabilize the isoperimetric deficit at a curvature-controlled quantitative rate?**  
+If true, the exponent \(\beta\) would quantify the rate at which hypoelliptic diffusion recovers sharp isoperimetric geometry at small times.
+
+---
+
+Why is it a "good" problem:  
+This version is mathematically sound and conceptually profound: it asks whether sub-Riemannian diffusion provides *quantitative isoperimetric stability* akin to Riemannian Bakry–Émery diffusion inequalities.
+
+- **Profound insight:** The problem probes whether the heat flow, a purely analytic process, quantitatively encodes the geometric optimality of sub-Riemannian isoperimetry. It proposes an entirely new notion of “diffusive rigidity” connecting short-time hypoelliptic analysis with geometric measure asymptotics.
+
+- **Bridge between fields:** It unites three currently distinct frameworks:
+  1. **Hypoelliptic PDE theory** of sub-Laplacians on bracket-generated structures;  
+  2. **Metric measure geometry** through curvature-dimension inequalities;  
+  3. **Geometric measure theory** of horizontal BV and perimeter in non-Euclidean spaces.  
+
+  Proving (or disproving) the conjecture would link diffusion asymptotics to perimeter variation—a synthesis of analytic and geometric tools currently beyond known theory.
+
+- **Simplicity and depth:** The statement is compact: it’s a single quantitative continuity question for an isoperimetric deficit under heat regularization. Yet resolving it demands deep understanding of:
+  - small-time asymptotics of sub-Riemannian heat kernels,
+  - quantitative De Giorgi characterizations of perimeter under hypoelliptic flows, and  
+  - the influence of horizontal curvature on measure-theoretic stability.
+
+A solution could establish a new paradigm for geometric–analytic regularity in sub-Riemannian geometry, revealing how diffusion semigroups mirror the underlying Carnot-group structure at infinitesimal scales.

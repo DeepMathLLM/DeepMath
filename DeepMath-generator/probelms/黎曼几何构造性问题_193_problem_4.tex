@@ -1,0 +1,48 @@
+problem:  
+Let \((M, \mathcal{H}, g_{\mathcal{H}}, \mu)\) be a complete, equiregular sub-Riemannian manifold of Hausdorff dimension \(Q\), endowed with its Carnot–Carathéodory distance \(d\). Denote by \(P_{\mathcal{H}}(E; B(x,r))\) the horizontal perimeter of a measurable set \(E \subset M\) within the ball \(B(x,r)\).  
+
+For each \(x \in M\) and small \(r>0\), define the **localized normalized isoperimetric profile**
+\[
+I_x(V, r)
+:= \inf\Big\{ \frac{P_{\mathcal{H}}(E; B(x, r))}{\mu(E\cap B(x, r))^{(Q-1)/Q}}
+: E \subset B(x, r),\ \mu(E\cap B(x, r)) = V \Big\}.
+\]
+Let \(C(\mathcal{G}_x)\) denote the sharp isoperimetric constant of the nilpotentization (tangent Carnot group) at \(x\).  
+
+Assume that \(M\) satisfies the curvature-dimension inequality \(CD(K,Q)\) for some \(K \ge 0\).  
+
+---
+
+**Open problem (second-order localized sub-Riemannian isoperimetric curvature):**  
+Suppose that for each \(x \in M\), the limit
+\[
+\mathcal{K}(x)
+:= \lim_{V\to 0^+} \frac{I_x(V, r(V)) - C(\mathcal{G}_x)}{V^{\beta_x}}
+\]
+exists, where \(r(V) \to 0\) and \(\beta_x > 0\) is a (possibly geometry-dependent) scaling exponent reflecting the growth vector of \(\mathcal{H}\) at \(x\).  
+
+1. Does such an exponent \(\beta_x\) exist (depending only on the step and growth vector) for which the limit is finite and nontrivial?  
+2. If so, can \(\mathcal{K}(x)\) be expressed intrinsically in terms of the sub-Riemannian curvature invariants at \(x\) (e.g., the generalized Ricci or torsion tensors of Agrachev–Barilari–Rizzi)?  
+3. Does \(\operatorname{sign}(\mathcal{K}(x))\) correlate with curvature sign (e.g., nonnegative horizontal Ricci implying \(\mathcal{K}(x) \ge 0\))?  
+
+Equivalently: *Is there a well-defined “second-order isoperimetric curvature” describing how the local isoperimetric profile deviates from its Carnot tangent limit, and does it encode geometric curvature information of the horizontal distribution?*
+
+---
+
+Why is it a "good" problem:  
+This problem seeks to **quantify and geometrically interpret the second-order correction** to the small-volume isoperimetric asymptotics in sub-Riemannian manifolds. It is a refinement and stabilization of first-order Carnot asymptotics that remains completely unexplored.
+
+- **Profound insight:**  
+  The problem asks whether there exists a local geometric invariant \(\mathcal{K}(x)\) analogous to scalar curvature in Riemannian geometry, governing the second-order expansion of the isoperimetric profile. While the first order reflects the tangent Carnot group (the “flat model”), a second-order invariant would encapsulate *how curvature perturbs sub-Riemannian isoperimetry.*
+
+- **Bridge between fields:**  
+  - **Geometric measure theory:** studying fine asymptotics of perimeter minimizers;  
+  - **Sub-Riemannian geometry:** through nilpotentization and curvature structures of bracket-generated distributions;  
+  - **Analysis on metric-measure spaces:** via curvature-dimension inequalities \(CD(K,Q)\) and quantitative differentiation techniques.  
+  Establishing \(\mathcal{K}(x)\) would connect analytic curvature conditions to measure-theoretic isoperimetric data in a non-Euclidean setting.
+
+- **Rigorous refinement over the initial formulation:**  
+  The present version avoids ambiguities by (i) localizing the isoperimetric profile to balls \(B(x,r)\), ensuring geometric control near \(x\); (ii) introducing an undetermined exponent \(\beta_x\) (rather than fixing \(2/Q\) ad hoc), allowing adaptation to growth structure; and (iii) properly defining the limit sought.
+
+- **Simplicity and potential depth:**  
+  The statement is easy to phrase—to ask whether such a second-order limit exists and reflects curvature—but its resolution would require a deep synthesis of hypoelliptic analysis, blow-up geometry, and curvature-dimension theory. A positive answer would establish a powerful analogue of the Riemannian small-volume expansion theory in sub-Riemannian geometry and potentially lead to a new curvature invariant derivable from perimeter data.

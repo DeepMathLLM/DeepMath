@@ -1,0 +1,40 @@
+problem:  
+Let \((M,\mathcal D,g)\) be a **compact, equiregular, step‑2 sub‑Riemannian manifold** without abnormal minimizing geodesics, and let \(\mu\) be its Popp measure. For simplicity, assume that the exponential map at each \(x\in M\) is a submersion near the zero section of \(T_x^*M\).  
+
+For two smooth positive probability densities \(\rho_0,\rho_1\) on \(M\), let \((\nu_t=\rho_t\mu)_{t\in[0,1]}\) denote the **W₂‑geodesic** interpolation induced by sub‑Riemannian optimal transport of cost \(c(x,y)=\tfrac12 d_{\mathrm{subR}}(x,y)^2\). Set
+\[
+\mathsf{Ent}(t)=\int_M \rho_t\log\rho_t \, d\mu,
+\]
+the entropy functional along this geodesic.  
+In smooth Riemannian spaces, one has 
+\[
+\frac{d^2}{dt^2}\Big|_{t=0}\!\mathsf{Ent}(t)=\int_M \mathrm{Ric}(\nabla\phi_0,\nabla\phi_0)\,\rho_0\,d\mu,
+\]
+where \(\phi_0\) is the Kantorovich potential generating the map \(T_t=\exp_x(t\nabla\phi_0)\).  
+
+**Problem:**  
+In the sub‑Riemannian setting described above, does there exist a *canonical horizontal quadratic form* \(\mathrm{Ric}_{\mathrm{opt}}(\lambda)\) on the horizontal cotangent bundle satisfying the formal identity  
+\[
+\frac{d^2}{dt^2}\Big|_{t=0}\!\mathsf{Ent}(t)
+   =\!\int_M\!\mathrm{Ric}_{\mathrm{opt}}(d\phi_0)\,\rho_0\,d\mu,
+\]
+for every smooth strictly positive initial density \(\rho_0\)?  
+Furthermore,
+
+1. Does \(\mathrm{Ric}_{\mathrm{opt}}\) coincide with the **Agrachev–Barilari–Rizzi Ricci curvature** \(\mathrm{Ric}_{\mathrm{ABR}}\) when \((M,\mathcal D,g)\) is contact?  
+2. Is the sign of this second variation controlled by lower bounds on \(\mathrm{Ric}_{\mathrm{opt}}\), i.e. does
+   \[
+   \frac{d^2}{dt^2}\Big|_{t=0}\!\mathsf{Ent}(t)\ge K
+   \int_M|\nabla_{\mathcal D}\phi_0|^2\,\rho_0\,d\mu
+   \]
+   hold if and only if \(\mathrm{Ric}_{\mathrm{opt}}(\lambda)\ge K\) for all unit covectors \(\lambda\)?
+3. Can this identity persist (in an integral or distributional sense) for step‑2 equiregular manifolds admitting mild singularities in the transport potential?
+
+In essence, is there a precise **entropy‑curvature identity** in sub‑Riemannian optimal transport whose curvature term reduces to ABR Ricci in the contact case and extends it otherwise?
+
+Why is it a "good" problem:  
+- **Well‑posed formulation:** By focusing on the second derivative of entropy—an invariantly defined quantity—the problem is analytically meaningful and avoids ill‑defined pointwise Hessians.  
+- **Conceptual relevance:** It directly tests whether a *transport‑based Ricci curvature* can reproduce and generalize the ABR notion via entropy variation, the core analytic characterization in metric‑measure geometry.  
+- **Profound bridging:** The question joins the geometric‑control origin of ABR curvature with the analytic definition of Ricci curvature from optimal transport theory, aspiring to produce a synthetic Ricci concept for sub‑Riemannian spaces.  
+- **Potential breakthroughs:** Establishing such an identity would provide a rigorous foundation for curvature‑dimension conditions \(CD(K,N)\) in nonholonomic geometries, transforming analytic and metric approaches to sub‑Riemannian geometry.  
+- **Simplicity and depth:** The statement is compact—link the second derivative of entropy to curvature—yet encompasses deep issues of PDE regularity, Hamiltonian geometry, and synthetic curvature theory, exemplifying the “narrow entrance, profound depth” quality of a truly good research problem.

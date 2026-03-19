@@ -1,0 +1,34 @@
+problem:  
+Let \((P, \alpha, g)\) be a **regular compact Sasakian manifold** of dimension \(2n+1\), so that the Reeb vector field \(R_{\alpha}\) generates a free isometric \(S^1\)-action and \(P\) is a principal \(S^1\)-bundle over the compact Kähler manifold \((M,g_M,J,\omega_M)\), where \(\pi: P \to M\) is the Boothby–Wang fibration with connection form \(\alpha\) satisfying \(d\alpha = 2\pi^\ast \omega_M\).  
+
+Define the **sub‑Laplacian** on \(P\) using the horizontal orthonormal frame \(\{X_i\}_{i=1}^{2n}\) tangent to \(\mathcal{H}=\ker\alpha\):
+\[
+\Delta_{\mathcal{H}} f = \sum_{i=1}^{2n} X_i^2 f + (\operatorname{div}_{\mu_\mathrm{Popp}} X_i) X_i f,
+\]
+and let \(\Delta_M\) denote the Laplace–Beltrami operator on \(M\) with its Riemannian volume form.  
+
+For both operators, small‑time heat kernel expansions exist and are known to have the forms (by results of Beals–Greiner, Baouendi–Goulaouic, and others for strictly pseudo‑convex CR/Sasakian manifolds):
+\[
+p_{\mathcal{H}}(t,x,x) \sim (4\pi t)^{-\frac{Q}{2}}\sum_{j\in \frac12\mathbb{N}_0} a_j(x)\,t^{j}, 
+\quad 
+p_M(t,\pi(x),\pi(x)) \sim (4\pi t)^{-\frac{n}{2}}\sum_{j\in \mathbb{N}_0} b_j(\pi(x))\,t^{j},
+\]
+where \(Q = 2n+2\) is the Hausdorff dimension of the sub‑Riemannian structure on \(P\).
+
+**Conjecture (Contact Reduction Heat Coefficient Correspondence):**  
+There exists a universal local functional \(\Theta\big(\omega_M,\,\mathrm{Ric}_T\big)\) on \(M\), depending only on the Kähler form \(\omega_M\) and the transverse Ricci tensor \(\mathrm{Ric}_T\) (the curvature of the Riemannian foliation defined by \(R_\alpha\)), such that
+\[
+b_1(\pi(x)) = \frac{1}{2\pi}\int_{S^1}\! a_{1/2}(e^{i\theta}\!\cdot\!x)\, d\theta
++ \Theta\big(\omega_M,\,\mathrm{Ric}_T\big)(\pi(x)).
+\]
+In other words, the first local heat invariant on the quotient \(M\) differs from the averaged half‑integer invariant on \(P\) by a local **curvature defect** term governed entirely by the connection curvature \(d\alpha\) (or equivalently by the Kähler curvature of the base).
+
+**Open Problem:**  
+Determine whether such a function \(\Theta\) exists, even in the simplest geometric class (e.g. regular Sasakian–Einstein manifolds), and if so, whether its integral  
+\[
+\int_M\Theta\big(\omega_M, \mathrm{Ric}_T\big)\, d\mathrm{vol}_M
+\]
+defines a new spectral invariant of contact submersions analogous to the Bott–Chern or Chern–Simons secondary forms.
+
+Why is it a "good" problem:  
+This problem lives precisely at the confluence of contact geometry, Kähler geometry, and spectral analysis. It is formulated in a mathematically rigorous framework where the heat kernel expansions are established (regular Sasakian structures). By conjecturing a relation between sub‑Riemannian and Riemannian heat coefficients, it asks whether analytic invariants “survive” reduction up to a curvature defect, echoing O’Neill’s tensor but in a hypoelliptic, spectral context. The problem is conceptually simple yet would require deep analytic tools—microlocal analysis on CR manifolds, spectral geometry of foliations, and integration along group orbits—to approach. Confirming or refuting this conjecture would illuminate how sub‑Riemannian and Riemannian spectral data interact under geometric reduction, potentially forging new invariants across differential geometry and analysis.

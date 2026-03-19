@@ -1,0 +1,36 @@
+problem:  
+Let \((M^{2n+1}, D, J)\) be a compact, strictly pseudoconvex CR manifold with contact distribution \(D = \ker(\eta)\) and almost complex structure \(J\) on \(D\).  
+For a smooth function \(f \in C^\infty(M)\), define the *pseudohermitian conformal change*
+\[
+\hat{\eta} = e^{2f}\eta,
+\]
+and denote by \(\hat{R}\) the Tanaka–Webster scalar curvature of the pseudohermitian structure \((M, \hat{\eta}, J)\).  
+
+Define the **pseudohermitian Yamabe functional**
+\[
+\mathcal{Y}_{CR}(f) = \frac{\int_M \hat{R}\, d\mu_{\hat{\eta}}}{(\int_M d\mu_{\hat{\eta}})^{\frac{n-1}{n+1}}},
+\]
+where \(d\mu_{\hat{\eta}} = \hat{\eta} \wedge (d\hat{\eta})^n\).  
+
+Classically, the CR Yamabe problem seeks \(f\) minimizing \(\mathcal{Y}_{CR}\), producing pseudohermitian structures with constant Tanaka–Webster scalar curvature.  
+
+However, there is also the *underlying* Riemannian contact metric associated to each pseudohermitian structure:
+\[
+g_{\hat{\eta}} = d\hat{\eta}(\cdot, J\cdot) + \hat{\eta}\otimes\hat{\eta}.
+\]
+Let \(s_{\hat{g}}\) denote the full Riemannian scalar curvature of \(g_{\hat{\eta}}\).
+
+**Question:**  
+Is it true that whenever \(\hat{\eta}=e^{2f}\eta\) is a *critical point* of the pseudohermitian functional \(\mathcal{Y}_{CR}\), the corresponding Riemannian scalar curvature \(s_{\hat g}\) is constant as well?  
+
+If this is false in general, describe geometric obstructions (possibly expressed in terms of Tanaka–Webster torsion \(A_J\) or basic first Chern class \(c_1^B(D,J)\)) to the equivalence between
+“CR–Yamabe criticality” and “Riemannian Yamabe criticality” for compatible contact metrics.  
+
+In other words: do pseudohermitian extremals of the CR–Yamabe functional necessarily induce extremals of the standard Riemannian Yamabe functional within the compatible contact family, or can torsion or basic cohomological data break this link?
+
+Why is it a "good" problem:  
+This formulation now cleanly isolates the subtle interface between **Tanaka–Webster pseudohermitian geometry** and **Riemannian curvature variation** on contact manifolds. The conjectural equivalence between CR–Yamabe extremality (pseudohermitian constant curvature) and Riemannian Yamabe extremality (Riemannian constant curvature) for the same compatible structure is neither known nor automatic.  
+
+The problem requires a deep analysis of how the pseudohermitian scalar curvature, which encodes CR torsion and integrability, interacts nontrivially with the full Riemannian scalar curvature of the associated contact metric. Establishing—or disproving—equivalence between the two extremality conditions would bridge **CR geometric analysis** and **contact Riemannian variational theory**, potentially revealing new curvature identities or torsion obstructions.  
+
+It is conceptually simple and clearly posed (“Do pseudohermitian Yamabe extremals coincide with Riemannian Yamabe extremals within the same contact class?”), yet it demands a profound understanding of the links among scalar curvature, contact torsion, and transverse Einstein structures, marking it as a genuine research-level and geometrically foundational problem.

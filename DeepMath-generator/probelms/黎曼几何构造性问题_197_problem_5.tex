@@ -1,0 +1,34 @@
+problem:  
+Let \((P,\mathcal{H},g)\) be a compact, equiregular sub‑Riemannian manifold endowed with a smooth, free, proper, and isometric action of a compact Lie group \(G\) preserving \(\mathcal{H}, g,\) and the Popp measure \(\mu_P\).  Denote by \(\pi:P\to M = P/G\) the quotient which carries the reduced sub‑Riemannian structure \((\mathcal{H}_{\mathrm{red}},g_{\mathrm{red}})\) and measure \(\mu_M\).  
+
+For each \(x\in P\), let \(p_{\mathcal{H}}(t,x,y)\) be the (hypoelliptic) sub‑Riemannian heat kernel on \(P\), and let \(p_{\mathrm{red}}(t,\pi(x),\pi(y))\) be the heat kernel on \(M\) associated with the reduced sub‑Laplacian.  Write
+\[
+p_{\mathcal{H}}(t,x,x)\sim t^{-\frac{Q_P}{2}}\sum_{j=0}^{\infty} a_j(x)t^{j/2},\qquad
+p_{\mathrm{red}}(t,\pi(x),\pi(x))\sim t^{-\frac{Q_M}{2}}\sum_{j=0}^{\infty} b_j(\pi(x))t^{j/2},
+\]
+where \(Q_P\) and \(Q_M\) are the Hausdorff dimensions of \((P,\mathcal{H})\) and \((M,\mathcal{H}_{\mathrm{red}})\).  
+
+Each action of \(G\) determines, through a \(G\)-equivariant connection form \(\eta\) with curvature \(\Omega=d\eta+\tfrac12[\eta,\eta]\), a canonical **orbit curvature tensor** along the horizontal bundle, describing the failure of horizontal lifts of reduced geodesics to close along \(G\)-orbits.
+
+**Open Problem (Orbit curvature term in sub‑Riemannian heat asymptotics):**  
+Is there an intrinsic local geometric *defect functional*
+\[
+\mathcal{C}_G(\Omega, g, \mathcal{H}),
+\]
+depending polynomially on the horizontal curvature \(\Omega\) and its covariant derivatives, such that for every \(x\in P\)
+\[
+b_1(\pi(x))
+=
+\frac{1}{\mathrm{Vol}(G)}\int_G a_1(g\!\cdot\! x)\, d\mu_{\mathrm{Haar}}(g)
++\mathcal{C}_G(\Omega,g,\mathcal{H})(\pi(x))\,?
+\]
+
+That is, does there exist a universal “orbit curvature correction” that governs the second coeffficient in the small‑time heat kernel expansion under sub‑Riemannian symmetry reduction?
+
+In particular:
+- Is \(\mathcal{C}_G\) expressible via the structure constants of the nilpotent approximation and the curvature tensor \(\Omega\)?
+- Does \(\mathcal{C}_G\) vanish whenever the \(G\)-action is horizontally flat (i.e. \(\Omega=0\))?
+- Can such a correction term be interpreted as a *nonholonomic O’Neill tensor invariant* for heat asymptotics?
+
+Why is it a "good" problem:  
+This problem is sharply formulated yet unsolved: it asks for a specific, computable local geometric quantity controlling the difference between the first nontrivial heat coefficients on a manifold and its quotient under a symmetry.  It is logically grounded in known analytic structures — the sub‑Riemannian small‑time asymptotics — but pushes them into uncharted equivariant territory.  It demands integration of techniques from microlocal analysis, nonholonomic geometry, and representation theory of Lie group actions.  The problem’s conceptual simplicity masks its depth: identifying a universal curvature correction would unify heat kernel geometry, symmetry reduction, and sub‑Riemannian curvature theory.  Its resolution would provide the hypoelliptic analogue of classical O’Neill and Bismut curvature formulas, establishing a new bridge between geometric analysis and nonholonomic reduction theory.
