@@ -1,0 +1,41 @@
+problem:  
+Let \((M^{1+2}, g)\) be an **asymptotically flat, globally hyperbolic Lorentzian 3‑manifold** whose spatial slices \(\Sigma_t\) are asymptotic to \(\mathbb{R}^2\).  
+Assume that there exists a **stable elliptically trapped null geodesic** \(\gamma\) (for example, arising from a smooth metric perturbation of Minkowski space supported in a compact region, designed to produce such elliptic trapping).  
+Let \((N, h)\) be a compact Riemannian manifold of **strictly negative sectional curvature**, so that there are no nontrivial finite‑energy harmonic maps from \(\mathbb{R}^2\) to \(N\).  
+
+The energy‑critical wave map equation is
+\[
+\square_g \phi + A(\phi)(d\phi,d\phi) = 0, \quad \phi : M \to N.
+\]
+For initial data \((\phi_0,\phi_1)\) of finite energy on a Cauchy surface \(\Sigma_0\),
+define the **localized energy density along the trapped region**
+\[
+E_\epsilon[\phi](t) = \int_{\Sigma_t \cap \mathcal{T}_\epsilon(\gamma)} |d\phi(t,x)|_h^2 + |\partial_t \phi(t,x)|_h^2 \, d\mu_{\Sigma_t},
+\]
+where \(\mathcal{T}_\epsilon(\gamma)\) denotes the radius‑\(\epsilon\) tubular neighborhood in spacetime of the trapped geodesic \(\gamma\).
+
+**Problem (Geometry‑induced nonlinear metastability conjecture):**  
+Do there exist a fixed \(\epsilon >0\), a constant \(c_0>0\), and a sequence of smooth finite‑energy initial data \((\phi_0^{(k)},\phi_1^{(k)})\) for which the corresponding solutions \(\phi^{(k)}\) satisfy
+\[
+\sup_{t\in [0, T_k]} E_\epsilon[\phi^{(k)}](t) \ge c_0,
+\qquad T_k \to \infty,
+\]
+while globally each solution **scatters** as \(t\to\infty\) to a free wave map around a constant field, in the sense that for some constant map \(\phi_\infty\),
+\[
+\|(\phi^{(k)}(t),\partial_t \phi^{(k)}(t)) - (\phi_\infty + w_{\text{lin}}^{(k)}(t),\partial_t w_{\text{lin}}^{(k)}(t))\|_{\dot H^1(\Sigma_t)\times L^2(\Sigma_t)} \to 0,
+\]
+where \(w_{\text{lin}}^{(k)}\) solves the linearized wave equation on \((M,g)\) around \(\phi_\infty\) and scattering is taken in the asymptotic end of \(\Sigma_t\).  
+
+Equivalently: can **elliptic Lorentzian trapping** generate long‑lived, spatially localized, but ultimately radiating nonlinear structures for energy‑critical wave maps, even when the target curvature forbids harmonic bubbles or solitons?
+
+Why is it a "good" problem:  
+This formulation is geometrically and analytically coherent: spatial infinity supports scattering, while a compact elliptic trapping region offers a potential nonlinear resonance site.  
+It is a “good’’ problem because it pinpoints an unknown and profound mechanism—the possible existence of **purely geometry‑induced metastability** in nonlinear wave dynamics. It directly bridges multiple mature yet largely separate fields:
+
+- **Geometric analysis:** energy‑critical wave maps on curved spacetimes;  
+- **Microlocal analysis:** propagation and concentration near elliptic trapping;  
+- **Relativity and spectral theory:** analogue of nonlinear quasinormal modes;  
+- **Nonlinear dispersive PDE:** long‑time stabilization and scattering phenomena.
+
+The question is simple to state but demands new tools linking **nonlinear concentration**, **asymptotic scattering**, and **Lorentzian geometry**. A positive resolution would establish a new class of long‑lived geometric nonlinear states, whereas a negative result would clarify the stabilizing power of dispersion in the presence of stable trapping.  
+Its conceptual simplicity, yet deep cross‑field reach, makes it an archetypal “good’’ research problem.

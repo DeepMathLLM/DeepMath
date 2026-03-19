@@ -1,0 +1,35 @@
+problem:  
+Let \((M^n,g)\) be a complete, noncollapsed Riemannian manifold with \(\mathrm{Ric}_g \ge 0\) and Euclidean volume growth.  
+Assume \(M\) admits two globally defined harmonic functions \(u,v : M \to \mathbb{R}\) of linear growth, i.e. \(|u(x)|,|v(x)| \le C(1+d(p,x))\), such that:
+
+1. The averaged energy tensor of \((u,v)\) satisfies  
+   \[
+   \frac{1}{\mathrm{Vol}(B_R(p))}\int_{B_R(p)} 
+   |\langle\nabla u,\nabla v\rangle|\, dV_g \to 0,
+   \]
+   and  
+   \[
+   \frac{1}{\mathrm{Vol}(B_R(p))}\int_{B_R(p)} 
+   (|\nabla u|^2 - 1)^2 + (|\nabla v|^2 - 1)^2\, dV_g \to 0
+   \]
+   as \(R\to\infty\).
+
+2. There exists a sequence of complete manifolds \((M_i,g_i,p_i)\) with \(\mathrm{Ric}_{g_i}\ge -1/i\) converging in the measured Gromov–Hausdorff sense to \((M,g,p)\), and harmonic functions \(u_i,v_i\) on \(M_i\) with
+   \[
+   \int_{B_R(p_i)}|\langle\nabla u_i,\nabla v_i\rangle|^2 + (|\nabla u_i|^2-1)^2 + (|\nabla v_i|^2-1)^2 \,dV_{g_i}\le \varepsilon_i(R), \qquad \varepsilon_i(R)\to 0.
+   \]
+
+**Question:**  
+Does it follow that \((M,g)\) or each sufficiently large \(M_i\) splits isometrically as  
+\[
+M \cong \mathbb{R}^2\times N'  \quad \text{(respectively } M_i\cong\mathbb{R}^2\times N_i')?
+\]
+Equivalently, can **asymptotic \(L^2\)-orthogonality and linear growth of harmonic functions** (without any uniform Hessian control) force higher-rank Euclidean splitting in Ricci-limit spaces?  
+If not, can one construct a counterexample in the noncollapsed \(\mathrm{Ric}\ge0\) setting, showing that the absence of Hessian smallness permits new nonproduct geometries with analytic “rank two” harmonic structure but geometric rank one?
+
+Why is it a "good" problem:  
+This question isolates the exact borderline between known quantitative-splitting theories and possible new flexibility of Ricci-limit manifolds. Current rigidity results (Cheeger–Colding, Colding–Minicozzi) deduce global or asymptotic product decomposition under **second-derivative control** of harmonic coordinates. The problem asks whether such control is truly indispensable: could mere averaged gradient orthogonality and almost-linear energy suffice to force a genuine \(\mathbb{R}^2\) factor?
+
+A resolution would clarify the analytic–geometric mechanism behind splitting, determining whether **Hessian bounds** encode genuine curvature rigidity or merely technical convenience. It connects tools from geometric analysis (Bochner formulas, \(L^2\)-energy decay, harmonic function limits) and metric geometry (Gromov–Hausdorff convergence, global product decompositions).  
+
+Conceptually simple yet technically subtle, it asks if one can “see \(\mathbb{R}^2\)” purely from first-order \(L^2\) data on harmonic maps—precisely the kind of problem that could redefine quantitative rigidity theory. Hence it is a truly **good, research-level problem** bridging analysis and global geometric structure.

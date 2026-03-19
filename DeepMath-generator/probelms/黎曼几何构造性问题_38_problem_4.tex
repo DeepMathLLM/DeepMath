@@ -1,0 +1,33 @@
+problem:  
+Let \( (M^m,g) \) be a closed Riemannian manifold with bounded geometry, and let \( (N,h) \) be a compact manifold with nonpositive sectional curvature.  
+Let \(u_\varepsilon : M \to N\) be a sequence of \(\varepsilon\)-approximately harmonic maps satisfying
+\[
+\|\tau(u_\varepsilon)\|_{L^2(M)} \le \varepsilon, \qquad E(u_\varepsilon)\le E_0.
+\]
+As before, set the energy measures \(\mu_\varepsilon = |\nabla u_\varepsilon|^2\, d\mathrm{vol}_g\) and define the tension measures \(\theta_\varepsilon = |\tau(u_\varepsilon)|^2\, d\mathrm{vol}_g\).  
+Assume that (after extracting a subsequence)
+\[
+\mu_\varepsilon \rightharpoonup \mu = |\nabla u_*|^2\, d\mathrm{vol}_g + \nu, 
+\qquad \theta_\varepsilon \rightharpoonup \theta .
+\]
+Here \(\nu\) is the defect measure describing bubble formation, and \(\theta\) is the weak limit of the tension measures.
+
+**Problem:**  
+Does there exist a dimension-dependent (and bounded geometry–dependent) *local quantitative rigidity law* connecting \(\nu\) and \(\theta\) of the following type:
+
+> There exist universal constants \(C_m>0\), \( \alpha_m \in (0,1) \), such that for every \(x\in M\) and all sufficiently small \(r>0\),
+> \[
+> \nu(B_r(x)) \le C_m\, \Big(\theta(B_{C_m r}(x))\Big)^{\alpha_m}.
+> \]
+
+Equivalently, can one control local energy concentration (defect measure) quantitatively in terms of the accumulated tension in slightly larger balls, with constants depending only on the dimension and bounded geometry parameters — and not on the particular sequence or target curvature bounds once these are controlled?
+
+Further, is it possible that in some geometric regimes (e.g. \(m=2\)), the best possible exponent is \(\alpha_m=1\)?  
+Such a principle would constitute a *local nonlinear quantitative rigidity inequality* linking the microscopic defect of approximate harmonicity (through \(\theta\)) to the macroscopic defect in energy concentration (through \(\nu\)).
+
+Why is it a "good" problem:  
+This formulation specifies a **local, scaling-consistent quantitative inequality**—a natural, nontrivial bridge between analysis (the \(L^2\)-smallness of tension) and geometry (the concentration pattern of energy). It avoids vague operator-valued constructions by requiring an explicit, dimensionally universal exponent and inequality form, directly testable in core regimes such as \(m=2\).  
+
+The problem is motivated by the deep analytic question: *to what extent does small average tension suppress bubbling?* Classical compactness theory only gives qualitative convergence and discrete bubbling, but no universal quantitative inequality of this local type is known. Proving or refuting the existence of such an exponent \( \alpha_m \) would necessitate a profound understanding of the scaling behavior of the harmonic map equation, geometric measure concentration mechanisms, and ε–regularity theory.
+
+It is a “narrow entrance, profound depth” problem: the statement can be phrased in one line, yet resolving it would unify local regularity, energy quantization, and global compactness into a quantitative geometric law. It naturally connects geometric PDE analysis with modern quantitative measure theory, and progress here could trigger new paradigms in understanding rigidity phenomena for other critical equations (Yang–Mills, harmonic heat flow, Willmore energy).

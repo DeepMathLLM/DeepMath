@@ -1,0 +1,39 @@
+problem:  
+Let \( (M,g) \) be a closed Riemannian surface and \( (N,h) \) a compact Riemannian manifold.  
+For each \(n\), let \(G_n=(V_n,E_n,F_n)\) be a geodesic triangulation of \(M\) with mesh size \(h_n\to 0\).  
+Define a **discrete generalized harmonic map** \(f_n:V_n\to N\) as a minimizer of the discrete energy  
+\[
+E_n(f_n)=\frac12\!\!\sum_{(i,j)\in E_n} \!w_{ij}^{(n)}\, d_N^2(f_n(i),f_n(j)),
+\]
+where the symmetric weights \(w_{ij}^{(n)}>0\) are chosen so that \(E_n\) \(\Gamma\)-converges to the Dirichlet energy of maps \(f:M\to N\).  
+Assume \(f_n\) converges (weakly in \(H^1\)) to a smooth harmonic map \(f:M\to N\).
+
+Denote by
+\[
+\tau_{ij}^{(n)} = w_{ij}^{(n)}\, \exp^{-1}_{f_n(i)}(f_n(j)) \in T_{f_n(i)}N
+\]
+the *discrete tension vectors* along edges of \(G_n\).  
+
+**Open problem:**  
+Does there exist a coordinate-free, mesh-invariant functional
+\[
+\Phi\big(\{\tau^{(n)}_{ij}\}_{(i,j)\subset \partial T}\big)
+\]
+defined per triangle \(T \in F_n\), depending *only* on the local discrete tension field and weights (not on the full metric geometry of \(N\)), such that the resulting **discrete curvature density**
+\[
+\kappa_n(T) = \Phi\big(\{\tau^{(n)}_{ij}\}_{(i,j)\subset \partial T}\big)
+\]
+satisfies the curvature convergence property
+\[
+\kappa_n(T) \xrightarrow[n\to\infty]{} K_N(df_p(e_1)\wedge df_p(e_2))
+\]
+for almost every \(p\in M\) associated with the limiting location of the triangles \(T\), where \(K_N\) is the sectional curvature of \(N\) and \(df_p(e_1),df_p(e_2)\) span the image plane of \(df_p\)?  
+
+Equivalently, can intrinsic curvature information of the target manifold \(N\) be recovered asymptotically *purely from the local discrete harmonic energy structure*—without directly sampling metric distances in \(N\)?
+
+Why is it a "good" problem:  
+This question focuses sharply on the interplay between **first-order variational structure** and **second-order curvature geometry**. It asks whether curvature can emerge as a universal limit property encoded implicitly in the equilibrium data of discrete harmonic maps, rather than as an explicit geometric measurement.  
+
+The formulation is precise (defining triangulations, convergence, and the curvature target) and conceptually deep: it links discrete harmonic analysis, Γ-convergence, and intrinsic curvature reconstruction. It also imposes a crucial restriction—Φ must depend only on discrete tension data—to ensure the result cannot be reduced to trivial metric-triangle curvature computations.  
+
+A positive resolution would reveal that purely variational energy structures are sufficient to reconstruct curvature, unifying discrete geometric analysis and Riemannian geometry at a fundamental level. A negative answer would delineate intrinsic limits of variational discretizations. Either outcome would profoundly clarify the relationship between discrete harmonic theory and continuous curvature, making this a “narrow entrance, profound depth” kind of problem and thus an exemplary "good" mathematical problem.

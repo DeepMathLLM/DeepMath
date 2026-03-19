@@ -1,0 +1,50 @@
+problem:  
+Let \( (M^n,g) \) be a complete, noncompact Riemannian manifold with \(\operatorname{sec} M \ge 0\) and compact soul \(S\subset M\).  
+Fix \(p_0\in S\) and a sequence \(r_i\to\infty\). Suppose that the rescaled manifolds  
+\[
+(M_i,g_i,p_0):=(M,r_i^{-2}g,p_0)
+\]
+subconverge in the pointed Gromov–Hausdorff sense to an asymptotic cone \(C_\infty(M)\) with cone vertex \(o\).  
+Denote by \(\Sigma_o(C_\infty(M))\) the space of directions at \(o\) with its standard angular (Alexandrov) metric.
+
+For each \(p\in S\) and each unit vector \(v\in \nu_p S\) (normal to \(S\)), let  
+\[
+\gamma_{p,v}(t) = \exp_p(tv)
+\]
+be the normal geodesic ray in \(M\).  
+For the fixed subsequence defining \(C_\infty(M)\), the corresponding sequence of points \(x_i = \gamma_{p,v}(r_i)\in M_i\) defines (after passing to a further subsequence if necessary) a specific geodesic ray \(R_{p,v}\subset C_\infty(M)\) issuing from \(o\).  
+
+Define the **direction set**
+\[
+\Lambda_p := \{\, [R_{p,v}] \in \Sigma_o(C_\infty(M)) \mid v\in\nu_p S,\, \|v\|=1 \,\},
+\]
+the collection of all limit directions at infinity corresponding to normal rays from \(p\).
+
+**Question:**  
+For a fixed asymptotic cone \(C_\infty(M)\) constructed from \((r_i)\), is it necessarily true that for any two points \(p,q\in S\), the subsets \(\Lambda_p,\Lambda_q\subset \Sigma_o(C_\infty(M))\) are *congruent under an isometry* of \(\Sigma_o(C_\infty(M))\)?  
+Equivalently, does nonnegative sectional curvature force the space of directions at infinity to exhibit **asymptotic isotropy along the soul**, meaning that every point of the soul gives rise to the same configuration of asymptotic normal directions?  
+
+If the answer is negative, can one construct (or rule out) an example where the link \(\Sigma_o(C_\infty(M))\) genuinely “twists” along different soul points, i.e. where no global isometry aligns all families \(\Lambda_p\)?  
+
+Why is it a "good" problem:  
+This formulation now rigorously anchors all objects—subsequence, asymptotic cone, and direction sets—in standard Alexandrov‐geometric construction. It asks whether the nonnegative curvature condition enforces uniformity of asymptotic geometry relative to the soul, or whether subtle anisotropy can persist at infinity.
+
+It is a “good’’ research problem because:
+
+1. **Mathematically sound and precisely posed.**  
+   All definitions are explicit: the limit is taken along a fixed subsequence, the families \(\Lambda_p\) are identified as subsets of the space of directions, and the comparison (“isometric via an isometry of \(\Sigma_o(C_\infty(M))\)”) is rigorous.
+
+2. **Touches a core structural question.**  
+   The Soul Theorem describes the topological and convex structure of \(M\), but it remains unknown how geometric data (like directions to infinity) depend on basepoints across the soul. The problem directly probes this dependence through the geometry of the asymptotic cone—a central invariant in large‐scale Riemannian geometry.
+
+3. **Bridges multiple domains.**  
+   Progress would require integrating methods from comparison geometry, Alexandrov geometry, and the analysis of blow‐down limits, connecting fundamental curvature inequalities to asymptotic topology.
+
+4. **Simple in statement, profound in depth.**  
+   The question’s essence—“Do all points on the soul see the same infinity?”—is geometrically elementary yet cuts deeply into current technical gaps about how curvature, convexity, and large‐scale isotropy interact.
+
+5. **Potential for major implications.**  
+   - A positive outcome would reveal a new **asymptotic rigidity principle** for nonnegative sectional curvature, showing that curvature determines a uniform infinity independent of the soul point.  
+   - A counterexample would illuminate previously unknown **flexibility phenomena**—showing that even under \(\sec\ge0\), manifolds can exhibit twisting in the link at infinity.
+
+Hence, this problem is conceptually clean, technically challenging, and positioned at the frontier of understanding the interplay between curvature, soul geometry, and asymptotic structures in Riemannian manifolds.

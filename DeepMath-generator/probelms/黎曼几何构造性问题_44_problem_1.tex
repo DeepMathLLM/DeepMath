@@ -1,0 +1,25 @@
+problem:  
+Let \((M_i^n,g_i,p_i)\) be a sequence of complete, noncollapsed Riemannian manifolds with  
+\[
+\operatorname{Ric}_{g_i}\ge -\varepsilon_i g_i,\qquad \varepsilon_i\to 0,\qquad \operatorname{Vol}(B_1(p_i))\ge v_0>0,
+\]  
+and suppose each \(M_i\) admits \(k\ge2\) harmonic functions \(u_{i,1},\dots,u_{i,k}\) on \(B_{R_i}(p_i)\) (with \(R_i\to\infty\)) satisfying:  
+
+1. \(\int_{B_{R_i}(p_i)} |\Delta u_{i,a}|^2\to0\) for each \(a\) (so they are “almost linear”);  
+2. \(\displaystyle\int_{B_{R_i}(p_i)} |\langle\nabla u_{i,a},\nabla u_{i,b}\rangle-\delta_{ab}|^2\le \delta_i\to0\).  
+
+Let \((X,d,p_\infty)\) be the pointed Gromov–Hausdorff limit of \((M_i,g_i,p_i)\).  
+
+**Question:**  
+Assume the rescaled maps \(U_i=(u_{i,1},\dots,u_{i,k}):B_{R_i}(p_i)\to\mathbb{R}^k\) become nondegenerate in the measured Gromov–Hausdorff sense: the pushforward of the normalized volume measures converge weakly to a measure on \(\mathbb{R}^k\) absolutely continuous with respect to Lebesgue measure.  
+
+Does it follow that the limit space \(X\) splits off a global metric product \(\mathbb{R}^k\times Y\)?  
+Equivalently, is the \(L^2\)-independence of harmonic coordinate functions (without a priori Hessian control) sufficient to detect an \(\mathbb{R}^k\) factor in the limit?  
+If not, can one exhibit a counterexample showing that \(L^2\)-independence fails to ensure higher-rank metric splitting?
+
+Why is it a "good" problem:  
+This formulation targets a delicate gap between known quantitative splitting theorems and the limit-geometry structure of manifolds with almost nonnegative Ricci curvature. The Cheeger–Colding theory ensures splitting when harmonic functions are almost affine **and** satisfy second-derivative (Hessian) smallness. The problem asks whether one can drop the latter requirement, using only weak \(L^2\) orthogonality of gradients.  
+
+Such a result would refine our understanding of how Euclidean factors arise in Ricci limit spaces and test the robustness of the analytic machinery underlying metric splitting. It would bridge **analysis (harmonic function theory and \(L^2\)-geometry)** with **metric geometric rigidity**, and its resolution would either strengthen quantitative splitting or reveal new subtle obstructions to higher-rank product structures.  
+
+The statement is conceptually simple—merely asking whether “weak \(L^2\)-independent approximate coordinate functions” enforce a global product—yet would have far-reaching implications for metric measure geometry, making it a genuinely **good research-level problem**.

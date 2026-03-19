@@ -1,0 +1,27 @@
+problem:  
+Let \(S_g\) be a closed oriented surface of genus \(g\ge2\), and let \(\mathcal{T}(S_g)\) denote its Teichmüller space of hyperbolic metrics modulo diffeomorphism isotopic to the identity. For two metrics \(h_0, h_1 \in \mathcal{T}(S_g)\) and \(p>1\), define the \(p\)-energy  
+\[
+E_p(h_0,h_1)=\inf_{u\sim\mathrm{id}}\int_{S_g}\|du\|_{h_0,h_1}^p\,d\mathrm{vol}_{h_0},
+\]
+where the infimum runs over maps \(u:(S_g,h_0)\to(S_g,h_1)\) homotopic to the identity.  
+Assume that for \(p>1\) sufficiently close to \(2\):  
+
+1. the infimum is attained by a unique smooth \(p\)-harmonic map \(u^{(p)}_{h_0,h_1}\);  
+2. \(u^{(p)}_{h_0,h_1}\) depends smoothly on \((h_0,h_1)\);  
+3. \(E_p\) is \(C^2\) along the diagonal \(h_0=h_1=h\).  
+
+Define a pseudo-Riemannian structure \(g_p\) on \(\mathcal{T}(S_g)\) by its second variation along the diagonal:
+\[
+g_p(v,w)=\left.\frac{\partial^2}{\partial s\,\partial t}E_p(h_{s},h_{t})\right|_{s=t=0},
+\]
+for smooth paths \(h_s,h_t\) in \(\mathcal{T}(S_g)\) with \(h_0=h\), tangent vectors \(v=\dot{h}_0,\ w=\dot{h}_0'\).  
+It is known that \(g_2\) coincides (up to constant multiple) with the Weil–Petersson metric \(g_{\mathrm{WP}}\).
+
+**Problem:**  
+Investigate the asymptotic behavior of \(g_p\) as \(p\to2^+\).  
+- Does \(g_p\) converge, after suitable normalization, to \(g_{\mathrm{WP}}\) in the \(C^k\)-topology on compact subsets of \(\mathcal{T}(S_g)\)?  
+- If so, can one describe the first-order deformation \(\frac{d}{dp}g_p|_{p=2}\) and interpret it geometrically?  
+- Is the curvature of \(g_p\) near \(p=2\) comparable to that of \(g_{\mathrm{WP}}\), possibly revealing analytic stability or rigidity of the Weil–Petersson geometry under nonlinear \(p\)-harmonic perturbations?  
+
+Why is it a "good" problem:  
+This problem is conceptually simple yet goes directly to the analytic foundations of Teichmüller geometry. By investigating the deformation of the harmonic energy functional to the nonlinear \(p\)-energy and its induced metric, it seeks to understand whether the Weil–Petersson metric arises as a limit of a family of natural nonlinear geometries on \(\mathcal{T}(S_g)\). This bridges geometric analysis (via \(p\)-harmonic maps and their regularity theory) and complex-analytic geometry (via the WP metric). It leads naturally to questions about stability, curvature, and quantitative dependence of moduli-space geometry on nonlinear analytic structures. The problem is well-posed under clear analytic assumptions, undoubtedly difficult, and offers a new path linking two rich theories—harmonic map analysis and Teichmüller geometry—making it a genuinely “good” research-level problem.

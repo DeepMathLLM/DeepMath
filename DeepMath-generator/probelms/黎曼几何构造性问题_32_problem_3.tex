@@ -1,0 +1,57 @@
+problem:  
+Let \( (M,g) \) be a compact oriented Riemannian surface and \( (N,h) \) a compact Riemannian manifold.  
+Let \(G_n=(V_n,E_n,F_n)\) be a quasi-uniform sequence of geodesic triangulations of \(M\) with mesh size \(h_n\to0\).  
+
+For a discrete map \(f_n:V_n\to N\), consider for each face \(T=(v_i,v_j,v_k)\in F_n\) the geodesic triangle in \(N\) with vertices \(f_n(v_i),f_n(v_j),f_n(v_k)\). Denote by  
+\[
+\ell_{ab}^{(n)} = d_N(f_n(v_a),f_n(v_b))
+\]
+its edge lengths, and by \(\tilde{A}_T^N\) its area (in \(N\)). Let
+\[
+\delta_T^{(n)} := \alpha_i^{(T)}+\alpha_j^{(T)}+\alpha_k^{(T)}-\pi
+\]
+be the **angle excess** of this triangle, where the interior angles \(\alpha_i^{(T)}\) are computed in \(T_{f_n(v_i)}N\) using the logarithm map.  
+For sufficiently small triangles in \(N\) one has the expansion
+\[
+\frac{\delta_T^{(n)}}{\tilde{A}_T^N}\approx K_N(\Pi_T^{(n)})
+\]
+where \(\Pi_T^{(n)}\) is the image tangent plane spanned by the two edges at \(f_n(v_i)\).
+
+Define the **curvature-coupled discrete energy**
+\[
+E_n^{(\lambda)}(f_n)
+=\frac12\sum_{(i,j)\in E_n} w_{ij}^{(n)}\, d_N^2(f_n(i),f_n(j))
++\lambda(h_n)\sum_{T\in F_n} A_T^{(n)}\, \Phi\!\left(\frac{\delta_T^{(n)}}{\tilde{A}_T^N}\right),
+\]
+where \(A_T^{(n)}\) is the area of \(T\) in \((M,g)\),  
+\(\Phi:\mathbb{R}\to\mathbb{R}\) is smooth, even, and satisfies \(\Phi(0)=0,\Phi''(0)>0\); and \(\lambda(h_n)\) is a scaling factor depending only on mesh size.
+
+**Open problem:**  
+Is there a choice of nontrivial \(\Phi\) and an explicit power-law scaling \(\lambda(h_n)\sim h_n^{\alpha}\) such that, for any sequence of discrete minimizers \(f_n\) converging weakly in \(H^1\) to a smooth map \(f:M\to N\), the $\Gamma$-limit has the form  
+\[
+\Gamma\text{-}\lim_{n\to\infty} E_n^{(\lambda(h_n))}(f_n)
+=\frac{1}{2}\int_M |df|_g^2\,d\mathrm{vol}_g
++c_\Phi\int_MK_N(df_p(e_1)\wedge df_p(e_2))\,|\!df_p(e_1)\wedge df_p(e_2)\!|\,d\mathrm{vol}_g,
+\]
+for some nonzero constant \(c_\Phi\)?  
+
+That is, can the continuum limit of a purely distance-based discrete energy augmented by a normalized angle-excess term faithfully produce an additive curvature term involving the sectional curvature of the *target* manifold?
+
+---
+
+Why is it a "good" problem:  
+This version is geometrically and analytically coherent. It employs the classical small-triangle asymptotic  
+\[
+(\alpha+\beta+\gamma-\pi)/(\text{area}) \approx K
+\]
+as the discrete curvature signal, normalized by the triangle’s geodesic area. This ensures that the curvature contribution has a well-defined scale and geometric meaning.  
+
+The problem bridges three traditionally separate viewpoints:
+- **Discrete geometric analysis:** studying Γ-limits of triangulation-based energies on manifolds.
+- **Riemannian curvature asymptotics:** understanding how sectional curvature appears in small-triangle behavior.
+- **Variational harmonic map theory:** exploring corrections to the Dirichlet energy functional.
+
+It asks whether the curvature of the *target* manifold \(N\) can emerge naturally in the limit of intrinsic discrete tension energies by appropriately scaling a local angular-defect term.  
+A positive resolution would yield a fundamental link between local geodesic triangle asymptotics and continuum variational structures, potentially leading to discrete analogs of Polyakov-type curvature actions derived from intrinsic geometry alone. A negative resolution would reveal intrinsic constraints on curvature recovery from purely pairwise-distance schemes.  
+
+Its statement is compact, rigorous in setup, and conceptually deep—targeting a universal principle relating curvature emergence, variational discretization, and geometric limits—thus meeting every hallmark of a “good” research-level mathematical problem.

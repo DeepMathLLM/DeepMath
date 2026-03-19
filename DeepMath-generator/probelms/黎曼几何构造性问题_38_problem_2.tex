@@ -1,0 +1,31 @@
+problem:  
+Let \( (M^m,g) \) be a closed Riemannian manifold with bounded geometry and \( (N^n,h) \) a compact target with nonpositive curvature.  
+For a sequence of \( \varepsilon \)-approximately harmonic maps \(u_\varepsilon : M \to N\) satisfying
+\[
+\|\tau(u_\varepsilon)\|_{L^2(M)} \le \varepsilon, \qquad E(u_\varepsilon) \le E_0,
+\]
+denote by \(\mu_\varepsilon = |\nabla u_\varepsilon|^2\,d\mathrm{vol}_g\) the energy measures, and suppose \( \mu_\varepsilon \rightharpoonup \mu = |\nabla u_*|^2\,d\mathrm{vol}_g + \nu \) for some weak limit \(u_*:M\to N\).  
+
+Classically, the *defect measure* \( \nu \) captures the lack of strong \(W^{1,2}\)-convergence due to bubble formation. For genuine harmonic maps between manifolds, the bubbling phenomenon is well understood: each point of concentration arises via energy quantization in terms of entire harmonic spheres, and \(\nu\) corresponds to the sum of their energies.  
+
+**Problem:**  
+Assume \( (N,h) \) has nonpositive curvature and \( (M,g) \) has bounded geometry. Does there exist, for each dimension \(m\), a *universal quantitative rigidity principle* of the following type:
+
+> There exists a dimension-dependent modulus \( \Psi_m:(0,\infty)\to(0,\infty)\), with \(\Psi_m(t)\to 0\) as \(t\to 0\), such that whenever  
+> \[
+> \|\tau(u_\varepsilon)\|_{L^2(M)} \le t,
+> \]
+> one has the **quantitative defect bound**
+> \[
+> \nu(M) \le \Psi_m(t)\,E_0.
+> \]
+In other words, can the total bubbling (defect measure) for approximate harmonic maps be *quantitatively controlled* purely in terms of the smallness of the tension field and the total energy, with constants depending only on the dimension—independent of the target geometry within the class of bounded-geometry nonpositively curved manifolds?  
+
+Equivalently, does vanishing of the \(L^2\)-norm of the tension enforce *dimensionally uniform partial rigidity* that quantitatively precludes large-scale energy concentration?  
+
+Why is it a "good" problem:  
+This question reformulates the heart of the compactness theory for approximate harmonic maps in explicitly quantitative form, aiming at a *universal scaling law* linking analytic smallness of the tension to geometric suppression of bubbling.  
+It would unify the qualitative defect–measure compactness theory with quantitative stability analysis, providing a “soft” metric for how far an approximate harmonic map can be from genuine harmonicity before energy concentration becomes inevitable.  
+Unlike known almost-monotonicity or local ε-regularity results (which are local and depend on curvature constants), this problem asks for a *dimension-only* global quantitative rigidity mechanism across the entire bounded-geometry class, connecting fine-scale PDE analysis to geometric measure theory of concentration sets.  
+A positive answer would introduce a new invariant \(\Psi_m\) reflecting dimensionally intrinsic stability of the harmonic map equation and might yield analogous quantitative rigidity theories for other geometric variational problems (minimal immersions, Yang–Mills fields, etc.).  
+Its statement is simple, yet solving it would require deep new connections between nonlinear PDE regularity, geometric stability, and concentration–compactness analysis—fully matching the ideal of a "narrow entrance, profound depth" problem.

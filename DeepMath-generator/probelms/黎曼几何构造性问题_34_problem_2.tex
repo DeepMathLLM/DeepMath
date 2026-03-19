@@ -1,0 +1,29 @@
+problem:  
+Let \((M^n,g)\) be a complete, noncompact Riemannian manifold with Ricci curvature satisfying  
+\[
+\mathrm{Ric}_g(x) \ge -A(1+r(x))^{-\beta}, \qquad r(x)=\mathrm{dist}(x,o),
+\]
+for some \(A>0\) and \(\beta>0\), but suppose no a priori volume growth assumption is made.  
+Define \(V(o,r)=\mathrm{Vol}(B(o,r))\) as usual, and assume that \(M\) satisfies volume doubling and a scale-invariant Poincaré inequality.
+
+It is well known that for manifolds with controlled volume growth (e.g., \(V(o,r)\le C\,r^\gamma\)), parabolicity—and hence the vanishing of all finite-energy harmonic functions—can be described purely in terms of the volume integral criterion
+\[
+\int^\infty \frac{r\,dr}{V(o,r)^{1/(p-1)}} = \infty.
+\]
+However, when the only geometric hypothesis concerns the *curvature decay* of \(\mathrm{Ric}_g\) (with no prescribed volume growth), very little is known about the analytic consequences at infinity.
+
+**Open problem:**  
+Determine whether curvature decay alone can force parabolicity (and thus Liouville-type vanishing for finite \(p\)-energy harmonic functions) under volume doubling and Poincaré assumptions. More precisely:
+
+- Does there exist a critical exponent \(\beta_c(n,p)\) such that if  
+  \[
+  \mathrm{Ric}_g(x) \ge -A(1+r(x))^{-\beta_c(n,p)} \quad \text{outside a compact set,}
+  \]
+  then \(M\) must be \(p\)-parabolic (i.e., \(\mathcal{H}^p_{\mathrm{fin}}(M)=\mathbb{R}\)) regardless of the precise volume behavior?
+  
+- Conversely, can one construct examples of non-parabolic manifolds satisfying the same analytic inequalities but with curvature decaying strictly slower (\(\beta<\beta_c\))?
+
+Equivalently, is there an intrinsic analytic mechanism—beyond direct volume criteria—through which curvature decay controls the large-scale recurrence of the \(p\)-Laplacian, potentially producing a new **curvature-based parabolicity threshold** independent of prescribed volume bounds?
+
+Why is it a "good" problem:  
+This problem avoids redundancy with classical parabolicity criteria by removing the artificial assumption of fixed volume growth and directly challenging whether curvature decay alone can enforce global analytic rigidity. It bridges the geometric control of curvature with the analytic notion of \(p\)-parabolicity, a territory largely unexplored in known theory. Establishing (or disproving) a curvature-driven Liouville threshold would dramatically deepen understanding of how geometric decay governs stochastic completeness, capacity growth, and potential theory on manifolds. The problem has a deceptively simple statement—formulated purely in terms of curvature decay—but resolving it would require developing new tools linking comparison geometry, heat kernel analysis, and nonlinear potential theory, epitomizing the “narrow entrance, profound depth” ideal in contemporary geometric analysis.

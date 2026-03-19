@@ -1,0 +1,35 @@
+problem:  
+Let \(S_g\) be a closed oriented surface of genus \(g\ge2\) with hyperbolic metric \(h\).  
+For each pair of hyperbolic metrics \(h_0,h_1 \in \mathcal{T}(S_g)\), let  
+\[
+u_{h_0,h_1}\colon (S_g,h_0)\to (S_g,h_1)
+\]
+be the unique harmonic map homotopic to the identity. Its energy is  
+\[
+E(h_0,h_1)=\tfrac{1}{2}\int_{S_g}\|du_{h_0,h_1}\|^2_{h_0,h_1}\,d\mathrm{vol}_{h_0},
+\]
+and the associated Hopf differential \(\Phi(u_{h_0,h_1})\) is holomorphic on \((S_g,h_0)\).  
+For \(h_0,h_1\) close, the infinitesimals of \(\Phi(u_{h_0,h_1})\) provide a natural identification between tangent and cotangent directions in Teichmüller space.
+
+Define the *renormalized energy difference*
+\[
+\mathcal{E}(h_0,h_1)=E(h_0,h_1)-\tfrac{1}{2}\mathrm{Area}(S_g,h_0),
+\]
+and denote by \(E^\mathrm{WP}(h_0,h_1)\) the Weil–Petersson geodesic distance squared between \(h_0\) and \(h_1\).
+
+**Problem:**  
+Investigate whether the harmonic-map energy functional encodes the full Weil–Petersson geometry *beyond* infinitesimal order:
+
+1. Does there exist a universal constant \(c_g>0\) such that, for all \(h_0,h_1\in\mathcal{T}(S_g)\) sufficiently close,
+   \[
+   \mathcal{E}(h_0,h_1)=c_g\,E^\mathrm{WP}(h_0,h_1)+O(d_\mathrm{WP}(h_0,h_1)^3)?
+   \]
+   In other words, is the harmonic energy’s second-order Taylor expansion always Weil–Petersson quadratic, uniformly in direction?
+
+2. If such local quadratic equivalence holds, does it extend along global Weil–Petersson geodesics—i.e., is \(E(h_0,h_t)\) strictly convex, asymptotically quadratic in \(t\), and does its Hessian recover the WP metric everywhere?
+
+3. In the limit where a simple closed geodesic on \((S_g,h_t)\) shrinks to zero, does a renormalized version of \(E(h_0,h_t)\) converge to a metric on the Deligne–Mumford boundary compatible with the WP completion structure?  
+   (Equivalently, can one analytically continue the harmonic-map energy to a “harmonic energy compactification” equivalent to the WP compactification?)
+
+Why is it a "good" problem:  
+This problem is firmly grounded in existing rigorous structures but asks questions beyond current theorems. It probes whether the harmonic energy functional—already known to recover the Weil–Petersson metric infinitesimally—also captures its *finite* and *asymptotic* geometry. This bridges the deep analytic framework of harmonic maps with the global symplectic–Kähler geometry of Teichmüller space. A positive answer would provide a new analytic model of moduli-space geometry and a potential variational characterization of the WP metric; a negative one would reveal intrinsic obstructions in extending infinitesimal harmonic equivalence to global WP geometry. The question is simple to state yet profoundly open, structurally well-posed, and sits at the exact interface between geometric analysis and complex geometry—making it a robust and “good” research-level problem.

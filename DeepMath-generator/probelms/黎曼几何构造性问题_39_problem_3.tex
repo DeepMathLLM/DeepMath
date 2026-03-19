@@ -1,0 +1,32 @@
+problem:  
+Let \( (M^2,g) \) be a compact Riemann surface and \( (N,h) \) a compact Riemannian manifold. Consider the harmonic map flow  
+\[
+\partial_t u = \tau(u), \qquad u: M\times[0,T)\to N,
+\]
+and suppose it develops a finite-time singularity with blow-up described by a single bubble \(\phi:S^2\to N\) forming at a point \(x_0\in M\).  
+
+Write \(u(x,t)\) in rescaled coordinates near \(x_0\) as  
+\[
+u(x,t) = \phi\!\left(\frac{x-x_0(t)}{\lambda(t)}\right) + \eta(x,t),
+\]
+where \(\lambda(t)\) is the concentration scale, \(x_0(t)\) the center, and \(\eta\) a small error orthogonal (in \(L^2\)) to the kernel of the Jacobi operator \(L_\phi\) on \(\phi^*TN\).  
+Assume moreover that \(L_\phi\) has a finite-dimensional kernel spanned by Jacobi fields \(\{Y_1,\ldots,Y_m\}\).
+
+**Question:**  
+Is there a mathematically well-defined *modulation law* for the bubble parameters \((x_0(t), \lambda(t))\) that can be derived from the orthogonality conditions and the structure of \(L_\phi\)? More precisely:
+
+1. *(Well-posed modulation system)* Does there exist a limiting system of ordinary differential equations  
+   \[
+   \dot\lambda = F_\lambda(\lambda, x_0, t), \qquad \dot{x}_0 = F_x(\lambda, x_0, t),
+   \]
+   valid asymptotically as \(t\uparrow T\), whose leading coefficients depend only on the geometric and spectral data of \(L_\phi\)?  
+   In particular, can one define \(F_\lambda, F_x\) so that the flow of \((x_0(t),\lambda(t))\) reproduces the correct concentration rate predicted by analytic continuation of the harmonic map flow?
+
+2. *(Spectral origin of modulation coefficients)* If such a system exists, are the leading coefficients in \(F_\lambda,F_x\) computable as explicit bilinear expressions involving the Green’s operator \(L_\phi^{-1}\) and Hamiltonian-type pairings among Jacobi fields?  
+
+3. *(Universality conjecture)* If \(N\) varies within a generic class of metrics, does the asymptotic law for \(\lambda(t)\) belong to a discrete set of possible blow-up rates determined purely by the low-lying spectrum of \(L_\phi\)?
+
+The question can be formulated equivalently as: *Can one construct a general modulation theory describing single-bubble formation in harmonic map flow, with the evolution of bubble parameters governed by an autonomous geometric ODE derived from the linearized spectral structure around the limiting bubble?*
+
+Why is it a "good" problem:  
+This problem refines the heuristic idea of “effective bubble dynamics” into a mathematically concrete form—the existence of precise modulation equations governing blow-up parameters. It bridges rigorous geometric analysis with ideas from nonlinear dispersive PDEs, particularly modulation theory and stability analysis of solitons, but in the geometric-flow context where curvature and topology intervene. The question is both natural and unsolved: no existing theory produces explicit ODEs controlling blow-up rates in harmonic map flow, yet all evidence suggests such a structure underlies bubbling phenomena. Establishing (or disproving) the existence of this intrinsic modulation law would yield a conceptual and technical breakthrough, connecting spectral geometry, nonlinear dynamics, and singularity formation theory. The statement is simple, measurable, and sharply focused, yet its resolution would require deep new ideas—qualities that define a truly “good” research-level mathematical problem.

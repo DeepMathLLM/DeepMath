@@ -1,0 +1,26 @@
+problem:  
+Let \(M^n\) be a complete, noncompact Riemannian manifold with nonnegative sectional curvature, and fix a point \(p \in M\).  
+Let \(r(x) = \operatorname{dist}(p,x)\) and denote by \(S_r = \{x \in M \mid r(x)=r\}\) the geodesic sphere of radius \(r\).  
+
+Assume that there exists a sequence \(r_k \to \infty\) of regular values of \(r\) such that:  
+1. Each \(S_{r_k}\) is smooth, connected, and has **mean curvature**
+   \[
+   H(r_k) = \frac{n-1}{r_k} + o\Big(\frac{1}{r_k}\Big)
+   \]
+   as \(r_k \to \infty\), where the error is uniform on each \(S_{r_k}\); and  
+2. The second fundamental form \(A_{r_k}\) of \(S_{r_k}\) satisfies
+   \[
+   \|A_{r_k} - \tfrac{1}{r_k}I\|_{L^2(S_{r_k})} \to 0
+   \]
+   as \(k\to\infty\).  
+
+**Question:**  
+Do these asymptotically Euclidean extrinsic conditions force \(M\) to have asymptotically vanishing sectional curvature at infinity (e.g. \(\sup_{x \in S_{r_k}} |K(x)| \to 0\))?  
+Equivalently, does asymptotic Euclidean behavior of geodesic spheres imply that \(M\) is asymptotically flat in the sense of curvature decay?  
+
+Why is it a "good" problem:  
+This problem asks for a **quantitative rigidity** version of equality cases in comparison geometry. Exact equality of the shape operator in the Riccati equation \(A' + A^2 + R=0\) is known to enforce flatness; the open question is whether *asymptotic* equality implies *asymptotic flatness.*  
+
+It effectively bridges analytic geometry (control of extrinsic shape operators) with global geometric analysis (asymptotic curvature decay). Proving such an implication would represent a new rigidity phenomenon connecting geometric asymptotics and curvature comparison, with potential applications to the understanding of volume growth, soul stability, and scalar curvature decay in nonnegatively curved manifolds.  
+
+The problem is also conceptually simple—it speaks only about the shape of large geodesic spheres—but resolving it would demand deep control over the nonlinear Riccati system, long‐range curvature estimates, and perhaps new integral comparison techniques. It stands at the intersection of **comparison geometry**, **global analysis**, and **asymptotic geometry**, and a solution (positive or negative) would significantly advance the understanding of the fine structure at infinity of noncompact manifolds with \(\sec \ge 0\).

@@ -1,0 +1,37 @@
+problem:  
+Let \(X\) be a compact Kähler manifold with fundamental group \(\pi_1(X)\). Fix a connected semisimple algebraic group \(G\) over a non‑Archimedean local field \(k\), and denote by \(\mathscr{B}_G\) the associated Bruhat–Tits building endowed with its metric CAT(0) structure.  
+
+For each reductive representation \(\rho: \pi_1(X)\to G(k)\), denote by \(f_\rho: \widetilde{X} \to \mathscr{B}_G\) the corresponding \(\rho\)-equivariant energy‑minimizing harmonic map (Gromov–Schoen). When \(\rho\) varies in a fixed **irreducible component** \(R \subset \mathrm{Hom}(\pi_1(X),G(k))//G(k)\) (for instance, the analytic locus of semisimple representations), one obtains a family \(\{f_\rho\}_{\rho\in R}\) of harmonic maps varying possibly discontinuously with \(\rho\).  
+
+Define the **harmonic metric convex dimension**
+\[
+\dim_{\mathrm{harm}}(R) = \sup_{\rho\in R} \dim \operatorname{Conv}(f_\rho(\widetilde{X})) ,
+\]
+where \(\operatorname{Conv}(f_\rho(\widetilde{X}))\) denotes the smallest convex subcomplex of \(\mathscr{B}_G\) containing the image.
+
+**Problem:**  
+Investigate whether \(\dim_{\mathrm{harm}}(R)\) is **upper semicontinuous** as a function of the representation parameter, and whether curvature or algebraic properties of \(X\) enforce bounds on it.  In particular, is one of the following rigidity phenomena true?
+
+1. (**Rigidity under nonnegative curvature**)  
+   If \(X\) has nonnegative Ricci (or holomorphic bisectional) curvature, does it follow that \(\dim_{\mathrm{harm}}(R)\leq \dim \operatorname{Alb}(X)\), i.e. that harmonic images for all \(\rho\in R\) are contained in affine flats of dimension at most that of the Albanese torus?
+
+2. (**Degeneration behavior**)  
+   Suppose \((\rho_t)\subset R\) is a degenerating family of representations converging (in the Morgan–Shalen or Berkovich sense) to a non‑Archimedean representation \(\rho_\infty\). Does the limiting convex dimension  
+   \[
+   \limsup_{t\to\infty} \dim \operatorname{Conv}(f_{\rho_t}(\widetilde{X}))
+   \]
+   coincide with \(\dim \operatorname{Conv}(f_{\rho_\infty}(\widetilde{X}))\)?  
+   In other words, is there analytic semicontinuity of harmonic convex dimension across complex–to–non‑Archimedean degenerations?
+
+3. (**Existence of jumps**)  
+   Can one construct explicit manifolds \(X\) and components \(R\) where the harmonic convex dimension jumps discretely—e.g., from flat (dimensional stabilization) to genuinely higher‑dimensional convex images—mirroring the phenomenon of singularity formation in harmonic map sequences?
+
+Why is it a "good" problem:  
+This refinement replaces the uncontrolled global union of images by precise geometric invariants associated to **connected families** of representations, grounding the question in analytical and algebro‑geometric structure: convex dimension and its semicontinuity. It builds a bridge between metrics on buildings (via convex geometry) and complex geometric rigidity (via curvature constraints and Albanese dimension).  
+
+The problem is simple to state yet deeply open: it asks whether curvature or fibration data on \(X\) force universal dimension bounds on harmonic images into non‑Archimedean symmetric spaces, and how these dimensions behave under degenerations of representations.  
+
+A positive result would extend Siu‑type rigidity principles to singular non‑Archimedean targets, showing that analytic curvature controls not just regularity but also the polyhedral rank of harmonic images.  
+A negative result would reveal new failure modes of rigidity, linking harmonic map theory to representation‑theoretic boundary phenomena (Morgan–Shalen, Berkovich spaces).  
+
+Thus, the problem is coherent, conceptually economical, and connects several deep areas—Kähler geometry, harmonic maps, and non‑Archimedean representation theory—through a single, quantitative geometric invariant.

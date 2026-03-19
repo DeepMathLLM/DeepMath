@@ -1,0 +1,32 @@
+problem:  
+Let \((M^n, g)\) be a complete, noncompact Riemannian manifold with **nonnegative sectional curvature** and **Euclidean volume growth**, i.e.  
+\[
+\lim_{r \to \infty} \frac{\operatorname{Vol}(B(p, r))}{r^n} = v_0 > 0,
+\]
+for some base point \(p \in M\).  Suppose there exists a slowly varying, positive, nonincreasing function \(\phi:[0,\infty)\to (0,\infty)\) (in the sense of Karamata), such that  
+\[
+\sup_{B(p,r)} |Rm| \le C\, r^{-2} \phi(r)^{-1}, \quad \text{for all large } r.
+\]
+
+**Conjecture:**  
+There exists a *critical slowly varying function* \(\phi_{crit}(r)\) such that:
+1. If \(\phi(r)\) decays faster than \(\phi_{crit}(r)\), then \(M\) has a **unique Euclidean tangent cone at infinity**.  
+2. If \(\phi(r)\) decays at or slower than \(\phi_{crit}(r)\), then there exist examples (possibly warped product metrics with nonnegative curvature) that have **multiple non-Euclidean tangent cones** at infinity.
+
+In particular, determine whether a logarithmic threshold of the type
+\[
+\phi_{crit}(r) = (\log(1+r))^\beta
+\]
+for some \(\beta>0\), or an iterated logarithmic correction, separates the rigidity and nonrigidity regimes.
+
+Equivalently, identify the *exact asymptotic interplay* between the curvature-decay scale \(r^{-2}\) and its subpolynomial corrections that guarantees asymptotic flatness and uniqueness of the tangent cone under nonnegative sectional curvature and Euclidean volume growth.
+
+Why is it a "good" problem:  
+This problem sharpens a central open theme in comparison geometry—how geometric rigidity at infinity depends quantitatively on the rate of curvature decay. The exponent \(-2\) is the natural scaling boundary for curvature in noncompact Riemannian manifolds (since it is invariant under scaling of the metric). Introducing precisely controlled *slowly varying modulations* \(\phi(r)\)—instead of polynomial corrections—tests the frontier of rigidity: does even a logarithmic slowdown from the critical rate destroy the unique Euclidean asymptotic cone?  
+
+The question therefore combines three key geometric-analytic aspects:
+- Large-scale asymptotic geometry (tangent cones, Gromov–Hausdorff convergence),
+- Quantitative curvature control, and
+- Subpolynomial asymptotic analysis (slow variation à la Karamata).
+
+By focusing on the borderline \(r^{-2}\) decay scale, the problem mirrors the “critical exponent” phenomena in regularity theory and potential theory, connecting geometric analysis to asymptotic function theory. Its resolution would reveal whether curvature decay thresholds can be *quantitatively classified* through logarithmic-type corrections, a conceptually simple yet deeply far-reaching question whose answer is still completely unknown.

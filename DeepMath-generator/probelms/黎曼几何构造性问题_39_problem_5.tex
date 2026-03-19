@@ -1,0 +1,35 @@
+problem:  
+Let \( (M^2,g) \) be a compact Riemann surface and \( (N,h) \) a compact Riemannian manifold.  Consider a sequence of approximate harmonic maps  
+\[
+u_k:M\to N,\qquad \tau(u_k)=f_k,
+\]
+with uniformly bounded energy \(E(u_k)\le C\) and \(f_k\to0\) weakly in \(H^{-1}(M,TN)\) (using an isometric embedding of \(N\) in \(\mathbb{R}^m\)).  
+Suppose \(u_k\rightharpoonup u_\infty\) in \(H^1(M,N)\) and bubbling occurs at finitely many points \(x_1,\ldots,x_m\in M\).  
+After rescaling at \(x_i\), assume one obtains bubbles \(\phi_{i,j}:S^2\to N\), each a harmonic sphere.
+
+Denote by \(L_{\phi_{i,j}}\) the Jacobi operator on \(\phi_{i,j}^*TN\), and by
+\[
+\mathcal K_{\phi_{i,j}} = \ker L_{\phi_{i,j}}\quad\text{(modulo infinitesimal symmetries of \(S^2\) and target isometries)}.
+\]
+Let 
+\[
+\nu_i := \lim_{r\to0}\lim_{k\to\infty}\Big(E(u_k;A_{r,\rho}(x_i)) - \sum_j E(\phi_{i,j})\Big)
+\]
+be the neck energy at \(x_i\).
+
+**Conjecture (Jacobi–neck correspondence):**  
+If every bubble \(\phi_{i,j}\) appearing in the blow-up analysis is *nondegenerate* (that is, \(\mathcal K_{\phi_{i,j}} = \{0\}\)), then one has
+\[
+\nu_i = 0 \quad \text{for every blow-up point } x_i,
+\]
+for all weakly controlled approximate harmonic sequences \(u_k\) with \(f_k \to 0\) in \(H^{-1}\).
+
+Equivalently: nondegeneracy of all harmonic spheres forbids the appearance of nonzero neck defect measures in any weak limit of approximate harmonic maps from surfaces.
+
+More generally, if some \(\phi_{i,j}\) has nontrivial \(\mathcal K_{\phi_{i,j}}\), can one produce, via an explicit perturbative construction along a slowly varying tangent direction in \(\mathcal K_{\phi_{i,j}}\), approximate harmonic maps with a prescribed small nonzero neck energy \(\nu_i>0\)?  
+
+The conjecture seeks to identify the presence (or absence) of kernel modes of Jacobi operators as the *sole geometric mechanism* responsible for residual neck energy in bubbling sequences.
+
+Why is it a "good" problem:  
+This refined conjecture isolates a precise equivalence between an analytic compactness property (energy quantization without residual neck energy) and a geometric–spectral property (nondegeneracy of all bubble spheres).  It is simple to state yet lies far beyond current analytical techniques: although energy identities are known under certain curvature or integrability conditions, no result connects them to the spectral structure of the linearized operator on the bubbles.  
+Establishing (or disproving) this Jacobi–neck correspondence would create a conceptual bridge between two deep areas—spectral geometry of harmonic spheres and defect‑measure analysis in geometric variational problems—yielding a potential unification of linearized stability theory and nonlinear concentration phenomena.  The problem is mathematically sound, sharply formulated, and potentially transformative, capturing the essence of a “good” research-level mathematical problem.

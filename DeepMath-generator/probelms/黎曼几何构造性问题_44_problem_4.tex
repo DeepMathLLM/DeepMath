@@ -1,0 +1,42 @@
+problem:  
+Let \((M^n,g)\) be a complete, noncompact Riemannian manifold with \(\mathrm{Ric}_g\ge 0\) containing a line \(\gamma:\mathbb{R}\to M\).  
+Let \(b=b^+\) be the forward Busemann function associated to \(\gamma\), normalized so that \(b(p)=0\) for a base point \(p\in \gamma\).
+
+It is known from the Cheeger–Gromoll and Cheeger–Colding theories that the space of linear growth harmonic functions on \(M\) has **finite dimension**, and that equality of this dimension with \(n\) implies that \(M\) is isometric to \(\mathbb{R}^n\).  
+However, the connection between the **directionality** of these harmonic functions and the **presence of additional Euclidean factors** in the global metric structure remains only partially understood.
+
+Assume there exist \(k\ge 2\) linearly independent harmonic functions \(u_1,\dots,u_k\) of linear growth such that:
+
+1. (Asymptotic \(L^2\)-orthonormality)
+   \[
+   \frac{1}{\mathrm{Vol}(B_R(p))}\int_{B_R(p)}
+   |\langle\nabla u_i,\nabla u_j\rangle-\delta_{ij}|^2\,dV_g\to0
+   \quad\text{as }R\to\infty;
+   \]
+
+2. (Busemann orthogonality)
+   \[
+   \frac{1}{\mathrm{Vol}(B_R(p))}\int_{B_R(p)}
+   |\langle\nabla u_i,\nabla b\rangle|^2\,dV_g\to0
+   \quad\text{as }R\to\infty;
+   \]
+   that is, in the mean, each \(\nabla u_i\) becomes asymptotically orthogonal to the line direction \(\nabla b\).
+
+3. (Nondegeneracy)
+   The pushforward of normalized volume measure under \((u_1,\dots,u_k)\) does not degenerate to a lower-dimensional subset of \(\mathbb{R}^k\).
+
+**Question:**  
+Under these hypotheses, must \(M\) split isometrically as 
+\[
+M \cong \mathbb{R}^k \times N
+\]
+for some complete \(N\) with \(\mathrm{Ric}_N\ge 0\)?  
+If not, what are the sharp constraints on \(k\) imposed by the analytic structure of the space of harmonic functions—i.e., can one have \(k>1\) asymptotically orthonormal directions orthogonal to a Busemann line without geometric higher-rank splitting?
+
+Why is it a "good" problem:  
+This question reinterprets the classical Cheeger–Gromoll splitting theorem through the lens of **asymptotic harmonic analysis**.  
+Whereas existing theory controls the *dimension* of the space of linear growth harmonic functions, it does not explain how their **distribution relative to a given line** influences geometric rank. By isolating the **Busemann-orthogonality** aspect, this problem asks whether analytic flatness orthogonal to a line enforces additional Euclidean factors—an issue not settled by current rigidity results.
+
+A resolution would deepen the bridge between **harmonic-analytic rank** and **geometric rank**, clarifying whether the global product structure of a \(\mathrm{Ric}\ge0\) manifold is encoded purely in first-order asymptotics of its harmonic coordinate fields.  
+If affirmative, it would provide a new, purely analytic detection of Euclidean factors; if negative, it would reveal a previously unnoticed gap between analytic symmetry and metric splitting.  
+Its statement is elementary—posed in terms of familiar objects \(b,\,u_i\)—but its implications touch the foundations of quantitative rigidity theory, making it a genuinely **good research-level problem**.

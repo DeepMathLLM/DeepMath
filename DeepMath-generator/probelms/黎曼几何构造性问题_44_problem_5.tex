@@ -1,0 +1,44 @@
+problem:  
+Let \((X,d,\mathfrak{m})\) be a complete, noncollapsed metric measure space satisfying the synthetic curvature–dimension condition \(\mathrm{RCD}(0,N)\) for some \(2\le N<\infty\).  
+Fix two unit-speed geodesic rays \(\gamma^+:[0,\infty)\to X\) and \(\gamma^-:[0,\infty)\to X\) emanating from a common point \(p\in X\), but do **not** assume that \(\gamma^+\) and \(\gamma^-\) concatenate into a line (so an actual global line may or may not exist).  
+
+Define the corresponding forward and backward Busemann functions:
+\[
+b^+(x)=\lim_{t\to\infty}\bigl(t-d(x,\gamma^+(t))\bigr),\qquad  
+b^-(x)=\lim_{t\to\infty}\bigl(t-d(x,\gamma^-(t))\bigr),
+\]
+both 1‑Lipschitz on \(X\).  
+Consider the **Busemann pair map**
+\[
+B=(b^+,b^-):X\longrightarrow\mathbb{R}^2,
+\]
+and, for each \(R>0\), the **normalized pushforward measure**
+\[
+\nu_R := \frac{1}{\mathfrak{m}(B_R(p))}\,B_*\bigl(\mathfrak{m}|_{B_R(p)}\bigr)
+\quad\text{on }\mathbb{R}^2.
+\]
+
+**Question:**  
+Assume that for every compactly supported smooth test function \(f\in C_c^\infty(\mathbb{R}^2)\) and every fixed \(t\in\mathbb{R}\),
+\[
+\lim_{R\to\infty}
+\Bigl|\int_{\mathbb{R}^2} f(b^+,b^-)\,d\nu_R
+-\int_{\mathbb{R}^2} f(b^+,b^-+t)\,d\nu_R\Bigr|=0.
+\tag{\(*\)}
+\]
+That is, the joint distribution of \((b^+,b^-)\) becomes **asymptotically shift‑invariant** in the \(b^-\)-direction on large scales.
+
+1. Does the asymptotic shear‑invariance property \((*)\) force \((X,d,\mathfrak{m})\) to admit a true line, and consequently (by the Gigli splitting theorem) to split isometrically as \(\mathbb{R}\times Y\)?  
+2. If not, can one construct an explicit nonproduct RCD(0,N) space—e.g. a pointed metric cone or warped product—where the pair \((b^+,b^-)\) satisfies \((*)\) but no metric line exists?
+
+Why is it a "good" problem:  
+This refined formulation removes the logical redundancy of assuming an existing line and makes the problem genuinely open within modern geometric analysis. It asks whether a **measure‑theoretic symmetry property** of Busemann pairs can *detect the existence of a Euclidean factor* in an \(\mathrm{RCD}(0,N)\) space.  
+
+The idea fuses several domains:
+- **Synthetic Ricci‑curvature geometry**, where lines imply splitting but detecting them is difficult.  
+- **Metric–measure analysis**, via weak convergence and asymptotic invariance of pushforward measures.  
+- **Geometric rigidity theory**, testing if global product structure can be inferred from distributional symmetries rather than geodesic existence.
+
+An affirmative answer would provide a new, probabilistic characterization of linear directions—turning the splitting theorem into a statement of asymptotic measure invariance.  
+A counterexample would expose a fundamental gap between geometric and measure‑theoretic symmetries in nonnegative‑curvature spaces.  
+The statement involves only simple, first‑order notions (Busemann functions, weak measure limits, translations in \(\mathbb{R}^2\)) yet touches the essence of how curvature, analysis, and structure interact—making it a truly **good, research‑level problem**.

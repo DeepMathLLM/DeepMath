@@ -1,0 +1,48 @@
+problem:  
+Let \( (M^n,g) \) be a complete noncompact Riemannian manifold with **nonnegative sectional curvature** and Euclidean volume growth, and fix a base point \(p \in M\).  
+For \(d>0\), define  
+\[
+\mathcal{H}_d(M)=\{u\in C^\infty(M):\Delta u=0,\ |u(x)|\le C(1+r(x))^d \text{ for some }C>0,\ r(x)=\mathrm{dist}(p,x)\}.
+\]
+For any tangent cone at infinity \(C(X)\) of \(M\), denote by
+\[
+\mathcal{H}_d(C(X))=\{u\in C^\infty(C(X)):\Delta_{C(X)}u=0,\ |u(x)|\le C(1+r(x))^d\}
+\]
+the space of polynomial-growth harmonic functions on \(C(X)\).  
+Let \(\lambda_i(X)\) be the Laplace eigenvalues on the cross-section \(X\), with corresponding harmonic growth exponents
+\(\alpha_i(\alpha_i+n-2)=\lambda_i(X)\), and define the **harmonic growth spectrum**
+\[
+\mathcal{S}(M):=\{\alpha_i(M)\mid u_i\in \mathcal{H}_{\alpha_i}(M)\setminus \mathcal{H}_{\alpha_i^-}(M)\},
+\]
+and analogously \(\mathcal{S}(X)\) for \(C(X)\).
+
+**Open Problem (Spectral Characterization of Tangent Cones at Infinity):**  
+Suppose \(M\) has nonnegative sectional curvature and Euclidean volume growth, with a tangent cone \(C(X)\) at infinity.  
+Assume that for some normalization of the growth exponents,
+\[
+\mathcal{S}(M)=\mathcal{S}(X)
+\]
+as multisets, i.e. the *entire harmonic growth spectrum* (including multiplicities) of \(M\) coincides with that of its cone \(C(X)\).  
+
+Must \(M\) then have a **unique tangent cone at infinity**, necessarily isometric to \(C(X)\)?  
+If so, does this spectral coincidence further imply that \(C(X)\) is **smooth** (i.e. that all tangent cones at infinity of \(M\) are smooth metric cones)?
+
+---
+
+Why is it a "good" problem:  
+This formulation refines prior attempts by demanding equality of the *entire harmonic growth spectrum*—a much stronger analytic invariant than mere asymptotic dimension growth—and connects it to the geometric structure at infinity in an unprecedented way.
+
+- **Profound analytic–geometric bridge:**  
+  The harmonic growth spectrum records all possible growth rates of harmonic functions on \(M\); on a cone \(C(X)\), these correspond exactly to the square roots of Laplace eigenvalues on the cross-section. Thus, equality \(\mathcal{S}(M)=\mathcal{S}(X)\) means that \(M\) encodes *the same spectral geometry at infinity* as the cone. The conjecture that this determines the unique asymptotic geometry amounts to a “spectral rigidity at infinity” principle.
+
+- **Addresses limitations of Weyl-type data:**  
+  Unlike earlier formulations concerned only with asymptotic ratios of dimension functions—which could coincide for many non-isometric cross-sections due to Weyl asymptotics—the full spectrum incorporates the entire eigenvalue sequence, including lower-order (non-Weyl) spectral corrections that are sensitive to geometric and topological structure. This evades the critique that the problem is too weakly constrained.
+
+- **Connections and implications:**  
+  A positive answer would provide an *analytic characterization of tangent-cone uniqueness*, complementing the metric-measure approach of Cheeger–Colding with a harmonic-analytic counterpart. It would forge a deep connection among potential theory, geometric measure theory, and spectral geometry—areas traditionally considered partially disjoint.
+
+- **Conceptual reach:**  
+  The question is concise and intuitively natural: does knowing all polynomial growth rates of harmonic functions determine the asymptotic cone uniquely? Yet solving it would require developing new tools that blend asymptotic spectral analysis on manifolds with nonnegative curvature, geometric convergence theory, and analytic blow-down limits.
+
+- **Open and feasible frontier:**  
+  No current result establishes such spectral determination even in special cases beyond \(\mathbb{R}^n\). The problem sits plausibly at the boundary of what present techniques can approach, serving as a realistic and stimulating direction for future work—epitomizing the "narrow entrance, profound depth" hallmark of an excellent research-level mathematical problem.

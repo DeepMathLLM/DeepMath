@@ -1,0 +1,33 @@
+problem:  
+Let \( (M^m,g) \) be a closed Riemannian manifold of fixed dimension \(m\) with uniformly bounded geometry, i.e.  
+\[
+|\mathrm{Rm}_g| \le K_M, \qquad \mathrm{inj}(M,g) \ge i_0 > 0,
+\]  
+and let \( (N,h) \) be a compact Riemannian manifold with nonpositive sectional curvature and bounded geometry constants \( |\mathrm{Rm}_h| \le K_N \), \( \mathrm{inj}(N,h) \ge j_0 > 0 \).  
+For each small \( \varepsilon > 0 \), consider an \( \varepsilon \)-approximately harmonic map \( u_\varepsilon : M \to N \) satisfying  
+\[
+\|\tau(u_\varepsilon)\|_{L^2(M)} \le \varepsilon
+\quad \text{and} \quad E(u_\varepsilon) \le E_0,
+\]
+where \( \tau(u_\varepsilon) \) is the tension field and \(E(u_\varepsilon)\) is the energy.
+
+We know from classical results that when \( \varepsilon \) is small compared to geometry-dependent thresholds, one has closeness of \(u_\varepsilon\) to a genuine harmonic map up to bubbling. However, the dependence of such quantitative control on geometric constants is not clearly understood.
+
+**Problem:**  
+For fixed dimension \(m\) and bounded geometry class \(\mathcal{G}(m,K_M,i_0,K_N,j_0)\), does there exist a *dimension-only* modulus of stability  
+\[
+\Phi_m:(0,\infty) \to (0,\infty) \text{ with } \Phi_m(t) \to 0 \text{ as } t \to 0
+\]
+such that for all \((M,g),(N,h)\in\mathcal{G}\) and all approximately harmonic maps \(u_\varepsilon\) as above,  
+\[
+\mathrm{dist}_{W^{1,2}}(u_\varepsilon,\mathcal{H}(M,N)) \le \Phi_m(\|\tau(u_\varepsilon)\|_{L^2(M)})
+\]
+holds, where \(\mathcal{H}(M,N)\) is the set of harmonic maps \(M \to N\)?  
+Equivalently, can one establish a *dimension-dependent quantitative rigidity theorem* for the class of approximate harmonic maps between bounded-geometry manifolds?
+
+Why is it a "good" problem:  
+This revised formulation asks for a *geometrically stable*, quantitative version of harmonic map compactness — one that depends only on dimension, not on specific curvature or injectivity bounds once these are kept under control. It targets the heart of geometric analysis: how analytic quantities (tension field) capture geometric rigidity (closeness to harmonicity).  
+The problem bridges nonlinear PDE analysis, geometric measure theory (through bubble-tree convergence and defect measures), and Riemannian geometry (through bounded-geometry dependence).  
+
+Solving it would unify local ε-regularity and global compactness principles into a single quantitative stability modulus, providing a new analytical invariant of dimension. Even partial progress would likely require developing new scale-invariant estimates or a metric-analytic theory of quantitative bubble dynamics, yielding broader impact beyond harmonic maps themselves.  
+Its simplicity of statement conceals profound depth, making it both accessible in form and challenging at the highest research level — meeting the ideal of a "good" mathematical problem.

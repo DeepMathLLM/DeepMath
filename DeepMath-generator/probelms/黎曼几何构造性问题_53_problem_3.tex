@@ -1,0 +1,30 @@
+problem:  
+Let \((M^n, g)\) be a complete, noncompact Riemannian manifold with **nonnegative sectional curvature** and fix a base point \(p \in M\).  
+Assume the curvature satisfies for some constants \(C>0\) and \(\alpha>0\),
+\[
+|Rm|(x) \le C (1+r(x))^{-(2+\alpha)}, \quad r(x) = d(p, x).
+\]  
+For any sequence \(r_i \to \infty\), consider the blow-down sequence of pointed manifolds \((M, r_i^{-2} g, p)\) and their Gromov–Hausdorff limits (which exist, up to subsequence).  
+
+**Problem:**  
+Determine whether there exists a *dimension–dependent threshold exponent* \(\alpha_c > 0\) with the following property:
+
+If \(\alpha > \alpha_c\), then all such blow-down limits are **isometric** to a single **metric cone** \(C(Y)\), i.e. \(M\) has a unique tangent cone at infinity.  
+If \(\alpha \le \alpha_c\), examples exist (possibly warped products or gluing constructions with nonnegative curvature) admitting **multiple nonisometric tangent cones** at infinity.  
+
+Furthermore, is the threshold value \(\alpha_c\) characterized by any of the following equivalent formulations?  
+- The rate at which the *normalized volume ratio*
+  \[
+  \frac{\mathrm{Vol}(B(p,r))}{\omega_n r^n}
+  \]
+  converges to its limit as \(r\to\infty\); or  
+- The asymptotic decay rate of the *Abresch–Gromoll excess function* associated with geodesics from \(p\); or  
+- The stability exponent for which the rescaled metrics \(r^{-2}g\) approach a cone metric in the Cheeger–Gromov topology.
+
+Why is it a "good" problem:  
+This formulation refines the general theme of curvature-decay rigidity into a **quantitative uniqueness problem for tangent cones at infinity**.  
+While the Soul Theorem and standard comparison arguments give global qualitative control on topology, they provide no quantitative guarantees on asymptotic geometry or the uniqueness of cones. The key question here—whether there is a critical curvature-decay rate beyond which asymptotic geometry stabilizes—targets this missing link between *decay* and *rigidity*.  
+
+The problem is deeply situated at the crossroads of **comparison geometry**, **metric limit theory (Cheeger–Colding–Gromov)**, and **quantitative geometric analysis**. Establishing or refuting the existence of such a universal threshold \(\alpha_c\) would illuminate how curvature decay influences the *stability and uniqueness* of metric cones, a structure fundamental in both Ricci limit spaces and nonnegative–curvature geometry.  
+
+Its strength lies in its simplicity yet wide consequences: it asks a crisp geometric question understandable in just a few lines, but whose resolution requires blending fine curvature analysis, asymptotic volume control, and large-scale stability techniques—an archetype of a good, deep, research-level problem.

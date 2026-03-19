@@ -1,0 +1,40 @@
+problem:  
+Let \(S_g\) be a closed oriented surface of genus \(g\ge2\), and let \(\mathcal{T}(S_g)\) denote its Teichmüller space of hyperbolic metrics.  
+For each \(h_0,h_1\in\mathcal{T}(S_g)\), let  
+\[
+u_{h_0,h_1}:(S_g,h_0)\to(S_g,h_1)
+\]
+be the unique harmonic diffeomorphism isotopic to the identity, and denote by \(\Phi(h_0,h_1)\in Q(h_0)\) its Hopf differential on \((S_g,h_0)\).  
+By Wolf’s theorem, the *Hopf map*
+\[
+\mathcal{H}_{h_0}:\mathcal{T}(S_g)\to Q(h_0),\quad h_1\mapsto \Phi(h_0,h_1)
+\]
+is a diffeomorphism.  
+
+Fix a hyperbolic metric \(h_*\in \mathcal{T}(S_g)\).  
+Define the *harmonic mirror map*
+\[
+\Xi_{h_*}:\mathcal{T}(S_g)\to\mathcal{T}(S_g),\quad 
+\Xi_{h_*}(h_0)=\mathcal{H}_{h_0}^{-1}\big(\overline{\Phi(h_0,h_*)}\big),
+\]
+where complex conjugation acts in \(Q(h_0)\) with respect to the complex structure induced by \(h_0\).
+
+**Problem:**  
+1. For which (possibly canonical) choices of \(h_*\) does the map \(\Xi_{h_*}\) enjoy naturality with respect to the mapping class group action on \(\mathcal{T}(S_g)\)?  
+   Is there a geometrically distinguished \(h_*\) (for example, a harmonic-energy barycenter or WP-center-of-mass point) that makes \(\Xi_{h_*}\) equivariant or canonical?  
+
+2. Determine whether there exists a choice of \(h_*\) for which \(\Xi_{h_*}\) is anti-holomorphic with respect to the Weil–Petersson complex structure:
+   \[
+   d\Xi_{h_*}\circ J_{\mathrm{WP}} = -J_{\mathrm{WP}}\circ d\Xi_{h_*}.
+   \]
+   If not exactly, does \(\Xi_{h_*}\) approximate an anti-holomorphic involution infinitesimally at \(h_0=h_*\)?  
+
+3. Analyze the infinitesimal generator of \(\Xi_{h_*}\) at \(h_*\): is \(d\Xi_{h_*}|_{h_*}\) related to the canonical conjugation on the cotangent space \(Q(h_*)\) under the \(T_{h_*}\mathcal{T}(S_g)\cong Q(h_*)\) identification?  What geometric quantity (for instance, the real part of the harmonic energy Hessian) does it encode?  
+
+4. Can the construction \(\Xi_{h_*}\) be extended to the augmented Teichmüller space, and does its boundary behavior induce complex conjugation on the limiting quadratic-differential strata corresponding to nodal degenerations?  
+
+Why is it a "good" problem:  
+This problem is now mathematically well-posed: the map \(\Xi_{h_*}\) is rigorously defined using the Wolf parametrization, avoiding cross-fiber ambiguities.  It asks whether complex conjugation in the *space of Hopf differentials* corresponds to a meaningful geometric or anti-holomorphic symmetry of Teichmüller space under the Weil–Petersson geometry.  
+The question is deceptively simple—“does conjugation in \(Q(h_0)\) translate to a mirror symmetry of Teichmüller space?”—yet opens deep analytical and geometric inquiries: existence of canonical centers, infinitesimal compatibility with the WP complex structure, and behavior near the Deligne–Mumford boundary.  
+A positive result would reveal a new symmetry underpinning the WP Kähler geometry, while a negative one would measure analytically how harmonic-coordinate parametrizations fail to preserve complex conjugation.  
+The problem thus bridges harmonic map analysis, complex and symplectic structures on moduli space, and degeneration theory—conceptually minimal yet truly research-level in depth—making it a compelling and “good” open problem.

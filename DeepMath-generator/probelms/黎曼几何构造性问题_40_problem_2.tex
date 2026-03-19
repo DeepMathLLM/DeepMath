@@ -1,0 +1,42 @@
+problem:  
+Let \( (M^n,g) \) be a complete noncompact Riemannian manifold with **nonnegative Ricci curvature** and Euclidean volume growth, i.e.  
+\[
+\lim_{r\to\infty}\frac{\mathrm{Vol}(B_r(p))}{r^n}=V_0>0.
+\]
+For \(d>0\), let
+\[
+\mathcal{H}_d(M)=\{u\in C^\infty(M):\Delta u=0,\ |u(x)|\le C(1+r(x))^d \text{ for some }C>0\}
+\]
+be the space of harmonic functions of polynomial growth of degree at most \(d\), and denote \(N(d)=\dim\mathcal{H}_d(M)\).
+
+It is known that for any tangent cone at infinity \(C(X)\), the homogeneous harmonic functions on \(C(X)\) correspond to eigenfunctions of \(\Delta_X\) on the cross-section \(X\), with eigenvalues \(\lambda_i(X)\) related to growth exponents \(\alpha_i\) by  
+\[
+\alpha_i(\alpha_i+n-2)=\lambda_i(X).
+\]
+
+**Open Problem (Quantitative Rigidity via Harmonic-Growth Spectrum):**  
+Assume all tangent cones at infinity of \(M\) have smooth cross-sections \(X\) satisfying \(\mathrm{Ric}_X\ge(n-2)g_X\).  
+Suppose that the **normalized growth function** of harmonic functions satisfies a quantitative near-equality with Euclidean harmonic growth:
+\[
+1-\varepsilon \le \frac{N(d)}{N_{\mathbb{R}^n}(d)} \le 1+\varepsilon \quad\text{for all }d\ge d_0(\varepsilon).
+\]
+Does there exist a universal function \(\delta(\varepsilon,n)\to0\) as \(\varepsilon\to0\) such that \(M\) is \(C^{1,\alpha}\)-close to \(\mathbb{R}^n\) outside a compact set, and in the limit \(\varepsilon\to0\) actually **isometric to \(\mathbb{R}^n\)**?
+
+Equivalently: is the Euclidean manifold **quantitatively rigid** under asymptotic near-equality of polynomial growth harmonic dimension, within the class of manifolds with nonnegative Ricci curvature and Euclidean volume growth?
+
+---
+
+Why is it a "good" problem:  
+This new problem avoids known pitfalls of pure spectral asymptotics and instead asks about **quantitative rigidity** of spaces of polynomial growth harmonic functions — an analytic invariant directly linked to geometric structure at infinity. It takes inspiration from the equality case (Colding–Minicozzi dimension growth) but moves into the uncharted **stability regime**.
+
+- **Profound conceptual link:**  
+  The behavior of \(N(d)\) encodes the harmonic polynomial structure of tangent cones. The conjecture that “near equality in \(N(d)\)” enforces geometric closeness reflects a deep connection between harmonic analysis and metric geometry, paralleling quantitative versions of Bishop–Gromov or splitting theorems but through analytic function spaces.  
+
+- **Cross-field synthesis:**  
+  This problem interlaces ideas from **geometric analysis** (Ricci limit theory), **potential theory on manifolds**, and **quantitative rigidity/stability** frameworks—pushing the analytic rigidity phenomenon into the asymptotic realm.
+
+- **Mathematically plausible and open:**  
+  Unlike full spectral coincidence (which is too weak), small deviation in \(N(d)\) across all large \(d\) might genuinely constrain geometric deviation, but current techniques give no such quantitative estimate. Understanding this would combine estimates on heat kernel asymptotics, tangent cone uniqueness, and harmonic approximation arguments—a realistic frontier problem.
+
+- **Elegant and deep:**  
+  The statement is simple—“if the space of harmonic functions almost matches Euclidean growth, the manifold is almost Euclidean”—yet it cuts to the core of how analytic data detect global geometry, embodying the “narrow entrance, profound depth” principle.

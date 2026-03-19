@@ -1,0 +1,34 @@
+problem:  
+Let \((M^n,g)\) be a complete, noncompact Riemannian manifold with **nonnegative sectional curvature** and **Euclidean volume growth**, i.e.  
+\[
+\lim_{r\to\infty}\frac{\operatorname{Vol}(B(p,r))}{r^n}=v_0>0
+\]
+for some base point \(p\in M\).  Denote \(r(x)=d(p,x)\).  
+
+Assume that the curvature tensor satisfies the **integral curvature-decay condition**
+\[
+\lim_{r\to\infty}\frac{1}{\operatorname{Vol}(B(p,r))}\int_{B(p,r)} r(x)^2 |Rm|(x)\, dV_g = 0.
+\]
+
+**Problem (Conjecture):**  
+Does this averaged curvature decay condition imply that \(M\) has a *unique* tangent cone at infinity, and moreover that this tangent cone is **Euclidean**?  
+
+More explicitly:
+1. Does the above condition guarantee that for every blow-down sequence \((M,r_i^{-2}g,p)\), \(r_i\to\infty\), the Gromov–Hausdorff limit is unique and isometric to \(\mathbb{R}^n\)?  
+2. Conversely, can one construct examples of complete noncompact Riemannian manifolds with nonnegative sectional curvature satisfying the same integral condition, yet admitting **multiple nonisometric tangent cones** at infinity?
+
+This asks whether **average quadratic curvature vanishing** is enough to compel **asymptotic Euclidean rigidity**, analogous to how pointwise \(r^{-2-\alpha}\) decay implies strong control in known partial cases.  
+
+Why is it a "good" problem:  
+The conjecture explores the precise boundary between *pointwise* and *averaged* curvature decay and its influence on large-scale geometric rigidity. It generalizes the classic curvature-decay rigidity program (which assumes pointwise bounds) to an integral setting, compelling the analysis of whether smallness in mean—a much weaker notion—can still prevent nonunique or nonflat asymptotic cones under nonnegative curvature.  
+
+This shift from pointwise to integral control parallels critical developments in elliptic and parabolic PDE regularity and signals a profound possible extension of Cheeger–Colding-type structure theory, which currently relies on lower Ricci bounds and volume convergence, not on integral curvature strength of this type.  
+
+Mathematically it intersects several active domains:
+- **Comparison geometry**: nonnegative curvature and the structure at infinity.  
+- **Metric measure geometry**: Gromov–Hausdorff limits and tangent-cone uniqueness.  
+- **Geometric analysis**: curvature integrability and decay averaged over large scales.  
+
+The problem is simple in formulation—expressed in one integral condition yet deeply linked to geometric rigidity—and solidly open: no known theorem deduces Euclidean asymptotics from such an averaged decay under nonnegative curvature. Its resolution would reveal whether the global geometry at infinity depends on **how much curvature is concentrated on the large scale, not merely its pointwise strength**, marking a conceptual advance in curvature decay theory.  
+
+That blend of simplicity, depth, and potential to unify analytic and geometric rigidity principles makes this a *good mathematical problem*.

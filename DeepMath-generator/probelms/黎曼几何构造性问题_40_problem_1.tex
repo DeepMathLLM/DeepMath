@@ -1,0 +1,47 @@
+problem:  
+Let \( (M^n, g) \) be a complete, noncompact Riemannian manifold with **nonnegative sectional curvature**.  
+For a fixed base point \( p \in M \), let  
+\[
+r(x) = \mathrm{dist}(p, x), \quad
+\mathcal{H}_d(M) = \{ u \in C^\infty(M) : \Delta u = 0,\ |u(x)| \le C(1+r(x))^d \text{ for some } C>0 \}.
+\]
+These are the harmonic functions on \(M\) of polynomial growth order at most \(d\).
+
+It is known (Colding–Minicozzi) that for manifolds with nonnegative Ricci curvature and maximal volume growth, \(\dim \mathcal{H}_d(M)\) is finite for each \(d\) and grows at most polynomially in \(d\). For \(\mathbb{R}^n\),
+\[
+\dim \mathcal{H}_d(\mathbb{R}^n) = \binom{n+d}{d} - \binom{n+d-2}{d-2}.
+\]
+
+**Open Problem (Asymptotic Rigidity for Polynomial Growth Harmonic Functions):**  
+Assume \( (M^n,g) \) has nonnegative sectional curvature and maximal (i.e. Euclidean) volume growth:
+\[
+\lim_{r\to\infty} \frac{\mathrm{Vol}(B_r(p))}{\omega_n r^n} = 1.
+\]
+Suppose further that for every tangent cone at infinity \( C(X) \) of \(M\), the cross-section \(X\) is a smooth Riemannian manifold with \( \mathrm{Ric}_X \ge (n-2)g_X \).
+
+Is it true that the **asymptotic agreement** of polynomial growth harmonic function spaces,
+\[
+\lim_{d\to\infty} \frac{\dim \mathcal{H}_d(M)}{\dim \mathcal{H}_d(\mathbb{R}^n)} = 1,
+\]
+forces \( M \) to be isometric to \( \mathbb{R}^n \)?  
+
+Equivalently: does the “asymptotic spectral completeness” of polynomial growth harmonic functions rigidly characterize Euclidean geometry among manifolds of nonnegative sectional curvature?
+
+---
+
+Why is it a "good" problem:  
+This question sits at the intersection of **harmonic analysis**, **geometric analysis**, and **asymptotic geometry**. It proposes a new **rigidity criterion** formulated purely through the asymptotics of the spaces of harmonic functions, an analytic object that indirectly encodes the geometry at infinity.  
+
+- **Profound connection between analysis and geometry:**  
+  The dimension growth of \(\mathcal{H}_d(M)\) reflects the spectral structure of cross-sections of tangent cones at infinity. Showing that the asymptotic ratio being \(1\) forces \(M\) to be Euclidean would unify harmonic function analysis and curvature rigidity theories à la Cheeger–Colding and Colding–Minicozzi.  
+
+- **Novel conceptual direction:**  
+  Traditional rigidity results require equality in geometric quantities such as volume growth or Bishop–Gromov ratios. This problem asks whether *analytic equality*—in the asymptotic “counting measure” of harmonic functions—suffices to recover the full geometric rigidity.  
+
+- **Technically and conceptually deep:**  
+  Resolving this would require understanding how the distribution of polynomial growth harmonic functions reflects the geometry of tangent cones, possibly through a Weyl-type asymptotic linking eigenvalues of \(X\) to harmonic growth on \(M\).  
+
+- **Plausibly open and nontrivial:**  
+  Existing results give dimension estimates and rigidity when exact equality holds for all finite \(d\), but the large-\(d\) asymptotic equality case has not been established. It therefore suggests a realistic extension of known theorems beyond current techniques, opening potential connections with metric-measure spectral geometry.  
+
+The statement is clean, conceptually motivated by known theories, and bridges distinct strands of modern differential geometry — embodying precisely the “narrow entrance, profound depth” characteristic of a good research problem.

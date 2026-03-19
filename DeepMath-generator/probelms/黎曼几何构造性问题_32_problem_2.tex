@@ -1,0 +1,43 @@
+problem:  
+Let \( (M,g) \) be a closed oriented surface and \( (N,h) \) a compact Riemannian manifold.  
+For each integer \(n\), let \(G_n = (V_n,E_n,F_n)\) be a geodesic triangulation of \(M\) with mesh size \(h_n \to 0\). Assume the triangulations are uniformly shape regular and that edge-based parallel transports and vertex barycentric areas are well-defined.  
+
+For a map \(f_n : V_n \to N\), define the **generalized discrete energy**
+\[
+E_n(f_n) = \frac{1}{2} \sum_{(i,j)\in E_n} \omega_{ij}^{(n)} \, \Psi\!\left(d_N^2(f_n(i),f_n(j))\right),
+\]
+where \(\Psi:[0,\infty)\to[0,\infty)\) is convex, smooth, strictly increasing, and \( \Psi'(0)=1\).  The edge weights \(\omega_{ij}^{(n)}>0\) depend only on the intrinsic geometry of the triangulation of \(M\), normalized so that \(E_n\) $\Gamma$-converges to 
+\[
+E_\Psi(f) = \frac{1}{2}\int_M \Psi(|df|^2_g)\,d\mathrm{vol}_g .
+\]
+
+At each vertex \(v_i\), define the **discrete tension vector**
+\[
+T_i^{(n)} = \sum_{j\sim i} \omega_{ij}^{(n)}\, \Psi'\!\left(d_N^2(f_n(i),f_n(j))\right)\, \exp^{-1}_{f_n(i)}(f_n(j)) \in T_{f_n(i)}N,
+\]
+which satisfies the discrete Euler–Lagrange condition \(T_i^{(n)} = 0\) at interior vertices.  
+Let \(\mathrm{area}_i^{(n)}\) be the barycentric area around vertex \(i\), and define a **vertex-based discrete mean curvature vector**
+\[
+H_i^{(n)} := \frac{1}{2\,\mathrm{area}_i^{(n)}} \, T_i^{(n)}.
+\]
+We may view the piecewise constant interpolation \(H_n: M\to TN\) as the discrete mean curvature field attached to \(f_n\).
+
+**Open problem:**  
+Does there exist a choice of convex function \(\Psi\) (and possibly a scaling of \(\omega_{ij}^{(n)}\) depending only on local geometry of \(M\)) such that, whenever the minimizing sequence \(f_n\) of \(E_n\) converges weakly in \(H^1\) to a smooth immersion \(f:M\to N\), one necessarily has
+\[
+H_n \rightharpoonup H(f) \quad\text{weakly in } L^2(M,TN),
+\]
+where \(H(f)\) is the smooth mean curvature vector of the immersion \(f\)?  
+
+Equivalently, can a discrete first-order variational energy depending only on pairwise distances (via a single convex nonlinearity) **encode the second fundamental form** of the limiting immersion in its Euler–Lagrange structure, without introducing geometric data beyond those distances and edge weights?
+
+---
+
+Why is it a "good" problem:  
+This revised problem isolates a fundamental question at the intersection of **discrete geometric analysis, harmonic map theory, and extrinsic surface geometry**: can second-order extrinsic information (mean curvature) emerge universally from first-order, pairwise variational structures?  
+
+The formulation is now mathematically well-posed—the discrete mean curvature vectors are derived directly from the discrete Euler–Lagrange operators, which are standard in discrete harmonic theory.  The triangulations and tangent-space identifications are clearly specified, making the question precise while retaining its conceptual simplicity.  
+
+A positive answer would reveal a deep principle that connects **Γ-limit variational convergence** with **emergent extrinsic curvature**, showing that fundamental curvature information is already latent in the purely tension-based structure of discrete harmonic maps.  A negative answer would illuminate the intrinsic limits of purely pairwise energy models for geometric discretization.  
+
+Either resolution would bridge discrete variational analysis and geometric curvature theory, representing a “narrow entrance, profound depth” problem—elegant in statement and profound in consequence, satisfying every hallmark of a good mathematical problem.

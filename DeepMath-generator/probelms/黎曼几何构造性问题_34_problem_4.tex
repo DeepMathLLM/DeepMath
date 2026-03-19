@@ -1,0 +1,45 @@
+problem:  
+Let \((M^n,g,f)\) be a complete smooth metric measure space with measure \(d\mu = e^{-f}d\mathrm{vol}_g\) and suppose \((M,d,\mu)\) satisfies volume doubling and a scale-invariant Poincaré inequality.  
+Assume \(M\) has one nonparabolic end \(E\subset M\) that is **asymptotically conical in the weighted sense**, meaning there exists a compact set \(K\) and a diffeomorphism  
+\[
+E\setminus K \cong (R_0,\infty)\times S^{n-1}
+\]
+with metric  
+\[
+g = dr^2 + r^2 h_r, \qquad \|h_r - h_\infty\|_{C^2(S^{n-1})} = O(r^{-\alpha}),
+\]
+and weight \(f=f(r,\theta)\) satisfying
+\[
+|f(r,\theta) - \phi(r)| + r |\partial_r(f-\phi)| \le C\, r^{-\alpha}, \quad \text{for some radial } \phi(r).
+\]
+
+Let \(\mathcal{H}_f^\infty(M)\) be the space of bounded \(f\)-harmonic functions, i.e.
+\[
+\mathcal{H}_f^\infty(M) = \{u \in L^\infty(M,\mu)\mid \Delta_f u = 0\}, \quad \Delta_f = \Delta - \langle\nabla f,\nabla\cdot\rangle.
+\]
+
+---
+
+**Open problem:**  
+Does the Liouville property
+\[
+\mathcal{H}_f^\infty(M) = \mathbb{R}
+\]
+remain stable under all \(O(r^{-\alpha})\)-asymptotically conical perturbations of the link metric \(h_\infty\) and the drift potential \(f\), provided the Bakry–Émery tensor satisfies
+\[
+\mathrm{Ric}_f \ge -K r^{-2},
+\]
+or can one find examples with the **same asymptotic cone and weight profile** but nonconstant bounded \(f\)-harmonic functions?
+
+Equivalently: *Is there a universal decay exponent \(\alpha_c>0\) such that Liouville-type vanishing for bounded \(f\)-harmonic functions holds for all \(O(r^{-\alpha})\)-convergent weighted cones if and only if \(\alpha>\alpha_c\)?*  
+If not, can one characterize the minimal geometric obstructions at subcritical decay rates that allow new bounded harmonic modes to appear?
+
+---
+
+Why is it a "good" problem:  
+This problem precisely isolates the frontier of **analytic and geometric stability** of Liouville-type theorems in the weighted asymptotically conical (AC) setting—a context central to analysis on manifolds, Ricci solitons, and scattering geometry.  
+Known vanishing results in asymptotically conical geometry rely heavily on \(\alpha>1\) to invoke Fredholm and decay theory. Whether the bounded \(f\)-harmonic Liouville property survives at or below this critical threshold (\(\alpha\le1\)) remains completely open, even in the unweighted case.  
+
+The problem’s simplicity (a decay rate question for geometric convergence) hides a deep analytic challenge: it demands understanding how slow metric and weight convergence can destabilize the spectral and potential-theoretic rigidity of the Laplacian. This requires tools from microlocal analysis, diffusion theory, and potential theory on manifolds with ends.  
+
+By bridging geometric asymptotics with analytic stability of harmonic function spaces, the question lies at the conceptual heart of geometric analysis and spectral theory—the quintessential “narrow entrance, profound depth’’ problem.

@@ -1,0 +1,37 @@
+problem:  
+Let \(S_g\) be a closed oriented surface of genus \(g\ge 2\), and \(\mathcal{T}(S_g)\) its Teichmüller space of hyperbolic metrics modulo isotopy.  
+Fix a base hyperbolic metric \(h\), and for any \(h'\in\mathcal{T}(S_g)\), let  
+\[
+u_{h,h'}:(S_g,h)\to(S_g,h')
+\]
+be the unique harmonic diffeomorphism in the identity homotopy class.  
+The *Hopf differential* \(\Phi(h,h')\in Q(h)\), a holomorphic quadratic differential on \((S_g,h)\), is given by  
+\[
+\Phi(h,h') = (u_{h,h'})_z\overline{(u_{h,h'})_z}\,dz^2.
+\]
+This defines the *Hopf map*  
+\[
+\mathcal{H}_h:\mathcal{T}(S_g)\to Q(h), \quad \mathcal{H}_h(h')=\Phi(h,h').
+\]
+At \(h'=h\), the differential \(d\mathcal{H}_h\) identifies \(T_h\mathcal{T}(S_g)\cong Q(h)\), and infinitesimally the \(L^2\)-inner product on \(Q(h)\) induces the Weil–Petersson form  
+\[
+\omega_{\mathrm{WP}}(v,w)=\Im\langle v,w\rangle_{L^2(h)}.
+\]
+
+Define, for \(h' \in \mathcal{T}(S_g)\),
+\[
+\omega_h|_{h'}(v,w):=\Im\langle d\mathcal{H}_h|_{h'}(v),\, d\mathcal{H}_h|_{h'}(w)\rangle_{L^2(h)},\qquad v,w\in T_{h'}\mathcal{T}(S_g).
+\]
+Then \(\omega_h\) is a smooth 2-form on \(\mathcal{T}(S_g)\) agreeing with \(\omega_{\mathrm{WP}}\) at \(h'=h\).
+
+**Problem:**  
+1. Determine whether \(\omega_h\) is a *closed* 2-form on \(\mathcal{T}(S_g)\); equivalently, does the harmonic Hopf map \(\mathcal{H}_h\) pull back the constant \(L^2\)-symplectic structure on \(Q(h)\) to a symplectic structure on Teichmüller space beyond first order?  
+2. If \(d\omega_h\neq 0\), compute \(d\omega_h\) explicitly in terms of higher variations of harmonic maps between hyperbolic surfaces, and interpret its geometric content (e.g., whether it measures non-holomorphicity of the Hopf parametrization).  
+3. Study the degeneracy and asymptotic behavior of \(\omega_h\) near the Deligne–Mumford boundary of \(\mathcal{T}(S_g)\): can a suitably renormalized version extend smoothly to the boundary, or does it capture a limiting complex-symplectic structure on the nodal surface?  
+4. Explore whether \(\omega_h\), up to normalization or averaging, coincides with the Goldman symplectic form on the \(\mathrm{PSL}_2(\mathbb{R})\)-character variety under the harmonic-map/Higgs-bundle correspondence.
+
+Why is it a "good" problem:  
+This problem isolates a concrete, well-defined analytic object—the pullback of the standard \(L^2\)-symplectic form via the *Hopf differential embedding* of Teichmüller space—and asks whether it determines a genuine, globally closed symplectic geometry. It stands at the intersection of harmonic map theory, complex geometry, and geometric representation theory.  
+If \(\omega_h\) is closed, it would yield a new analytic realization of the Weil–Petersson-type geometry derived purely from harmonic energy; if not, the deviation \(d\omega_h\) measures precisely how nonlinear harmonic deformations fail to preserve complex-symplectic structure.  
+Moreover, the problem naturally connects to Higgs bundle and Goldman symplectic geometry: the Hopf differential corresponds to the Higgs field of the harmonic bundle solution of the Hitchin equations. Thus, investigating \(\omega_h\) could uncover a deep analytic bridge between the representation-theoretic and geometric-analytic perspectives on moduli space.  
+The formulation is concise and self-contained, yet involves unresolved global and boundary-analytic properties. It is simple to state, conceptually natural, and would represent a major advance in understanding the analytic symplectic geometry underlying Teichmüller theory—making it a truly “good” research-level problem.

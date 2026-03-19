@@ -1,0 +1,44 @@
+problem:  
+Let \( (M^m,g) \) be a compact Riemannian manifold with bounded geometry, and \( (N^n,h) \) a compact manifold with nonpositive sectional curvature.  
+For a sequence of \( \varepsilon\)-approximately harmonic maps \(u_\varepsilon : M \to N\) satisfying  
+\[
+\|\tau(u_\varepsilon)\|_{L^2(M)} \le \varepsilon, \quad E(u_\varepsilon)\le E_0,
+\]  
+consider the stress–energy tensors  
+\[
+S_\varepsilon = \frac12 |\nabla u_\varepsilon|^2 g - (\nabla u_\varepsilon)^{\!*}\nabla u_\varepsilon,
+\]
+and the distributional divergence identity
+\[
+\operatorname{div} S_\varepsilon = -\langle \tau(u_\varepsilon),\nabla u_\varepsilon\rangle.
+\]
+
+Suppose \( S_\varepsilon \rightharpoonup S_* \) weakly as tensor-valued Radon measures. Let  
+\(T := S_* - \tfrac12|\nabla u_*|^2 g + (\nabla u_*)^{\!*}\nabla u_*\)  
+be the *tensorial defect measure*, representing the weak limit discrepancy in stress–energy beyond the scalar energy defect.
+
+**Problem (revised focus):**  
+At bubbling points, the scalar energy defect measure \(\nu\) captures lost energy through harmonic spheres.  Is it true that, after rescaling bubbles around such points,  
+the anisotropic (trace-free) part of \(T\) satisfies a **quantitative isotropy principle**:
+
+> There exists a dimension-dependent modulus \( \Gamma_m:(0,\infty)\to(0,\infty)\), with \(\Gamma_m(t)\to0\) as \(t\to0\), such that for every sequence of \( \varepsilon\)-approximately harmonic maps as above,
+> \[
+> \frac{\|T - \tfrac{1}{m}\operatorname{tr}_g T\cdot g\|(M)}{\nu(M)} \le \Gamma_m( \|\tau(u_\varepsilon)\|_{L^2(M)} ).
+> \]
+> 
+> In other words, as the tension field becomes small, **the tensorial defect in stress–energy becomes asymptotically isotropic**, uniformly in the geometry class—a statement that would quantitatively rule out formation of anisotropic stress concentration at bubbling.
+
+Equivalently: Does near-harmonicity enforce that, in all possible blow-up limits of \(u_\varepsilon\), the defect stress–energy tensor approaches a scalar multiple of the metric, to within a dimension-only modulus controlled by \( \|\tau(u_\varepsilon)\|_2 \)?  
+
+Why is it a "good" problem:  
+This refinement directly targets what standard bubbling theory cannot see: the *directional structure* of defect measures. Classical results describe only total scalar energy loss, not whether that lost energy is isotropically distributed in tangent directions.  
+
+Asking whether small tension enforces asymptotic isotropy of stress–energy defects bridges several deep areas:
+
+- From *analytic PDE*: one must analyze how the nearly divergence-free condition constrains the microlocal structure of tensor-valued Radon measures;
+- From *geometric measure theory*: it introduces a new notion of “directional concentration rigidity,” extending scalar defect theory;
+- From *geometric analysis*: it asks whether the harmonic map equation’s variational symmetry (stationarity under diffeomorphisms) quantitatively manifests in the isotropy of defect tensors.
+
+A positive resolution would imply a new form of *quantitative stationarity rigidity*: not only does small tension bound total defect mass, it also enforces directional symmetry. Proving this would likely require new compensated compactness or H-measure tools linking weak convergence of quadratic forms to geometric isotropy.  
+
+The statement is simple—“does small near-harmonicity force isotropy of stress–energy defects?”—but conceptually deep, highlighting subtle structure beyond classical energy quantization, and pointing towards a new layer of quantitative rigidity theory.

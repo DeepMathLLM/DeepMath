@@ -1,0 +1,31 @@
+problem:  
+Let \( (M^2,g) \) be a compact Riemann surface and \( (N,h) \) a compact Riemannian manifold. Consider the harmonic map flow  
+\[
+\partial_t u = \tau(u), \qquad u: M\times[0,T)\to N,
+\]
+which develops finite-time singularities at points \(x_1,\dots,x_\ell\in M\). After appropriate blow-up rescaling at each \(x_i\), one obtains a bubble tree of harmonic spheres  
+\(\{\phi_{i,j}:S^2\to N\}\), organized by their relative concentration scales \(\lambda_{i,j}\).
+
+Denote by  
+\[
+\mu_{i,j} := \lim_{k\to\infty} \frac{\lambda_{i,j+1}(t_k)}{\lambda_{i,j}(t_k)} \in (0,\infty],
+\]
+the *scale ratio* between consecutive bubbles along one bubbling branch. In all known examples, this ratio is either \(+\infty\) (complete scale separation) or determined indirectly via specific model computations.
+
+**Question:**  
+Is there a *universal asymptotic law* governing the ratios of consecutive bubble scales within a single branch of a bubble tree? Specifically:
+
+1. *(Quantitative scale recursion)*  Does there exist a discrete relation of the form  
+   \[
+   \log \mu_{i,j+1} \sim F(E(\phi_{i,j}), \mathrm{spec}(L_{\phi_{i,j}})),
+   \]
+   where \(F\) is an explicit or asymptotic functional depending only on the energy and Jacobi spectrum of the preceding bubble?  
+
+2. *(Scale quantization or universality)*  For generic metrics \(h\) on \(N\), are the possible limits of the ratios \(\mu_{i,j}\) constrained to a finite or discrete subset of \((0,\infty]\), independent of \(u_0\)?  Equivalently, do bubble‐tree scales form a *quantized hierarchy* determined by intrinsic geometry of \(N\)?  
+
+3. *(Renormalized interaction model)*  Can one define an effective “interaction potential” \(V_{\text{bubble}}(\phi,\psi)\)—depending on two harmonic spheres \(\phi,\psi\) arising on the same branch—so that the observed scale ratios correspond asymptotically to critical points of \(V_{\text{bubble}}\)?  
+
+If such quantitative recursion laws exist, they would reveal an underlying discreteness or universality in how successive bubbles emerge and interact during singularity formation, generalizing the known finiteness and energy quantization results.
+
+Why is it a "good" problem:  
+This problem is firmly grounded in established analytic structures: finite bubble trees in harmonic map flow are known, but no quantitative law relates the *relative scales* of multiple bubbles on a branch. It proposes a realistic, mathematically definable next step—discovering whether scale ratios obey a universal or quantized pattern depending only on geometric and spectral data of bubbles. Establishing such relationships would connect three major aspects of geometric analysis: (i) fine asymptotics of blow-up scales, (ii) spectral geometry of harmonic spheres, and (iii) interaction energy in nonlinear PDE. The formulation is concise and natural, avoids unverifiable assumptions like infinite bubbling, and—if solved—would yield a major advance toward a dynamical classification of multi-bubble singularities. Its conceptual clarity, grounded novelty, and potential to unify discrete and analytic features make it a truly “good” research-level mathematical problem.
