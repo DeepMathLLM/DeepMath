@@ -54,7 +54,7 @@ The DeepMath-Creative dataset is fully open-sourced and available in the [`DeepM
 
 ---
 
-## 🔬 Second Work: [DeepMath-Generator — When AI Becomes a Mathematical Creator](./DeepMath-generator/)
+## 🔬 Second Work: [DeepMath-Generator — Can LLM generate interesting mathematical research problems?](./DeepMath-generator/)
 
 ### 📝 Paper
 
