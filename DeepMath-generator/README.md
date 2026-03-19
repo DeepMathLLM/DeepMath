@@ -30,7 +30,7 @@ The DeepMath-Generator employs a sophisticated two-agent architecture to ensure 
                              │                   │
                              ▼                   │
                     ┌─────────────────┐          │
-                    │   Reviewer      │          │
+                    │   Evaluator      │          │
                     │      LLM        │          │
                     │ (Quality Control│          │
                     └────────┬────────┘          │
@@ -81,13 +81,13 @@ The DeepMath-Generator employs a sophisticated two-agent architecture to ensure 
    - The **Generator LLM** (creative role) produces an original research problem based on the given knowledge point
    - Each generated problem aims to be novel, non-trivial, and research-worthy
 
-3. **Review Phase**:
-   - The **Reviewer LLM** (quality control role) evaluates the generated problem against rigorous criteria
+3. **Evaluation Phase**:
+   - The **Evaluator LLM** (quality control role) evaluates the generated problem against rigorous criteria
    - Assessment includes: originality, mathematical validity, research potential, and clarity
 
 4. **Iterative Refinement**:
-   - If the problem fails review, it returns to the Generator for improvement
-   - This cycle continues until the problem passes review or reaches attempt limits
+   - If the problem fails evaluation, it returns to the Generator for improvement
+   - This cycle continues until the problem passes evaluation or reaches attempt limits
    - Once a problem passes, it is immediately saved
 
 5. **Batch Completion**:
@@ -105,7 +105,7 @@ The DeepMath-Generator employs a sophisticated two-agent architecture to ensure 
 | File/Folder | Description |
 |-------------|-------------|
 | [`generator_prompt.md`](./generator_prompt.md) | System prompt for the Generator LLM (creative role) |
-| [`reviewer_prompt.md`](./reviewer_prompt.md) | System prompt for the Reviewer LLM (quality control) |
+| [`evaluator_prompt.md`](./evaluator_prompt.md) | System prompt for the Evaluator LLM (quality control) |
 | [`problems/`](./problems/) | Complete collection of 665 expert-verified problems |
 
 ---
@@ -115,7 +115,7 @@ The DeepMath-Generator employs a sophisticated two-agent architecture to ensure 
 - **665 qualified, expert-verified research problems** in differential geometry
 - **200 knowledge points** systematically explored
 - **Two specialized LLM agents** with distinct creative and evaluative roles
-- **Rigorous quality control** through iterative review process
+- **Rigorous quality control** through iterative evaluation process
 - **First-of-its-kind demonstration** of LLMs generating genuinely novel mathematical research directions
 
 ---
