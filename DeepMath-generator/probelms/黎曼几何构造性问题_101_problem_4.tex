@@ -1,0 +1,41 @@
+problem:  
+Let \((X,d,\mathfrak{m})\) be a compact, essentially non‑branching metric measure space satisfying the curvature–dimension condition \(\mathrm{CD}(K,N)\) for some \(K\in\mathbb{R}\), \(N>1\).  
+For each pair of absolutely continuous measures \(\mu_0,\mu_1\in\mathcal P_2(X)\) with bounded densities, denote by \((\mu_t^\varepsilon)_{t\in[0,1]}\) the entropic interpolation between them with regularization parameter \(\varepsilon>0\), and by \((\mu_t)\) the limiting Wasserstein geodesic as \(\varepsilon\to 0\).  
+
+Define the **metric Fisher–information deviation functional**  
+\[
+\mathcal{I}_\varepsilon(\mu_0,\mu_1)
+:= \int_0^1\!\!\Big(
+I(\mu_t^\varepsilon) - I(\mu_t)
+\Big)\,dt,
+\quad 
+I(\nu):=\int_X |\nabla^- \log\rho_\nu|^2\,d\nu,
+\]
+where \(I(\nu)\) denotes the metric Fisher information defined in terms of the local slope \(|\nabla^- \log\rho_\nu|\) of the entropy, which is always available in CD spaces.  
+
+Assume that for every \(\mu_0,\mu_1\) as above, the limit  
+\[
+Q(\mu_0,\mu_1):=\lim_{\varepsilon\to0}\varepsilon^{-2}\mathcal{I}_\varepsilon(\mu_0,\mu_1)
+\]
+exists and defines a finite, symmetric, quadratic functional on absolutely continuous measures.  
+
+**Question:**  
+Does the existence of such a quadratic limit \(Q\) for all pairs \((\mu_0,\mu_1)\) imply that \((X,d,\mathfrak{m})\) has a linear heat flow, i.e. that its Cheeger energy is quadratic and it is in fact an \(\mathrm{RCD}(K,N)\) space?  
+Equivalently, can the **second‑order Fisher‑information asymptotics** of the entropic interpolation serve as a quantitative analytic test distinguishing \(\mathrm{CD}(K,N)\) from \(\mathrm{RCD}(K,N)\) spaces?  
+
+Why is it a "good" problem:  
+This formulation avoids the circularity of requiring Hessians, relying only on first‑order quantities (entropy gradients and Fisher information) that are well-defined for all CD spaces. Yet the question still fundamentally probes the emergence of *second‑order geometric structure* (the quadraticity of Cheeger energy and the tensorial Ricci notion) from entropic transport asymptotics.  
+
+1. **Conceptual bridge:**  
+   The problem connects *stochastic smoothing via the Schrödinger problem* with the *first‑ and second‑order calculus of metric measure spaces*. It asks whether higher‑order geometric structure can be inferred purely from the decay rate of the Fisher‑information gap, forging a deep link between probabilistic regularization and differential geometry.  
+
+2. **Mathematical soundness:**  
+   Every term in the statement—local slope, Fisher information, entropic interpolation—exists in any CD space. Thus, the problem is logically well‑posed even without second‑order calculus.  
+
+3. **Depth and simplicity:**  
+   Expressed with familiar analytic objects, the problem carries profound meaning: it seeks whether a curvature–dimension space whose entropic interpolations exhibit *quadratic Fisher‑information stability* must necessarily possess a linear (Riemannian) heat flow. This blends probabilistic asymptotics, information geometry, and the structure theory of metric measure spaces.  
+
+4. **Potential theoretical impact:**  
+   A positive answer would create a new analytic characterization of RCD spaces through Schrödinger‑bridge asymptotics, paralleling how linearity of the heat flow characterizes RCD structure, while grounding it in measurable transport quantities accessible to stochastic analysis.  
+
+Hence this version constitutes a mathematically sound and conceptually deep “good” problem uniting synthetic geometry, analysis, and probability.

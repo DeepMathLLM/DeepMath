@@ -1,0 +1,39 @@
+problem:  
+Let \((M^n,g,f)\) be a complete noncompact *expanding gradient Ricci soliton*,
+\[
+\operatorname{Ric}_g + \nabla^2 f = \lambda g, \qquad \lambda < 0.
+\]
+Assume that outside a compact set, \((M,g)\) is asymptotically conical in the sense that there exist coordinates \((r,x)\in(R_0,\infty)\times X\) with a compact \((n-1)\)-manifold \(X\) such that for some \(\delta>0\),
+\[
+g = dr^2 + r^2 h_r, \quad \text{where } h_r = h_0 + O_{C^2}(r^{-\delta}),
+\]
+and that the potential satisfies
+\[
+f = \frac{r^2}{4} + O(1).
+\]
+Let \(L_h := \Delta_L + 2(n-2)\) denote the Lichnerowicz operator on symmetric \(2\)-tensors over \((X,h_0)\).
+
+---
+
+**Problem:**  
+Fix an integer \(k\ge2\). Define the weighted Hölder spaces \(C^{k,\alpha}_\delta\) on the end of \((M,g)\) using \(r^{-\delta}\)-weights.  
+
+1. Determine explicitly the first nontrivial term in the expansion of the soliton equation in these weighted spaces.  
+   In particular, show that the leading correction \(\dot h = \lim_{r\to\infty} r^{\delta}(h_r - h_0)\), if it exists, satisfies a linearized equation on the link
+   \[
+   L_{h_0}(\dot{h}) = 0.
+   \]
+   Is this asymptotic equation valid whenever \(\delta\) lies below the smallest positive indicial root of the Lichnerowicz operator on the cone \(C(X)\)?
+
+2. Let \(\delta_c\) denote the smallest nonnegative number such that for all \(\delta > \delta_c\), every solution of the soliton equation satisfying \(|g - g_C|_{C^{k,\alpha}_\delta}<\infty\) has \(\dot{h}=0\).  
+   Does \(\delta_c\) coincide with the real part of the smallest positive indicial root of \(L_{h_0}\)?  
+   Equivalently, does the linear spectral geometry of \(L_{h_0}\) precisely determine the analytic rigidity threshold for asymptotic cone deformation in expanding Ricci solitons?
+
+3. If equality holds, can one construct weakly AC expanders corresponding to marginally admissible indicial roots (i.e. at \(\delta=\delta_c\)), analogous to threshold resonance solutions in linear PDE theory?
+
+---
+
+Why is it a "good" problem:  
+This version yields a precise, analytically rigorous question directly linking *spectral theory* on the cone cross-section \(X\) with *asymptotic rigidity* of expanding Ricci solitons. Instead of loosely defined quantities, it employs weighted Hölder spaces and the indicial theory of the Lichnerowicz operator—an established analytic framework—so the problem is both meaningful and technically challenging.  
+The problem isolates a single deep issue: whether the *critical decay threshold* for Einstein rigidity of asymptotically conical expanders equals a spectral invariant of the cross-section. A positive resolution would provide a sharp quantitative criterion delineating when Einstein rigidity must hold and when new non-Einstein asymptotics could emerge.  
+It connects geometric PDE, elliptic spectral theory, and asymptotic geometry—illustrating how the fine analysis of a linearized operator on a compact manifold determines the global structure of nonlinear solitons. This interplay between linear spectral data and nonlinear geometric rigidity epitomizes a "good" modern analytic‑geometric problem.

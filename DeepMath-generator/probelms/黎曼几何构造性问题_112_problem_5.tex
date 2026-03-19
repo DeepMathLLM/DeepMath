@@ -1,0 +1,24 @@
+problem:  
+Let \((X,d,\mathfrak m)\) be an \(RCD(K,N)\) metric measure space with \(K\in\mathbb R\) and finite \(N>1\).  
+For Lipschitz \(f:X\to\mathbb R\), denote by \(u_t=P_t f\) the gradient flow of the Cheeger energy (the heat semigroup) and write  
+\[
+E_t(f):=\int_X |\nabla u_t|^2\,d\mathfrak m,\qquad E_0(f):=\int_X |\nabla f|^2\,d\mathfrak m.
+\]  
+It is known that \(E_t(f)\) is nonincreasing and that \(E_t(f)\le e^{-2Kt}E_0(f)\).
+
+Define the **normalized energy ratio**:
+\[
+\mathcal R_t(f):=e^{2Kt}\frac{E_t(f)}{E_0(f)}=1-r(f)\,t^2+o(t^2),\quad t\to0^+.
+\]
+In smooth Bakry–Émery manifolds, \(r(f)\) encodes both \(\operatorname{Ric}_V\) and its derivatives.  
+
+**Problem:**  
+Is there an intrinsic notion of the second-order curvature functional \(r(f)\) in the nonsmooth \(RCD(K,N)\) framework whose spatial constancy characterizes spaces of *parallel synthetic curvature*, i.e., whose tangent cones are all Gaussian after rescaling?  
+Equivalently, does small-time *quadratic flatness* of the normalized energy decay, uniform across test functions, imply that \((X,d,\mathfrak m)\) is isometric (up to scaling) to a weighted Euclidean space \((\mathbb R^n,|\cdot|,e^{-\frac K2|x|^2}dx)\)?  
+
+Exploring further, can one define \(r(x)\) as the limit of suitably normalized second differences in \(E_t(f)\) for sharply localized \(f\) near \(x\), and, if so, does constancy of \(r(x)\) entail constancy of the “synthetic Hessian of the entropy” or of the metric–measure Laplacian spectrum?
+
+Why is it a "good" problem:  
+This problem pushes curvature–dimension analysis beyond first-order Bochner-type identities into second-order asymptotics, a regime not yet defined in general for \(RCD(K,N)\) spaces. It invites the construction of a *second-order curvature invariant* based on the fine decay of the heat-flow energy ratio—connecting probabilistic diffusion asymptotics, synthetic Ricci geometry, and spectral rigidity.  
+Unlike first-order expansions, the second-order term involves curvature derivatives and genuinely new geometric content; defining and interpreting it in the nonsmooth synthetic setting would demand fundamentally new techniques.  
+A resolution would inaugurate a “second-order” Bakry–Émery theory on metric measure spaces, revealing whether uniform higher-order diffusion symmetry forces Gaussian–type rigidity. This clean yet profound question thus lies at the frontier where analytic expansions meet metric geometric structure.

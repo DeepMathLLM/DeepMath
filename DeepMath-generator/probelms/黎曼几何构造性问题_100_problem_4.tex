@@ -1,0 +1,35 @@
+problem:  
+Let \((M^n,g)\) be a compact Riemannian manifold with \(\operatorname{Ric}_g \ge (n-1)k\, g\) for some \(k>0\), and let \(I_M(v)\) denote its isoperimetric profile.  
+Define the *normalized isoperimetric deficit* relative to the model sphere \(S_k^n\) by  
+\[
+\Delta(M,g) := \sup_{v\in(0,\operatorname{Vol}(M,g))} \frac{I_M(v)-I_{S_k^n}(v)}{I_{S_k^n}(v)} \ge 0,
+\]
+so that \(\Delta(M,g)=0\) if and only if \((M,g)\) is isometric to the round sphere.
+
+**Conjecture (Quantitative Lévy–Gromov Rigidity):**  
+For every \(n\ge 3\) and \(k>0\), there exist constants \(C=C(n,k)>0\) and \(\alpha>0\) such that  
+\[
+\sup_{p\in M}\|\operatorname{Ric}_g(p) - (n-1)k\, g_p\| \le C\, [\Delta(M,g)]^{\alpha}.
+\]  
+Equivalently: if the isoperimetric profile of \((M,g)\) is uniformly close—up to a small relative error—to that of the constant‑curvature model, then the Ricci tensor is uniformly close to its model value everywhere.
+
+---
+
+Why is it a "good" problem:  
+
+1. **Mathematically sound definition.**  
+   The sign convention ensures \(\Delta(M,g)\ge 0\) and vanishes only for the round sphere, making the conjecture logical. It precisely formalizes "how small isoperimetric deviation enforces curvature closeness."
+
+2. **Sharp quantitative rigidity target.**  
+   Classical Lévy–Gromov gives a qualitative rigidity (equality ⇒ sphere). This conjecture asks for a *quantitative* version translating geometric inequality into analytic curvature control, a modern theme paralleling quantitative Alexandrov or spectral gap rigidity.
+
+3. **Bridge between fields.**  
+   A proof would intertwine geometric measure theory (on quantitative isoperimetry), Ricci comparison and stability theory (Cheeger–Colding), and nonlinear analysis (propagation of almost‑equality in PDEs for the isoperimetric profile). Such cross‑fertilization is typical of the strongest developments in geometric analysis.
+
+4. **Genuinely new and unsolved.**  
+   No known theorem establishes even weaker curvature‑norm bounds from isoperimetric profile closeness. Deriving tensor‑level quantitative curvature stability from a global variational inequality would represent a new rigidity mechanism in Riemannian geometry.
+
+5. **Extreme simplicity and conceptual depth.**  
+   The statement involves only two geometric quantities—Ricci curvature and the isoperimetric function—yet bridges global shape and local curvature in a nontrivial quantitative way. It is understandable in one sentence but would likely require groundbreaking methods to solve.
+
+Hence this conjecture embodies the hallmarks of a *good* research problem: simple to state, logically sound, immediately connected to a core theorem, yet deep and open, uniting analysis, geometry, and curvature comparison in a profound way.

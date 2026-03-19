@@ -1,0 +1,43 @@
+problem:  
+Let \((X,d,\mu)\) be a complete, **noncollapsed** metric measure space satisfying the \(\mathrm{RCD}(K,N)\) condition for some \(K\in\mathbb{R}\) and integer \(N\ge 2\), with \(\mu = \mathcal{H}^N\).  
+Let \(p_t(x,y)\) denote the minimal heat kernel associated with the canonical Dirichlet form on \((X,d,\mu)\).  
+
+For each \(x\in X\), define the **heat moment functional**
+\[
+\Psi_t(x):=\int_X d^2(x,y)\,p_t(x,y)\,d\mu(y),\qquad t>0.
+\]
+On a smooth \(N\)-dimensional Riemannian manifold, it is classically known that
+\[
+\Psi_t(x) = 2Nt - \frac{t^2}{3}\,\mathrm{Scal}(x) + O(t^3)
+\quad (t\downarrow 0),
+\]
+where \(\mathrm{Scal}(x)\) denotes the scalar curvature at \(x\).  
+
+**Open Problem:**  
+In the general noncollapsed \(\mathrm{RCD}(K,N)\) setting:
+
+1. (**Well-posedness and scaling**)  
+   Does the normalized expression \(\Psi_t(x)/(2Nt)\) converge to \(1\) as \(t\downarrow0\) for \(\mu\)-a.e. \(x\)? Equivalently, can one justify that the infinitesimal metric dimension detected by the heat kernel’s second moment coincides with \(N\)?  
+
+2. (**Second-order deviation and synthetic scalar curvature**)  
+   Assuming the limit in (1) holds, define the **renormalized deviation**
+   \[
+   \Theta(x):=\lim_{t\downarrow0}\frac{\Psi_t(x)-2Nt}{t^2}
+   \]
+   (whenever the limit exists in \(L^1_{\mathrm{loc}}\) or in measure).  
+   Does \(\Theta(x)\) exist and define a measurable function such that, on smooth manifolds, \(\Theta(x)=-\tfrac{1}{3}\mathrm{Scal}(x)\)?  
+
+3. (**Stability**)  
+   If a sequence of noncollapsed \(\mathrm{RCD}(K_i,N)\) spaces \((X_i,d_i,\mathcal{H}^N,x_i)\) converges in the pointed measured Gromov–Hausdorff sense to \((X_\infty,d_\infty,\mathcal{H}^N,x_\infty)\), does the corresponding family \(\Theta_i(x_i)\) converge (in measure or weakly) to \(\Theta_\infty(x_\infty)\)?  
+
+A complete affirmative answer would yield a **synthetic scalar curvature density** derived purely from the small-time geometry of the heat kernel, stable under pmGH convergence.  
+
+Why is it a "good" problem:  
+This problem targets the most fundamental geometric invariant—the scalar curvature—through the small-time asymptotic of a single, elementary quantity: the second moment of the heat distribution. It is simple to state and invariantly defined using only the heat kernel, yet seeks to penetrate the deep analytic structure of \(\mathrm{RCD}(K,N)\) spaces.  
+
+Resolving it would:  
+- Provide a heat-based definition of **synthetic scalar curvature**, compatible with smooth geometry and stable under metric measure limits.  
+- Establish a bridge linking diffusion processes, curvature bounds, and second-order synthetic analysis—integrating stochastic, geometric, and variational perspectives.  
+- Extend the philosophy of the Bakry–Émery approach to curvature to an explicit spectral–geometric invariant measurable directly from the heat flow.  
+
+Its simplicity masks extraordinary depth: the statement is reducible to a short integral expression, yet its verification entails the full machinery of nonsmooth analysis, tangent-cone geometry, and heat kernel asymptotics. Hence, it exemplifies the type of problem that could open an entirely new chapter in the analytic theory of metric spaces with curvature bounds.

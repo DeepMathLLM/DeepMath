@@ -1,0 +1,15 @@
+problem:  
+Let \((M,g,o)\) be a complete, noncompact Riemannian manifold with \(\mathrm{Ric}\ge0\).  
+Assume that there exists a sequence of smooth, strictly convex exhaustion functions \(f_i:M\to[0,\infty)\) satisfying:  
+
+1. \(f_i(o)=0\) and every sublevel set \(\{f_i<t\}\) is compact and exhausts \(M\);  
+2. For each \(\varepsilon>0\), there exists \(R>0\) such that \(|\nabla^2 f_i|(x)<\varepsilon\) for all \(x\) with \(d(x,o)>R\) and for all \(i\);  
+3. \(|\nabla f_i|(x)\to c>0\) uniformly as \(d(x,o)\to\infty\);  
+4. The functions \(u_i(x):=f_i(x)/c\) (so that each has asymptotically unit gradient) satisfy the uniformly Lipschitz bound \(|\nabla u_i|\le 1+\varepsilon_i\) with \(\varepsilon_i\to0\).  
+
+Consider the pointed rescalings \((M,r_i^{-2}g,o)\) with \(r_i\to\infty\), which subconverge in the pointed Gromov–Hausdorff sense to a tangent cone at infinity \(C_\infty(M,o)\), and suppose \(u_i\) converge (in the Cheeger–Colding sense) to a limit 1-Lipschitz function \(u_\infty\colon C_\infty(M,o)\to\mathbb{R}\).  
+
+**Question:** If \(u_\infty\) is convex along geodesics in \(C_\infty(M,o)\), must it be affine in the sense that its restriction to every minimizing geodesic is linear, and hence does \(C_\infty(M,o)\) necessarily split isometrically as a product \(N_\infty\times\mathbb{R}\)?  
+
+Why is it a "good" problem:  
+This formulation places the question squarely in the frontier between analytic methods and geometric rigidity under nonnegative Ricci curvature. It asks whether the asymptotic presence of globally defined convex functions whose Hessians vanish at infinity is enough to *force* a Cheeger–Gromoll–type splitting, but now at the level of tangent cones and in analytic language. The problem is simple to state yet mathematically deep: it calls directly for bridging convex potential theory, Cheeger–Colding’s limit/functional analysis framework, and the geometry of Ricci limit spaces. A positive answer would establish a new analytic pathway to detect lines and product structures purely from nearly affine convex functions, advancing our understanding of asymptotic geometry and rigidity without assuming the existence of geodesic lines a priori.

@@ -1,0 +1,23 @@
+problem:  
+Let \((M_i^n,g_i)\) be a sequence of closed Riemannian manifolds with \(\operatorname{Ric}_{M_i}\ge -(n-1)\), \(\operatorname{Diam}(M_i)\le D\), and \( \operatorname{Vol}(M_i)\to V>0\).  Assume \((M_i,g_i)\) converge in the measured Gromov–Hausdorff sense to \((X,d_X,\mathcal{H}^n)\); by Cheeger–Colding and Mondino–Naber, \(X\) is an \(\mathrm{RCD}(-(n-1),n)\) space.  
+
+For each \(i\), fix a smooth isoperimetric minimizer \(\Omega_i\subset M_i\) for some fixed reference volume fraction \(v\in (0,1)\), i.e.  
+\[
+\operatorname{Vol}_{M_i}(\Omega_i)=v\,\operatorname{Vol}(M_i),\qquad
+\operatorname{Area}_{g_i}(\partial\Omega_i)=I_{M_i}(v). 
+\]
+By compactness of the sequence \((M_i,g_i)\), the characteristic functions \(\chi_{\Omega_i}\) form a sequence of BV functions with uniformly bounded variation.  Hence (after subsequence extraction) they may converge in \(L^1\) to a set of finite perimeter \(\Omega_\infty\subset X\).  
+
+**Conjectural problem:**  
+Does the limit perimeter measure of \(\Omega_i\) detect the singular structure of \(X\)?  More precisely, is it true or false that the perimeter measure \( |D\chi_{\Omega_i}|\) concentrates asymptotically only on the regular set \(\mathcal{R}\subset X\), in the sense that the limiting measure of the singular part vanishes:
+\[
+\lim_{i\to\infty}\frac{|D\chi_{\Omega_i}|(f_i^{-1}(\mathcal{S}))}{|D\chi_{\Omega_i}|(M_i)} = 0,
+\]
+where \(\mathcal{S}=X\setminus\mathcal{R}\) and \(f_i:M_i\to X\) are almost isometries realizing the measured Gromov–Hausdorff convergence?  
+
+Equivalently: in Ricci-limit spaces, do genuine isoperimetric regions in the approximating manifolds “see” only the smooth part of the limit, or can they exhibit nontrivial area concentration along the singular strata?  
+
+Why is it a "good" problem:  
+This question isolates a subtle and genuinely unresolved aspect of Colding’s volume convergence philosophy—it asks whether the *fine variational geometry* of isoperimetric hypersurfaces remains smooth in the limit or interacts significantly with metric singularities.  Existing BV compactness and lower-semicontinuity results in the RCD setting do not decide this issue: they guarantee convergence of perimeters but not the *distribution* of perimeter measure between regular and singular parts.  Resolving this would deepen our understanding of how curvature lower bounds control the interface between smooth and singular regions of Ricci-limit spaces.  
+
+A positive answer would demonstrate that lower Ricci curvature bounds preclude area concentration on singular strata, thus unifying geometric measure theory with the stratified analysis of Ricci-limit spaces and advancing structural classification beyond mere metric or measure convergence.  A counterexample would reveal new analytic phenomena in singular metric geometry.  The problem is expressible in a single line yet probes the core of the Cheeger–Colding–Naber theory, exemplifying the ideal of simplicity masking profound depth.

@@ -1,0 +1,38 @@
+problem:  
+Let \(f : X \to Y\) be a **submetry** between compact Alexandrov spaces with curvature bounded below by \(0\).  
+For each \(x \in X\), denote by \(\Sigma_x X\) the space of directions (of curvature \(\ge 1\)) and let  
+\[
+d_x f : \Sigma_x X \to \Sigma_{f(x)} Y
+\]
+be the **differential submetry** between links.  
+
+Define the **vertical directions** by  
+\[
+V_x = \ker(d_x f) = \{v \in \Sigma_x X \mid d_x f(v) \text{ is a single point in } \Sigma_{f(x)} Y\},
+\]
+and define the **horizontal directions** as the metric orthogonal complement  
+\[
+H_x = \{w \in \Sigma_x X \mid \angle(w,v) = \tfrac{\pi}{2} \ \forall v \in V_x\}.
+\]
+
+For \(v,w \in H_x\), let \(\gamma_v,\gamma_w\) be the corresponding unit-speed geodesics issuing from \(x\).  
+Denote by \(T(v,w)\) the Toponogov hinge in \(X\) at \(x\) defined by \(\gamma_v,\gamma_w\), and by \(\tilde{T}(v,w)\) its Euclidean comparison hinge.  
+
+**Assume:** For Hausdorff-a.e. \(x\in X\) and for \( \mathcal{H}^1_{\Sigma_x}\times \mathcal{H}^1_{\Sigma_x}\)-a.e. horizontal pair \((v,w)\in H_x\times H_x\),
+\[
+d_X(\gamma_v(t), \gamma_w(t)) = d_{\mathbb{R}^2}(\tilde{\gamma}_v(t), \tilde{\gamma}_w(t)) + o(t)
+\quad \text{as } t\to 0,
+\]
+i.e. infinitesimal equality holds in the Toponogov hinge inequality along horizontal directions almost everywhere.
+
+**Question:**  
+Does this “almost-everywhere infinitesimal Toponogov equality in horizontal directions” imply that, for \(\mathcal{H}^n\)-a.e. \(x\in X\), the tangent cone splits as a metric product
+\[
+T_x X \cong T_{f(x)} Y \times F_x,
+\]
+for some Euclidean cone \(F_x\)?  
+Equivalently, does such infinitesimal equality almost everywhere force \(X\) to be locally an Alexandrov product \(Y\times F\) (possibly with \(F\) varying continuously)?
+
+Why is it a "good" problem:  
+This problem precisely probes the threshold between local rigidity and measure-theoretic regularity in Alexandrov geometry. Classical Toponogov rigidity gives splitting only under *pointwise* equalities, while here one asks if **almost-everywhere infinitesimal equality along horizontal directions of a submetry** already enforces product splitting at tangent-cone level.  
+A positive result would reveal that Alexandrov spaces exhibit an unexpected stability of smooth geometric structure under measure-theoretic rigidity—deeply connecting geometric comparison, metric measure theory, and submetry analysis. A counterexample would expose subtle geometric phenomena in the gap between metric splitting and weak curvature equality. The formulation is minimal and geometrically natural, yet its resolution would demand profound insight into the infinitesimal structure of Alexandrov spaces—making it a truly “good” research problem.

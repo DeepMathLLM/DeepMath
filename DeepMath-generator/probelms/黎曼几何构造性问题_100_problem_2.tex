@@ -1,0 +1,36 @@
+problem:  
+Let \((M^n,g)\) be a smooth Riemannian manifold with \(\operatorname{Ric}_g \ge (n-1)k\,g\), and denote by \(I_M(v)\) its isoperimetric profile.  
+From classical results (Bérard–Meyer, Druet, Nardulli), as \(v\to 0\),
+\[
+I_M(v) = c_n v^{\frac{n-1}{n}} \Big(1 - A(p) v^{2/n} + o(v^{2/n})\Big),
+\]
+where each small-volume minimizer concentrates near a point \(p\), and \(A(p)\) is an explicit multiple of the scalar curvature \(\operatorname{Scal}_g(p)\).  
+
+**Conjecture (Second-order isoperimetric rigidity under Ricci lower bound):**  
+Suppose there exists a point \(p_0\in M\) such that for some sequence \(v_i\to 0\),  
+\[
+I_M(v_i) = I_{M_k^n}(v_i) + o(v_i^{(n+1)/n}),
+\]
+and the corresponding minimizers actually concentrate at \(p_0\).  
+Does this local small-volume *second-order equality* imply that \((M,g)\) has constant sectional curvature \(k\) in a neighborhood of \(p_0\)?
+
+Equivalently: if the isoperimetric profile agrees with that of the space form up through the second asymptotic term near \(v=0\), does it force full curvature rigidity locally, assuming only \(\operatorname{Ric}\ge (n-1)k\,g\)?
+
+Why is it a "good" problem:  
+1. **Mathematically sound and genuinely restrictive assumption:**  
+   While equality of the *leading term* in the small-volume expansion is universal, equality through the *second asymptotic order* encodes detailed curvature information (governed by scalar curvature at the concentration point). Demanding the same second-order behavior as the model imposes nontrivial curvature constraints, making the hypothesis meaningful and highly restrictive.
+
+2. **Deep interaction between local geometry and global inequalities:**  
+   This conjecture probes whether fine asymptotics of a global geometric quantity (the isoperimetric profile) determine *local curvature tensors*. It is positioned precisely between geometric measure theory and Riemannian curvature analysis.
+
+3. **Potential bridge across fields:**  
+   - From the analytic side, knowledge of expansions suggests that \(A(p)\) depends linearly on \(\operatorname{Scal}(p)\); perfect equality with model terms could, under additional Ricci bounds, force vanishing of curvature deviations.  
+   - From the synthetic geometry side, it ties curvature lower bounds à la Lott–Sturm–Villani to infinitesimal geometric rigidity phenomena encoded by the isoperimetric deficit.
+
+4. **Relation to unresolved questions:**  
+   Currently, the propagation of equality from the asymptotic expansion to full local curvature rigidity is not understood. Extending known asymptotic analyses to deduce local constancy of the entire curvature tensor would require new techniques in regularity and PDE–geometry coupling, adding a genuinely open dimension to curvature comparison theory.
+
+5. **Extreme simplicity concealing profound difficulty:**  
+   Formulated in elementary geometric terms—"if the isoperimetric profile matches the constant-curvature model to second order, must the manifold be locally constant curvature?"—the problem hides powerful analytic depth. Its resolution would refine our understanding of how subtle equality information in a global inequality determines local geometric structure.  
+
+Thus, this problem rectifies earlier flaws by posing a mathematically sound, precise, and genuinely open rigidity question connecting Ricci curvature, small-volume isoperimetry, and local geometric analysis.

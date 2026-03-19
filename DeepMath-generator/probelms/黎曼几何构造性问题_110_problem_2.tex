@@ -1,0 +1,37 @@
+problem:  
+Let \((X,d,\mu)\) be a complete metric measure space satisfying the \(\mathrm{RCD}^*(K,N)\) condition for some \(K\in\mathbb{R}\) and \(N\in(1,\infty)\), and let \(p_t(x,y)\) be its minimal heat kernel.  
+For \(x,y\in X\), define the **relative entropy between two heat distributions** at time \(t>0\),
+\[
+\mathcal{E}_t(x,y):=\int_X p_t(x,z)\,\log\frac{p_t(x,z)}{p_t(y,z)}\, d\mu(z).
+\]
+It is known that
+\[
+-\!4t\log p_t(x,y)\to d^2(x,y) \quad\text{as }t\downarrow 0
+\]
+for all \(x,y\), and in Euclidean space one can compute that \(\mathcal{E}_t(x,y)\sim d^2(x,y)/(4t)\).
+
+**Open Problem:**  
+Assume that \((X,d,\mu)\) satisfies the \(\mathrm{RCD}^*(K,N)\) condition.  
+
+1. **Leading-order confirmation.**  
+   Prove (or formulate sufficient conditions to ensure) that for all \(x,y\in X\),
+   \[
+   \lim_{t\to0^+}4t\,\mathcal{E}_t(x,y)=d^2(x,y).
+   \]
+   Even this “entropy Varadhan formula” is not yet established in general.
+
+2. **Next-term asymptotic structure.**  
+   Assuming the limit in (1) holds, investigate whether there exists a measurable function \(A(x,y)\) capturing second-order deviations:
+   \[
+   \mathcal{E}_t(x,y)=\frac{d^2(x,y)}{4t}+A(x,y)+o(1)\qquad (t\to0^+).
+   \]
+   Can \(A(x,y)\) be expressed synthetic-analytically in terms of the intrinsic Ricci curvature measure or through \(\Gamma_2\)-calculus quantities?  
+
+3. **Smooth-manifold compatibility.**  
+   When \(X\) is a smooth manifold with \(\mathrm{Ric}_N\ge K\), does \(A(x,y)\) reduce to an explicit integral of curvature along the minimal geodesic between \(x\) and \(y\), mirroring the second term in the classical Minakshisundaram–Pleijel expansion of heat kernel asymptotics?
+
+Even formulating or bounding \(A(x,y)\) in the general \(\mathrm{RCD}^*(K,N)\) case would constitute a major step toward understanding how curvature influences the dissipation of entropy at infinitesimal scales in nonsmooth settings.
+
+Why is it a "good" problem:  
+This formulation corrects the scaling and focuses on the two most fundamental analytic layers of heat-kernel geometry: the leading order reproducing distance (Varadhan) and the next order encoding curvature.  Establishing an **entropy-based Varadhan formula** and a **second-order curvature correction** would enrich the synthetic theory of Ricci curvature by uncovering an analytic invariant derived entirely from diffusion behavior—requiring deep synthesis of heat kernel analysis, Γ₂-calculus, and Gromov–Hausdorff stability.  
+The question is simple to state but profound in implications: *what does curvature look like to an infinitesimally diffusing particle in a nonsmooth space?*  Answering it would significantly advance the analytic and geometric understanding of RCD structures and how curvature emerges from heat propagation.

@@ -1,0 +1,41 @@
+problem:  
+Let \((X,d,\mu)\) be a complete, noncollapsed \(\mathrm{RCD}(K,N)\) space for some \(K\in\mathbb{R}\) and integer \(N\ge2\), with \(\mu=\mathcal{H}^N\).  Let \(p_t(x,y)\) be its minimal heat kernel.  
+Fix \(x_0\in X\) and define the **diagonal deviation function**
+\[
+\Delta_t(y) := -4t\,\log\!\left(\frac{p_t(y,y)}{(4\pi t)^{-N/2}}\right),
+\quad y\in X,\ t>0.
+\]
+On a smooth manifold, \(\Delta_t(y)=\tfrac{2t^2}{3}\mathrm{Scal}(y)+O(t^3)\), so that the second-order term encodes scalar curvature.  
+
+**Open Problem:**  
+In the noncollapsed \(\mathrm{RCD}(K,N)\) setting:
+
+1. (**Existence of synthetic heat diagonal asymptotics**)  
+   Does there exist a measurable function \(\mathsf{S}(y)\in L^1_{\mathrm{loc}}(X,\mu)\) such that for \(\mu\)-a.e.\ \(y\in X\),
+   \[
+   \lim_{t\to0^+}\frac{\Delta_t(y)}{t^2}
+        \;=\;\frac{2}{3}\,\mathsf{S}(y),
+   \]
+   where the limit is taken in \(L^1_{\mathrm{loc}}\)?  
+
+   Equivalently, is there a second-order small-time correction to the on-diagonal heat kernel universal across all noncollapsed \(\mathrm{RCD}(K,N)\) spaces?
+
+2. (**Comparison with the Γ₂-curvature**)  
+   If such \(\mathsf{S}\) exists, is it true that for all test functions \(f\in W^{1,2}(X)\),
+   \[
+   \int_X \mathsf{S}(y)\,|\nabla f|^2(y)\,d\mu(y)
+       \;=\;\lim_{t\downarrow0}\frac{3}{2t^2}
+          \!\int_X\Bigl[(P_t f)^2 - f^2 + 2t\,|\nabla f|^2 \Bigr]\,d\mu,
+   \]
+   where \(P_t\) is the heat semigroup?
+   Does \(\mathsf{S}\) coincide (where defined) with minus the synthetic scalar curvature defined through the Γ₂-operator?
+
+3. (**Tangent cone stability**)  
+   For a measured Gromov–Hausdorff convergent sequence \((X_i,d_i,\mathcal{H}^N,x_i)\to(X_\infty,d_\infty,\mathcal{H}^N,x_\infty)\) of noncollapsed \(\mathrm{RCD}(K_i,N)\) spaces, does the corresponding family of functions \(\mathsf{S}_i\) converge weakly in \(L^1_{\mathrm{loc}}\) to \(\mathsf{S}_\infty\)?  
+
+If affirmative, such a limit would define a stable and purely analytic notion of **synthetic scalar curvature** recoverable from the heat kernel’s diagonal asymptotics, even without any smooth structure or prior curvature tensor.
+
+Why is it a "good" problem:  
+This problem eliminates redundant restatements of known Varadhan-type results and sharply targets the *on-diagonal* regime of the heat kernel, the only place where a scalar curvature signal can asymptotically appear. Its statement is elementary—tracking the deviation of \(p_t(y,y)\) from Euclidean scaling—but it asks for the deepest possible analytic–geometric reconstruction: the extraction of a synthetic scalar curvature from second-order heat kernel asymptotics.  
+
+If solved, it would establish a **curvature density directly measurable from diffusion behavior**, stable under metric limits, and connected canonically to the Γ₂-calculus. It thus bridges spectral analysis, stochastic geometry, and nonsmooth curvature theory, forming a synthetic analogue of the Minakshisundaram–Pleijel expansion valid beyond manifolds. The simplicity of the definition conceals remarkable depth, connecting microscopic heat flow behavior to macroscopic curvature invariants in possibly singular metric spaces—precisely the hallmark of a “good” research problem.

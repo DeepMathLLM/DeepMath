@@ -1,0 +1,30 @@
+problem:  
+Let \((X,d,\mathfrak{m})\) be a compact, essentially non‑branching metric measure space satisfying the \(CD(K,N)\) condition for some \(K\in\mathbb{R}\), \(1<N<\infty\).  
+Assume the following quantitative Euclideanity and quadratic‑defect properties:
+
+1. (**Reifenberg‑type asymptotic Euclideanity**)  
+   There exists a function \(\varepsilon:(0,1)\to[0,\infty)\) with \(\varepsilon(r)\to 0\) as \(r\to0\), and an integer \(k\in\{1,\dots,N\}\), such that for every \(x\in X\) and all sufficiently small \(r>0\),
+   \[
+   d_{mGH}\big((B_r(x),r^{-1}d,\mathfrak{m}_x^r), (B_1(0^k),|\cdot|,\lambda^k)\big)\le \varepsilon(r),
+   \]
+   where \(\mathfrak{m}_x^r\) is the normalized restriction of \(\mathfrak{m}\) to \(B_r(x)\).
+
+2. (**Approximate parallelogram law for minimal weak upper gradients**)  
+   There exists a modulus \(\delta:\mathbb{R}_+\to[0,\infty)\) with \(\delta(s)\to0\) as \(s\to0\) such that for all 1‑Lipschitz functions \(f,g:X\to\mathbb{R}\), the global defect in the quadraticity of the Cheeger energy satisfies  
+   \[
+   \left|\mathrm{Ch}(f+g)+\mathrm{Ch}(f-g)-2\,\mathrm{Ch}(f)-2\,\mathrm{Ch}(g)\right|\le \delta(r)
+   \]
+   whenever both \(f\) and \(g\) are supported in a ball \(B_r(x)\) for some \(x\in X\).
+
+**Question:**  
+Does the conjunction of these two quantitative conditions necessarily imply that \((X,d,\mathfrak{m})\) is *infinitesimally Hilbertian*—that is, that the Cheeger energy is exactly quadratic, hence \((X,d,\mathfrak{m})\) is an \(RCD(K,N)\) space?  
+Equivalently, can there exist a compact \(CD(K,N)\) space that is asymptotically Euclidean in the measured Gromov–Hausdorff sense and whose energy functional satisfies an arbitrarily small parallelogram defect, yet fails the exact \(RCD\) condition?
+
+Why is it a "good" problem:  
+This formulation targets the **quantitative stability and rigidity** of the \(RCD(K,N)\) property—the precise threshold where “almost Euclidean” geometry and “almost quadratic” analysis jointly force fully Riemannian structure.  
+Current theory guarantees that \(\varepsilon(r)\to0\) (i.e., Euclidean tangents) and exact quadraticity of the Cheeger energy yield \(RCD(K,N)\); the question here asks whether *approximate* versions already suffice.  
+
+A positive solution would establish a **stability principle** asserting that infinitesimal Hilbertianity is robust under small geometric and analytic defects, linking synthetic Ricci bounds to quantitative Reifenberg‑type geometry and convexity of entropy along Wasserstein geodesics.  
+A counterexample would reveal a new class of “almost‑Riemannian yet non‑Hilbertian” \(CD\) spaces, exposing subtle interactions between measured Gromov–Hausdorff convergence, Dirichlet form theory, and calculus on nonsmooth spaces.  
+
+The problem is exceptionally simple to state—quantitative Euclideanity + near‑quadraticity → Riemannian?—yet resolving it would likely demand breakthroughs uniting analysis, metric geometry, and stability theory. This balance of clarity, breadth, and foundational depth exemplifies the “narrow entrance, profound depth” character of a good research problem.

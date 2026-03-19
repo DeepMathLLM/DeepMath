@@ -1,0 +1,33 @@
+problem:  
+Let \((X,d,\mathfrak{m})\) be a noncollapsed RCD\((K,N)\) metric measure space with \(K\in\mathbb{R}\) and \(1<N<\infty\).  
+For each \(p\in X\), denote \(r_p(x)=d(p,x)\).  
+For small \(r>0\), consider the probability measures supported in the **annuli**
+\[
+\mu_{p}^{r/2,r}:=\frac{1}{\mathfrak{m}(A_{r/2,r}(p))}\,\mathfrak{m}|_{A_{r/2,r}(p)},
+\qquad
+A_{r/2,r}(p):=B_r(p)\setminus B_{r/2}(p).
+\]
+Let \(\phi_{p,r}\) be the Kantorovich potential generating the optimal transport map sending \(\mu_{p}^{r/2,r}\) to \(\mu_{p}^{r,r+ r/2}\).  
+Both \(\phi_{p,r}\) and \(r_p\) are Sobolev functions with well-defined minimal relaxed gradients in the tangent module.
+
+Define the **radial potential misalignment**:
+\[
+E_p(r):=\int_{A_{r/2,r}(p)} |\langle \nabla \phi_{p,r}, \nabla r_p\rangle - 1|^2\, d\mathfrak{m}.
+\]
+
+**Open problem (synthetic transport–Laplacian rigidity):**  
+Assume that for all \(p\in X\) and all sufficiently small \(r>0\),
+there exists \(C>0\) such that
+\[
+E_p(r)\le C\,r^2 .
+\]
+1. Does this smallness condition imply that every tangent cone at \(p\) is isometric to \(\mathbb{R}^N\)?  
+2. In the noncollapsed case (\(\mathfrak{m}=\mathcal{H}^N\)), does a uniform small bound on \(E_p(r)\) imply that \(X\) is locally Gromov–Hausdorff close to a smooth Riemannian manifold with \(\mathrm{Ric}\ge K\)?  
+3. More generally, can the family \(E_p(r)\) serve as a *synthetic Laplacian isotropy functional*: a quantitative descriptor of the gap between the synthetic Laplacian of \(r_p\) and that of the model space with curvature \(K\)?
+
+Why is it a "good" problem:  
+This formulation is now mathematically sound: all objects—Kantorovich potentials, weak gradients, and integrals over annuli—are rigorously defined in RCD spaces. The dot product \(\langle\nabla \phi_{p,r},\nabla r_p\rangle\) is intrinsic to the tangent module structure and directly measurable. 
+
+Conceptually, \(E_p(r)\) compares the gradient of an *optimal transport potential* with that of the *distance function*, measuring how closely mass transport between consecutive annuli mimics the smooth radial expansion driven by the Laplacian comparison. The \(r^2\)-scaling reflects curvature-order deviations, paralleling how curvature arises as the second-order term in smooth Laplacian expansions.
+
+The question thus probes a new **transport–analytic route to geometric regularity**: if optimal transport between neighboring annuli is almost perfectly radial, is the underlying space locally Euclidean or a smooth Ricci-lower-bounded manifold? Resolving it would fuse synthetic curvature comparison, optimal transport regularity, and geometric analysis, potentially introducing a fully analytic indicator of local isotropy and smoothness inside the RCD framework—a fresh, simple-to-state bridge between Laplacian comparison and quantitative regularity theory.

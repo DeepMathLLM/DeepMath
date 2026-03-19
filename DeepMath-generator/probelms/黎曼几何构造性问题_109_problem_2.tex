@@ -1,0 +1,38 @@
+problem:  
+Let \((X,d,\mathfrak{m})\) be an \(\mathrm{RCD}(0,N)\) space with \(1<N<\infty\).  
+The sharp Sobolev constant is defined by  
+\[
+C_{N}(X) := 
+\sup_{f \in W^{1,2}(X) \setminus \{0\}}
+\frac{\|f\|_{L^{2^*}(\mathfrak{m})}^2}{\|Df\|_{L^2(\mathfrak{m})}^2},
+\qquad
+2^* = \frac{2N}{N-2}.
+\]
+For \(\mathbb{R}^N\) with its Euclidean structure, the sharp constant \(C_N^{\mathrm{Euc}}\) is attained by the Aubin–Talenti bubbles.  
+
+**Open Problem:**  
+Suppose \((f_k)\subset W^{1,2}(X)\) satisfies  
+\[
+\frac{\|f_k\|_{L^{2^*}}^2}{\|Df_k\|_{L^2}^2} \to C_{N}(X),
+\]
+but no nontrivial strong limit exists in \(W^{1,2}(X)\).  
+Let \((x_k)\subset X\) be points where \(f_k\) concentrates, and define the rescaled pointed metric–measure spaces
+\[
+(X_k, d_k, \mathfrak{m}_k, x_k)
+:= (X, r_k^{-1} d, c_k\,\mathfrak{m}, x_k),
+\]
+where the scaling factors \(r_k,c_k>0\) are chosen so that concentration occurs at scale \(1\) and \(\mathfrak{m}_k(B_1(x_k))=1\).  
+Consider convergence in the pointed measured Gromov–Hausdorff topology:
+\[
+(X_k, d_k, \mathfrak{m}_k, x_k) \to (Y,d_Y,\mathfrak{n},y_\infty).
+\]
+
+Is it necessarily true that every such limit \((Y,d_Y,\mathfrak{n})\) must be an *Euclidean metric–measure space* \((\mathbb{R}^N, |\cdot|, c\,dx)\)?  
+Equivalently, does the occurrence of near-extremizers for the Sobolev inequality force that all tangent cones at points of Sobolev concentration are Euclidean, so that analytic *blow-up profiles* detect the flatness of the infinitesimal geometry?  
+
+Why is it a "good" problem:  
+This question bridges *analysis* and *geometry* in synthetic curvature settings. It asks whether the existence of almost extremizing Sobolev sequences rigidly determines tangent-space structure—as in smooth analysis, where Aubin–Talenti profiles manifest Euclidean scaling—but in the vastly more general nonsmooth world of \(\mathrm{RCD}(0,N)\) spaces.  
+It narrows a profound gap between infinitesimal geometric rigidity (tangent cones are typically metric cones) and analytic extremality: are Euclidean tangents singled out precisely by the pursuit of Sobolev sharpness?  
+
+A resolution would link the *functional-analytic concentration compactness* (defect measures, bubbles, variational limits) with *synthetic Ricci curvature* and *measured Gromov–Hausdorff geometry*, potentially opening a rigorous “bubble-tree theory” for nonsmooth spaces.  
+The formulation is simple—tracking limits of near-extremizers—but any progress would require merging deep tools from optimal transport, geometric measure theory, and analysis on metric spaces, embodying the ideal of a cross-field, deep, and forward-looking mathematical problem.

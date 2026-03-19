@@ -1,0 +1,36 @@
+problem:  
+Let \((X,d,\mathfrak{m})\) be an \(\mathrm{RCD}(K,N)\) space with \(K \in \mathbb{R}\), \(1 < N < \infty\).  
+By the Mondino–Naber rectifiability theorem, for \(\mathfrak{m}\)-a.e. \(x\in X\), the tangent cone is uniquely Euclidean \(\mathbb{R}^{k(x)}\).  
+Let
+\[
+S := \{x \in X \mid \text{there exists at least one non‑Euclidean or non‑unique tangent cone at } x\}.
+\]
+We know \(\mathfrak{m}(S)=0\).
+
+Fix \(x \in S\). For each \(r>0\), consider the rescaled space
+\[
+(X_r, d_r, \mathfrak{m}_r, x) := (X, r^{-1}d, \mathfrak{m}(B_r(x))^{-1}\mathfrak{m}, x)
+\]
+so that \(\mathfrak{m}_r(B_1(x))=1\).  
+Let \(T_x(X,d,\mathfrak{m})\) denote the (possibly non‑unique) collection of measured Gromov–Hausdorff tangent cones at \(x\).
+
+**Question:**  
+Does there exist an exponent \(\alpha>0\) (possibly depending on \(x\)) such that the following *quantitative tangent stability property* holds:  
+for every sufficiently small \(r>0\), there exists a tangent cone \((Y_x, d_{Y_x}, \mathfrak{m}_{Y_x}, p_x) \in T_x(X,d,\mathfrak{m})\) satisfying
+\[
+d_{mGH}\big( (X_r, d_r, \mathfrak{m}_r, x), (Y_x, d_{Y_x}, \mathfrak{m}_{Y_x}, p_x) \big) \le C_x r^{\alpha},
+\]
+for some constant \(C_x>0\) independent of \(r\)?  
+
+Equivalently, can tangent cones at singular points be *approximated at a uniform Hölder rate* by the rescalings of the ambient space, or can the infinitesimal geometries oscillate arbitrarily fast while still satisfying the synthetic Ricci curvature‑dimension condition?
+
+Why is it a "good" problem:  
+This problem lies at the next frontier beyond existing RCD regularity theory. Current results give qualitative convergence of blow‑ups—tangents exist, and at almost every point they are Euclidean—but **no quantitative rates** are known at singular points. Establishing or refuting the existence of any power‑law rate would open a quantitative regularity theory for synthetic Ricci curvature, analogous to the **Cheeger–Colding quantitative stratification** for smooth Ricci limit spaces.  
+
+Its significance is threefold:  
+1. **Analytic depth:** It calls for developing stable, scale‑sensitive estimates for measured Gromov–Hausdorff convergence in the non‑smooth realm, linking analytic and geometric control of the heat flow and Sobolev energies.  
+2. **Geometric relevance:** It probes whether Ricci curvature lower bounds control not only infinitesimal models but also the *speed of approach* to those models—an essential step toward a full blow‑up analysis of singularities.  
+3. **Cross‑field impact:** Any solution would unite metric measure convergence theory, optimal transport curvature bounds, and geometric analysis into a unified quantitative framework for non‑smooth spaces.  
+
+The question is simple to state yet profoundly deep: do RCD singularities admit a quantitative “rate of flatness’’?  
+A positive answer would yield a new category of **quantitative regularity theorems** for synthetic curvature spaces; a negative answer would expose new kinds of scale instability, revealing unexplored geometric phenomenology beyond the smooth limit setting.

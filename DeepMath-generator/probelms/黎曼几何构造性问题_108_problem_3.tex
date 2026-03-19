@@ -1,0 +1,34 @@
+problem:  
+Let \((X,d,\mathfrak{m})\) be an RCD\((K,N)\) metric measure space with \(K\in\mathbb{R}\), \(1<N<\infty\).  
+For \(p\in X\), define the *renormalized volume ratio*  
+\[
+\Theta_p(r) := \frac{\mathfrak{m}(B_r(p))}{v_{K,N}(r)},
+\qquad
+v_{K,N}(r) := \int_0^r \mathrm{sn}_K(t)^{N-1}\,dt .
+\]
+The Bishop–Gromov inequality ensures that \(\Theta_p(r)\) is nonincreasing in \(r\), and that \(\Theta_p(r)\to \vartheta(p)\) as \(r\downarrow 0\), where \(\vartheta(p)\) equals the volume density of the tangent cone at \(p\).  
+In smooth Riemannian manifolds with \(\mathrm{Ric}\ge K\), the finer expansion of \(\Theta_p(r)\) near \(r=0\) encodes curvature information:
+\[
+\Theta_p(r) = 1 - \frac{\mathrm{Scal}(p)}{6(N+2)} r^2 + o(r^2)
+\]
+in the normalized Euclidean case.
+
+**Open problem (second-order asymptotic rigidity in RCD spaces):**  
+For \(p\in X\), assume that all tangent cones at \(p\) are Euclidean \(\mathbb{R}^N\), so that \(\vartheta(p)=1\).  
+Define the *second-order asymptotic coefficient* (if it exists) by  
+\[
+\alpha(p):=\lim_{r\downarrow0}\frac{1-\Theta_p(r)}{r^2}.
+\]
+
+(1) Does the limit \(\alpha(p)\) exist for \(\mathfrak{m}\)-a.e. \(p\in X\)?  
+(2) If it exists, is \(\alpha(p)\ge 0\) for all \(p\) under RCD\((K,N)\)?  
+(3) In the noncollapsed case (i.e. when \(\mathfrak{m}=\mathcal{H}^N\)), does the vanishing of \(\alpha(p)\) for all \(p\) imply that \((X,d)\) is locally isometric to the constant-curvature space form of curvature \(K\)?
+
+More generally, can \(\alpha(p)\) be interpreted as a *synthetic scalar curvature density*—that is, the second-order term in the small-scale asymptotics of the volume ratio—thereby extending the scalar curvature expansion known in the smooth setting?
+
+Why is it a "good" problem:  
+This formulation corrects the geometry and analytic setting: the object \(\Theta_p(r)\) is the true Bishop–Gromov ratio, rigorously defined for all RCD\((K,N)\) spaces. The problem asks whether its second-order asymptotic behavior, beyond the known monotonicity, encodes a meaningful curvature quantity.  
+
+In smooth geometry, the \(r^2\)-term carries the scalar curvature, bridging local curvature with infinitesimal volume growth. Extending this structure to the non-smooth RCD world would produce a new analytic invariant—\(\alpha(p)\)—interpretable as a synthetic scalar curvature density.  
+
+This problem naturally fuses analysis (second-order expansion of monotone quantities), metric measure geometry (tangent cone theory and measure blow-ups), and differential geometry (interpretation as scalar curvature). It is simple to state yet profoundly deep: it seeks to uncover whether infinitesimal higher-order curvature data can be recovered purely from metric measure structure under synthetic Ricci bounds, potentially giving rise to a new direction in RCD regularity and curvature measure theory.

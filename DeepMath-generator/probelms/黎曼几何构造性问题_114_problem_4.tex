@@ -1,0 +1,42 @@
+problem:  
+Let \((M_i,g_i,\mu_i)\) be a sequence of compact, non‑collapsed \(n\)-dimensional Riemannian manifolds with uniform Ricci lower bounds  
+\[
+\mathrm{Ric}(M_i,g_i)\ge k\,g_i, \qquad \operatorname{diam}(M_i,g_i)\le D,
+\]
+for fixed \(k \in \mathbb{R}, D>0,\) and normalized measures \(\mu_i\).  
+Assume that \((M_i,g_i,\mu_i)\to(X,d,\mu)\) in the measured Gromov–Hausdorff sense and that the limit \((X,d,\mu)\) satisfies the \(RCD^*(k,n)\) condition.  
+
+For each \(i\), let \(f_i\in C^\infty(M_i)\) with \(\|f_i\|_{H^{1,2}(M_i)}\le C\), and assume \(f_i\to f\in W^{1,2}(X)\) in \(L^2\) and \(\Gamma(f_i)\to \Gamma(f)\) weakly in \(L^1\), where \(\Gamma\) denotes the carré‑du‑champ operator.  
+Define the **Bochner defect measure**
+\[
+\beta_i(f_i) := \bigl(\Gamma_2(f_i,f_i)-k\,\Gamma(f_i,f_i)\bigr)\mu_i,
+\]
+so that, by the Bochner identity,
+\[
+d\beta_i(f_i)= \bigl(|\mathrm{Hess}_{g_i}f_i|^2 + (\mathrm{Ric}_{g_i} - k\,g_i)(\nabla f_i, \nabla f_i)\bigr)\,d\mu_i.
+\]
+
+**Conjectural Problem (Bochner–Measure Stability and Curvature Defect):**  
+Does there exist a measure \(\beta_X(f)\) on \(X\), depending only on \(f\in W^{1,2}(X)\) and the intrinsic \(RCD^*(k,n)\) structure of \(X\), such that after passing to a subsequence,
+\[
+\beta_i(f_i)\;\stackrel{*}{\rightharpoonup}\; \beta_X(f)
+\quad\text{weakly as measures on } X,
+\]
+and:
+
+1. (**Consistency with RCD calculus**) For every test function \(f\in \mathrm{Test}(X)\), \(\beta_X(f)\) coincides with the canonical measure-valued \(\Gamma_2(f,f)-k\,\Gamma(f,f)\) defined in the RCD framework.  
+2. (**Smooth stability**) If \(X\) is smooth, \(\beta_X(f)\) is absolutely continuous and recovers the classical expression \( ( |\mathrm{Hess}_g f|^2 + (\mathrm{Ric}_g - k\,g)(\nabla f,\nabla f))\mu\).  
+3. (**Singularity detection**) For singular \(X\), the possible singular part of \(\beta_X(f)\) identifies quantitative curvature‑defect regions and vanishes if and only if all tangent cones of \(X\) are Euclidean.
+
+Equivalently: *Can the (generally nonnegative) Bochner defect on smooth Ricci‑bounded manifolds pass to a canonical limit measure reflecting both regular and singular curvature on every noncollapsed \(RCD^*(k,n)\) limit space?*
+
+---
+
+Why is it a "good" problem:  
+This question isolates, in a precise and rigorous way, the missing bridge between **analytic curvature identities** and **geometric convergence** of singular spaces.
+
+- It is posed entirely within the established \(RCD\) and \(Γ_2\) frameworks, so all quantities are rigorously defined; no informal tensorial objects appear.  
+- It targets a core structural issue: whether the *Bochner identity*—which encodes Ricci curvature and Hessian information—survives in a weak measure‑theoretic form under pmGH limits.  
+- If affirmative, the resulting curvature‑defect measure \(\beta_X(f)\) would extend the Levi‑Civita notion of curvature energy to the synthetic setting, providing a new intrinsic invariant for \(RCD\) limits that measures curvature concentration and singularity.  
+- This connects geometric analysis (Bochner calculus, weak Hessians), metric convergence theory (Cheeger–Colding, RCD), and geometric measure theory (decomposition into absolutely continuous and singular parts).  
+- The problem is minimal yet profound: “Do Bochner defect measures converge, defining a canonical curvature defect on limit spaces?”—a narrowly formulated question whose resolution would deepen foundational understanding of curvature stability and singularity formation in Ricci‑bounded geometry.

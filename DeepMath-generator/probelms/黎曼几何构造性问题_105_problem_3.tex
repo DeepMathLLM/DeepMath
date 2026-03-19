@@ -1,0 +1,35 @@
+problem:  
+Let \( (X,d) \) be a compact \(n\)-dimensional Alexandrov space with curvature bounded below by \(1\).  
+For each \(x\in X\), denote by \( \Sigma_x X \) its space of directions (curvature \(\ge 1\)) and by
+\(T_x X = C(\Sigma_xX)\) the tangent cone.  
+For \(v,w\in\Sigma_xX\), consider the hinge at \(x\) defined by unit geodesics \(\gamma_v,\gamma_w\).  
+Let  
+\[
+E_x(v,w,t) = d_X(\gamma_v(t),\gamma_w(t)) - d_{S^2_1}(\tilde{\gamma}_v(t),\tilde{\gamma}_w(t)),
+\]
+where \(S^2_1\) denotes the unit 2-sphere of curvature \(1\) and \(\tilde\gamma_v,\tilde\gamma_w\) form the comparison hinge.  
+Toponogov’s theorem gives \(E_x(v,w,t)\le 0\) and \(E_x(v,w,t)=O(t^2)\) as \(t\to0\).
+
+Define the **averaged second-order excess deviation** by
+\[
+\mathcal{K}(x)
+   = \limsup_{t\to0}
+     \frac{1}{t^2}
+     \frac{1}{\big(\mathcal{H}^{n-1}(\Sigma_xX)\big)^2}
+     \int_{\Sigma_xX\times\Sigma_xX} 
+     |E_x(v,w,t)|\, d\mathcal{H}^{n-1}(v)\, d\mathcal{H}^{n-1}(w).
+\]
+
+**Problem:**  
+Assume \( \mathcal{K}(x)=0 \) for \(\mathcal{H}^n\)-a.e.~\(x\in X\).  
+Does it follow that, for almost every \(x\), the link \(\Sigma_xX\) is isometric to the round unit sphere \(S^{n-1}\)?  
+Equivalently, does the almost-everywhere vanishing of *absolute averaged second-order Toponogov deviation* enforce that the infinitesimal geometry of \(X\) is of constant curvature \(1\)?  
+If not, can one characterize the non-round links \(\Sigma_xX\) for which \(\mathcal{K}(x)=0\)?
+
+Why is it a "good" problem:  
+This problem corrects earlier issues by focusing on the absolute second-order deviation—thus removing potential sign cancellations—and by explicitly connecting the Toponogov excess to infinitesimal curvature rigidity.  
+It asks whether Alexandrov spaces exhibit **measure-theoretic second-order rigidity**: if all small hinges are *on average* as flat as those in the model sphere to quadratic order, must the space’s infinitesimal geometry itself be spherical?  
+In the smooth Riemannian case, a heuristic expansion shows \(E_x(v,w,t) \approx -\tfrac{t^2}{6}\sec(v\wedge w)\), so the functional \(\mathcal{K}(x)\) directly encodes averaged deviation of sectional curvature from \(1\).  
+Hence this question generalizes the smooth curvature-determination principle to the nonsmooth Alexandrov setting.  
+A positive answer would reveal powerful new rigidity linking second-order comparison geometry and measure-theoretic structure; a counterexample would uncover limits of curvature control in the Alexandrov category.  
+Its formulation is simple yet touches a central open interface between infinitesimal comparison curvature, rigidity, and metric measure theory—qualities that make it a *good*, genuinely research-level problem.

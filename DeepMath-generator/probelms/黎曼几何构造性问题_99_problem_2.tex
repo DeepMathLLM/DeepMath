@@ -1,0 +1,42 @@
+problem:  
+Let \((M^n,g,f)\) be a complete, noncompact **shrinking gradient Ricci soliton** satisfying  
+\[
+\mathrm{Ric}_g+\nabla^2 f=\tfrac12 g,
+\]
+where \((M,g)\) is \(\kappa\)-noncollapsed with nonnegative curvature operator.  
+For each **regular value** \(t>0\) of \(f\), define the level hypersurface  
+\(\Sigma_t=\{x\in M: f(x)=t\}\)  
+with unit normal \(\nu=\frac{\nabla f}{|\nabla f|}\), mean curvature \(H=\mathrm{div}(\nu)\), and area \(A(t)=\operatorname{Vol}_{n-1}(\Sigma_t)\).
+
+The coarea identity yields
+\[
+A'(t)=\int_{\Sigma_t}\mathrm{div}_{\Sigma_t}
+\Big(\frac{\nabla f}{|\nabla f|^2}\Big)\,d\mu_{\Sigma_t}
+=\int_{\Sigma_t}\frac{H}{|\nabla f|}\,d\mu_{\Sigma_t},
+\]
+for regular \(t\).  
+The soliton identities \(R+|\nabla f|^2-f=C_0\) and \(R+\Delta f=n/2\) imply that the growth of \(|\nabla f|\) and the convexity of \(f\) strongly affect the geometry of the level sets \(\Sigma_t\).
+
+**Problem:**  
+In dimensions \(n\le4\), consider the weighted area functional
+\[
+\Phi(t)=e^{t/2} A(t).
+\]
+
+1. Does there exist (under the above curvature assumptions) a universal constant \(t_0>0\) such that for all \(t\ge t_0\),
+\[
+\frac{d\Phi}{dt}(t)
+= e^{t/2}\Big(\int_{\Sigma_t}\frac{H}{|\nabla f|}\,d\mu_{\Sigma_t}+\tfrac12 A(t)\Big)
+\le 0 ?
+\]
+2. If equality \(\frac{d\Phi}{dt}\equiv 0\) holds for large \(t\), must \((M,g)\) be isometric to a model Gaussian shrinker or a product cylinder \(\mathbb{R}^k\times S^{n-k}\)?
+
+In other words, is there a genuine **monotonicity law** for the weighted area \(e^{t/2}A(t)\) of soliton potential level sets — a law that would automatically encode rigidity in the equality case?
+
+Why is it a "good" problem:  
+- The problem isolates an explicit, well‑defined geometric quantity that arises naturally from the self‑similar scaling of shrinkers.  
+- It tests whether a monotonicity mechanism — akin to Perelman’s entropy or Huisken’s formula — exists **purely on the static geometry of a shrinker**. Such a formula would represent a new analytic invariant for Ricci solitons.  
+- Its **simplicity of formulation** contrasts with the potential analytic depth: establishing or refuting the inequality requires relating intrinsic curvature, the soliton potential’s Hessian, and the extrinsic mean curvature of the level sets.  
+- A positive result would unify variational analysis of hypersurfaces with Ricci‑flow self‑similarity, providing a bridge between **mean-curvature geometry**, **entropy methods**, and **low‑dimensional Ricci soliton classification**.  
+- Even a counterexample would be profoundly informative, clarifying how large‑scale geometric behavior (e.g., Bryant‑type versus cylindrical versus conical) interacts with the potential's level‑set geometry.  
+Thus, the problem offers both conceptual breadth and analytic challenge, fitting the profile of a deep, open, and genuinely research‑level question.

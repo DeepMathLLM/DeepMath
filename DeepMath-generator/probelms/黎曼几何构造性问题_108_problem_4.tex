@@ -1,0 +1,35 @@
+problem:  
+Let \((X,d,\mathfrak{m})\) be an RCD\((K,N)\) metric measure space with \(K\in\mathbb{R}\) and \(1<N<\infty\).  
+For each \(p\in X\), denote \(r_p(x)=d(p,x)\).  
+It is known that the measure-valued Laplacian of \(r_p\) satisfies in the distributional sense
+\[
+\Delta r_p \le (N-1)\frac{\mathrm{sn}'_K(r_p)}{\mathrm{sn}_K(r_p)}\,\mathfrak{m}
+\quad\text{on }X\setminus\{p\}.
+\]
+To quantify near-equality, define the **integrated Laplacian excess** by
+\[
+D_p(r)
+:= \Delta r_p(B_r(p))
+- \int_{B_r(p)} (N-1)\frac{\mathrm{sn}'_K(r_p)}{\mathrm{sn}_K(r_p)}\,d\mathfrak{m},
+\]
+where \(\Delta r_p(B_r(p))\) is the total mass of the measure \(\Delta r_p\) in the ball \(B_r(p)\).  
+By the Laplacian comparison, \(D_p(r)\le0\).
+
+**Open problem (Laplacian excess and infinitesimal rigidity):**  
+Assume that for each \(p\in X\) there exists a constant \(C>0\) such that for all sufficiently small \(r>0\)
+\[
+|D_p(r)| \le C\, r^{N+2}.
+\]
+(Here the exponent \(N+2\) reflects the expected second-order—curvature—scale, since in the smooth case  
+\(\Delta r_p=(N-1)/r - \tfrac{1}{3}\mathrm{Ric}(\partial_r,\partial_r)r + O(r^2)\).)
+
+1. Does this quantitative smallness imply that every tangent cone at \(p\) is isometric to \(\mathbb{R}^N\)?  
+2. In the noncollapsed case (\(\mathfrak{m}=\mathcal{H}^N\)), does the uniform validity of such a bound (with a fixed constant \(C\)) imply that the regular set is open and carries a \(C^{1,\alpha}\)-Riemannian structure?  
+3. More generally, can the quantitative decay of \(D_p(r)\) be used to produce a Laplacian-based \(\varepsilon\)-regularity criterion, i.e. smallness of \(D_p(r)\) implying Gromov–Hausdorff closeness to the Euclidean ball?
+
+Why is it a "good" problem:  
+This formulation now rigorously employs the total mass of the measure \(\Delta r_p\), avoiding any undefined expression, and its scaling reflects the curvature-order deviation seen in smooth geometry.  
+
+The problem asks whether fine quantitative *analytic control* on the Laplacian deviation from its model value forces *geometric regularity*—that is, Euclidean tangent cones and structural smoothness. It parallels the Cheeger–Colding ε‑regularity framework but replaces volume and harmonic information with directly Laplacian-derived data.  
+
+Conceptually simple yet profoundly deep, it builds a direct analytic bridge between PDE-like behavior (measure Laplacians), metric measure geometry (tangent cones, stratifications), and quantitative curvature analysis. A positive resolution would unveil an analytic diagnostic for regularity within the RCD framework, potentially unifying Laplacian comparison theory with geometric regularity and advancing the understanding of curvature at infinitesimal scales.

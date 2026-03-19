@@ -1,0 +1,45 @@
+problem:  
+Let \(\{(M_i,g_i)\}_{i=1}^\infty\) be a sequence of compact \(n\)-dimensional Riemannian manifolds satisfying  
+\[
+\mathrm{Ric}(M_i,g_i)\ge (n-1)k, \qquad \operatorname{diam}(M_i,g_i)\le D,
+\]
+for fixed constants \(k\in\mathbb{R}\), \(D>0\).  
+Assume that \((M_i,g_i,\mu_i)\to (X,d_X,\mu)\) in the **measured Gromov–Hausdorff (pmGH)** sense, where \(\mu_i\) is the normalized Riemannian measure.  
+Let \(T_xX\) denote any **measured tangent cone** at \(x\in X\), that is, any limit  
+\[
+(X,r_j^{-1}d_X,x,\mu_x^{(r_j)}) \to (Y_x,y_x,\nu_x),\quad r_j\to 0,
+\]  
+in pointed measured GH sense.
+
+**Problem (Measurable Tangent Selection and Stratification Conjecture):**  
+Does there exist a **Borel measurable selection**
+\[
+x \;\mapsto\; [Y_x,\nu_x] \in \mathcal{T}
+\]
+into the moduli space \(\mathcal{T}\) of pointed metric‑measure cones (with the pmGH topology), such that:
+
+1. (**Existence and measurability**)  
+   The graph  
+   \(\{(x,[Y_x,\nu_x]) : x\in X\}\subset X\times \mathcal{T}\)  
+   is Borel, and for \(\mu\)-a.e. \(x\), \([Y_x,\nu_x]\) represents an actual tangent cone of \(X\) at \(x\).
+
+2. (**Stability under further limits**)  
+   If a sequence of Ricci‑bounded spaces \((M_i,g_i,\mu_i)\to (X,\mu)\) and a subsequence of \(X_j\)’s themselves converge pmGH to \((Z,\zeta)\), then the measurable tangent selections pass coherently to a measurable selection on \(Z\), in the sense that  
+   \[
+   (Y_x,\nu_x)\in \mathcal{T} \ \text{for } x\in X_j \quad \text{converges in } \mathcal{T} \ \text{to the tangent at } z\in Z
+   \]
+   for \(\zeta\)-a.e. \(z\).
+
+3. (**Information content**)  
+   Does the induced partition of \(X\) into subsets
+   \[
+   X_{[C]} = \{x\in X : [Y_x,\nu_x]\cong [C]\}
+   \]
+   (where \([C]\) runs over isometry classes of tangent cones) coincide, up to \(\mu\)-null sets, with the known stratification of \(X\) obtained via quantitative symmetry or dimension increments (Cheeger–Naber)?
+
+Equivalently, can one define a **canonical measurable tangent field** for Ricci‑bounded limit spaces that is stable under pmGH convergence and recovers the stratified infinitesimal structure of the limit?
+
+Why is it a "good" problem:  
+This problem isolates and formalizes one of the most elusive missing structural ingredients in the theory of Ricci‑bounded Gromov–Hausdorff limits: the absence of a canonical, measurable way to coherently assign tangent objects.  Cheeger–Colding theory gives existence of tangents and their almost‑everywhere Euclideanity in the noncollapsed setting, but such tangents need not be unique or measurable, especially under collapse.  
+
+Asking for a *Borel measurable tangent selection* that behaves functorially under limits transforms a philosophical desire for “canonical tangents” into a precise measure‑theoretic problem.  Success would yield a new invariant: the **tangent‑field stratification**, linking infinitesimal metric measure geometry with global topological data.  This would bridge Ricci curvature stability, measurable selection theory, and quantitative stratification, forming a minimal yet profound question at the interface of analysis, geometry, and topology.  Its statement is crisp—can tangents be chosen coherently and measurably?—but its resolution demands entirely new ideas in both synthetic and differential geometry.

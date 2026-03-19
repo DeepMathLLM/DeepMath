@@ -1,0 +1,32 @@
+problem:  
+Let \((M,\mathcal{D},g_{\mathcal{D}})\) be a compact, equiregular sub-Riemannian manifold of step \(2\), endowed with its Popp measure \(\mu_{\mathrm{Popp}}\).  
+Fix a smooth complement \(\mathcal{V}\) so that \(TM=\mathcal{D}\oplus\mathcal{V}\), and a Riemannian metric \(g_\varepsilon = g_{\mathcal{D}} \oplus \varepsilon^{-2} g_{\mathcal{V}}\) for small \(\varepsilon>0\).  
+Let \(\mathrm{Ric}_{g_\varepsilon}\) be the Riemannian Ricci tensor of \(g_\varepsilon\).  
+
+For each horizontal vector field \(X\in\Gamma(\mathcal{D})\), define the *renormalized horizontal Ricci functional*
+\[
+\mathsf{R}_\varepsilon(X) := \varepsilon^{2}\,\mathrm{Ric}_{g_\varepsilon}(X,X).
+\]
+(The factor \(\varepsilon^2\) cancels the vertical metric scaling in \(g_\varepsilon\).)  
+
+**Question:**  
+Does there exist, possibly after extraction of a subsequence, a weak limit  
+\[
+\mathsf{R}_\varepsilon \rightharpoonup \mathsf{R}_0
+\]
+in the sense of distributions on \(M\), where \(\mathsf{R}_0\) depends only on the quadruple \((M,\mathcal{D},g_{\mathcal{D}},\mu_{\mathrm{Popp}})\) but **not** on the chosen complement \(\mathcal{V}\)?  
+
+Moreover, if such a limit exists, is it equivalent (up to a universal normalization constant) to the Agrachev–Barilari–Rizzi horizontal Ricci curvature \(\mathrm{Ric}^{\mathcal{H}}_{\mathrm{ABR}}(X,X)\) defined from the sub-Riemannian Jacobi curve associated to the geodesic flow?  
+
+Equivalently, one asks whether the data
+\[
+(\{\mathrm{Ric}_{g_\varepsilon}\}_{\varepsilon>0},\ g_\varepsilon)\quad\text{under the rescaling}\quad \varepsilon^2 \mathrm{Ric}_{g_\varepsilon}\Big|_{\mathcal{D}\times\mathcal{D}}
+\]
+admit an intrinsic, complement-free limit that faithfully encodes the sub-Riemannian curvature operator on \(\mathcal{D}\). If this fails in general, determine the geometric conditions (contact, quasi-contact, or fat) under which the limiting weak limit \(\mathsf{R}_0\) exists and is intrinsic.
+
+Why is it a "good" problem:  
+This refined formulation removes the ambiguity of earlier “unified curvature” proposals by prescribing a precise normalization and convergence mode. It directly tests whether the *horizontal projection of the Riemannian Ricci tensor*, after natural scaling, converges to a geometric invariant independent of the chosen complement. The possibility that this weak limit reproduces the Agrachev–Barilari–Rizzi curvature—an object arising from Hamiltonian and geometric control theory—constitutes a remarkable bridge between collapse geometry and sub-Riemannian curvature theory.  
+
+The problem is mathematically well-posed: it specifies a clear object \(\mathsf{R}_\varepsilon\), a normalization factor, and a convergence topology (distributional convergence). Its truth value is unknown even in standard settings such as contact manifolds with regular Reeb flows.  
+
+A resolution would produce the first rigorous limiting mechanism that turns Riemannian Ricci curvature into sub-Riemannian horizontal curvature, unifying differential-geometric, analytic, and control-theoretic curvature concepts. The statement is conceptually straightforward—“does the renormalized Ricci tensor converge to the ABR curvature?”—yet the analysis required demands profound insight into geometry and analysis under collapse, exemplifying the simplicity and depth characteristic of a *good* mathematics problem.

@@ -1,0 +1,38 @@
+problem:  
+Let \((M^n, g, f)\) be a complete, noncompact **steady gradient Ricci soliton** satisfying  
+\[
+\mathrm{Ric}(g) = \nabla^2 f,
+\]
+with positive Ricci curvature, bounded curvature tensor, and normalized so that \(f(o)=0\) at some base point \(o\in M\).  
+For each regular value \(c > 0\), let \(\Sigma_c = \{ f = c \}\) be the level hypersurface of the potential function, endowed with the **induced metric**  
+\[
+h_c = g|_{\Sigma_c}.
+\]  
+Define the **normalized level-set metric**  
+\[
+\tilde{h}_c := \frac{1}{(\operatorname{diam}_{h_c}(\Sigma_c))^2}\, h_c,
+\]
+so that each \((\Sigma_c, \tilde{h}_c)\) has unit diameter.
+
+**Question:**  
+Is there a steady gradient Ricci soliton \((M,g,f)\), not flat and not isometric to the Bryant soliton, such that the sequence of normalized intrinsic geometries  
+\[
+(\Sigma_c, \tilde{h}_c)
+\]
+subconverges, in the smooth Cheeger–Gromov sense as \(c\to\infty\), to a **compact Einstein manifold \((N^{n-1}, h_\infty)\)**?  
+
+If such examples exist, classify the possible Einstein limits \((N,h_\infty)\).  
+If none exist, prove or disprove the rigidity statement that for every complete nonflat steady soliton with \(R>0\) and bounded curvature, the second fundamental form \(A_c\) of \(\Sigma_c\) degenerates asymptotically in such a way that no sequence of normalized level-set metrics can converge smoothly to a nonflat Einstein geometry.
+
+---
+
+Why is it a "good" problem:  
+This question examines whether the **intrinsic geometry of the potential level sets** of a steady soliton can asymptotically stabilize into a fixed, compact Einstein structure when appropriately normalized.  Known examples such as the Bryant soliton exhibit asymptotically round—yet collapsing—level sets rather than approaching a stationary Einstein metric; whether this behavior is universal or accidental remains open.  
+
+The problem is both **highly geometric** and **analytically deep**: the Gauss equations for the hypersurfaces \(\Sigma_c\) give
+\[
+\mathrm{Ric}_{\Sigma_c} = \mathrm{Ric}_g - \mathrm{Rm}_g(\nu,\nu) + H A_c - A_c^2,
+\]
+where \(\nu = \frac{\nabla f}{|\nabla f|}\).  Combined with the soliton identity \(\mathrm{Ric}_g = \nabla^2 f\), these equations tightly couple the intrinsic Ricci tensor of the level set to the soliton potential’s Hessian, yielding a nonlinear system that dictates how \(h_c\) evolves with \(c\).  Determining whether the metrics \(h_c\) can settle into an Einstein limit requires understanding this long‑time evolution and balancing between curvature decay and the geometry of the \(f\)-foliation.  
+
+A resolution—either proving rigidity (asymptotic geometry never stabilizes) or discovering new steady solitons with asymptotically Einstein cross‑sections—would reveal fundamental structure about steady Ricci solitons and their role as **eternal Ricci flow singularity models**.  The question connects **intrinsic hypersurface geometry**, **asymptotic analysis**, and **Einstein metrics**, offering a conceptually simple yet profoundly rich challenge at the intersection of geometric analysis and global differential geometry.

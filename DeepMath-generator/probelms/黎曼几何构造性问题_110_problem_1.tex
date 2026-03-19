@@ -1,0 +1,26 @@
+problem:  
+Let \((X,d,\mu)\) be a complete metric measure space satisfying the \(\mathrm{RCD}(K,N)\) condition for some \(K \in \mathbb{R}\) and \(N \in (1,\infty)\), and fix a base point \(x_0 \in X\). For each \(t > 0\), define the **parabolically rescaled space**
+\[
+(X_t, d_t, \mu_t, x_0) := (X, t^{-1/2}d, \mu_t := c_t\,\mu, x_0),
+\]
+where \(c_t\) is a normalizing factor such that \(\mu_t(B_{d_t}(x_0,1)) = 1\).  
+
+Let \(p_t(x,y)\) denote the heat kernel associated with the canonical Dirichlet form on \((X,d,\mu)\). Suppose that, for some sequence \(t_i \downarrow 0\), the pointed measured spaces \((X_{t_i},x_0,\mu_{t_i})\) converge in the pointed measured Gromov–Hausdorff sense to a tangent cone \((Y,d_Y,\nu,y_0)\) at \(x_0\).  
+
+**Open Problem:**  
+Does the sequence of rescaled heat kernels
+\[
+\Phi_{t_i}(x,y) := (4\pi t_i)^{N/2}\, p_{t_i}(x,y)
+\]
+converge, in the sense of integral kernels transported under the \(\mathrm{pmGH}\) convergence maps, to the heat kernel \(p_Y(s;\xi,\eta)\) on the tangent cone \((Y,d_Y,\nu)\) evaluated at \(s=1\)?  
+
+Formally, is there a subsequence \(t_{i_j}\to0\) and a measurable correspondence \(f_{i_j}: B_Y(y_0,R)\to X\) arising from the \(\mathrm{pmGH}\) approximation such that for every compact \(K\subset Y\times Y\),
+\[
+\lim_{j\to\infty} \int_K \left|\Phi_{t_{i_j}}(f_{i_j}(\xi), f_{i_j}(\eta)) - p_Y(1;\xi,\eta)\right|\, d(\nu\times\nu)(\xi,\eta) = 0?
+\]
+If such convergence holds, can second-order deviations of \(p_t(x,y)\) from these tangent-cone kernels encode an intrinsic **synthetic curvature tensor** within the \(\mathrm{RCD}(K,N)\) framework, generalizing the classical second coefficient in the Minakshisundaram–Pleijel expansion?
+
+Why is it a "good" problem:  
+This formulation captures the essence of connecting microscopic analytic structure (heat diffusion at infinitesimal scales) to macroscopic geometric invariants in the nonsmooth \(\mathrm{RCD}(K,N)\) setting. It refines the classical intuition—where the small-time heat kernel approximates the Euclidean one on tangent spaces—into a rigorous synthetic context where tangent cones arise from pmGH limits rather than smooth tangent spaces.  
+
+If successfully resolved, it would establish a **tangent heat kernel theory** for synthetic Ricci curvature spaces, bridging the fields of stochastic analysis, geometric measure theory, and optimal transport. The possibility of defining a “second-order” synthetic curvature tensor from heat kernel asymptotics would echo the role of curvature in smooth heat kernel expansions, thus providing a profound analytic tool for nonsmooth geometry and potentially initiating a new line of inquiry into curvature-based invariants on metric measure spaces.

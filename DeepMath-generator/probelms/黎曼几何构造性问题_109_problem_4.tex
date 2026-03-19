@@ -1,0 +1,56 @@
+problem:  
+Let \((X,d,\mathfrak{m})\) be an \(\mathrm{RCD}(K,N)\) metric measure space with \(K \in \mathbb{R}\), \(1<N<\infty\).  
+Denote by \(H_t\) the gradient-flow heat semigroup associated with the Cheeger energy, which satisfies the **Bakry–Émery inequality**
+\[
+|\nabla H_t f|^2 \le e^{-2Kt} H_t(|\nabla f|^2), \quad f \in W^{1,2}(X), \ t>0.
+\]
+
+It is known that this inequality leads to the Sobolev-type inequality
+\[
+\|f\|_{L^{2^*}(\mathfrak{m})}^2
+\le C_{K,N}(X)\big(\|Df\|_{L^2(\mathfrak{m})}^2 + \tfrac{N-2}{N}K_+\|f\|_{L^2(\mathfrak{m})}^2\big),
+\quad 2^*=\tfrac{2N}{N-2},
+\]
+where \(C_{K,N}(X)\) is the *sharp Sobolev constant* and \(K_+ = \max\{K,0\}\) normalizes to the constant value on the \(N\)-sphere of curvature \(K>0\).
+
+---
+
+**Open Problem (Equality characterization via parabolic invariance):**  
+
+For \(t>0\), consider the functional  
+\[
+\Psi_X(t)
+:= \sup_{f\in W^{1,2}(X)\setminus\{0\}}
+\frac{\|H_t f\|_{L^{2^*}(\mathfrak{m})}^2}{
+\|Df\|_{L^2(\mathfrak{m})}^2 + \tfrac{N-2}{N}K_+\|f\|_{L^2(\mathfrak{m})}^2}.
+\]
+
+(a) One trivially has \(\Psi_X(t)\le C_{K,N}(X)\) by the contractivity of \(H_t\).  
+Determine under what geometric conditions **equality** holds:
+\[
+\Psi_X(t)=C_{K,N}(X)\ \text{for some }t>0.
+\]
+
+(b) Is it true that equality at a single time or all times forces the space to be model—namely,
+\[
+\Psi_X(t)=C_{K,N}(X)\ \text{for some (hence all) }t>0
+\quad\Longleftrightarrow\quad
+(X,d,\mathfrak{m})\text{ is isometric (up to scaling) to } 
+\begin{cases}
+\mathbb{R}^N & \text{if }K=0,\\
+S^N_K & \text{if }K>0 ?
+\end{cases}
+\]
+
+(c) Investigate whether the equality can be localized: if one has equality for functions strongly supported near a point \(x\in X\), does it imply that all tangent cones at \(x\) are Euclidean (for \(K=0\)) or spherical cones (for \(K>0\))?
+
+---
+
+Why is it a "good" problem:  
+- **Conceptual depth:** The question isolates the parabolic footprint of *sharpness* in Sobolev inequalities. It asks whether the preservation of sharp Sobolev constants under diffusion identifies constant-curvature geometries, providing an entirely new analytic characterization of sphere or Euclidean structures within the nonlinear RCD framework.  
+
+- **Connection to equality in gradient estimates:** Equality in the Bakry–Émery gradient estimate is known in smooth settings to occur precisely for model spaces. Extending that observation to the *nonlinear Sobolev sharp constant*—a global datum rather than a local differential inequality—would bridge discrete analytic information with global geometry.  
+
+- **Nontriviality and novelty:** Unlike simple monotonicity questions (implied by contractivity), the equality regime is extremely rigid and subtle; proving that equality forces roundness or flatness would mirror Obata-type results through a **parabolic–functional route**, a perspective that does not yet exist even in the classical smooth case.  
+
+- **Simplicity of statement, depth of content:** It reduces to a one-line statement—“When can applying heat flow leave the sharp Sobolev constant unchanged?”—but the answer requires unifying semigroup theory, analysis on metric spaces, and synthetic curvature geometry. This makes it a genuinely *good* research problem: conceptually simple, mathematically rich, and potentially paradigm-shifting in understanding geometric rigidity via parabolic methods.

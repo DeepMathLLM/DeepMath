@@ -1,0 +1,32 @@
+problem:  
+Let \((X,d,\mu)\) be a proper geodesic metric measure space satisfying **Bishop–Gromov volume comparison** with parameters \((K,N)\), i.e. for every \(x\in X\),
+\[
+r\mapsto \frac{\mu(B(x,r))}{v_{K,N}(r)}
+\]
+is nonincreasing, where \(v_{K,N}(r)\) is the model \(N\)-dimensional volume function.  
+Set \(\Theta(x):=\lim_{r\downarrow 0}\frac{\mu(B(x,r))}{v_{K,N}(r)}\), which exists by monotonicity.  
+Then \(\mu\) is necessarily doubling, so standard differentiation theorems guarantee Lebesgue points for locally \(L^1\) functions.  
+
+**Open problem:**  
+Investigate whether the *modulus of continuity* of \(\Theta\) at \(\mu\)-almost every point can be quantitatively controlled by the Bishop–Gromov ratio.  
+Precisely, is there a function \(\omega:(0,1)\to (0,\infty)\) with \(\omega(r)\to 0\) as \(r\to0\), depending only on \(K,N,\) such that for \(\mu\)-almost every \(x\in X\),
+\[
+\biggl|\Theta(y)-\Theta(x)\biggr| \le \omega\bigl(d(x,y)\bigr)
+\]
+for \(\mu\)-a.e. \(y\) sufficiently close to \(x\)?  
+If such \(\omega\) exists, does it imply quantitative stability of tangent cones \(T_xX\) with respect to basepoint perturbation (i.e. the pointed measured Gromov–Hausdorff distance between \(T_{x}X\) and \(T_{y}X\) is \(o(1)\) as \(d(x,y)\to0\))?  
+If no uniform modulus \(\omega\) exists, can one construct a Bishop–Gromov space where \(\Theta\) is approximately continuous a.e. but fails to satisfy any uniform modulus of continuity on a set of positive measure?
+
+---
+
+Why is it a "good" problem:  
+This refined formulation pinpoints a genuinely open frontier: we know Bishop–Gromov comparison enforces **monotonicity** and hence existence of limits, and measure-doubling grants mere **approximate continuity**, but the extent of *quantitative control* on how densities vary remains unknown.  
+
+- **Profound insight:**  
+  Determining whether a universal modulus of continuity exists would gauge precisely how much *microscopic regularity* the global comparison principle enforces. A positive answer would reveal that Bishop–Gromov inequalities govern not just monotone volume ratios but an actual “modulus of coherence” in infinitesimal volume distribution. A negative answer would show that synthetic curvature bounds lend qualitatively new stability beyond what Bishop–Gromov comparison can dictate.  
+
+- **Bridge between fields:**  
+  The problem ties together **comparison geometry**, **quantitative differentiation theory**, and **measured Gromov–Hausdorff stability**. The potential existence (or nonexistence) of such a modulus would influence approaches to regularity and rectifiability of singular spaces, bridging synthetic Ricci geometry with quantitative geometric measure theory.  
+
+- **Extreme simplicity:**  
+  The question only asks: *how uniformly continuous is the density function \(\Theta\) under Bishop–Gromov comparison?*—a statement expressible in elementary analytic terms but potentially demanding a new blend of global geometric comparison, metric differentiability, and tangent-cone analysis for its resolution. It thus achieves the ideal of “simple to state but profound in scope.”

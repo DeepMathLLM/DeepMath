@@ -1,0 +1,47 @@
+problem:  
+Let \((M^n,g,f)\) be a complete, noncompact **gradient shrinking Ricci soliton** satisfying  
+\[
+\mathrm{Ric}_g + \nabla^2 f = \tfrac{1}{2} g,
+\]
+with normalization  
+\[
+(4\pi)^{-n/2}\int_M e^{-f}\,dV_g = 1.
+\]  
+Such triples \((M,g,f)\) are critical points of Perelman’s entropy functional  
+\[
+\mu(g,f) = \int_M \big(|\nabla f|^2 + R + f - n\big) (4\pi)^{-n/2} e^{-f}\,dV_g.
+\]
+
+Known examples (e.g., Gaussian shrinker, round cylinders, Bryant soliton) are expected to correspond to **isolated entropy critical points**, yet no analytic mechanism ensuring that isolation is understood.
+
+**Problem:**  
+Define the normalized moduli space of shrinkers (up to diffeomorphism and scaling)
+\[
+\mathcal{M}_n := \{(M,g,f): \mathrm{Ric}+\nabla^2 f=\tfrac12 g,\ (4\pi)^{-n/2}\int_M e^{-f}=1\}/\!\!\sim ,
+\]
+where \((M,g,f)\sim (M',g',f')\) if they differ by a diffeomorphism and scaling.
+
+Focus on the **Perelman entropy functional** viewed as a map  
+\[
+\mu : \mathcal{M}_n \to \mathbb{R}.
+\]
+
+1. (**Local spectrum question**)  
+Does the **Hessian of \(\mu\)** at a noncompact shrinker \((M,g,f)\) — interpreted as a self‑adjoint operator on symmetric 2‑tensors with respect to the weighted measure \(e^{-f}dV_g\) — have **discrete spectrum** near zero?  
+Equivalently, do infinitesimal deformations of a shrinker split into finitely many entropy‑neutral directions and a discrete positive spectrum?
+
+2. (**Entropy accumulation question**)  
+Is it possible to construct a sequence of nonhomothetic shrinkers \((M_i,g_i,f_i)\) with uniformly bounded curvature such that  
+\[
+\mu(g_i,f_i)\to \mu(g_\infty,f_\infty)
+\]
+for some limit shrinker \((M_\infty,g_\infty,f_\infty)\),
+while the corresponding eigenvalues of the Hessian at each point display **accumulation from above** at \(0\)?  
+In other words, can entropy‑criticality fail to be spectrally isolated even if geometric convergence holds?
+
+Why is it a "good" problem:  
+This formulation converts the vague “entropy discreteness” intuition into a precise **analytic spectral** problem: does the Hessian of Perelman’s entropy on the moduli space of shrinkers possess discrete spectrum near zero, or can there exist continuous families of nearly entropy‑neutral deformations?  
+The question probes the **stability structure** of Ricci solitons from a variational viewpoint and links **Ricci flow stability theory**, **nonlinear elliptic analysis**, and **weighted spectral geometry**.  
+A positive answer would establish that Perelman’s entropy endows the moduli space of shrinkers with a **Morse–Smale type structure**, allowing an “energy landscape” picture of Ricci singularity models.  
+Conversely, a negative answer would identify new genuinely continuous moduli phenomena for self‑similar solutions of Ricci flow.  
+Its statement is clear and concise yet demands a deep synthesis of geometry, analysis, and spectral theory — precisely the kind of insight-driven and cross‑field challenge that defines a good research problem.

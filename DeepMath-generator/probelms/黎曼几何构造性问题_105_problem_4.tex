@@ -1,0 +1,39 @@
+problem:  
+Let \( (X,d) \) be an \(n\)-dimensional Alexandrov space with curvature bounded below by \( \kappa \in \mathbb{R} \).  
+For each \(x\in X\), let \(\Sigma_xX\) denote its link (space of directions, curvature \(\ge1\)).  
+For each pair of unit directions \(v,w\in\Sigma_xX\), let \(E_\kappa(x;v,w,t)\) denote the standard Toponogov hinge excess for hinge \((x,\gamma_v,\gamma_w)\) at length \(t\):
+\[
+E_\kappa(x;v,w,t) =
+d_X(\gamma_v(t),\gamma_w(t))
+ - d_{M^2_\kappa}(\tilde{\gamma}_v(t),\tilde{\gamma}_w(t)) \le0.
+\]
+Define the asymptotic *Toponogov profile* at \(x\) by
+\[
+\mathcal{E}_\kappa(x;v,w)
+=\limsup_{t\to0}\frac{|E_\kappa(x;v,w,t)|}{t^2}.
+\]
+
+**Problem:**  
+Assume that for \(\mathcal{H}^{n}\)-a.e. \(x\in X\),
+\[
+0<\int_{\Sigma_xX\times \Sigma_xX}\!\!\mathcal{E}_\kappa(x;v,w)^2\,d\mathcal{H}^{n-1}(v)d\mathcal{H}^{n-1}(w)
+<\infty.
+\]
+Does there exist an \(\varepsilon_n>0\) such that if
+\[
+\int_{\Sigma_xX\times \Sigma_xX}
+\mathcal{E}_\kappa(x;v,w)^2\,d\mathcal{H}^{n-1}(v)\,d\mathcal{H}^{n-1}(w)
+<\varepsilon_n
+\quad\text{for a.e. }x,
+\]
+then every link \(\Sigma_xX\) is \(C(n,\varepsilon_n)\)-close (say, in the Gromov–Hausdorff sense) to the round unit sphere \(S^{n-1}\)?  
+Equivalently: is near-vanishing average infinitesimal hinge deviation sufficient to force the infinitesimal metric structure of \(X\) to be quantitatively close to the model space at almost every point?
+
+Why is it a "good" problem:  
+This problem translates the classical rigidity of Toponogov equality into a **quantitative infinitesimal stability principle**, avoiding poorly justified higher-order or non-invariant constructions.  
+By focusing on the second-order normalized hinge excess—which is well defined and geometrically natural in Alexandrov geometry—it asks whether *small average deviations* from the model law imply that the space of directions must be close (in GH sense) to the sphere.  
+
+A positive result would constitute the first **quantitative stability theorem for Alexandrov curvature bounds at infinitesimal scale**, bridging Riemannian stability phenomena (Cheeger–Colding-type) with nonsmooth metric comparison geometry.  
+Conversely, constructing a counterexample would expose subtle geometric flexibility within curvature-bounded spaces.  
+
+The problem’s formulation is simple, uses only standard Alexandrov-geometric ingredients (hinge excess, space of directions), yet touches upon the heart of infinitesimal rigidity and quantitative geometry—qualifying it as a *good*, genuinely research-level problem that is logically self-consistent and conceptually deep.

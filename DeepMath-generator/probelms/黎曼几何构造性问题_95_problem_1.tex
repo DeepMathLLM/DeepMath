@@ -1,0 +1,37 @@
+problem:  
+Let \((M^n, g, f)\) be a compact smooth weighted Riemannian manifold, with measure \(d\mu = e^{-f} \, d\mathrm{vol}_g\), satisfying the Bakry–Émery curvature bound  
+\[
+\mathrm{Ric}_f := \mathrm{Ric} + \nabla^2 f \ge (n-1)k g
+\]
+for some \(k>0\).  
+Let \(\lambda_1^{(f)}\) denote the first nonzero eigenvalue of the weighted Laplacian \(-\Delta_f = -\Delta + \langle \nabla f, \nabla \cdot \rangle\).  
+By the Bakry–Émery–Lichnerowicz theorem,  
+\[
+\lambda_1^{(f)} \ge (n-1)k,
+\]
+with equality on the round sphere when \(f\) is constant.
+
+**Refined open problem (Weighted Obata stability beyond CD theory):**  
+Known results in \(CD(K,N)\) or \(RCD(K,N)\) metric measure spaces imply that if equality holds, the space is an isometric spherical model, and certain *quantitative almost-rigidity* properties hold at the level of metric-measure convergence. However, these results do not yet fully control the *smooth structure* or the *potential function \(f\)* in the smooth Bakry–Émery case.
+
+Formulate and establish a **quantitative, smooth rigidity** result:
+
+> If \((M^n,g,f)\) is compact, satisfies \(\mathrm{Ric}_f \ge (n-1)k g\), and  
+> \[
+> \lambda_1^{(f)} \le (n-1)k + \varepsilon,
+> \]
+> does it follow that there exist:
+> - a diffeomorphism \(\Phi: S^n_k \to M\) and a constant \(C>0\), and  
+> - a smooth function \(u\) on \(S^n_k\) with \(\|u\|_{C^2}\) small, and  
+> - a potential deviation \(\psi := f \circ \Phi - C\) with \(\|\psi\|_{C^1}\) small
+> 
+> such that \((M,g,f)\) is \(C^1\)-close (after normalization of total weighted measure) to the canonical sphere \((S^n_k, g_{S^n_k}, f\equiv C)\)?
+
+Equivalently: can *metric-measure almost-rigidity* under \(CD((n-1)k,n)\) be upgraded to a **smooth differential–geometric rigidity theorem** controlling both \(g\) and the potential \(f\)?
+
+Why is it a “good” problem:  
+This problem identifies the precise missing link between the established **metric-measure rigidity** of \(CD(K,N)\)/\(RCD(K,N)\) spaces and the stronger **smooth geometric rigidity** in Bakry–Émery geometry. While curvature-dimension theory ensures measure–metric convergence near equality, no known result guarantees **smooth control of the potential function** or full \(C^1\)–\(C^2\) approximation by a spherical metric.  
+
+Thus the problem’s novelty lies in asking whether the weighted Obata rigidity extends quantitatively to the *smooth* structure—bridging the gap between synthetic and smooth settings. It would connect techniques from geometric PDEs (Bochner identities, maximum principles) with those from metric-measure analysis (curvature–dimension inequalities and stability theory).  
+
+The statement is compact, geometrically transparent, and deeply rooted in active research—addressing whether spectral almost-rigidity in the Bakry–Émery framework enforces smooth geometric and measure-theoretic order. Its resolution would significantly advance understanding of how analytic and synthetic curvature constraints shape manifolds, making it an exemplary “good” research-level problem.

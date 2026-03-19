@@ -1,0 +1,37 @@
+problem:  
+Let \((M^n,g)\) be a compact Riemannian manifold with Ricci curvature \(\mathrm{Ric}(g)\ge (n-1)g\).  
+Let \(-\Delta_g\phi_i = \lambda_i(g)\phi_i\) and denote by \(\lambda_1(g)<\lambda_2(g)\le\cdots\) the spectrum and by \(E_1(g)\) the eigenspace corresponding to \(\lambda_1(g)\).  Define the **first spectral tensor**  
+\[
+T_1(g) := \sum_{\phi_i \in E_1(g)} d\phi_i \otimes d\phi_i,
+\]
+normalized so that \(\int_M \sum_{\phi_i\in E_1(g)} \phi_i^2\,d\operatorname{vol}_g = 1.\)  
+On the round sphere \((S^n,g_{\mathrm{rnd}})\) one has \(\lambda_1(S^n)=n\) and 
+\[
+T_1(g_{\mathrm{rnd}})=\frac{n}{\mathrm{Vol}(S^n)}\,g_{\mathrm{rnd}}.
+\]
+
+**Open Problem (Ricci–Spectral Tensor Rigidity and Multiplicity Stability):**  
+Assume \(\mathrm{Ric}(g)\ge (n-1)g\) and \(\lambda_1(g) \le n+\varepsilon\).  
+
+(a) Suppose \(E_1(g)\) has dimension \(m_1(g)\ge n+1\!\!-\!\delta\).  
+Is it true that if, moreover,
+\[
+\big\| T_1(g) - c\, g \big\|_{L^2(g)} \le \eta
+\]
+for some scalar \(c>0\) and sufficiently small \(\varepsilon,\delta,\eta>0\) (depending only on \(n\)), then \((M,g)\) is \(C^1\)-close (up to scaling and diffeomorphism) to the round sphere \(S^n\)?  
+
+(b) More ambitiously, under Ricci lower bounds, is there a universal quantitative relation
+\[
+\lambda_2(g) \ge F_n\big(\lambda_1(g),\,\|T_1(g)-c\,g\|_{L^2}\big)
+\]
+valid for all compact \((M^n,g)\), with equality if and only if \(M\) is isometric to \(S^n\)?  
+Here \(F_n\) reflects the spherical pattern of alignment between the first eigenspace and the metric.
+
+Why is it a "good" problem:  
+- **Structural depth:** This problem corrects the deficiency of scalar spectral ratios by invoking the *tensorial* object \(T_1(g)\), which genuinely encodes how the first eigenspace interacts with the geometry.  On the sphere, \(T_1\) reproduces the metric itself, expressing analytic symmetry as geometric isotropy.  Asking whether near-proportionality implies geometric near-sphericity probes the analytic-to-geometric correspondence at the heart of spectral geometry.  
+
+- **Bridge across disciplines:** The question unites tools from **differential geometry** (Ricci curvature rigidity), **spectral analysis** (eigenfunction structure and stability), and **representation theory** (spherical eigenspaces).  It suggests a quantitative mechanism through which analytic isotropy (\(T_1\approx c\,g\)) enforces geometric isotropy (\(g\approx g_{\mathrm{rnd}}\)).  
+
+- **Extreme simplicity with profound implications:** The equation \(T_1 = c\,g\) holds exactly for the round sphere.  Determining whether approximate equality forces approximate roundness is an elegantly minimal formulation, yet resolving it would require advancing the theory of eigenfunction geometry under curvature constraints.  
+
+- **Research relevance:** While Lichnerowicz–Obata controls merely the size of \(\lambda_1\), this problem introduces its multiplicity and tensorial profile into the rigidity framework.  No current theory fully quantifies how close \(T_1\) must be to a scalar multiple of \(g\) to guarantee smooth geometric closeness to \(S^n\).  Its resolution would yield a powerful analytic criterion for detecting spherical geometry directly from spectral data—making it a genuinely “good” and far-reaching open problem.

@@ -1,0 +1,35 @@
+problem:  
+Let \( (M^n, g_0) \) be a compact, simply connected Riemannian manifold (\(n \ge 4\)) with **positive sectional curvature**, and let \(g(t)\) denote the **normalized Ricci flow** starting from \(g_0\):  
+\[
+\frac{\partial g}{\partial t} = -2\,\mathrm{Ric}(g) + \frac{2}{n}r(g)\,g.
+\]  
+Perelman’s \(\nu\)-functional, defined on the space of Riemannian metrics by  
+\[
+\nu(g) = \inf_{f,\tau>0} W(g,f,\tau),
+\]  
+is monotone nondecreasing along the Ricci flow and constant precisely on **shrinking gradient Ricci solitons** (particularly, on Einstein metrics with positive scalar curvature).  
+
+**Open problem:**  
+Suppose \(M^n\) admits at least two **non-isometric positive Einstein metrics**, \(g_1\) and \(g_2\), with corresponding Perelman entropies \(\nu(g_1)\) and \(\nu(g_2)\).  
+
+1. Must \(\nu(g_1) \neq \nu(g_2)\)?  
+2. If equality \(\nu(g_1) = \nu(g_2)\) were possible, could there exist a **nontrivial ancient solution** \(g(t)\) of the normalized Ricci flow (\(t\in(-\infty,T)\)) satisfying
+   \[
+   \lim_{t\to -\infty} g(t)=g_1, \quad \lim_{t\to T^-} g(t)=g_2,
+   \]
+   thereby forming an entropy‑neutral connecting orbit between distinct Einstein metrics?  
+3. More broadly, can the space of positive Einstein metrics on a fixed manifold carry multiple distinct **critical points of equal maximal entropy**, implying a flat direction in the entropy landscape that allows analytic connecting trajectories?  
+
+This asks whether Perelman’s entropy functional defines a **strict partial order** among distinct positive Einstein geometries on the same underlying manifold—or whether the entropy landscape can have multiple critical points with identical height.
+
+Why is it a "good" problem:  
+This formulation respects the established **gradient‑like structure** of Ricci flow but probes its **fine global geometry** via Perelman’s entropy. The question pushes beyond known monotonicity to ask whether **degeneracies** (equal values for distinct Einstein metrics) can occur, which would profoundly affect how the Ricci flow organizes the space of metrics.  
+
+It directly connects:  
+- **Geometric analysis**, through the dynamics of Ricci flow and entropy monotonicity;  
+- **Global differential geometry**, through the moduli space of Einstein metrics on positively curved manifolds;  
+- **Variational analysis**, through the Morse–theoretic structure of \(\nu\).  
+
+A positive answer would force a reevaluation of entropy rigidity and suggest new analytic families of ancient solutions mediating between Einstein metrics. A negative answer would establish that Perelman’s entropy provides a **strict Morse ordering** on the space of positive Einstein geometries, reinforcing the view of Ricci flow as genuinely gradient‑like.  
+
+The question is simple to state yet touches the deepest structural aspects of Ricci flow and the landscape of Einstein geometries, thereby meeting all criteria for a good and foundational open problem.

@@ -1,0 +1,39 @@
+problem:  
+Let \((X, d, \mathfrak{m})\) be a non‑collapsed \(RCD(K,N)\) space, i.e., the measured Gromov–Hausdorff limit of \(n\)-dimensional Riemannian manifolds \((M_i,g_i)\) with \(\mathrm{Ric}_{M_i} \ge K\) and \(\operatorname{vol}(B_1(p_i)) \ge v_0>0\).  
+
+For \(k \in \mathbb{N}\), \(\varepsilon>0\), and \(r>0\), define the **multi‑scale quantitative \(k\)-regular set** by  
+\[
+\mathcal{R}_{k,\varepsilon}(r_0)
+:= 
+\Big\{ x\in X \;\Big|\;
+\forall s\in(0,r_0], \ 
+d_{GH}\big((B_s(x), s^{-1}d,x),(B_s(0^k), s^{-1}d_{\mathbb{R}^k},0)\big)<\varepsilon
+\Big\}.
+\]
+That is, every ball centered at \(x\) with radius up to \(r_0\) is uniformly \(\varepsilon\)-close (in the pointed Gromov–Hausdorff sense) to a Euclidean \(k\)-ball.  
+
+---
+
+**Open problem:**  
+Assume that for some \(k\), there exists a sequence \(\varepsilon_j \downarrow 0\) such that the family of multi‑scale regular sets \(\mathcal{R}_{k,\varepsilon_j}(r_0)\) *stabilizes in measure*, i.e.  
+\[
+\lim_{j\to\infty}
+\mathfrak{m}\!\left(\mathcal{R}_{k,\varepsilon_j}(r_0)
+\,\triangle\,
+\mathcal{R}_{k,\varepsilon_{j+1}}(r_0)\right)=0.
+\tag{*}
+\]
+Does this stabilization imply that \(X\) (up to an \(\mathfrak{m}\)-null or codimension‑2 subset) admits local coordinate charts  
+\(\Phi_\alpha: U_\alpha \to \mathbb{R}^k\)  
+such that each \(\Phi_\alpha\) and its inverse are bi‑Hölder, and for which the pullback of the Euclidean metric is equivalent (locally in the bi‑Lipschitz sense) to a \(C^{1,\alpha}\) Riemannian metric tensor inducing the same length metric as \(d\)?  
+
+Equivalently: does the stabilization condition (*)—quantitative flatness persisting almost everywhere at all scales—force the space to carry a genuine \(C^{1,\alpha}\) Riemannian manifold structure (possibly outside a negligible or codimension‑2 subset)?
+
+---
+
+Why is it a "good" problem:  
+The problem confronts a fundamental unsolved issue in Ricci limit theory: when does infinitesimal \(RCD(K,N)\) regularity accumulate into classical smooth geometry? Existing results give rectifiability and tangent cone uniqueness, yet they stop short of guaranteeing smooth charts or metric regularity. The proposed stabilization hypothesis introduces a measure‑theoretic signal of geometric coherence—persistence of quantitative Euclidean approximations across all small scales—and asks whether that “frozen” small‑scale behavior is sufficient to rebuild a smooth Riemannian structure.
+
+If true, such a result would provide the first criterion that upgrades synthetic geometric regularity to classical smoothness, linking quantitative flatness stability, measure‑theoretic convergence, and metric differentiability in one framework. Its resolution would demand new ideas in quantitative cone rigidity, Reifenberg‑type parameterizations, and multi‑scale metric measure compactness.  
+
+The statement is elementary—merely a question about persistence of approximate Euclidean geometry in measure—yet its implications are deep, uniting synthetic curvature theory, geometric measure theory, and Riemannian regularity. This combination of simplicity, depth, and cross‑disciplinary reach makes it a strong and “good’’ open research problem.

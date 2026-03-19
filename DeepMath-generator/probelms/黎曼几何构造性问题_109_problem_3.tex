@@ -1,0 +1,49 @@
+problem:  
+Let \((X,d,\mathfrak{m})\) be a **noncollapsed** \(\mathrm{RCD}(0,N)\) space with \(1<N<\infty\), i.e., \(\mathfrak{m}=\mathcal{H}^N\).  
+For \(p\in(1,N)\), define the sharp Sobolev constant
+\[
+C_p(X):=\sup_{f\in W^{1,p}(X)\setminus\{0\}}
+\frac{\|f\|_{L^{p^*}(\mathfrak{m})}^{p}}{\|Df\|_{L^{p}(\mathfrak{m})}^{p}}, 
+\quad p^*=\frac{Np}{N-p}.
+\]
+On Euclidean space \(\mathbb{R}^N\), denote the classical constant by \(C_p^{\mathrm{Euc}}\), and set
+\[
+A_p^{\mathrm{Euc}}:=(N-p)^{p/N}C_p^{\mathrm{Euc}},
+\]
+which converges to a finite limit determining the critical Moser–Trudinger constant.  
+
+**Open Problem (Critical Sobolev asymptotics and Euclidean rigidity):**  
+
+(a) *(Existence of limit)* For general noncollapsed \(\mathrm{RCD}(0,N)\) spaces, does the renormalized sequence  
+\[
+A_p(X):=(N-p)^{p/N}C_p(X)
+\]
+admit a finite limit as \(p\to N^{-}\)?  
+
+(b) *(Rigidity at the Euclidean value)* If the limit exists, does
+\[
+\lim_{p\to N^-}\frac{A_p(X)}{A_p^{\mathrm{Euc}}}=1
+\]
+hold **if and only if** \(X\) is globally isometric (up to measure scaling) to the Euclidean space \((\mathbb{R}^N,|\cdot|,c\,dx)\)?  
+
+(c) *(Dependence on local geometry)*  
+For \(\mathcal{H}^N\)-a.e. regular point \(x\in X\), the infinitesimal volume density
+\[
+\theta(x):=\lim_{r\to0^+}\frac{\mathfrak{m}(B_r(x))}{\omega_N r^N}
+\]
+exists and may vary with \(x\).  
+Does the asymptotic ratio
+\[
+L(X):=\lim_{p\to N^-}\frac{A_p(X)}{A_p^{\mathrm{Euc}}}
+\]
+depend only on the **distribution** of \(\theta(x)\) (for instance, on its essential infimum or mean value), thereby defining a geometric analytic invariant linking Sobolev asymptotics to infinitesimal volume structure?
+
+Why is it a "good" problem:  
+This formulation corrects earlier issues and is now mathematically sound. It focuses on the **limit behavior of sharp Sobolev constants** at the critical exponent, within the synthetic curvature framework, and connects it with the local measure–metric geometry encoded by volume densities.  
+
+This makes it a *good* problem because:  
+- It isolates a clean analytic phenomenon—the asymptotics of \(C_p(X)\) as \(p\to N^-\)—and proposes a deep geometric interpretation.  
+- It builds a bridge between **nonlinear analysis** (sharp critical inequalities and \(p\)-Laplacian asymptotics) and **synthetic geometry** (tangent cones, measure densities, and noncollapsing structure).  
+- The conjectured rigidity at the Euclidean value parallels Obata-type theorems but in a limit and nonsmooth regime, potentially introducing new analytic invariants for metric spaces.  
+
+The problem is simple to state yet probes profound interactions between curvature, analysis, and geometry, embodying the essence of a forward-looking research-level question.

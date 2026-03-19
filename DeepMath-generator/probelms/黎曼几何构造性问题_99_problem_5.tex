@@ -1,0 +1,68 @@
+problem:  
+Let \((M^n,g,f)\) be a complete, noncompact **gradient shrinking Ricci soliton** satisfying  
+\[
+\mathrm{Ric}_g + \nabla^2 f = \tfrac{1}{2} g, \qquad \min f = 0,
+\]
+with **nonnegative sectional curvature** and **Euclidean volume growth**.  
+Endow \(M\) with the normalized weighted measure  
+\[
+d\mu_f := (4\pi)^{-n/2} e^{-f}\, dV_g,
+\]
+and for any smooth domain \(\Omega \subset M\), define  
+\[
+\mu_f(\Omega) = \int_\Omega d\mu_f, \quad 
+\mu_f(\partial \Omega) = \int_{\partial \Omega} e^{-f} \, dA_g.
+\]
+The **weighted isoperimetric profile** is the function
+\[
+I_f(V) = \inf_{\Omega:\, \mu_f(\Omega) = V}\, \mu_f(\partial \Omega), \quad V \in (0,1),
+\]
+defined with respect to the normalized measure \(\mu_f\).
+
+Every shrinking soliton satisfies the Bakry–Émery curvature lower bound \(\mathrm{Ric}_f = \mathrm{Ric}_g + \nabla^2 f = \tfrac{1}{2} g\), i.e. the synthetic curvature–dimension condition \(CD(\tfrac{1}{2},\infty)\).  
+In Gaussian space \((\mathbb{R}^n,g_{\mathrm{Euc}},f=|x|^2/4)\), the function \(I_f(V)\) is **strictly concave**, and all isoperimetric minimizers are Euclidean halfspaces.
+
+**Problem:**  
+
+1. (**Rigidity via strict concavity**)  
+For dimensions \(n\le4\), determine whether the **strict concavity of \(I_f(V)\)** uniquely characterizes the Gaussian shrinker among all noncompact gradient shrinking solitons with nonnegative sectional curvature and Euclidean volume growth.  
+That is,  
+> If \((M,g,f)\) satisfies \(CD(\tfrac{1}{2},\infty)\) and \(I_f''(V)<0\) for all regular \(V \in (0,1)\), must \((M,g,f)\) be isometric (up to scaling) to the Gaussian shrinker?
+
+2. (**Quantitative concavity‑defect**)  
+Define the **concavity‑defect functional**
+\[
+\tilde{\mathcal D}_f := 
+\sup_{0<V_1<V<V_2<1}
+\left[
+I_f(V) - 
+\frac{(V_2-V)\, I_f(V_1) + (V-V_1)\, I_f(V_2)}{V_2 - V_1}
+\right].
+\]
+This functional measures the maximal deviation of \(I_f\) from concavity.  
+
+> Does \(\tilde{\mathcal D}_f = 0\) hold if and only if \((M,g,f)\) is the Gaussian shrinker?  
+> Moreover, can the size or asymptotic behaviour of \(\tilde{\mathcal D}_f\) (e.g. for small \(V\)) be expressed geometrically—for instance, via curvature integrals, eigenvalue data of the drift Laplacian, or the structure of the soliton's asymptotic cone?
+
+---
+
+Why is it a "good" problem:  
+This question links the **geometry of Ricci shrinkers** with the **isoperimetric theory of metric‑measure spaces** under curvature‑dimension conditions. It refines the relationship between self‑similar Ricci flow geometry and measure‑concentration inequalities into a concrete analytic test: *does concavity of the weighted isoperimetric profile rigidly identify the Gaussian shrinker?*
+
+- **Novel perspective:**  
+  While \(CD(K,\infty)\) spaces enjoy generalized convexity and concentration inequalities, the *strict* concavity of \(I_f(V)\) is not guaranteed by these synthetic conditions. It could act as a new rigidity criterion distinguishing the Gaussian soliton from all others.
+
+- **Bridge between fields:**  
+  It draws connections among **Ricci soliton geometry**, **Bakry–Émery analysis**, and **optimal transport–based isoperimetric inequalities**, requiring cross‑field methods from geometric PDE, spectral theory, and geometric measure theory.
+
+- **Simplicity with depth:**  
+  The entire problem is built from tangible quantities—volume, perimeter, concavity—yet its resolution involves subtle analysis of the soliton potential, curvature decay, and functional inequalities, echoing Perelman‑type monotonicity phenomena in a static setting.
+
+- **Low‑dimensional focus:**  
+  The restriction \(n\le4\) reflects the frontier of current classification results while leaving the isoperimetric characterization of these shrinkers completely open.
+
+- **Potential impact:**  
+  A *positive rigidity result* would yield a purely analytic characterization of the Gaussian shrinker via a measure‑theoretic property intrinsic to its geometry, forging a new link between Ricci‑flow models and probabilistic isoperimetry.  
+  Conversely, a *negative result* would uncover novel non‑Gaussian examples where the expected concavity fails, shedding light on the limitations of curvature‑dimension methods in capturing soliton rigidity.
+
+This combination of simplicity, depth, and cross‑disciplinary synthesis makes it a genuinely “good” research problem.

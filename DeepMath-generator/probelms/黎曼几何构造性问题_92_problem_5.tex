@@ -1,0 +1,47 @@
+problem:  
+Let \((M_i^n,g_i)\) be a non-collapsing sequence of closed Riemannian manifolds with  
+\[
+\operatorname{Ric}_{M_i}\ge -(n-1),\qquad  \operatorname{diam}(M_i)\le D,
+\]
+converging in the measured Gromov–Hausdorff sense to a compact limit space \((X,d_X,\mathcal{H}^n)\).  
+By Cheeger–Colding theory, \(X\) decomposes as \(X=\mathcal{R}\cup \mathcal{S}\), where \(\mathcal{R}\) is open, dense, and \(C^{1,\alpha}\)-rectifiable, and each \(x\in X\) admits tangent cones
+\[
+(X,r_j^{-1}d_X,x)\xrightarrow[\text{pmGH}]{j\to\infty}(C(Y_x),d_{C(Y_x)},o),
+\]
+for some metric cross-section \(Y_x\).
+
+For each \(x\in X\) and each sufficiently small \(r>0\), denote by \(I_X(x,r)\) the minimal perimeter required to cut \(B_r(x)\) into two subsets of equal \(\mathcal{H}^n\)-measure:
+\[
+I_X(x,r):=\inf\big\{\,|D\chi_E|(B_r(x)) \ :\ \mathcal{H}^n(E\cap B_r(x))=\tfrac{1}{2}\mathcal{H}^n(B_r(x)) \big\}.
+\]
+Define the normalized local isoperimetric density
+\[
+\Psi_r(x) := \frac{I_X(x,r)}{r^{n-1}}.
+\]
+
+---
+
+**Conjectural problem:**  
+For any \(x\in X\), consider a sequence of scales \(r_j\to0\) such that \((X, r_j^{-1}d_X, x)\to (C(Y_x),o)\).  
+
+1. **(Blow-up stability of perimeter ratios)**  
+   Does \(\Psi_{r_j}(x)\) converge to a finite nonzero limit \(\Psi_0(x)\), and does  
+   \[
+   \Psi_0(x)=I_{C(Y_x)}(1)?
+   \]
+   In other words, can the infinitesimal isoperimetric profile of \((X,d_X)\) at \(x\) be recovered as the isoperimetric constant of the tangent cone’s unit ball?
+
+2. **(Dependence on tangent cone type)**  
+   At points \(x\) where tangent cones are non-unique, do all possible tangent cones \(C(Y_x)\in \mathrm{Tan}_x(X)\) yield the same value \(I_{C(Y_x)}(1)\)?  
+   Equivalently, is the infinitesimal isoperimetric density \(\Psi_0(x)\) *well-defined* independently of which tangent cone one chooses?
+
+A positive resolution would yield a canonical measurable function \(x\mapsto \Psi_0(x)\) capturing the local geometric type of tangent cones purely from perimeter–volume scaling.
+
+---
+
+Why is it a "good" problem:  
+This reformulation corrects definitional issues and poses two coherent, testable questions lying at the analytic core of Colding’s volume convergence philosophy. It builds directly on well-understood objects—rescaled metric balls, BV-perimeter minimizers, and tangent cones—while probing whether **local isoperimetric structure determines infinitesimal geometry**.  
+
+If established, the result would create a new invariant \(\Psi_0(x)\) bridging geometric measure theory and Ricci-limit geometry: an analytic density connecting perimeter minimization with tangent-cone geometry. Even partial progress would clarify how fine-scale variational geometry behaves under pmGH convergence.  
+
+The problem is **simple in form** (a limit comparison of perimeter ratios), yet **deep in consequence**, as it would unify measure-theoretic and metric descriptions of singularities in spaces with Ricci curvature bounds—precisely embodying the “narrow entrance, profound depth’’ ideal of a good mathematical problem.

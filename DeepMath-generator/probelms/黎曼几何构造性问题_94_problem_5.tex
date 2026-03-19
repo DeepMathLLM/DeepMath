@@ -1,0 +1,59 @@
+problem:  
+Let \((M_i^4,g_i)\) be a sequence of closed, connected, oriented 4‑manifolds satisfying  
+\[
+\operatorname{Vol}(M_i,g_i)=1,\qquad \operatorname{diam}(M_i,g_i)\le D,
+\]  
+and suppose each metric \(g_i\) has **constant scalar curvature** \(R_{g_i}\) (so each is a Yamabe metric).  
+Assume their trace‑free Ricci tensors satisfy the \(L^2\)-smallness condition  
+\[
+\int_{M_i}\Big|\operatorname{Ric}_{g_i} - \tfrac{R_{g_i}}{4}g_i\Big|^2\,d\mu_{g_i} \le \varepsilon_i^2,\qquad \varepsilon_i\to0,  
+\]
+and that the total curvature energy is uniformly bounded:
+\[
+\int_{M_i} |{\rm Rm}_{g_i}|^2\,d\mu_{g_i}\le C<\infty.
+\]
+
+**Problem:**  
+Does there exist a (possibly singular) limit space \((X,d_\infty)\) such that, after passing to a subsequence and diffeomorphisms,
+\[
+(M_i,g_i) \;\xrightarrow{\mathrm{GH}}\; (X,d_\infty),
+\]
+and the following **compactness–bubbling dichotomy** holds?  
+
+1. (**Rigidity and Smooth Convergence**)  
+If no curvature concentration occurs, then \(X\) is a smooth 4‑manifold, and \((M_i,g_i)\) converge smoothly to an Einstein metric \(g_\infty\) on \(X\).  
+
+2. (**Curvature Bubbling and Energy Quantization**)  
+Otherwise, there exist finitely many concentration points \(\{x_1,\dots,x_k\}\subset X\) such that:
+   - The metrics \(g_i\) converge smoothly on compact subsets of \(X\setminus\{x_1,\dots,x_k\}\) to an Einstein metric \(g_\infty\).
+   - Around each \(x_j\), there exist rescalings \(r_{i,j}\to0\) and basepoints \(x_{i,j}\to x_j\) such that the pointed rescaled manifolds
+     \[
+     (M_i, r_{i,j}^{-2} g_i, x_{i,j})
+     \]
+     subconverge in the pointed smooth sense to complete, noncompact, finite‑energy Einstein manifolds \((E_j,h_j)\), with  
+     \(\int_{E_j} |{\rm Rm}_{h_j}|^2 <\infty.\)
+   - Curvature energy quantizes via
+     \[
+     \lim_{i\to\infty}\int_{M_i}|{\rm Rm}_{g_i}|^2
+     = \int_{X\setminus\{x_1,\dots,x_k\}}|{\rm Rm}_{g_\infty}|^2
+       + \sum_{j=1}^k \int_{E_j}|{\rm Rm}_{h_j}|^2.
+     \]
+
+Equivalently: does every \(L^2\)-bounded, almost‑Einstein sequence of Yamabe metrics in dimension four with bounded geometry either converge (modulo diffeomorphism) to an Einstein metric or develop a **finite, quantized collection of Einstein bubbles** carrying all the curvature energy?
+
+---
+
+Why is it a "good" problem:  
+This final formulation is mathematically self-consistent:  
+- The limit space \(X\) is defined as a **Gromov–Hausdorff limit**, guaranteeing a well‑defined singular setting.  
+- The energy identity treats \(|{\rm Rm}|^2\) over the **regular part** of \(X\setminus\{x_j\}\), where smooth convergence holds.  
+- The curvature energy bound ensures compactness and defines the natural scale of bubbling.  
+
+The question asks whether the *Einstein condition is quantization‑stable in \(L^2\)* for Yamabe metrics—a direct geometric analogue of Uhlenbeck’s compactness theorem for Yang–Mills fields.  
+It bridges three central themes of contemporary geometric analysis:  
+1. **Geometric PDE and stability:** near‑Einstein equations under weak norms.  
+2. **Global structure and degeneration:** compactness theory for moduli spaces of almost‑Einstein manifolds.  
+3. **Energy concentration phenomena:** discrete energy decomposition through bubbling.  
+
+The problem is **profoundly simple to state yet conceptually deep**: it tests whether weak \(L^2\) analytic control suffices to constrain the global topology and limit behavior of near‑Einstein Yamabe metrics, balancing pure PDE analysis with global geometric rigidity.  
+Its resolution—positive or negative—would unify rigidity, compactness, and energy quantization in a single framework, making it a paradigmatic *“good”* research‑level problem.

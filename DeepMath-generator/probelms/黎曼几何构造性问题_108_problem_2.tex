@@ -1,0 +1,29 @@
+problem:  
+Let \((X,d,\mathfrak{m})\) be an RCD\((K,N)\) metric measure space with \(K\in\mathbb{R}\) and \(1<N<\infty\).  
+Fix \(p\in X\) and let \(r_p(x)=d(p,x)\).  
+For \(r>0\), define the *average radial mean curvature* by using the coarea formula:
+\[
+H_p(r):=\frac{d}{dr}\log\mathfrak{m}(B_r(p)),
+\]
+where \(B_r(p)=\{x\in X:d(p,x)<r\}\) and the derivative is taken in the sense of functions of bounded variation.  
+In smooth manifolds with \(\mathrm{Ric}\ge K\) and dimension \(N\), one has
+\[
+H_p(r)\le (N-1)\frac{\mathrm{sn}'_K(r)}{\mathrm{sn}_K(r)},
+\]
+and equality characterizes the model spaces of constant curvature \(K\).
+
+**Open problem (quantitative radial Laplacian rigidity):**  
+Does there exist a function \(\varepsilon=\varepsilon(K,N)>0\) such that, for any compact RCD\((K,N)\) space,
+\[
+\Big|H_p(r)-(N-1)\frac{\mathrm{sn}'_K(r)}{\mathrm{sn}_K(r)}\Big|\le \varepsilon(K,N)
+\quad\text{for all }p\in X,\ r\in(0,\mathrm{diam}(X)),
+\]
+implies that \((X,d,\mathfrak{m})\) is Gromov–Hausdorff close to a smooth \(N\)-dimensional Riemannian manifold \((M,g)\) with \(\mathrm{Ric}_g\ge K\)?  
+If such an \(\varepsilon\) exists, can it be universal in the sense that it depends only on \(K,N\) and not on \((X,d,\mathfrak{m})\) itself?
+
+Why is it a "good" problem:  
+This question reformulates the Laplacian comparison by averaging over metric balls, thereby avoiding the measure-theoretic difficulties of integrating the distributional Laplacian over spheres. The function \(H_p(r)=\frac{d}{dr}\log\mathfrak{m}(B_r(p))\) is well defined in RCD spaces via coarea disintegration and exactly captures the *average radial divergence* of distance functions.  
+
+The problem seeks a quantitative stability principle linking this one-dimensional averaged curvature quantity to global geometric regularity — a metric analogue of Cheeger–Colding almost rigidity, but built on Laplacian comparison instead of volume ratios. It questions whether near-equality in the analytic form of Ricci lower bounds forces the space to be metrically close to a smooth manifold, integrating analytic curvature comparison, measure concentration, and synthetic geometry in one framework.  
+
+Resolving it would extend the rigidity and stability program in RCD theory, clarifying how local analytic curvature control encoded by \(H_p(r)\) determines large-scale geometry, and forging a new quantitative bridge between PDE-inspired curvature bounds and global metric structure.

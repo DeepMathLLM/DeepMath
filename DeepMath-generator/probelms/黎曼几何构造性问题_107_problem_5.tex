@@ -1,0 +1,22 @@
+problem:  
+Let \((M^n,g,o)\) be a complete, noncompact Riemannian manifold with \(\mathrm{Ric}\ge0\).  
+Fix an integer \(k\ge1\). Suppose there exist harmonic functions \(f_1,\dots,f_k:M\to\mathbb{R}\) such that  
+
+1. \(|\nabla f_j|\le1\) everywhere;  
+2. The **harmonic splitting defect**  
+   \[
+   \mathcal{D}(R)^2 := \frac{1}{\operatorname{vol}(B_R(o))}\int_{B_R(o)}
+   \left( 
+      \sum_{j=1}^k |\nabla^2 f_j|^2
+      +\sum_{j,\ell=1}^k|\langle\nabla f_j,\nabla f_\ell\rangle-\delta_{j\ell}|^2
+   \right)
+   \]
+   satisfies \(\mathcal{D}(R)<\varepsilon_n\) for all sufficiently large \(R\),  
+   where \(\varepsilon_n>0\) is a dimension-dependent constant to be determined.  
+
+**Question:**  
+Does there exist a universal constant \(\varepsilon_n>0\) (depending only on \(n\)) such that the smallness condition above implies that **every tangent cone at infinity** of \((M,g,o)\) splits isometrically as a product \(N_\infty\times\mathbb{R}^k\)?  
+Equivalently, can vanishingly small harmonic splitting defect enforce higher-rank Euclidean factorization in the asymptotic geometry of nonnegatively Ricci curved manifolds?
+
+Why is it a "good" problem:  
+This problem asks for a **quantitative rigidity threshold** governing geometric splitting in Ricci nonnegative geometry. It extends the classical Cheeger–Gromoll and Cheeger–Colding frameworks by replacing the existence of exact affine functions or infinitesimal lines with an *inequality-based analytic defect measure*. Current theory provides almost-splitting under defect tending to zero along sequences of scales, but no known universal bound guarantees global asymptotic splitting. Finding such a critical threshold (or proving none exists) would inaugurate a new kind of geometric stability principle: a “universal rigidity constant” translating analytic smallness into exact geometric product structure. The statement is exceptionally simple yet touches the analytical core of modern Riemannian geometry—intertwining harmonic analysis, PDE estimates, and global curvature structure. Achieving such a quantitative stability would bridge spectral geometry and Ricci limit theory, creating a unified analytic-geometric view of asymptotic decomposition phenomena.

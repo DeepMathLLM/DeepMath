@@ -1,0 +1,25 @@
+problem:  
+Let \((M_i,g_i,V_i)\) be a sequence of compact smooth weighted Riemannian manifolds with measures  
+\(\mu_i = e^{-V_i}\, d\mathrm{vol}_{g_i}\) and dimensions uniformly bounded by \(n\).  
+Assume uniform control of diameter and volume,  
+\(\operatorname{diam}(M_i,g_i)\le D\), \(\mathrm{Vol}(M_i,g_i)\le V_0\), and consider for each \(i\) the Bakry–Émery Ricci tensor  
+\[
+\mathrm{Ric}_{V_i} = \mathrm{Ric}_{g_i} + \nabla^2 V_i.
+\]  
+Suppose that for some constants \(K_i>0\) with \(K_i\to K>0\),
+\[
+\|(\,K_i g_i - \mathrm{Ric}_{V_i}\,)_+\|_{L^p(\mu_i)} \le \varepsilon_i \quad\text{with}\quad \varepsilon_i\to 0,
+\]
+where \((T)_+\) denotes the positive part of a symmetric tensor, i.e. the local failure of the Bakry–Émery lower curvature bound.  
+
+**Question (research-level open problem):**  
+Does an *asymptotic Bakry–Émery condition* in this \(L^p\)-sense guarantee quantitative stability of the spectral gap?  
+That is, can one find a dimension-dependent modulus of continuity \(\omega_{n,p,D,V_0}(\varepsilon)\to 0\) such that  
+\[
+\big|\lambda_1(\Delta_{V_i}) - K_i\big| \le \omega_{n,p,D,V_0}(\varepsilon_i)
+\quad\text{for all sufficiently large }i?
+\]  
+Equivalently, is the spectral gap function \(\lambda_1(\Delta_V)\) *continuous* (or even Hölder continuous) under small \(L^p\)-violations of the Bakry–Émery curvature-dimension condition?  
+
+Why is it a "good" problem:  
+This problem formulates a precise **quantitative stability** question for one of the deepest connections in geometric analysis: the relationship between curvature and spectral properties. While exact Bakry–Émery bounds yield classical functional inequalities, no general theory exists describing how small analytic or geometric perturbations of curvature influence these inequalities quantitatively. Resolving this would extend the rigidity-and-stability philosophy of Cheeger–Colding to the analytic regime of diffusion processes, bridging Riemannian geometry, probability, and the theory of \(RCD(K,\infty)\) spaces. The formulation is deceptively simple—perturb curvature slightly, ask how the first eigenvalue responds—yet it touches on intricate mechanisms linking curvature, measure concentration, and functional inequalities, satisfying the “narrow entrance, profound depth” hallmark of a good research problem.

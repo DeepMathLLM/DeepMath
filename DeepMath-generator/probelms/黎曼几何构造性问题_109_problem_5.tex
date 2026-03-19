@@ -1,0 +1,44 @@
+problem:  
+Let \((X,d,\mathfrak{m})\) be a **compact, noncollapsed \(\mathrm{RCD}(K,N)\)** space with \(K\ge0\) and \(1<N<\infty\), normalized so that \(\mathfrak{m}(X)=1\).  
+For \(q>2\), define the **normalized Beckner interpolation constant**
+\[
+B_q(X)
+:=\sup_{\substack{f\in W^{1,2}(X),\\ \|f\|_{L^2(\mathfrak{m})}=1}}
+\frac{\|f\|_{L^q(\mathfrak{m})}^2-1}{(q-2)\|Df\|_{L^2(\mathfrak{m})}^2}.
+\]
+On a smooth compact manifold with \(\mathrm{Ric}\ge K\) and \(\dim = N\), Beckner-type inequalities imply that \(B_q(M)\to B_2(M)=\frac{1}{\lambda_1(M)}\) as \(q\to2^+\), where \(\lambda_1(M)\) is the first (nonzero) Laplacian eigenvalue; moreover, the exact profile \(q\mapsto B_q(M)\) depends delicately on the geometry.
+
+---
+
+**Open Problem (Beckner profile and synthetic curvature rigidity):**  
+
+(a)  Prove or disprove that the limit
+\[
+\lim_{q\to2^+} B_q(X)=\frac{1}{\lambda_1(X)}
+\]
+exists for every compact noncollapsed \(\mathrm{RCD}(K,N)\) space, where \(\lambda_1(X)\) is the spectral gap of the Laplacian defined via the Cheeger energy.  
+
+(b)  If this limit exists, is the entire function \(q\mapsto B_q(X)\) **determined up to first order** by the synthetic curvature lower bound \(K\)?  More precisely, does the equality
+\[
+B_q(X)=B_q^{\mathrm{model}}(K,N)+o(q-2)
+\quad\text{as }q\to2^+
+\]
+hold **if and only if**
+\((X,d,\mathfrak{m})\) satisfies the exact \(\mathrm{RCD}(K,N)\) condition with the model spectral structure (i.e. same first eigenvalue and eigenfunction geometry as the \(N\)-sphere or Gaussian space)?  
+
+Equivalently: *Can the asymptotic shape of the Beckner profile near \(q=2\) serve as a complete analytic invariant detecting the exact curvature bound and model geometry among all RCD spaces?*
+
+---
+
+Why is it a "good" problem:  
+- **Mathematical soundness:**  
+  By normalizing the measure and \(L^2\)-norm, this definition avoids divergences and aligns with established Beckner–log-Sobolev frameworks valid on compact or probability-normalized RCD spaces.  The limit as \(q\to2\) rigorously corresponds to spectral-gap data, so the question is well-posed.
+
+- **Conceptual depth:**  
+  It asks whether *infinitesimal deviations in the nonlinear inequality profile* encode *geometric curvature rigidity.*  The idea is that small-\((q-2)\) behavior of Sobolev-type inequalities linearizes geometric curvature information, potentially allowing curvature to be recovered from one-parameter analytic data.
+
+- **Bridge across fields:**  
+  It unites functional inequalities (Beckner/log-Sobolev), spectral geometry, and synthetic Ricci bounds.  Proving a curvature–profile equivalence would unify variational and entropic perspectives of curvature.
+
+- **Simplicity and power:**  
+  Expressed by one limit involving a one-variable function \(B_q(X)\), yet implying a global geometric rigidity phenomenon.  Any progress would demand subtle analysis of semigroup contractions, spectral theory, and curvature-dimension structure—making it a core, research-level challenge of significant reach.

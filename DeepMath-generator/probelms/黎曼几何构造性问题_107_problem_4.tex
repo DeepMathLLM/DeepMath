@@ -1,0 +1,18 @@
+problem:  
+Let \((M^n,g,o)\) be a complete noncompact Riemannian manifold with \(\mathrm{Ric}\ge0\).  
+Suppose there exists a sequence of harmonic functions \(u_i:M\to\mathbb{R}\) satisfying:  
+
+1. \( \Vert \nabla u_i\Vert_{L^\infty(M)} \le 1+\varepsilon_i \) with \(\varepsilon_i\to 0\);  
+2. \( \int_{M\setminus B_R(o)} |\nabla^2 u_i|^2 \to 0\) as \(R\to\infty\) uniformly in \(i\) (so only \(L^2\)-Hessian decay at infinity, not pointwise);  
+3. For some \(c>0\), the rescaled functions \(u_i/r_i\) on the rescaled spaces \((M,r_i^{-2}g,o)\) satisfy a uniform \(H^{1,2}\) bound on compact regions and \(u_i(o)=0\).  
+
+Let \((M_\infty,d_\infty,o_\infty,\mathfrak{m}_\infty)\) be a measured Gromov–Hausdorff limit of \((M,r_i^{-2}g,o)\), which is known to be an \(RCD(0,n)\) space. Assume that, after normalization, \(u_i\) converge in \(H^{1,2}\) to a weakly harmonic function \(u_\infty : M_\infty\to\mathbb{R}\) satisfying  
+\(|\nabla u_\infty|=1\) almost everywhere but \(u_\infty\) need not be affine along geodesics.
+
+**Question:**  
+Do these conditions imply that \(u_\infty\) must be affine and therefore that \(M_\infty\) splits as \(N_\infty\times \mathbb{R}\)?  
+Equivalently, is \(L^2\)-Hessian decay of approximate affine harmonic functions on \(M\) sufficient to enforce metric-product splitting on the tangent cone at infinity, even when uniform second-order (or structural) control is absent?  
+If not, can one construct a non-splitting counterexample with all the above analytic properties?
+
+Why is it a "good" problem:  
+This problem sharpens the analytic boundary of known splitting theorems. Current \(RCD\)-based proofs (Cheeger–Gromoll, Cheeger–Colding, Gigli) depend on exact affine or uniform Hessian control hypotheses that enable identification of a genuine line in the limit space. Here, those hypotheses are replaced by mere \(L^2\)-Hessian decay—exactly where existing theory ceases to guarantee a line. The question pinpoints the unresolved gap between *approximate asymptotic flatness* and *exact metric splitting*. It simultaneously challenges the understanding of weak convergence of harmonic functions, second-order calculus on Ricci limit spaces, and rigidity of \(RCD(0,N)\) structures. A solution would either yield a profound quantitative extension of splitting rigidity or uncover a new type of nonsplitting \(RCD(0,N)\) limit phenomenon exhibiting only \(L^2\)-affinity—both outcomes would meaningfully advance geometric analysis.

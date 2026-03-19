@@ -1,0 +1,32 @@
+problem:  
+Let \((M,g,e^{-V}\mathrm{vol}_g)\) be a smooth, complete weighted Riemannian manifold satisfying the curvature–dimension condition \(CD(K,N)\) with \(K>0\) and finite \(N>1\).  
+Let \(P_t = e^{t\Delta_V}\) denote the heat semigroup associated to \(\Delta_V = \Delta - \langle\nabla V,\nabla \cdot\rangle\).  
+For \(x,y\in M\), define  
+\[
+\Phi_t(x,y) := W_2^2(P_t\delta_x,P_t\delta_y),
+\]
+the squared \(L^2\)-Wasserstein distance between heat-regularized Dirac measures. Under \(CD(K,N)\),
+\[
+\Phi_t(x,y)\le e^{-2Kt}d^2(x,y)
+\]
+for small \(t>0\), with equality in Gaussian space.
+
+Suppose that, for small \(t>0\), one has the **uniform first-term expansion**
+\[
+\frac{\Phi_t(x,y)}{d^2(x,y)} = e^{-2Kt}\bigl(1-\alpha\,t + o(t)\bigr),\quad t\to0,
+\]
+where \(\alpha\ge0\) is a constant independent of \(x,y\).  
+
+**Problem:**  
+Determine whether the requirement that the first-order deviation coefficient \(\alpha\) be spatially constant forces the Bakry–Émery tensor to be constant, i.e.
+\[
+\operatorname{Ric}_V \equiv K g,
+\]
+and hence \((M,g,V)\) to be Gaussian up to affine equivalence.  
+Equivalently, can any nontrivial \(CD(K,N)\) weighted manifold exhibit uniform small-time diffusion-distance decay independent of base points?  
+More generally, describe how the small-time expansion of \(\Phi_t(x,y)\) determines local geometric data (e.g., curvature, Hessian of \(V\)), and whether uniformity of these coefficients implies rigidity.
+
+Why is it a "good" problem:  
+This problem transforms global equality questions in the heat-flow contraction principle into a *local asymptotic rigidity problem*, probing how fine-scale diffusion–transport behavior encodes curvature. By focusing on the coefficient of the first deviation from exponential decay, it directly links the stochastic geometry of Wasserstein distances to local Ricci–Bakry–Émery invariants.  
+If spatial constancy of this coefficient necessarily enforces constant weighted Ricci curvature, it would establish a new route to identify Gaussian structures from infinitesimal transport data—bridging heat kernel asymptotics, differential geometry, and optimal transport.  
+The formulation is simple but deep: it demands understanding of how small-time transport asymptotics reflect curvature-dimension conditions and whether any non-Gaussian geometry can present globally uniform diffusion symmetry. Resolving it would sharpen our grasp of rigidity phenomena at the interface of analysis and geometry in the \(CD(K,N)\) framework.

@@ -1,0 +1,26 @@
+problem:  
+Let \((M_i^n,g_i)\) be a non-collapsing sequence of closed Riemannian manifolds with  
+\[
+\operatorname{Ric}_{M_i}\ge -(n-1),\quad \operatorname{diam}(M_i)\le D,\quad \operatorname{Vol}(M_i)\to V>0,
+\]
+converging in the measured Gromov–Hausdorff sense to a compact limit space \((X,d_X,\mathcal{H}^n)\).  
+Let \(\mathcal{S}\subset X\) denote the singular set, stratified as \(\mathcal{S}=\bigcup_{k<n}\mathcal{S}^k\) where \(\mathcal{S}^k\) is the locus of points whose tangent cones split off exactly \(k\) Euclidean factors.
+
+For each \(i\), define the **curvature concentration measure**
+\[
+\mu_i := |{\rm Rm}_{g_i}|^{n/2}\,d{\rm Vol}_{g_i},
+\]
+normalized so that \(\mu_i(M_i)=1\).  By compactness of spaces with Ricci lower bounds and bounded diameter, we may extract a weak-* limit measure \(\mu_\infty\) on \(X\).
+
+Conjectural problem:  
+Does the limit measure \(\mu_\infty\) *detect the geometric singular strata* of \(X\)?  
+More precisely, does there exist a universal constant \(C(n,D)\) such that for every \(\varepsilon>0\),
+\[
+\mu_\infty\big(\{x\in X:\operatorname{dist}(x,\mathcal{S}^{n-2})\ge \varepsilon\}\big)=0?
+\]
+Equivalently, in non-collapsing Ricci-limit spaces, is curvature concentration forced to accumulate only along the codimension–2 singular stratum in the metric limit?
+
+Why is it a "good" problem:  
+This problem advances beyond standard ε-regularity by asking whether curvature energy concentration in Ricci-bounded sequences admits a **universal measure-theoretic limit law** tied precisely to the **codimension of singularities** in the Ricci-limit space. Existing theorems control metric regularity where curvature remains bounded, but it is not known whether the *singular strata correspond exactly to the limiting support of curvature concentration measures*. A positive resolution would unify the analytic side (curvature energy distribution) with the geometric stratification (Cheeger–Naber) and yield a deeper quantitative description of singularities arising under Ricci lower bounds.  
+
+The statement is concise and natural—connecting L^{n/2} curvature measures, Gromov–Hausdorff limits, and quantitative stratification—but dives into unknown territory where analysis, metric geometry, and geometric measure theory meet. Understanding whether curvature concentration lives precisely on codimension–2 strata could open a new quantitative theory of Ricci-limit geometry, akin to energy concentration phenomena in harmonic map theory. This makes the problem simple to state yet profoundly deep, a quintessential “narrow entrance, profound depth’’ research question.

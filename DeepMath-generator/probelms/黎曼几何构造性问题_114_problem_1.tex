@@ -1,0 +1,26 @@
+problem:  
+Let $\{(M_i, g_i)\}_{i=1}^\infty$ be a sequence of compact $n$–dimensional Riemannian manifolds with  
+\[
+\mathrm{Ric}(M_i,g_i) \geq (n-1)k, \qquad \operatorname{diam}(M_i,g_i) \leq D
+\]
+for some fixed constants $k \in \mathbb{R}$ and $D>0$.  
+Suppose that each $(M_i,g_i)$ admits a smooth **Riemannian foliation** $\mathcal{F}_i$ such that  
+1. every leaf $L_i$ has diameter $\leq D_0$, and the second fundamental form and mean curvature of $L_i$ are uniformly bounded independent of $i$;  
+2. the quotient metric space $B_i := M_i/\mathcal{F}_i$ (endowed with the leaf–space metric induced by $g_i$) is an Alexandrov space of curvature $\geq k_B$ uniformly bounded below.
+
+Assume that $(M_i,g_i)$ converges in the Gromov–Hausdorff sense to a compact metric space $(X,d_X)$.  
+
+**Conjecture:**  
+Under the above assumptions, there exists a compact metric space $(B_\infty, d_{B_\infty})$ and a 1–Lipschitz surjection $\pi_\infty : X \to B_\infty$ with the following properties:
+- $\pi_\infty$ is a **metric submetry**, i.e. $d_{B_\infty}(\pi_\infty(x),\pi_\infty(y)) = d_X(\pi_\infty^{-1}(\pi_\infty(x)), \pi_\infty^{-1}(\pi_\infty(y)))$;
+- the fibers of $\pi_\infty$ arise as pointed Gromov–Hausdorff limits of the leaves of $\mathcal{F}_i$;
+- $B_\infty$ is the Gromov–Hausdorff limit of the sequence $\{B_i\}$.
+
+Equivalently, the **Riemannian foliation structure is stable under Gromov–Hausdorff convergence** for sequences satisfying uniform lower Ricci bounds and uniform control on the leaf geometry.
+
+Why is it a "good" problem:  
+This conjecture isolates a precise and unexplored aspect of geometric stability. While classical collapsing theory (Cheeger–Fukaya–Gromov) handles sectional curvature bounds, and Cheeger–Colding theory addresses Ricci-bound convergence, there is a deep gap between them: how fine geometric decompositions, like Riemannian foliations and measured fibrations, behave in purely Ricci-controlled limits.  
+
+If true, this conjecture would generalize the Cheeger–Fukaya–Gromov fibration stability to the Ricci curvature setting, revealing new rigidity phenomena and bridging smooth and metric geometries. Its statement is minimal yet profound: it asks whether the **fibration−quotient structure itself** survives the smoothing-to-singular transition inherent to Gromov–Hausdorff limits.  
+
+Conceptually, it unifies analytic curvature control (Ricci bounds) with geometric-topological decomposition (foliations) and metric-limit theory (Gromov–Hausdorff convergence). The question’s clarity—does the leaf/fibration structure persist in the limit?—is simply stated but demands deep new techniques, involving convergence of measured foliations, stratification of singular sets, and quantitative geometric analysis across different frameworks.

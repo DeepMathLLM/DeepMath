@@ -1,0 +1,22 @@
+problem:  
+Let \((M_i^n,g_i,p_i)\) be a sequence of complete Riemannian manifolds with \(\operatorname{Ric}_{g_i}\geq -(n-1)\) and non-collapsed at scale 1, converging in the pointed Gromov–Hausdorff sense to a metric space \((X,d,p)\). Denote by \(\Gamma_i = \pi_1(M_i,p_i)\), and by \((\tilde M_i, \tilde g_i, \tilde p_i)\) their universal covers, with \(\Gamma_i\) acting by deck transformations.  
+
+Define the **volume growth entropy** \(h_{\mathrm{vol}}(M_i) = \limsup_{R \to \infty} \frac{1}{R}\log \operatorname{Vol}_{\tilde g_i}(B_{\tilde g_i}(\tilde p_i, R))\), and the **orbit growth entropy**  
+\[
+h_{\mathrm{orb}}(\Gamma_i) = \limsup_{R\to\infty} \frac{1}{R}\log \Big|\{\gamma\in \Gamma_i\mid d_{\tilde g_i}(\tilde p_i, \gamma \tilde p_i)\le R\}\Big|.
+\]
+
+Existing results show for negatively curved or cocompact settings that \(h_{\mathrm{orb}}(\Gamma_i)\approx h_{\mathrm{vol}}(M_i)\), but the relationship is unknown in general Ricci-limit scenarios, especially in collapse.  
+
+**Research problem:**  
+Under the above hypotheses, does there exist a universal inequality of the form
+\[
+h_{\mathrm{orb}}(\Gamma_i)\ \le\ h_{\mathrm{vol}}(M_i)
+\]
+that is *stable under pointed Gromov–Hausdorff convergence*, and persists even in collapsing limits (where the limit space \(X\) has lower Hausdorff dimension than \(n\))?  
+Moreover, if equality occurs in the limit, must each \(M_i\) be asymptotically volume-noncollapsed in all directions, or equivalently, must tangent cones at infinity of the universal covers \(\tilde M_i\) be metric cones of maximal possible dimension?
+
+Why is it a "good" problem:  
+This problem isolates a precise and currently unestablished bridge between Ricci curvature, entropy, and collapse phenomena. While the entropy equality is well understood for cocompact, non-collapsed, or strictly negative curvature settings, essentially nothing is known for sequences of spaces satisfying only lower Ricci bounds and possibly collapsing. It demands a new quantitative understanding of how group-theoretic orbit growth interacts with volume growth in the analytic limit.  
+
+A resolution would unify analytic and algebraic growth notions within the modern *Ricci-limit* framework developed by Cheeger–Colding–Naber and Kapovitch–Wilking, introducing entropy as a third invariant alongside dimension and nilpotent rank. The problem’s minimalist inequality hides deep implications: a positive answer would point toward an “entropy stability theorem” across collapsing sequences, while a counterexample would reveal previously unknown geometric or algebraic obstructions, potentially reshaping current understanding of fundamental group behavior under Ricci convergence.

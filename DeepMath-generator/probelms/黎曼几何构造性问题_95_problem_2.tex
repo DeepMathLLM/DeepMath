@@ -1,0 +1,41 @@
+problem:  
+Let \((M^n,g)\) be a compact Riemannian manifold normalized so that \(\operatorname{Vol}(M,g)=1\), and suppose  
+\[
+\mathrm{Ric}(g) \ge (n-1)g.
+\]
+For \(p>1\), define the first \(p\)-Laplacian eigenvalue by
+\[
+\lambda_{1,p}(g)
+:= \inf_{\substack{u\not\equiv \text{const}\\ \int_M |u|^{p-2}u\,d\mathrm{vol}_g=0}}
+\frac{\int_M |\nabla u|^p\,d\mathrm{vol}_g}
+     {\int_M |u|^p\,d\mathrm{vol}_g}.
+\]
+Set the normalized profile function
+\[
+\Psi_g(p) := \frac{\lambda_{1,p}(g)}{\lambda_{1,p}(S^n)},
+\]
+where \(S^n\) is the unit sphere.
+
+It is known that \(\Psi_g(2)\le 1\) by the Lichnerowicz–Obata theorem, with equality if and only if \(M\) is isometric to \(S^n\). For \(p\ne 2\), comparison results for \(\lambda_{1,p}\) are only known in special cases (e.g. comparison under Ricci bounds for functions of one dimension).
+
+**Open problem (Ricci curvature rigidity in the nonlinear spectral regime):**  
+Conjecture that for any \((M^n,g)\) with \(\mathrm{Ric}(g)\ge (n-1)g\),
+\[
+\Psi_g(p) \le 1 \quad \text{for all } p>1,
+\]
+with equality for some \(p\neq2\) if and only if \((M,g)\) is isometric to \(S^n\).  
+
+A stronger conjecture is that the map \(p\mapsto \log \Psi_g(p)\) is *strictly convex* for all nonspherical \(M\), i.e.
+\[
+\frac{d^2}{dp^2}\log \Psi_g(p) > 0 \quad \text{for } p>1.
+\]
+
+This would imply a universal *nonlinear spectral rigidity law* extending Lichnerowicz–Obata theory to all \(p\), with a convexity structure collapsing precisely on the round sphere.
+
+Why is it a "good" problem:  
+This problem isolates a concrete and natural nonlinear extension of a classical curvature–eigenvalue rigidity phenomenon.  
+
+- **Conceptual depth:** It asks whether positive Ricci curvature controls not just a single eigenvalue but the entire *nonlinear spectral curve* \(p \mapsto \lambda_{1,p}\), and whether the sphere uniquely realizes the extremal shape of this function.  
+- **Bridge between fields:** It connects differential geometry (Ricci curvature bounds and rigidity) with nonlinear PDE (the quasilinear \(p\)-Laplacian) and functional inequalities (spectral gaps and convexity). Resolving it would require merging Bochner-type methods, comparison geometry, and nonlinear variational analysis.  
+- **Extreme simplicity:** The statement is transparent: under a classical curvature bound, how does the first \(p\)-eigenvalue behave as \(p\) varies, and is the sphere characterized by extremality across all \(p\)? Yet the problem’s solution lies far beyond current tools.  
+- **Research relevance:** Known results address the \(p=2\) case and a few one-dimensional models. No known principle governs the global \(p\)-dependence under lower Ricci bounds. Establishing this conjectured convexity or comparison law would initiate a new nonlinear extension of eigenvalue geometry, potentially revealing how curvature affects nonlinear spectral phenomena.

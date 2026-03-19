@@ -1,0 +1,34 @@
+problem:  
+Let \((X,d,\mathfrak{m})\) be an \(\mathrm{RCD}(K,N)\) space with \(1<N<\infty\), and let \(p_t(x,y)\) denote its heat kernel. For \(\mathfrak{m}\)-a.e.\ \(x\in X\), the Mondino–Naber theorem gives a unique Euclidean tangent cone \(\mathbb{R}^{k(x)}\) and a density parameter \(\theta(x)>0\) such that
+\[
+\mathfrak{m}(B_r(x))=\theta(x)\,\omega_{k(x)}r^{k(x)}+o(r^{k(x)}).
+\]
+Define the **renormalized entropy** of the heat kernel at \(x\) as
+\[
+E_x(t):=\mathrm{Ent}_{\mathfrak{m}}(p_t(x,\cdot)\mathfrak{m})+\frac{k(x)}{2}\log(4\pi t)+\frac12\log\theta(x),
+\]
+where \(\mathrm{Ent}_{\mathfrak{m}}(\nu)=\int\log\!\left(\frac{d\nu}{d\mathfrak{m}}\right)\,d\nu\).
+
+In the smooth case, \(E_x(t)\to 0\) as \(t\to 0\). However, near non‑regular points, tangent cones can be non‑unique or vary with scale, potentially destroying uniformity of small‑time analytic behavior.
+
+**Question:**  
+For an \(\mathrm{RCD}(K,N)\) space, does there exist \(\alpha>0\) such that for almost every \(x\) and every sufficiently small \(t>0\),
+\[
+|E_x(t)| \le C_x\,t^{\alpha}?
+\]
+In other words, does the entropy of the heat kernel approach its Euclidean‑density limit at a *quantitative rate* depending continuously on scale?  
+If not, can one exhibit an \(\mathrm{RCD}(K,N)\) space where \(E_x(t)\) oscillates arbitrarily slowly or fails to converge, even though tangents are Euclidean and \(\theta(x)\) exists?
+
+Why is it a "good" problem:  
+This formulation pushes beyond known results by demanding *quantitative control* of the convergence linking analytic diffusion behavior to geometric blow‑ups. It sits at the intersection of three deep themes:
+
+1. **Quantitative Regularity vs. Analytic Convergence:**  
+   Known theorems provide qualitative mGH convergence of blow‑ups and thus qualitative limits of \(E_x(t)\), but no rate. Requiring a power‑law rate would originate a synthetic analogue of the Cheeger–Colding quantitative stratification theory.
+
+2. **Stability of the Heat Kernel Under Scaling:**  
+   The problem tests whether small‑time heat diffusion detects infinitesimal geometric stability, central to understanding singularities in curvature‑bounded spaces.
+
+3. **Cross‑Disciplinary Significance:**  
+   It demands tools from geometric measure theory, heat semigroup analysis, and optimal transport curvature bounds. Proving such a rate (or finding counterexamples) would unify analytic and geometric notions of *how fast synthetic spaces look Euclidean*.
+
+This question is compact and elementary to state—the behavior of \(E_x(t)\) near \(t=0\)—yet its resolution would inaugurate a new quantitative regime in RCD geometry, revealing whether synthetic curvature bounds control not just shapes of tangents, but *the speed of analytic convergence* toward those infinitesimal models.

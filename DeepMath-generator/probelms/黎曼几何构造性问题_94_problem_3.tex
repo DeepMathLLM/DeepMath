@@ -1,0 +1,34 @@
+problem:  
+Let \((M^n,g)\) be a closed Riemannian manifold normalized by \(\operatorname{Vol}(M,g)=1\).  
+Fix \(\tau>0\) and define Perelman’s \(\mathcal{W}\)-functional
+\[
+\mathcal{W}(g,f,\tau)=\int_M \big[\tau(|\nabla f|^2+R_g) + f - n\big](4\pi\tau)^{-n/2} e^{-f}\,d\mu_g,
+\]
+subject to \(\int_M (4\pi\tau)^{-n/2} e^{-f}\,d\mu_g = 1.\)
+Its critical points satisfy the gradient shrinking soliton equation
+\(\operatorname{Ric}_g + \nabla^2 f = \tfrac1{2\tau}g.\)
+
+**Problem:**  
+Consider a sequence of manifolds \((M_i,g_i,f_i)\) with the following properties:
+\[
+\operatorname{Ric}_{g_i} + \nabla^2_{g_i} f_i = \tfrac{1}{2\tau_i} g_i + E_i,\qquad \|E_i\|_{L^2(M_i,g_i)}\to0,
+\]
+and each has weighted spectral gap \(\lambda_1(\Delta_{f_i})\ge c_0>0.\)  
+Assume that \(\mathcal{W}(g_i,f_i,\tau_i)\) remains uniformly bounded and that no diameter or curvature bounds are imposed.  
+
+Does it follow that, after passing to a subsequence and applying suitable diffeomorphisms and rescalings,  
+\[
+(M_i,g_i,f_i) \;\longrightarrow\; (M_\infty,g_\infty,f_\infty)
+\]
+in the smooth Cheeger–Gromov sense for which \((M_\infty,g_\infty,f_\infty)\) is a genuine gradient shrinking Ricci soliton?  
+Equivalently, is the class of \(\mathcal{W}\)-almost-minimizers with a uniform weighted spectral gap *precompact* modulo scaling and diffeomorphism, even in the absence of geometric bounds?  
+If this fails, can one construct an explicit nontrivial limiting defect measure capturing the “entropy escape” of such a sequence?  
+
+Why is it a "good" problem:  
+This formulation adds both analytic and geometric depth. It shifts from pointwise stability of one almost-critical triple to the *global compactness theory* for sequences of almost-minimizers of Perelman's entropy, testing whether analytic smallness (\(L^2\) Einstein-defect + spectral gap) controls global geometric degeneration.  
+
+A positive result would supply a new compactness principle parallel to the Cheeger–Colding theory for Ricci curvature, but driven only by entropy and spectral constraints rather than curvature bounds—thus bridging **entropy geometry**, **spectral analysis**, and **metric measure convergence theory**.  
+A negative result (constructing escaping sequences) would uncover new degeneration phenomena for Ricci shrinkers and may require a new “defect measure” theory analogous to energy concentration in harmonic map analysis.  
+
+Technically, the problem intertwines three active frontiers—nonlinear elliptic PDE regularity in weak norms, spectral gap stabilization, and the analytic geometry of Ricci flow functionals. Conceptually, it asks whether entropy and stability data alone suffice to rigidify Einstein-type structures, a question that sits precisely at the nexus of geometric analysis, spectral theory, and flow dynamics.  
+Its premise is simple but its implications would be far-reaching, extending the current Ricci flow compactness and rigidity machinery into new analytic territory—fully meeting the standard of a “good” research-level problem.
