@@ -1,24 +1,109 @@
-# DeepMath: 开源数学大模型项目
+# DeepMath
 
-## 项目简介
-这是一个由同济大学数学科学学院 DeepMath 团队发起的开源项目，旨在训练一个能够达到数学专业博士生水平的数学大模型。项目不仅致力于提升模型的数学推理能力，还探索大模型是否具备数学创造能力，以及其在前沿数学研究中的潜在应用。
+## 📅 Project Timeline
 
-## 第一项工作：DeepMath-Creative评测集
+```
+2025.05 · Release of First Work:  [**DeepMath-Creative Benchmark**](./DeepMath-Creative/)
+2025.05 · Paper "DeepMath-Creative: A Benchmark for Evaluating Mathematical Creativity of Large Language Models" Published on arXiv
+2026.03 · Next Frontier: [**Exploring LLMs' Capacity to Originate Mathematical Research Problems**](./DeepMath-generator/)
+2026.03 · Historic Release: 665 Expert-Verified Research-Level Problems in Differential Geometry, Conceived by an LLM Agent — The [**DeepMath-Generator**](./DeepMath-generator/) Series
+```
 
-### 论文标题
+## 🎯 Project Introduction
+
+**DeepMath** is more than just another AI project—it's a bold exploration into the unknown territories of machine creativity. Initiated by the DeepMath team at the School of Mathematical Sciences, Tongji University, our mission is audacious: to train a large language model that doesn't just solve math problems, but thinks, creates, and discovers at the level of a PhD mathematician.
+
+We are not merely chasing higher scores on existing benchmarks. We are asking the questions that matter:
+- **Can machines truly create mathematics, or merely mimic it?**
+- **Could an AI become a genuine collaborator in pushing the frontiers of human knowledge?**
+
+Through rigorous evaluation and groundbreaking generation of novel research problems, DeepMath stands at the intersection of artificial intelligence and pure mathematics, challenging the very definition of creativity itself.
+
+---
+
+## 📚 First Work: [The DeepMath-Creative Benchmark — Measuring the Unmeasurable](./DeepMath-Creative/)
+
+### 📝 Paper
 
 [**DeepMath-Creative: A Benchmark for Evaluating Mathematical Creativity of Large Language Models**](https://arxiv.org/abs/2505.08744)
 
-### 摘要概述
+### 🔍 The Challenge
 
-为了进一步提升大模型的数学能力，DeepMath团队发起了一个开源计划，旨在训练一个开源数学大模型，探索大模型的数学创造能力。本文是该开源计划的第一个工作。目前大语言模型在数学领域的发展主要聚焦于推理能力，已有丰富的评测集用于测试其初等或本科水平的数学推理能力。然而，目前鲜有工作研究大模型的数学创造能力，并且用于评测大模型数学创造能力的数据稀缺。本文研究了大模型的数学创造能力的衡量标准，并构建了一个高质量评测数据集**DeepMath-Creative**，涵盖代数、几何、分析等分支的构造性问题，系统评估了当前主流大语言模型在数学问题上的创造性能力。实验结果表明，即使在相当宽松的评分标准下：强调核心解题步骤，忽略次要错误，如逻辑小漏洞、论证不完整或表述冗余等细节误差。表现最好的模型 O3 Mini 在本科层级的构造性问题上准确率也仅为 70%。在更复杂的问题上，模型性能急剧下降，对于开放问题，模型甚至无法提供有效建议。这一结果表明，尽管当前大模型在熟悉且难度较低的问题中表现出一定的构造能力，但其解题过程多依赖于记忆模式的重组，而非源于真正的创造性理解或新颖的结构性构造。
+The AI world is obsessed with reasoning. Benchmarks abound for testing how well models solve known problems. But what about the ability that defines true mathematicians—the ability to **create**, to **construct**, to **innovate**? This critical dimension of mathematical intelligence has remained in the shadows, unmeasured and unexplored.
 
-### 数据集位置
+Until now.
 
-本论文所使用的 **DeepMath-Creative** 数据集已开源，位于本项目的 [`DeepMath/DeepMath-Creative-data/`](./DeepMath-Creative-data/) 文件夹中。
+### 💡 Our Contribution
 
-## 联系方式
-如有任何问题或合作意向，请联系项目团队，邮箱：[xychen100@tongji.edu.cn]。
+As the inaugural work of the DeepMath initiative, we dared to measure the unmeasurable. We introduced **DeepMath-Creative**—the first benchmark specifically designed to probe the mathematical creativity of large language models. Featuring carefully crafted construction problems across algebra, geometry, and analysis, this dataset pushes models beyond pattern recognition into the realm of genuine structural insight.
 
-## 项目贡献
-欢迎所有对数学和机器学习感兴趣的朋友们加入我们，共同推动 DeepMath 项目的发展。
+### 📊 Startling Discoveries
+
+Our findings reveal a profound gap between reasoning and creativity:
+- Under generous grading (focusing on core ideas, forgiving minor errors), the top-performing model—OpenAI's O3 Mini—managed only **70% accuracy** on undergraduate-level creative problems.
+- As problem complexity increased, performance collapsed dramatically.
+- For truly open-ended challenges, models offered little more than silence.
+
+The verdict? Today's AI excels at **recombining memorized patterns** but struggles profoundly with **genuine creative understanding**. DeepMath-Creative doesn't just expose this limitation—it provides the roadmap for overcoming it.
+
+### 📁 Dataset
+
+The DeepMath-Creative dataset is fully open-sourced and available in the [`DeepMath/DeepMath-Creative/datasets/`](./DeepMath-Creative/datasets/) folder of this project.
+
+---
+
+## 🔬 Second Work: [DeepMath-Generator — When AI Becomes a Mathematical Creator](./DeepMath-generator/)
+
+### 📝 Paper
+
+[**Can LLM generate interesting mathematical research problems?**]
+
+### 🌟 The Breakthrough
+
+If creativity can be measured, can it also be **generated**? This question drove our second, even more ambitious exploration.
+
+We built **DeepMath-Generator**—an advanced LLM-powered agent system with a singular mission: to conceive mathematical problems that have never existed before. Not textbook exercises. Not variations of known theorems. But **genuine, research-level questions** that could occupy mathematicians for years.
+
+### 🏆 The Result
+
+**665 original research-level problems in differential geometry.**
+
+Every single one generated entirely by our LLM agent. But we didn't stop there. Each problem underwent rigorous verification by domain experts, who confirmed what we had hoped but hardly dared to believe:
+
+- **Many problems were completely unknown** to specialists in the field
+- **They possessed authentic research value**—not mere mathematical curiosities
+- **They opened new avenues for exploration**, suggesting directions no human had yet considered
+
+This is not pattern recognition. This is not recombination. This is the emergence of **machine creativity**—an AI system functioning not as a calculator, but as a **mathematical discoverer**.
+
+### 📁 The Treasure
+
+The complete collection—**665 expert-verified, LLM-generated research-level problems in differential geometry**—is now publicly available in the [`DeepMath/DeepMath-generator/problems/`](./DeepMath-generator/problems/) folder.
+
+This is more than a dataset. It's a glimpse into the future of mathematical discovery.
+
+---
+
+## 🤝 Join Us
+
+Welcome all friends interested in **mathematics** and **machine learning** to join the DeepMath community!
+
+Whether you are a mathematics researcher, a machine learning engineer, or an enthusiast passionate about the intersection of AI and science, you can find like-minded partners here to jointly explore the infinite possibilities of mathematics and artificial intelligence.
+
+- **Contribute Code**: Participate in dataset construction, model training, and evaluation system development
+- **Pose Questions**: Share your mathematical problems to enrich our evaluation set
+- **Collaborate on Research**: Jointly explore cutting-edge issues of large models in the realm of mathematical creativity
+
+### 📧 Contact Information
+
+For any questions, suggestions, or collaboration inquiries, please feel free to contact us via email: **[xychen100@tongji.edu.cn]**
+
+---
+
+## ⭐ Acknowledgments
+
+DeepMath stands on the shoulders of every researcher, contributor, and supporter who believes that mathematics and artificial intelligence, together, can achieve something extraordinary. Thank you for being part of this journey.
+
+---
+
+## **Beyond reasoning. Beyond computation. Into creation — DeepMath looks forward to your joining!**
