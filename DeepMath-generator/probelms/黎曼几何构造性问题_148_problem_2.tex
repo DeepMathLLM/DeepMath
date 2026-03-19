@@ -1,0 +1,69 @@
+problem:  
+Let \((M^n,g_0)\) be a complete, oriented, asymptotically flat spin manifold of dimension \(n\ge 3\) with \(R_{g_0}\ge 0\).  
+For any such \(g\), let \(\psi_g\) be the *Witten spinor* solving  
+\[
+D_g \psi_g = 0,\qquad \lim_{r\to \infty}\psi_g = \psi_\infty,
+\]
+where \(\psi_\infty\) is a fixed constant spinor at infinity and \(\psi_g\in H^1_\delta(\Sigma M)\) for appropriate weighted Sobolev exponent \(\delta<0\).  
+
+By Witten’s identity, for smooth compactly supported \( \phi\),
+\[
+\int_M (|\nabla^g \psi_g|^2 + \tfrac14 R_g |\psi_g|^2)\, d\mu_g
+  = \lim_{r\to\infty} \int_{S_r} \langle \nabla_\nu \psi_g + \nu\!\cdot\! D_g \psi_g,\, \psi_g\rangle \, d\sigma
+  = C_n\, m_{\mathrm{ADM}}(g),
+\]
+so the boundary term encodes the ADM mass whenever \(R_g\ge 0\).  
+
+Define the **spinorial energy functional**
+\[
+\mathcal{E}_S(g) := \int_M \!\big(|\nabla^g \psi_g|^2 + \tfrac14 R_g |\psi_g|^2\big)\, d\mu_g.
+\]
+It coincides with \(C_n\, m_{\mathrm{ADM}}(g)\) when \(R_g\ge 0\).
+
+---
+
+**Research Problem (precise form):**  
+
+1. *Analytic structure of \(\psi_g\):*  
+Show that the map \(g\mapsto \psi_g\) from a neighborhood of the Euclidean metric in weighted Sobolev space \( \mathcal{M}_\delta \subset \mathrm{Met}^{k,\alpha}_\delta(M)\) into \(H^1_\delta(\Sigma M)\) is \(C^1\) and compute its Fréchet derivative.  
+
+2. *First variation of \(\mathcal{E}_S\):*  
+Using the derivative of \(g \mapsto \psi_g\), derive an explicit formula for the first variation  
+\[
+\delta \mathcal{E}_S(g)[h]
+\]
+under a metric perturbation \(h\). Does this variation yield a well-defined symmetric 2-tensor—potentially an analogue of a spinorial stress tensor—whose divergence or energy positivity parallels that of the Einstein tensor?  
+
+3. *Gradient-flow interpretation:*  
+Equip the space of asymptotically flat metrics with the \(L^2\) (DeTurck-gauged) metric  
+\[
+\langle h_1,h_2\rangle_g := \int_M g^{ik}g^{j\ell} (h_1)_{ij} (h_2)_{k\ell} (1+\omega(r))\, d\mu_g,
+\]
+and define formally  
+\[
+\frac{\partial g_t}{\partial t} = -\operatorname{grad}_g \mathcal{E}_S(g_t).
+\]
+Is the resulting system well-posed (weakly parabolic) after gauge fixing, and does it preserve asymptotic flatness?  
+
+4. *Mass monotonicity and rigidity:*  
+If such a flow exists, is the ADM mass monotone nonincreasing, and is the Euclidean metric the unique fixed point?  
+
+---
+
+Why is it a "good" problem:  
+
+**Profound insight:**  
+This problem refines the idea of expressing the *positive mass theorem* as a variational principle.  It targets the precise differentiable dependence of Witten spinors on the underlying metric—an object never analyzed in depth—and seeks to turn Witten’s elliptic identity into a dynamical or gradient-flow framework.  Understanding this differential could uncover hidden geometric “energy–momentum” structures encoded by spinors.
+
+**Bridge between fields:**  
+It synthesizes spin geometry, global analysis, geometric PDE, and general relativity. Computing the derivative of the Witten spinor with respect to the metric requires implicit-function theory for elliptic operators on noncompact manifolds and weighted Sobolev analysis—techniques at the confluence of differential geometry, spectral theory, and functional analysis. A successful gradient or flow formulation would forge links between elliptic and parabolic approaches to geometric invariants.
+
+**Extreme simplicity:**  
+Despite deep analytic content, the statement hinges on a *single natural functional*,
+\[
+\mathcal{E}_S(g)=\int (|\nabla\psi_g|^2+\tfrac14 R|\psi_g|^2),
+\]
+and its infinitesimal and dynamical behavior. No elaborate geometric constructs are necessary, making the problem succinct yet profoundly rich.
+
+**Nontrivial and open:**  
+The differentiability of \(g\mapsto \psi_g\) and the explicit expression for \(\operatorname{grad}\mathcal{E}_S\) remain completely open. Proving even local well-posedness of the induced metric flow would establish a new analytic structure underlying the ADM mass and could lead to dynamic proofs of positivity or novel small-mass stability phenomena in spin geometry.

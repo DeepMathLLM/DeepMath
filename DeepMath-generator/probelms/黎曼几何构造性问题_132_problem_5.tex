@@ -1,0 +1,40 @@
+problem:  
+Let \((M^n,g_0)\) be a complete noncompact Riemannian manifold with **asymptotically cylindrical ends**, i.e.
+\[
+M\setminus K \cong (0,\infty)\times Y,
+\qquad
+g_0 = dr^2 + h + O(e^{-\alpha r}),
+\]
+for some compact \((Y^{n-1},h)\) and \(\alpha>0\).  
+Consider the Ricci flow \(\partial_t g = -2\,\operatorname{Ric}(g)\) starting from \(g_0\), which exists on some maximal interval \([0,T_{\max})\).  
+Assume that:
+
+- the curvature remains uniformly bounded on every compact subset of \(M\),
+- but there exists a sequence \(x_i\to\infty\) and times \(t_i\nearrow T_{\max}\) such that \(|\operatorname{Rm}(x_i,t_i)|\to\infty\).
+
+Let \(\lambda_i = |\operatorname{Rm}(x_i,t_i)|^{1/2}\) and consider the pointed, parabolically rescaled flows
+\[
+(M,g_i(t),x_i) := (M,\lambda_i^2\,g(t_i+\lambda_i^{-2} t),x_i),
+\qquad t\in[-\lambda_i^2 t_i,0].
+\]
+Suppose that a subsequence converges (in pointed Cheeger–Gromov sense) to an **ancient complete solution** \((M_\infty,g_\infty(t),x_\infty)\) to Ricci flow.
+
+**Conjectural Problem:**  
+Under the following additional assumptions
+
+- the Ricci curvature of \((M,g_0)\) is nonnegative,  
+- and the initial end geometry is uniformly noncollapsed,
+
+is the limiting ancient flow \((M_\infty,g_\infty(t))\) necessarily a **steady gradient Ricci soliton** which is asymptotic (spatially) to a cylinder \((\mathbb{R}\times Y,ds^2+h)\)?  
+Equivalently, do all **Type II singularities at infinity** on asymptotically cylindrical manifolds generate steady solitons that capture the cylindrical asymptotic structure of the original end?
+
+Why is it a "good" problem:  
+This formulation resolves the Type–I/II inconsistency and gives a logically coherent conjecture: it asks whether *Type II blow-ups* originating “at infinity’’ on manifolds whose ends are asymptotically cylindrical must converge to **steady solitons reflecting that same asymptotic shape**.  
+
+It stands at the core of several profound themes in modern geometric analysis:
+
+1. **Asymptotic rigidity of flows:** Do noncompact geometries encode their own singularity models? Just as Euclidean-type ends lead heuristically to expanding solitons, are cylindrical ends rigidly associated with steady solitons?  
+2. **Singularity formation mechanisms:** Type II limits remain the least understood Ricci flow singularities; understanding their formation in noncompact settings would expand our knowledge beyond the compact κ–solutions paradigm.  
+3. **Bridging geometry and analysis:** The conjecture links large-scale geometric decay (cylindrical ends, nonnegative Ricci curvature) to analytic self-similarity (steady solitons), hinting at a deep equivalence between spatial infinity and temporal steadiness.
+
+The problem is simple to state—“Do Type II singularities at infinity on cylindrical ends always yield steady solitons with the same asymptotic shape?”—but pursuing it would require developing new tools in the stability and compactness theory of ancient Ricci flows, the asymptotic analysis of noncompact solitons, and long-time geometric PDE behavior, making it a profoundly rich research-level problem.

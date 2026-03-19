@@ -1,0 +1,47 @@
+problem:  
+Let \((M^n,g(t))\) be a compact manifold evolving by the Ricci flow
+\[
+\partial_t g = -2\,\mathrm{Ric}(g),
+\]
+and let \(v=v(x,t)\) satisfy
+\[
+\partial_t v = \Delta_{g(t)}v - (R_{g(t)}-\bar R(t))v,
+\]
+so that \(\int_M v\,d\mu_{g(t)}\) is constant in \(t\).  Define, for real parameters \(a,b\),
+\[
+\mathcal{H}_{a,b}(t) = \int_M \left(|\nabla v|^2 + a\,R_g\,v^2 + b\,R_g^2\,v^2\right)\,d\mu_g.
+\]
+
+---
+
+**Conjectural problem (refined form):**
+
+1. (**Existence of sharp curvature coupling constants**)  
+   Determine whether there exist explicit dimensional constants \(a=a_n\), \(b=b_n\) such that  
+   \[
+   \frac{d}{dt}\,\mathcal{H}_{a_n,b_n}(t)\le 0
+   \]
+   for all smooth solutions \((g(t),v(t))\) as above, with equality if and only if \(g(t)\) is a *steady* or *expanding* gradient Ricci soliton satisfying  
+   \[
+   \mathrm{Ric} + \nabla^2 f = \kappa\,g, \qquad v=e^{-f/2}.
+   \]
+   The constants should be universal (dimension‑dependent only).
+
+2. (**Analytic motivation**)  
+   The derivative of \(\mathcal{H}_{a,b}\) involves mixed curvature terms such as \(\int (a\Delta R + 2bR\Delta R)v^2\), which in turn contain the tensor contraction \(|\mathrm{Ric}|^2-\tfrac{1}{n}R^2\).  Can the coefficients \(a,b\) be chosen to cancel these non‑integrable terms, producing a dissipative quantity analogous to Perelman’s \(\mathcal{F}\) functional yet genuinely nonlinear in \(R\)?
+
+3. (**Rigidity spectrum**)  
+   If such \((a,b)\) exist, classify the manifolds \((M,g)\) for which equality holds: do they yield a new family of Ricci solitons satisfying an “\(R^2\)‑corrected” steady equation  
+   \[
+   \mathrm{Ric}+\nabla^2 f = \kappa\,g + cR\,g\,?
+   \]
+
+4. (**Optional variational direction**)  
+   Can one reinterpret \(\mathcal{H}_{a,b}\) as a Lyapunov functional for a curvature‑modified diffusion on the Wasserstein space \(\mathcal{P}_2(M)\) in which the dissipation rate is expressed by a positive quadratic form in \((|\nabla^2v|,|\mathrm{Ric}|)\)?  
+
+---
+
+Why is it a "good" problem:  
+This problem is now precise, concrete, and touches an unexplored part of Ricci‑flow entropy theory.  Unlike Perelman’s linear‑curvature entropies, here one seeks **quadratic curvature couplings** producing monotonicity, probing whether higher‑order curvature interactions can still yield analytic stability and rigidity analogous to soliton behavior.  The constants \(a,b\) must trigger delicate cancellations between curvature evolution and the parabolic diffusion of \(v\); existence or nonexistence of such values would advance our structural understanding of entropy in nonlinear geometric flows.
+
+The conjecture requires combining **curvature evolution identities**, **Bochner formulas**, and **global integral estimates**, connecting geometric PDE techniques with variational analysis and possible optimal‑transport interpretations.  It is simple in expression but deeply tied to the analytic heart of Ricci flow, making it a genuine “narrow entrance, profound depth’’ research problem, and thus a “good’’ mathematical problem.

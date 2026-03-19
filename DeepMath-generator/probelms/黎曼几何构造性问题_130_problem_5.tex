@@ -1,0 +1,43 @@
+problem:  
+Let \( (M^n,g) \) be a smooth, compact Riemannian manifold with \(\mathrm{Vol}(M,g)=1\), \(\mathrm{Ric}_g \geq -(n-1)\), and \(\mathrm{diam}(M,g)\le D\).  
+Let \( \{\lambda_k(g)\}_{k\ge1} \) denote the Laplace–Beltrami eigenvalues, and let \(h_k(M,g)\) be the \(k\)-way isoperimetric constant:  
+\[
+h_k(M,g) = \inf_{\{A_1,\ldots,A_k\}} \max_i \frac{\mathrm{Vol}_{n-1}(\partial A_i)}{\mathrm{Vol}_n(A_i)} ,
+\]
+with the infimum taken over all mutually disjoint measurable subsets \(A_1,\dots,A_k\subset M\) of positive volume.
+
+Define the **normalized spectral–isoperimetric ratio**  
+\[
+\mathcal{R}_k(M,g) = \frac{\lambda_k(g)}{h_k(M,g)^2}.
+\]
+
+**Open Problem.**  
+1. (**Asymptotic stability under bounded geometry**)  
+For manifolds satisfying the above Ricci and diameter bounds, does  
+\[
+\lim_{k\to\infty} \mathcal{R}_k(M,g)
+\]
+exist and depend only on the dimension \(n\)?  In other words, is there a *spectral–isoperimetric constant* \(\mathcal{C}_n\) governing the large-\(k\) asymptotic interplay between eigenvalue growth and isoperimetric partitioning?
+
+2. (**Extremal geometries**)  
+If for some manifold one has  
+\[
+\limsup_{k\to\infty} \mathcal{R}_k(M,g) = \mathcal{C}_n,
+\]
+must \((M,g)\) be isometric to a space form of constant curvature?  In particular, do round spheres or flat tori maximize this asymptotic ratio?
+
+3. (**Scaling consistency with Weyl’s law**)  
+Under bounded geometry assumptions, does the limiting relation  
+\[
+\lambda_k(g) \asymp \mathcal{C}_n\, h_k(M,g)^2
+\]
+(where constants are dimensionally consistent) hold in analogy with Weyl’s law?  That is, can the local distribution of eigenmodes and the optimal multi–way cut geometry be governed by the same asymptotic constant?
+
+---
+
+Why is it a "good" problem:  
+This formulation corrects scaling inconsistencies and fits solidly into the frontier of **spectral geometry** and **isoperimetric analysis**. The ratio \(\mathcal{R}_k=\lambda_k/h_k^2\) is dimensionally natural and known to be bounded both above and below up to universal constants by the higher–order Cheeger inequalities; yet whether it stabilizes under bounded geometry, or whether particular space forms serve as extremizers, is completely unknown.  
+
+The question probes whether the balance between eigenvalue growth (analytic spectrum) and optimal partition boundaries (geometric isoperimetry) reaches a universal asymptotic regime independent of the manifold’s fine structure. If such a constant \(\mathcal{C}_n\) exists, it would provide a deep analog of Weyl’s law intertwining analysis and geometry through isoperimetric partitions. The rigidity direction would further connect this balance to curvature symmetry, aligning spectral–geometry extremality with classical uniformity.  
+
+Simple to state, yet of high analytic and geometric complexity, this problem would open a new path linking **quantum asymptotics** (spectral data) and **metric measure partition theory** (isoperimetric geometry) under unified curvature control—exactly the type of conceptual synthesis that marks a “good’’ mathematical problem.

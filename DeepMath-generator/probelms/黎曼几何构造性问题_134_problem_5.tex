@@ -1,0 +1,26 @@
+problem:  
+Let \((M^n,g)\) be a closed oriented Riemannian manifold, and let \(u:M\to S^{m-1}\) be a smooth map.  
+Consider energies of the form  
+\[
+E(u,g) = \int_M \big(|du|_g^p + \alpha\,R_g\,|du|_g^{p-2} + \beta\,\langle \operatorname{Ric}_g(\nabla u,\nabla u)\rangle_g\big)\, d\mathrm{vol}_g,
+\]
+where \(R_g\) and \(\operatorname{Ric}_g\) are scalar and Ricci curvatures, and \(\alpha,\beta\) are constants.  
+It is known that for \(p=n\), the first term is conformally invariant in itself.  The second and third terms, however, typically destroy conformal invariance because curvature transforms nontrivially under \(g\mapsto e^{2\psi}g\).
+
+**Problem:**  
+1. Classify all *local geometric Lagrangians* of the broad form  
+   \[
+   L(u,g)=\text{(polynomial in $du$ and curvature tensors up to order $\le2$)},
+   \]
+   such that the corresponding Euler–Lagrange equation  
+   \(\tau_L(u;g)=0\) is conformally covariant in the sense
+   \[
+   \tau_L(u; e^{2\psi}g) = e^{-w\psi} \,\tau_L(u;g)
+   \]
+   for some conformal weight \(w\).  
+2. Determine whether any such Lagrangians exist *beyond* the well‑known conformally invariant examples (e.g. the \(n\)-harmonic equation in all dimensions and the conformally invariant wave‑map equation in \(n=2\)).  
+3. If no further examples exist, provide a rigorous geometric obstruction explaining why local invariants built from \(du\) and curvature cannot achieve conformal covariance—e.g., via a uniqueness theorem analogous to the Graham–Jenne–Mason–Sparling (GJMS) classification for scalar conformally covariant operators.
+
+Why is it a "good" problem:  
+This reformulation lifts the discussion from verifying energy invariance to classifying **all conformally covariant elliptic systems depending locally on curvature and first derivatives of maps into spheres**.  It matches the spirit of known classification problems in conformal geometry (like GJMS operators) but in a genuinely *nonlinear, vector‑valued* setting where no theory currently exists.  Determining even uniqueness would unify ideas from geometric analysis, invariant theory, and nonlinear PDEs.  
+It is simple to state—seeking all possible local metrics–map couplings that remain conformally covariant—yet its depth lies in relating transformation laws, tensorial calculus, and elliptic regularity; a complete solution would open a new chapter in the interaction between **conformal geometry and nonlinear elliptic systems**, satisfying all hallmarks of a “good” research‑level problem.

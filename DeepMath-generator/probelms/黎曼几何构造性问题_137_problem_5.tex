@@ -1,0 +1,49 @@
+problem:  
+Let \( M = G/K \) be a **compact symmetric space of rank \( r \ge 2 \)** with canonical metric \( g_0 \).  
+Let \( \Sigma_0 \subset M \) be a smooth **\(K\)-invariant stationary hypersurface** for the weighted mean curvature functional  
+\[
+\mathcal{F}_\psi(\Sigma) = \int_{\Sigma} e^{-\psi(x)}\, d\mu_\Sigma,
+\]
+where \( \psi : M \to \mathbb{R} \) is a smooth \(G\)-invariant potential.  
+The weighted mean curvature flow (WMCF) is defined by  
+\[
+\partial_t X = \big( H_\psi - \bar{H}_\psi \big)\, \nu, \qquad H_\psi = H - \langle \nabla \psi, \nu \rangle,
+\]
+where \( X: \Sigma_t \hookrightarrow M \) is an embedding, \( \nu \) the outer unit normal, and \( \bar{H}_\psi \) is the spatial average of \(H_\psi\) ensuring volume preservation.  
+
+Let \( \mathcal{L}_\psi \) denote the linearized (weighted) Jacobi operator at \(\Sigma_0\).  
+Suppose the kernel of \( \mathcal{L}_\psi \) decomposes as a sum of **distinct \(K\)-types**,  
+\[
+\ker \mathcal{L}_\psi = V_1 \oplus \cdots \oplus V_m,
+\]
+with \( m \ge 2 \) and each \(V_i\) irreducible under the \(K\)-action on \(L^2_K(\Sigma_0)\).
+
+---
+
+**Problem:**  
+Under these assumptions, investigate the **nonlinear equivariant bifurcation structure of stationary solutions** of the *volume-preserving* WMCF near \(\Sigma_0\).  
+Specifically:
+
+1. Do the higher-rank symmetries of \(M\) and curvature tensors induce nontrivial **coupling terms** between inequivalent \(K\)-types \( V_i \) in the Lyapunov–Schmidt reduction of the stationary equation  
+   \[
+   \mathcal{E}(u,\lambda) = 0, \qquad \mathcal{E}(u,\lambda) = \mathcal{L}_\psi u + N_\psi(u,\lambda),
+   \]
+   or does geometric invariance enforce block-diagonality of all multilinear terms \( D^k N_\psi(0, \lambda_*) \) with respect to the decomposition \(V_1 \oplus \cdots \oplus V_m\)?
+
+2. Equivalently, can one classify for which symmetric spaces \(M=G/K\) and weight potentials \(\psi\) the nonlinear curvature–potential interaction generates **mixed‑mode symmetry breaking** within this kernel, producing new families of equilibria that are not contained in any single \(V_i\)?
+
+3. In the absence of forcing (standard mean curvature flow), the system is purely gradient-like. Does the inclusion of the *volume constraint* or the *weight potential* modify the analytic structure sufficiently to allow **non‑gradient coupling** on the center manifold, akin to equivariant “drift” phenomena observed in forced geometric flows?
+
+---
+
+Why is it a "good" problem:  
+This revised formulation maintains mathematical coherence: the flow considered—the **weighted, volume-preserving mean curvature flow**—is no longer strictly gradient in \(L^2\) and admits non‑self‑adjoint linearizations, thus allowing genuine interaction between geometric symmetries and nonlinear dynamics.  
+It directly extends understanding of **bifurcation theory for geometric PDEs on symmetric spaces** in an arena where classical rigidity results (for standard MCF) no longer trivially preclude mixed or dynamic behavior.  
+
+The problem is significant because:
+
+- It probes whether **curvature–potential coupling** breaks the all‑real spectral nature of the standard geometric flow, creating room for rich nonlinear dynamics while preserving geometric meaning.  
+- It unites **representation theory (through \(K\)-decomposition of the kernel)**, **geometric analysis (Jacobi operators on symmetric spaces)**, and **dynamical systems (non‑gradient bifurcation theory)**.  
+- The statement remains simple—does the symmetry of the space forbid mixed‑mode bifurcations under weighted geometric evolution?—yet its resolution would entail deep structural insights and possibly identify a new **dynamical rigidity vs. flexibility dichotomy** for symmetric‑space PDEs.
+
+Thus, the problem is mathematically sound, profoundly motivated, and poised at the frontier between geometry, bifurcation theory, and symmetric‑space analysis—an archetypal “good” research problem.

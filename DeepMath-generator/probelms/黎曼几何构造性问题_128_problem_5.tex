@@ -1,0 +1,40 @@
+problem:  
+Let \((M^n,g)\) be a closed Riemannian manifold with \(\mathrm{Ric}_g \ge (n-1)g\).  
+Let \(u\colon M\to\mathbb{R}\) be a nonconstant smooth function normalized by \(\int_M u^2 = 1\) and satisfying  
+\[
+\Delta_g u + \lambda_1(g)\, u = 0,
+\]
+where \(\lambda_1(g)\) is the first nonzero eigenvalue of the Laplace–Beltrami operator.  
+
+Assume the **approximate Obata condition**:  
+\[
+\|\nabla^2 u + u\,g\|_{L^2(M)} \le \varepsilon,
+\]
+for some small \(\varepsilon>0\).
+
+**Problem:**  
+Is there a quantitative rigidity statement of the form  
+\[
+d_{GH}\big((M,g),(S^n,g_{S^n})\big)\le \Psi(\varepsilon),
+\]
+with \(\Psi(\varepsilon)\to 0\) as \(\varepsilon\to 0\)?  
+
+Equivalently, can one construct a sequence of closed manifolds \((M_i^n,g_i)\) with
+\(\mathrm{Ric}_{g_i}\ge (n-1)g_i\), first eigenvalue \(\lambda_1(g_i)\to n\), and normalized eigenfunctions \(u_i\) satisfying  
+\[
+\|\nabla^2 u_i + u_i\, g_i\|_{L^2(M_i)}\to 0,
+\]
+yet such that \((M_i,g_i)\) fail to converge in the Gromov–Hausdorff sense to the standard sphere?  
+
+In other words, does *approximate Obata rigidity from a single eigenfunction* imply global spherical geometry, or can local analytic near-equality coexist with global geometric non-rigidity?
+
+---
+
+Why is it a "good" problem:  
+This problem isolates the **analytic essence** of the Obata theorem: the tensorial identity \(\nabla^2 u + ug = 0\). Replacing equality by an \(L^2\)-smallness assumption transforms a sharp rigidity statement into a **quantitative stability question**, one that balances local PDE control against global geometric and topological rigidity.  
+
+It is a **good** problem because:  
+- It links **Bochner analysis** and **metric geometry** in a minimal way—just one small \(L^2\)-estimate on the Hessian tensor of an eigenfunction under a Ricci lower bound.  
+- It asks whether local analytic near-symmetry enforces global geometric near-symmetry—this is a central theme in modern geometric analysis, but here expressed in its most elementary scalar form.  
+- It avoids dependence on multiplicity or eigenvalue pinching (the focus of previous results), introducing a new perspective on *functional stability versus spectral stability*.  
+- The question is simple to state, logically coherent, and currently unsolved, yet resolution would deepen our understanding of how analytic near-equality conditions dictate full geometric rigidity—essentially a “one-function quantitative Obata conjecture.”

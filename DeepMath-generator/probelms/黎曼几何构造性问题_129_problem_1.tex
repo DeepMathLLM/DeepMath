@@ -1,0 +1,24 @@
+problem:  
+Let \( (M^n,g) \) be a compact smooth Riemannian manifold with nonempty boundary \( \partial M \), and denote by \(\sigma_1(M,g)\) its first nonzero Steklov eigenvalue.  
+Fix a smooth boundary metric \(h\) on \( \partial M \) and a volume \(V_0 > 0\), and define  
+\[
+\mathcal{G}(h,V_0) = \{ g \text{ on } M : g|_{\partial M} = h,~\mathrm{Vol}(M,g)=V_0 \}.
+\]
+Let
+\[
+\Lambda(h,V_0) = \sup_{g \in \mathcal{G}(h,V_0)} \sigma_1(M,g).
+\]
+
+**Open problem:**  
+1. **Existence problem:** Determine whether the supremum \( \Lambda(h,V_0) \) is attained by some smooth Riemannian metric \( g_* \in \mathcal{G}(h,V_0) \).  
+    - In particular, can one exclude degenerations of \( (M,g_j) \) near the boundary that cause concentration phenomena of Steklov eigenfunctions?  
+
+2. **Geometric characterization:** Assuming such a smooth maximizing metric \( g_* \) exists, consider an \(L^2\)-orthonormal basis \( \{u_i\}_{i=1}^k \) of first Steklov eigenfunctions for \(g_*\), and define
+\[
+\Phi_{g_*} : \partial M \to \mathbb{R}^k, \quad \Phi_{g_*}(x) = (u_1(x),\ldots,u_k(x)).
+\]
+Is it true that the Euler–Lagrange conditions for the variation of \( \sigma_1 \) within \( \mathcal{G}(h,V_0) \) necessarily imply that \( \Phi_{g_*} \) is a minimal isometric immersion of \((\partial M,h)\) into the sphere \(S^{k-1} \subset \mathbb{R}^k\)?  
+Equivalently, does the stationarity of \( \sigma_1(M,g) \) under the constraints of fixed boundary metric and volume *force* the Steklov eigenspace to realize a boundary minimal immersion, generalizing the Fraser–Schoen phenomenon beyond the two-dimensional case?
+
+Why is it a "good" problem:  
+This formulation isolates two core and unresolved challenges in Steklov spectral geometry — **existence** and **geometric rigidity** of extremal metrics — in a clean and testable way. The existence part probes deep compactness and regularity issues for variational problems involving boundary operators, requiring tools from geometric measure theory and PDE analysis at the boundary. The geometric characterization part asks whether a variational principle for Steklov eigenvalues enforces minimal-immersion structure in higher dimensions, bridging the theory of spectral optimization with the geometry of minimal submanifolds. This is both a natural analogue of the El Soufi–Ilias and Fraser–Schoen theories and a conceptual extension into a largely unexplored dimensional setting. The statement is elementary to write down, but its resolution would demand a synthesis of spectral geometry, analysis on manifolds with boundary, and geometric measure theory — precisely the hallmarks of a “narrow entrance, profound depth” good problem.

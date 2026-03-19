@@ -1,0 +1,37 @@
+problem:  
+Let \((M,g(t))_{t\ge0}\) be a smooth family of closed \(n\)-dimensional Riemannian manifolds evolving under the **normalized Ricci flow**
+\[
+\partial_t g = -2(\mathrm{Ric}(g) - \tfrac{R_\mathrm{avg}}{n} g), 
+\]
+and let \(V:\mathbb{R}\to\mathbb{R}\) be a smooth double‑well potential with minima at \(u_\pm\).  
+For \(\varepsilon>0\), consider the **curvature‑coupled Allen–Cahn system**
+\[
+\partial_t u_\varepsilon = \Delta_{g(t)}u_\varepsilon - \frac{1}{\varepsilon^2}V'(u_\varepsilon) + \alpha R_{g(t)}u_\varepsilon.
+\]
+Define the **energy measure**
+\[
+\mu^t_\varepsilon := \left(\frac{\varepsilon}{2}|\nabla u_\varepsilon|_{g(t)}^2 + \frac{1}{\varepsilon}V(u_\varepsilon)\right)\!d\mu_{g(t)}.
+\]
+Assume a uniform energy bound \(\sup_{t\le T}\mu^t_\varepsilon(M)<C_T\), and that the metrics \(g(t)\) converge smoothly (up to diffeomorphism) to an Einstein metric \(g_\infty\).
+
+**Open problem (Allen–Cahn–Ricci flow interface conjecture):**  
+As \(\varepsilon\to0\), for each fixed \(T>0\), does the family \(\{\mu^t_\varepsilon\}_{t\in[0,T]}\) subconverge (in the sense of integral varifolds depending on \(t\)) to a limit family \(V_t\) representing a **generalized mean‑curvature flow** in the evolving metric \(g(t)\)?  
+More precisely:
+
+1. Can one prove that any such limit \(V_t\) satisfies a Brakke‑type inequality in \((M,g(t))\),
+   \[
+   \frac{d}{dt}\!\int\!\phi\, d\|V_t\| 
+   \le -\!\int (\phi |H_t|^2 - \langle\nabla_{g(t)}\phi, H_t\rangle)\,d\|V_t\|
+   +\mathcal{K}[\phi,g(t)], 
+   \]
+   where \(\mathcal{K}[\phi,g(t)]\) is an explicit curvature‑dependent correction arising from \(\partial_t g\) and \(\alpha R_{g(t)}\)?  
+
+2. If this evolving‑metric Brakke inequality holds, does \(V_t\) converge as \(t\to\infty\) to a stationary varifold \(V_\infty\)?  Is \(V_\infty\) necessarily *minimal* with respect to \(g_\infty\), or can persistent **non‑minimal Ricci‑biased interfaces** occur when \(\alpha\neq0\)?  
+
+The conjecture asks for an intrinsic limit theory for curvature‑dependent phase fields on manifolds whose metrics undergo Ricci evolution, including precise identification of any **Ricci‑flow forcing** term that modifies classical mean curvature motion.
+
+Why is it a "good" problem:  
+This problem refines the Allen–Cahn–mean curvature correspondence into a dynamic geometric context where the ambient metric itself evolves.  It avoids speculative formulas and instead targets the analytical core: whether a **Brakke‑type compactness and energy‑dissipation principle** continues to hold when both the curvature and the Allen–Cahn field co‑evolve.  
+Resolving it demands integrating techniques from geometric measure theory (varifold convergence and Brakke inequalities), parabolic PDEs with time‑dependent metrics, and Ricci flow analysis—areas currently lacking a unified framework.  
+Success would produce a new analytic bridge between **Ricci flow entropy methods** and **phase‑field curvature dynamics**, revealing how geometric deformation influences energy concentration and interface motion.  
+The statement is conceptually simple but penetrates deep, unexplored territory at the intersection of evolving geometry, Γ‑convergence, and curvature‑driven pattern formation—qualities that mark it as a genuinely “good’’ mathematical problem.

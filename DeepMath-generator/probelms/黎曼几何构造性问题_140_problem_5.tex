@@ -1,0 +1,62 @@
+problem:  
+Let \(G\) be a compact, connected Lie group acting isometrically with cohomogeneity one on a closed manifold  
+\[
+M \cong [0,1]\times_{K_0,K_1} G/H,
+\]
+and suppose the isotropy representation of \(G/H\) splits as
+\[
+\mathfrak{m} = \mathfrak{m}_1 \oplus \mathfrak{m}_2
+\]
+into two inequivalent irreducible \(H\)-modules.  
+Then each \(G\)-invariant metric on \(G/H\) can be written  
+\[
+g_t = x_1(t)\, Q|_{\mathfrak{m}_1} + x_2(t)\, Q|_{\mathfrak{m}_2},
+\]
+for smooth functions \(x_1,x_2>0\) and a fixed \(G\)-invariant inner product \(Q\) on \(\mathfrak{m}\); the metric on \(M\) reads
+\[
+g = dt^2 + g_t .
+\]
+
+Define the mixed intrinsic–extrinsic curvature functional
+\[
+\mathcal{F}_\lambda(g) = \int_0^1 \! \operatorname{Vol}(G/H,g_t) \Big( |\mathrm{Ric}_{g_t}|^2 + 
+   \lambda |A_t|^2 \Big)\,dt,
+\]
+with \(\lambda \in \mathbb{R}\) and \(\operatorname{Vol}(M,g)=1\),  
+where \(A_t=\frac12 g_t^{-1}\dot g_t\) is the shape operator of the orbits.
+
+Let \((x_{1*},x_{2*})\) correspond to a homogeneous Einstein metric \(g_*\) on \(M\)
+(i.e. \(g_t = r(t)^2(x_{1*},x_{2*})\) with fixed ratio \(x_{1*}:x_{2*}\)).  
+
+---
+
+**Precise conjectural problem (Linear stability and bifurcation for \(\mathcal{F}_\lambda\)):**
+
+1.  Derive the Euler–Lagrange ODE system satisfied by \((x_1(t),x_2(t))\) for critical points of \(\mathcal{F}_\lambda\) under the given symmetry and boundary constraints.
+
+2.  Linearize this system at the homogeneous Einstein solution \((x_{1*},x_{2*})\).  
+    Denote by \(L_\lambda\) the linearized operator acting on \((\xi_1,\xi_2)\), the variations of \((x_1,x_2)\).
+
+3.  **Conjecture (Spectral bifurcation criterion):**  
+    There exists a discrete set of parameters \( \{\lambda_j\} \subset \mathbb{R} \) such that the kernel of \(L_\lambda\) changes dimension precisely at \(\lambda = \lambda_j\);  
+    for those values, one can expect nontrivial branches of \(G\)-invariant critical metrics where the orbit‑ratio function \(x_1(t)/x_2(t)\) is non‑constant.  
+    Equivalently, the orbit geometry ceases to be a fixed homogeneous metric up to scale and instead *bifurcates dynamically* along \(t\).
+
+4.  **Rigidity question:**  
+    For actions where the isotropy decomposition has only one irreducible summand (isotropy‑irreducible orbits), is \(L_\lambda\) always positive and no bifurcation possible?  
+    That is, does the one‑summand case exhibit analytical rigidity for all \(\lambda\)?
+
+Concrete test cases include the standard cohomogeneity‑one actions:
+\[
+SO(k)\times SO(n{+}1{-}k)\!\curvearrowright\! S^n,\qquad SU(2)\times SU(2)\!\curvearrowright\! S^7,
+\]
+for which explicit boundary smoothness conditions and two‑summand isotropy decompositions are known.
+
+---
+
+Why is it a "good" problem:  
+This version is sharply formulated as a study of the *linearized variational operator* derived from an explicit geometric functional, under precise symmetry assumptions that guarantee a two‑parameter family of invariant orbit geometries.  
+It recasts the vague idea of "symmetry enhancement" into concrete spectral language: the existence of bifurcation parameters \(\lambda_j\) where the operator \(L_\lambda\) loses invertibility.  
+Proving or disproving the existence of such \(\lambda_j\) would reveal whether coupling intrinsic and extrinsic curvatures can destabilize homogeneous metrics, a genuinely open and analyzable question linking differential geometry, representation theory, and nonlinear ODE analysis.  
+
+The problem thus achieves the desired mathematical precision (well‑defined variables, functional, operators, boundary constraints) while preserving profound depth: it tests whether analytical stability of geometric variational functionals can fail in a controlled symmetry‑reduced setting—an entryway to understanding how curvature variation interacts with global symmetry, a compelling frontier in geometric analysis.

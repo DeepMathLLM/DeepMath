@@ -1,0 +1,48 @@
+problem:  
+Let \((M_t,g(t))_{t\ge0}\) be a smooth family of closed Riemannian \(n\)-manifolds evolving under the **normalized Ricci flow**
+\[
+\partial_t g = -2(\operatorname{Ric}(g) - \tfrac{R_{\mathrm{avg}}}{n} g),
+\]
+and let \(u : M_t\times [0,\infty)\to \mathbb{R}\) satisfy the **gradient-form reaction–diffusion equation**
+\[
+\partial_t u = \Delta_{g(t)}u - V'(u),
+\]
+where \(V:\mathbb{R}\to\mathbb{R}\) is a smooth potential bounded below (for example, of polynomial growth).  
+Define an auxiliary field \(\phi:M_t\times [0,\infty)\to \mathbb{R}\) by the **weighted backward heat-type equation**
+\[
+\partial_t \phi = -\Delta_{g(t)}\phi + |\nabla \phi|_{g(t)}^2 - R_{g(t)} + c(t),
+\]
+where \(c(t)\) ensures normalization \(\int_{M_t} e^{-\phi}\, d\mu_{g(t)} = 1.\)
+
+**Open problem (Unified Perelman–Lyapunov functional):**  
+Does there exist a natural functional of the form
+\[
+\mathcal{E}[g(t),u(t),\phi(t)]
+= \int_{M_t}\left(R_{g(t)} + |\nabla\phi|_{g(t)}^2 
++ \kappa\,|\nabla u|_{g(t)}^2 + G(u)\right)e^{-\phi(t)}d\mu_{g(t)},
+\]
+for some constant \(\kappa>0\) and potential correction \(G(u)\) depending on \(V(u)\), such that along the coupled evolution
+\[
+\begin{cases}
+\partial_t g = -2(\operatorname{Ric} - \tfrac{R_{\mathrm{avg}}}{n} g),\\[0.3em]
+\partial_t u = \Delta_{g(t)}u - V'(u),\\[0.3em]
+\partial_t \phi = -\Delta_{g(t)}\phi + |\nabla\phi|_{g(t)}^2 - R_{g(t)} + c(t),
+\end{cases}
+\]
+the monotonicity property
+\[
+\frac{d}{dt}\mathcal{E}[g(t),u(t),\phi(t)]\ge 0
+\]
+holds for all sufficiently smooth solutions?
+
+The functional should **reduce to known cases** in limiting regimes:
+1. When \(V\) is constant (so \(u\) is stationary), and \(\phi\) minimizes \(\mathcal{E}\) subject to \(\int e^{-\phi}=1\), it coincides with **Perelman's \(\mathcal{F}\)-entropy**.
+2. When the metric \(g(t)\) is fixed and \(\phi\) becomes constant (so \(e^{-\phi}\) is the uniform measure), it reduces to the **classical Lyapunov free energy**
+\[
+\int_M (|\nabla u|^2+2V(u))\,d\mu_g.
+\]
+
+If such a nontrivial monotone functional exists, when is it unique (up to scaling or additive constants)? If not, what geometric or analytic obstructions—such as curvature sign, growth of \(V(u)\), or dimension—prevent its existence?
+
+Why is it a “good” problem:  
+This question poses a precise but profoundly deep challenge: to find a single entropy-type functional unifying **Perelman’s geometric entropy** for Ricci flow and **Lyapunov energies** for reaction–diffusion dynamics. All defining objects are explicit, and the limiting cases are well posed, yet the monotonicity requirement couples curvature, diffusion, and nonlinear potential energy in a highly nontrivial way. Any successful construction would reveal a hidden variational structure behind both geometric and dissipative evolutions, generalizing the entropy principle in geometric analysis. The problem builds a conceptual and technical bridge between geometric flows, gradient-flow theory, and nonequilibrium thermodynamics, promising new insights into the intertwined behavior of curvature and dissipative fields on evolving manifolds—hallmarks of an original and far-reaching “good” mathematical problem.

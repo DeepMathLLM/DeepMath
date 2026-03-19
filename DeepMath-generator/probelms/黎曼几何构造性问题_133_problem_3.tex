@@ -1,0 +1,34 @@
+problem:  
+Let \( (M^n, g) \) be a complete noncompact Riemannian manifold satisfying  
+\[
+\mathrm{Ric}(x) \ge -\frac{C}{(1+r(x))^2}, \qquad r(x) = d(x, x_0),
+\]
+and assume that \(M\) is noncollapsing in the sense that  
+\[
+\operatorname{Vol}(B(x_0, r)) \ge c\, r^{n-\varepsilon}
+\]
+for some constants \(c>0\), \(0\le \varepsilon <1\).  
+
+For each \(R>0\), define the rescaled manifold \( (M_R, g_R) = (M, R^{-2}g) \), and consider a harmonic function \(u\colon M \to \mathbb{R}\) of growth  
+\[
+|u(x)| \le A (1+r(x))^{1+\delta}, \qquad A>0,\ 0<\delta<1.
+\]
+Let \(\nabla u\) denote its gradient with respect to \(g\). Assume further that \(u\) satisfies the asymptotic flattening condition  
+\[
+\fint_{B(x_0,r)} |\nabla u|^2 = o(r^{2\delta}) \qquad \text{as } r\to\infty.
+\]
+
+**Question (Conical Rigidity via Gradient Weak-Liouville Property):**  
+Does the assumption that *every* harmonic function satisfying the above conditions must have vanishing rescaled Dirichlet energy in the blow-down limit, i.e.  
+\[
+\lim_{R\to\infty} R^{-2\delta}\int_{B_{g_R}(x_0,1)} |\nabla u|^2\, dV_{g_R} = 0,
+\]
+imply that all tangent cones at infinity of \(M\) are *isometric to the same metric cone* \(C(Z)\) for some compact length space \(Z\)?  
+Equivalently, does such a gradient-type Liouville property ensure the *uniqueness* of the tangent cone at infinity under the borderline condition \(\mathrm{Ric} \ge -C(1+r)^{-2}\)?  
+
+Why is it a "good" problem:  
+This formulation provides a **quantitatively sharpened bridge** between analytic rigidity and geometric uniqueness. Rather than demanding the absence of sublinear or linear growth harmonic functions (classical Liouville properties), it assumes a *quantitative decay of the averaged gradient energy* for mildly superlinear harmonic functions. This is a natural analytic condition appearing in harmonic expansions on cones: if \(M\) were asymptotic to a cone, the homogeneous harmonic functions satisfy precise scaling of Dirichlet energy, so the given condition would suppress all nontrivial homogeneous components except the constant term.  
+
+The problem now directly asks whether such suppression of homogeneous modes at infinity forces *geometric mode uniqueness*—that is, the uniqueness of the metric cone tangent at infinity. This reframes the Liouville–cone correspondence at an analytic–energetic level, grounding it in the well-studied framework of Colding–Minicozzi and Cheeger–Colding theory but pushing into a **previously uncharted quantitative regime** where curvature is only barely controlled by \(O(r^{-2})\).  
+
+It is simple to state, deeply geometric in significance, and tightly aligned with ongoing research on quantitative cone-splitting and harmonic measure rigidity. Resolving it would illuminate whether fine asymptotic behavior of the harmonic energy can substitute for global analytic rigidity in detecting asymptotic geometry—an advance that could unify Liouville theorems, harmonic analysis, and tangent-cone uniqueness under critical curvature conditions.

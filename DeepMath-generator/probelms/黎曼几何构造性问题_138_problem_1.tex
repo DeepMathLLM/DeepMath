@@ -1,0 +1,39 @@
+problem:  
+Let $(M,g)$ be a compact connected oriented $4$–dimensional Riemannian manifold with positive Paneitz operator $P_g$ and strictly positive Q–curvature $Q_g$.  Consider the conformally invariant functional
+\[
+\mathcal{F}_g(u)
+=\tfrac12\int_M u\,P_g u\,dV_g
+ + 2\int_M Q_g\,u\,dV_g
+ - \log\!\int_M e^{4u}\,dV_g , \qquad
+u\in C^\infty(M),\ \int_M u\,dV_g=0 .
+\]
+It generates the constant Q–curvature equation
+$\;P_g u + 2Q_g = 2Q_{\tilde g}e^{4u}$ for $\tilde g=e^{2u}g.$
+Define the *conformal energy*
+\[
+E(M,[g])=\inf_{u\in C^\infty(M)}\mathcal{F}_g(u),
+\]
+which is conformally invariant within $[g]$ when $P_g>0$.
+
+On the standard $4$‑sphere $(S^4,g_{\mathrm{can}})$,
+$\mathcal{F}_{g_{\mathrm{can}}}$ attains its minimum at $u=0$ and all other critical points correspond to the Möbius group of conformal automorphisms.
+
+---
+
+**Open Problem (four–dimensional Q–curvature rigidity):**  
+Assume $(M,g)$ satisfies $P_g>0$ and $\int_M Q_g\,dV_g=8\pi^2\,\chi(M)$ (the Gauss–Bonnet relation holds in dimension four).  
+
+Is it true that
+\[
+E(M,[g])=E(S^4,[g_{\mathrm{can}}])
+\quad\Longrightarrow\quad
+(M,[g])\ \text{is conformally diffeomorphic to } (S^4,[g_{\mathrm{can}}])?
+\]
+Equivalently, is the round sphere the unique $4$‑manifold (up to conformal diffeomorphism) minimizing the conformally invariant Paneitz–Q energy?
+
+---
+
+Why it is a "good" problem:  
+This formulation corrects the Gauss–Bonnet identity and confines the question to the concrete setting of $4$ dimensions, where the analytical and geometric structures of the Paneitz operator and Q–curvature are rigorously understood.  The proposed rigidity principle is a natural analog of Obata’s theorem in the exponential–critical regime: it asks whether saturation of a distinguished conformally invariant energy identifies the sphere among all conformal manifolds with positive Paneitz operator.  
+
+The problem bridges nonlinear analysis, conformal geometry, and topology—linking the extremals of a sharp inequality (Adams–Moser–Trudinger type) with a topological invariant (Euler characteristic) via curvature prescriptions.  It is simple to state yet deeply intertwined with blow‑up analysis, the structure of conformal automorphism groups, and subtle spectral properties of $P_g$.  A solution—positive or negative—would clarify whether variational Q–curvature theory can serve as a complete geometric classifier in dimension four, potentially inaugurating higher‑dimensional analogs for critical GJMS operators.

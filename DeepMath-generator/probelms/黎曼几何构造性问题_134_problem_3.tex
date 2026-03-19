@@ -1,0 +1,29 @@
+problem:  
+Let \((M,g)\) be a compact Riemannian manifold without boundary, and \((\varphi_j,\lambda_j)\) the normalized eigenpairs of the Laplacian \(-\Delta_g\).  
+For eigenfunctions, semiclassical (Wigner) measures \(\mu_j\) on \(S^*M\) are defined by  
+\[
+\langle \mu_j, a \rangle = \langle \operatorname{Op}_h(a)\varphi_j,\varphi_j\rangle,
+\]
+and satisfy invariance under the geodesic flow on \(S^*M\).  
+Now, consider instead the stationary *nonlinear* eigenvalue problem
+\[
+-\varepsilon^2\Delta_g u_\varepsilon + f(|u_\varepsilon|^2)u_\varepsilon = E_\varepsilon u_\varepsilon,
+\qquad \|u_\varepsilon\|_{L^2(M)}=1,
+\]
+with \(f:\mathbb{R}_{\ge0}\to\mathbb{R}\) smooth, and \(\varepsilon\to 0\) corresponding to the semiclassical limit.  
+Assume that \((u_\varepsilon)\) satisfies uniform semiclassical bounds so that (after extraction)  
+\[
+\langle \mu_\varepsilon, a\rangle := \langle \operatorname{Op}_\varepsilon(a)\,u_\varepsilon, u_\varepsilon\rangle \to \langle \mu,a\rangle
+\]
+for some probability measure \(\mu\) on \(S^*M\).  
+
+**Problem:**  
+1. Determine whether any limiting measure \(\mu\) arising from the nonlinear stationary Schrödinger system above must satisfy a transport (Liouville-type) equation on \(S^*M\). If such an equation exists, what effective Hamiltonian governs the induced flow (does it coincide with the classical geodesic Hamiltonian \(|\xi|_g^2\), or does the nonlinearity deform it)?  
+2. Once the appropriate transport dynamics is established, is there any manifold \((M,g)\) and nonlinearity \(f\) for which the set of nonlinear semiclassical measures equals—or at least contains—all quantum limits of Laplace eigenfunctions?  
+3. If equality fails in general, characterize geometric or analytic obstructions (e.g. loss of Hamiltonian invariance, nonlinear self-consistency effects) that forbid the nonlinear stationary states from realizing the same semiclassical distributions as linear eigenfunctions.  
+
+Why is it a "good" problem:  
+This formulation starts from well-defined analytical objects—standard semiclassical measures for stationary nonlinear Schrödinger equations—and asks whether they obey Liouville-type transport laws analogous to those known in the linear case.  It isolates the core difficulty that remains undeveloped in current research: **how nonlinearity modifies microlocal propagation of high-frequency mass**.  
+Answering even part (1) would constitute a major advance in bridging nonlinear elliptic theory and semiclassical analysis, illuminating how geometric flow invariance emerges or breaks under nonlinear self-interaction.  
+Parts (2)–(3) then push this analysis toward **spectral geometry**, investigating whether nonlinear stationary states can reproduce quantum limits and under what conditions nonlinear dynamics respect (or destroy) classical ergodic structures.  
+The problem is precise, logically consistent, and situated where tools from microlocal analysis, nonlinear PDE, and geometric spectral theory must interact—meeting the hallmarks of a “good” research-level mathematics problem.

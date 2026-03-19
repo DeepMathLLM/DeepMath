@@ -1,0 +1,28 @@
+problem:  
+Let \( (M^n,g_0) \) be a smooth compact Riemannian manifold with nonempty boundary.  Fix its conformal class \([g_0]\), and normalize metrics by \(\mathrm{Vol}_n(M,g)=1\).  For each \(g=e^{2\omega}g_0\in[g_0]\), let \(\lambda_1^N(g)\) denote the first nonzero Neumann eigenvalue of the Laplace–Beltrami operator, and denote the boundary area by \(A(g)=\mathrm{Vol}_{n-1}(\partial M,g)\).  
+
+Define the **spectral–boundary functional**
+\[
+\mathcal{I}_{[g_0]}(g)=\lambda_1^N(g)\,A(g)^{\frac{2}{n-1}}.
+\]
+
+**Open Problem.**  
+1. (Boundedness) Is \(\mathcal{I}_{[g_0]}(g)\) bounded above for all \(g\in[g_0]\) with unit volume?  In other words, can boundary “bubbling” in a conformal class force the product  \(\lambda_1^N(g)A(g)^{2/(n-1)}\) to diverge, or do analytic or geometric constraints prevent that?  
+
+2. (Existence and structure of extremals)  If the functional is indeed bounded above, does there exist a smooth conformal maximizer \(g_\ast=e^{2\omega_\ast}g_0\), and must such a metric satisfy an Euler–Lagrange relation of the form  
+\[
+\mathrm{div}_{g_\ast}(T(u_\ast,g_\ast))=0,\qquad  
+T(u_\ast,g_\ast)\cdot n_\ast=\kappa\,H_{g_\ast}\,n_\ast,
+\]
+where \(T(u_\ast,g_\ast)\) is the stress–energy tensor of the first Neumann eigenfunction \(u_\ast\), \(H_{g_\ast}\) is the boundary mean curvature, and \(n_\ast\) the boundary normal?  
+
+3. (Dimensional behaviour)  Does boundedness, or existence of an extremal metric, depend on the dimension \(n\)?  For instance, is there a threshold dimension—analogous to the critical dimension in the Yamabe problem—where boundary concentration obstructs compactness?
+
+---
+
+Why is it a "good" problem:  
+This formulation isolates exactly the frontier difficulty in **isoperimetric–spectral analysis with boundary**: interaction between conformally invariant spectral quantities and geometric boundary measures.  It connects several major strands—analytic geometry (control of eigenvalues under conformal change), conformal compactness phenomena familiar from Yamabe-type problems, and the structural analogue of minimal-immersion conditions known from the El Soufi–Ilias and Fraser–Schoen frameworks.  
+
+The boundedness question itself forces tools from conformal geometry, PDE concentration–compactness, and boundary analysis to interact in new ways.  If extremal metrics exist, their Euler–Lagrange relations would reveal deep links between **spectral stress–energy tensors** and **boundary mean curvature**, producing a Neumann-analogue of the Dirichlet minimal-immersion phenomenon.  
+
+The problem is thus simple to state, well grounded in current theory, yet open and demanding: it asks for the geometric mechanism that governs whether an isoperimetric-type spectral invariant can achieve an extremum in a conformal class.  Resolving it would extend fundamental results at the intersection of **isoperimetric inequalities** and **spectral geometry**.

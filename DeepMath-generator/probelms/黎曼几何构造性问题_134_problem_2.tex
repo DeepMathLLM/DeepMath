@@ -1,0 +1,29 @@
+problem:  
+Let \((M^n,g)\) be a closed Riemannian manifold, and let \(W:\mathbb{R}^2\to\mathbb{R}_{\ge0}\) be a smooth double-well potential with exactly two nondegenerate minima \(a_\pm\in\mathbb{R}^2\).  
+For \(\epsilon>0\), consider the Modica–Mortola–type functional  
+\[
+E_\epsilon(\Phi) = \int_M \left[\frac{\epsilon}{2}|\nabla \Phi|_g^2 + \frac{1}{\epsilon}W(\Phi)\right]\, d\mathrm{vol}_g,
+\]
+where \(\Phi=(u,v):M\to\mathbb{R}^2\).  
+Fix a codimension‑one homology class \([S]\in H_{n-1}(M;\mathbb{Z}_2)\).  
+Define the admissible class  
+\[
+\mathcal{A}_{[S]} = \left\{ \Phi\in H^1(M,\mathbb{R}^2)\; :\; \Phi \text{ takes values near } a_+\text{ and } a_- \text{ on complementary regions whose mutual interface represents }[S]\text{ mod }2 \right\}.
+\]
+Assume that for each \(\epsilon>0\), \(\Phi_\epsilon\in\mathcal{A}_{[S]}\) minimizes \(E_\epsilon\).  
+It is known that, up to subsequences, the diffuse interfaces
+\[
+\Sigma_\epsilon := \left\{x\in M : \Phi_\epsilon(x) \approx \tfrac{a_++a_-}{2}\right\}
+\]
+converge (in the varifold sense) to a stationary integral \((n-1)\)-varifold \(\Sigma\subset M\) whose mod‑2 fundamental class is \([S]\), and that \(E_\epsilon\) Γ‑converges to the area functional.
+
+**Problem:**  
+Does there exist a potential \(W\), depending only on the topological input \([S]\) (and not on \(g\)), such that for *every* Riemannian metric \(g\) on \(M\), the limiting varifold \(\Sigma\) arising from minimizers of \(E_\epsilon\) in \(\mathcal{A}_{[S]}\) is the *area‑minimizing* integral current in the homology class \([S]\)?  
+If not, characterize the classes of metrics \(g\) for which such a “universally area‑selecting” potential \(W\) could exist—that is, for which the diffuse‑interface energy always recovers area‑minimizing currents rather than merely stationary ones.
+
+Why is it a "good" problem:  
+This question targets a fundamental and unsolved interface between **elliptic variational PDE theory** and **geometric measure theory**.  
+Existing results via Γ‑convergence of Modica–Mortola functionals and the Allen–Cahn approach (Ilmanen, Hutchinson–Tonegawa, Guaraco) show that diffuse‑interface minimizers yield *stationary* minimal hypersurfaces.  
+But those hypersurfaces need not be globally area‑minimizing in their homology class, and their dependence on the Riemannian metric remains subtle.  
+Asking whether there exists a *metric‑independent potential* \(W\) whose minimizers universally select the homologically least‑area representatives pushes far beyond present theory: it challenges our understanding of how analytic models encode geometric minimality, whether calibration‑type structures can emerge analytically from elliptic systems, and how topology, metric geometry, and phase‑transition PDEs interact at the most fundamental level.  
+The statement is simple and precise, yet its resolution would demand new tools bridging Γ‑convergence, elliptic regularity, geometric measure theory, and metric invariance—making it a genuinely profound and forward‑looking research problem.

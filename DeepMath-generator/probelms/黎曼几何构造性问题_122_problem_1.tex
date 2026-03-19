@@ -1,0 +1,32 @@
+problem:  
+Let \((M^n,g)\) be a complete, noncompact Riemannian manifold (or more generally, a smooth metric measure space \((M,g,\mu)\)) with **controlled subexponential but superpolynomial volume growth**, that is,  
+\[
+\lim_{r\to\infty} \frac{\log V(r)}{r}=0, 
+\quad \text{and} \quad 
+\lim_{r\to\infty} \frac{V(r)}{r^d}=\infty \text{ for all } d>0,
+\]
+where \(V(r)=\mu(B(x_0,r))\).  Assume moreover that \(M\) satisfies a uniform heat kernel upper bound of the form  
+\[
+p_t(x,x) \le C \exp(-c (\log t)^{1+\theta}) \quad \text{for some } \theta>0,
+\]
+reflecting intermediate-transience properties typical of spaces with intermediate volume growth (e.g. manifolds modeled on discrete groups of intermediate growth).  
+
+For the semilinear equation  
+\[
+\partial_t u = \Delta_g u + u^p, \qquad u(0,x)=u_0(x)\ge 0, \; u_0\in C_c^\infty(M),
+\]  
+consider the dichotomy between global existence and finite-time blow-up for \(u>0\).
+
+**Problem (intermediate-growth Fujita-type conjecture):**  
+Does there exist a critical exponent \(p_c(M,g)\), depending only on the large-scale heat kernel decay or volume growth (and not on finer details of \(u_0\) or the local geometry), such that  
+- every nontrivial nonnegative solution blows up in finite time if \(1 < p < p_c(M,g)\);  
+- global positive solutions exist if \(p>p_c(M,g)\)?  
+
+Furthermore, can \(p_c(M,g)\) be related to a geometric-analytic “effective dimension” \(d_{\mathrm{eff}}(M,g)\) defined via asymptotic heat kernel behavior, for instance by an expression of the form  
+\[
+p_c(M,g) = 1 + \frac{2}{d_{\mathrm{eff}}(M,g)},
+\]
+and can one determine whether in the subexponential-but-superpolynomial regime \(d_{\mathrm{eff}}(M,g)=\infty\) (implying \(p_c=1\)) or instead takes a finite intermediate value?
+
+Why is it a "good" problem:  
+This problem isolates a mathematically consistent and genuinely unexplored setting: spaces with **intermediate growth** between Euclidean and exponential, now known to exist in both discrete and smooth categories (for example, through Riemannian realizations of Grigorchuk-type groups). Unlike the classical Fujita phenomenon on \(\mathbb{R}^n\) or on polynomial/exponential growth manifolds, the analytic behavior of nonlinear diffusion in the intermediate regime is essentially unknown. The question aims to bridge nonlinear PDE dynamics with the geometric group theory of growth, by asking whether the asymptotic heat kernel decay—an analytic reflection of large-scale geometry—dictates a new type of Fujita threshold. It is simple to state, logically consistent, and conceptually deep: it seeks a unified “critical exponent law” that interpolates between known polynomial and exponential cases, potentially revealing new invariant quantities governing nonlinear evolution on spaces of exotic growth. Its resolution would create a new synthesis between geometric analysis, probability on groups, and nonlinear PDE theory, thereby fully qualifying as a “good” research-level problem.

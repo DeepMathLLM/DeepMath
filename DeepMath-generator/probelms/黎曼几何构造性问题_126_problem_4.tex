@@ -1,0 +1,72 @@
+problem:  
+Let \((M^4,g)\) be a smooth closed oriented Riemannian 4‑manifold.  
+Assume its **Paneitz operator**
+\(P_g: C^\infty(M)\rightarrow C^\infty(M)\) is invertible (kernel trivial).  
+Let \(G_g(x,y)\) be its **normalized Green function**, defined by  
+\[
+P_g G_g(\cdot,y)=\delta_y-\frac{1}{\mathrm{Vol}(M,g)},\quad
+\int_M G_g(x,y)\,dV_g(x)=0.
+\]
+For \(x\neq y\), write in local coordinates near the diagonal
+\[
+G_g(x,y)=\frac{1}{8\pi^2}\log\frac{1}{d_g(x,y)}+A_g(y)+R_g(x,y),
+\]
+where \(R_g(x,y)\) is smooth and \(A_g(y)\) is the **Paneitz–Robin function**.
+
+For \(k\in\mathbb N\) and a configuration \(\mathbf{x}=(x_1,\dots,x_k)\in M^k\setminus\Delta\)
+(\(\Delta\) the diagonal), define the **Paneitz renormalized interaction energy**
+\[
+\mathcal F_g(\mathbf{x})
+=\sum_{i\neq j} G_g(x_i,x_j) + \sum_{i=1}^k A_g(x_i).
+\]
+
+Consider sequences \(u_i\in C^\infty(M)\) satisfying the constant \(Q\)-curvature equation
+\[
+P_g u_i + 2Q_g = 2\bar Q_i e^{4u_i},
+\]
+with \(g_i=e^{2u_i}g\) and \(\mathrm{Vol}(M,g_i)=1\), producing \(k\) bubbling points
+\(p_1,\ldots,p_k\) such that
+\[
+Q_{g_i}dV_{g_i}\rightharpoonup 8\pi^2\sum_{j=1}^k m_j\delta_{p_j},\quad m_j\in\mathbb N.
+\]
+
+---
+
+**Main Conjecture (Paneitz–Green Critical Point Principle):**  
+There exists a natural normalization of \(A_g\) (possibly up to an additive global curvature constant)
+such that for every bubbling sequence as above, the limiting centers \((p_1,\dots,p_k)\)
+satisfy
+\[
+\nabla_{x_j}\mathcal F_g(p_1,\dots,p_k)=0, \quad j=1,\dots,k,
+\]
+that is, bubble locations are **critical points** of the Paneitz interaction energy \(\mathcal F_g\).
+
+---
+
+**Further questions:**
+
+1. (**Rigidity**)  
+   If all critical configurations of \(\mathcal F_g\) are nondegenerate and isolated,
+   is every degenerating sequence of constant‑\(Q\) solutions constrained
+   to occur precisely at those configurations?
+
+2. (**Conformal covariance**)  
+   Can one find an explicit correction term \(\Phi_g(\mathbf{x})\), expressible through integrals of geometric curvature quantities, such that \(\mathcal F_g+\Phi_g\) is conformally invariant within \([g]\)?
+   Does this corrected functional preserve the critical‑point/bubbling correspondence?
+
+3. (**Analytic description**)  
+   Derive or conjecture explicit formulas for \(\nabla_{x_j}\mathcal F_g\)
+   in terms of the derivatives of the Green function, 
+   giving a PDE‑based criterion for equilibrium of bubble centers.
+
+---
+
+Why is it a "good" problem:  
+This formulation cleanly isolates a **single central conjecture**:  
+that the blow‑up centers for the constant \(Q\)-curvature equation are governed by a variational structure built from the Paneitz Green function. It is a *good* problem because:
+
+- It is **mathematically well‑posed**: all quantities (\(P_g\), \(G_g\), \(A_g\), \(\mathcal F_g\)) and assumptions are precisely defined.  
+- It directly links **spectral geometry** (properties of \(G_g\)) and **nonlinear geometric analysis** (blow‑up and quantization in conformal metrics), two distinct areas whose interaction is poorly understood.  
+- It generalizes the successful *renormalized energy* theory from second‑order (Liouville) to fourth‑order, where the analytic and geometric mechanisms differ profoundly.  
+- Its resolution would provide a **variational classification of bubbling phenomena** for the Paneitz‑\(Q\)-curvature equation, giving a geometric‑spectral framework for conformal degeneration in dimension four.  
+- The conjecture remains unproved, yet the statement is crisp and conceptually deep—simple to express, but demanding new tools in conformal geometry, spectral theory, and nonlinear PDE analysis.

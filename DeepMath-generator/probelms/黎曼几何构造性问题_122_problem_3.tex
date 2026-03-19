@@ -1,0 +1,26 @@
+problem:  
+Let \((M,g,\mu)\) be a complete, noncompact weighted Riemannian manifold, where \(d\mu=e^{-f}dV_g\) with \(f\in C^\infty(M)\). Assume that \((M,g,\mu)\) satisfies the **volume-doubling property** and a **local Poincaré inequality**, so that the heat kernel \(p_t(x,y)\) of the weighted Laplacian \(\Delta_f=\Delta_g-\langle\nabla f,\nabla\cdot\rangle\) obeys two-sided Gaussian bounds.  
+Suppose moreover that the diagonal heat kernel admits a global asymptotic scaling dimension:
+\[
+d_{f,\infty}:= -2\lim_{t\to\infty}\frac{\log p_t(x,x)}{\log t}
+\]
+exists (and is independent of \(x\)), which we call the **asymptotic diffusion dimension**.
+
+Consider the **focusing nonlinear Schrödinger equation**
+\[
+i\partial_t u + \Delta_f u = -|u|^{p-1}u,\quad u(0)=u_0\in L^2(M,d\mu).
+\]
+
+**Problem (asymptotic diffusion–critical NLS conjecture):**  
+Assuming that \(d_{f,\infty}\) exists and that asymptotic dispersive estimates for \(e^{it\Delta_f}\) are governed by the same dimension \(d_{f,\infty}\) (in the sense that the \(L^1\!\to\!L^\infty\) bound behaves like \(|t|^{-d_{f,\infty}/2}\) at large \(|t|\)), is the \(L^2\)-critical exponent for global existence and scattering determined universally by
+\[
+p_c=1+\frac{4}{d_{f,\infty}}?
+\]
+That is:
+1. **Subcritical regime:** for \(1<p<p_c\), there exist nontrivial finite-mass initial data producing finite-time blow-up;
+2. **Supercritical regime:** for \(p>p_c\), all sufficiently small \(L^2\) data yield global, scattering solutions.
+
+Moreover, is \(d_{f,\infty}\)—and hence \(p_c\)—**stable under quasi-isometries** between weighted manifolds satisfying the same analytic structure (volume-doubling and Poincaré inequalities)?
+
+Why is it a "good" problem:  
+The problem now takes a clean, well-posed form: it postulates that one large-scale analytic invariant—derived purely from the long-time decay of the heat kernel—fully governs the nonlinear dynamics of the NLS flow. This connects **three deep frameworks**: (i) geometric analysis of expansions of the heat semigroup, (ii) dispersive PDE theory for nonlinear Schrödinger equations, and (iii) quasi-isometric invariance in metric-measure geometry. The question is simple enough to state (a single geometric quantity predicting the critical power \(p_c\)), yet resolving it would require new tools blending spectral analysis, semiclassical dispersive estimates, and geometric asymptotics. It is unknown, logically consistent, and sharply targeted at uncovering whether heat diffusion behavior encodes enough information to dictate nonlinear time evolution—a profound synthesis that fully qualifies as a “good” research-level mathematical problem.

@@ -1,0 +1,31 @@
+problem:  
+Let \( (N^{n+1}, g) = (I\times_f M^n,\,dr^2 + f(r)^2 h)\), with \( (M^n,h)\) compact Einstein, \( \mathrm{Ric}_h=\lambda h\), and \(f>0\) smooth on \(I\subset \mathbb{R}\).  
+Fix \(r_0 \in I\) and denote \(M_{r_0}=\{r_0\}\times M\).  
+For smooth mean-zero functions \(\varphi:M\to\mathbb{R}\), define the radial graph hypersurfaces
+\[
+\Sigma_\varepsilon := \{(r_0+\varepsilon \varphi(x),x)\colon x\in M\}.
+\]  
+Let \(H_0 = n\,f'(r_0)/f(r_0)\) be the slice mean curvature, \(L\) the linearized mean curvature operator at \(M_{r_0}\), and \(\lambda_1(\varepsilon)=\lambda_1(\Sigma_\varepsilon)\) the first nonzero Laplace eigenvalue on \(\Sigma_\varepsilon\).
+
+Assume that for every mean-zero direction \(\varphi\) satisfying \(L\varphi \le 0\) on \(M\) (i.e. infinitesimally “mean-curvature-nondecreasing” deformations), the first variation of \(\lambda_1\) obeys
+\[
+\left.\frac{d}{d\varepsilon}\right|_{\varepsilon=0}\,\lambda_1(\Sigma_\varepsilon)\ \ge\ 0.
+\]
+**Problem:**  
+Do there exist non-model warping functions \(f\) (i.e. \(f''/f\) not constant) satisfying this infinitesimal spectral monotonicity property?  
+Or must this inequality for all admissible \(\varphi\) force \(f''/f\) to be constant—hence making \(N\) a space form?  
+
+In other words: *Are constant-curvature warped products the only ones where coordinate slices are first-order spectral minimizers among all infinitesimal mean-curvature-majorizing radial deformations?*
+
+---
+
+Why is it a "good" problem:  
+This version is **precise, logically consistent, and research-level**. It codifies a new type of *spectral rigidity criterion* for warped products at the linearized level:
+
+* **Analytic coherence:** The admissible variation class \(L\varphi\le0\) linearizes the condition \(H_\varphi\ge H_0\) correctly. Both relevant first-variation operators—the mean curvature operator \(L\) and the spectral derivative of \(\lambda_1\)—are well-defined and computable, creating a genuine perturbation problem.
+* **Cross-field integration:** The question bridges **comparison geometry** (mean curvature conditions in warped products) and **spectral geometry** (Laplacian eigenvalue variation), producing an unexplored intersection of extrinsic curvature and intrinsic spectral theory.
+* **Potential rigidity discovery:** If the only warping functions compatible with this monotonicity are those with constant sectional curvature (\(f''/f=\mathrm{const}\)), this would reveal a new analytic mechanism distinguishing space forms—analogous to classical rigidity theorems but spectral in nature.
+* **Simplicity, yet depth:** The formulation relies on minimal geometric data—\(f,\ H_0,\ L,\ \lambda_1\)—but involves highly nontrivial interactions between curvature, operator theory, and geometry of submanifolds.
+* **Conceptual foresight:** Linearized spectral inequalities of this type could inaugurate a broader *spectral comparison theory* for submanifolds in warped products, parallel to the established framework of curvature comparison.
+
+Hence this problem is *a good research problem*—technically subtle, conceptually unifying, and primed to initiate new analytic rigidity principles in geometric analysis.

@@ -1,0 +1,50 @@
+problem:  
+Let \((M^n,g_0)\) be a complete noncompact Riemannian manifold with **nonnegative Ricci curvature** and **polynomial volume growth**:
+\[
+\operatorname{Vol}(B_r(p)) \le C(1+r)^k, \quad k \ge n.
+\]
+Consider a complete, properly embedded mean curvature flow \(\{\Sigma_t\}_{t\in[0,T)} \subset (M,g_0)\),
+\[
+\partial_t F = -H\nu,
+\]
+satisfying the local geometric bound
+\[
+|A(x,t)|^2 \le C(1+d_{g_0}(x,p))^{2\alpha}, \quad \alpha<1,
+\]
+and assume the flow develops a singularity at finite or infinite time \(T\): there exist points \((x_i,t_i)\) with \(t_i\nearrow T\), \(d_{g_0}(x_i,p)\to\infty\), and \(|A(x_i,t_i)|\to\infty\).
+
+For each such sequence, let \(\lambda_i := |A(x_i,t_i)|\) and define the pointed, parabolically rescaled flows in exponential coordinates around \(x_i\):
+\[
+(M_i,g_i) := (M,\lambda_i^2 g_0),
+\qquad
+\Sigma^i_t := \exp_{x_i}^{-1}\big(\Sigma_{t_i+\lambda_i^{-2}t}\big).
+\]
+Assume local curvature bounds and noncollapsing conditions such that
+\[
+(M_i,g_i,\Sigma^i_t,x_i) \to (M_\infty,g_\infty,\Sigma_\infty(t),x_\infty)
+\]
+in the pointed \(C^\infty_{\mathrm{loc}}\) Cheeger–Gromov sense, where \((M_\infty,g_\infty)\) is a complete static Riemannian manifold and \(\Sigma_\infty(t)\) is an **ancient**, properly embedded mean curvature flow.
+
+Suppose that \((M_\infty,g_\infty)\) admits a **line**, so that by the Cheeger–Gromoll splitting theorem,
+\[
+(M_\infty,g_\infty) \cong (\mathbb{R}\times N^{n-1}, ds^2 + h).
+\]
+
+**Conjectural Problem:**  
+Conjecture that under these hypotheses, whenever the ambient limit manifold \((M_\infty,g_\infty)\) splits isometrically with an \(\mathbb{R}\)-factor, the corresponding limit flow \(\Sigma_\infty(t)\subset (M_\infty,g_\infty)\) is a **translating soliton** in the direction of the parallel vector field \(\partial_s\):
+\[
+H = \langle \partial_s, \nu \rangle,
+\qquad
+\Sigma_\infty(t) = \Phi_{t\partial_s}(\Sigma_\infty(0)).
+\]
+In other words, the existence of a splitting direction in the ambient limit forces the singularity model at infinity to exhibit pure translation along that direction.  
+(Note: No claim is made that splitting must always occur.)
+
+Why is it a "good" problem:  
+This formulation is now logically consistent and geometrically natural. It conjectures that *whenever large-scale ambient geometry induces an \(\mathbb{R}\)-splitting in the blow-up limit, the corresponding hypersurface model must realize a translating soliton aligned with that split direction*. The problem links three central ideas:
+
+1. **Global Riemannian structure:** the splitting phenomenon under nonnegative Ricci curvature captures the asymptotic flat direction of the manifold;  
+2. **Singularity analysis in geometric PDE:** the blow-up mechanisms of mean curvature flow and the emergence of ancient solutions;  
+3. **Self-similar geometry:** translators as canonical Type II singularity models.
+
+This concise conjecture embodies the principle that *geometric noncompactness manifests analytically as translation*. Proving or disproving it would reveal how curvature conditions and asymptotic topology constrain the formation of singularities. Its scope and simplicity make it an exemplary “good” research-level problem bridging asymptotic geometry, analysis of flows, and geometric rigidity theory.

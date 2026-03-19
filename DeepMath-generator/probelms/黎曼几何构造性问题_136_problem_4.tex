@@ -1,0 +1,39 @@
+problem:  
+Let \((M^n,g)\) be a compact Riemannian manifold and denote by \(\lambda_{1,p}(M,g)\) the first nonzero eigenvalue of the \(p\)-Laplacian  
+\[
+\Delta_p u = \operatorname{div}(|\nabla u|^{p-2}\nabla u)
+\]
+with homogeneous Neumann boundary conditions (or on the closed manifold).  
+It is known that  
+\[
+\lambda_{1,p}(M,g)^{1/p} \to \frac{2}{\operatorname{diam}(M,g)} \quad \text{as } p\to\infty.
+\]
+
+Define the *renormalized deviation*  
+\[
+\delta_p(M,g) := p\left[\left(\frac{\operatorname{diam}(M,g)}{2}\right)\lambda_{1,p}(M,g)^{1/p} - 1\right].
+\]
+
+**Open problem:**  
+Does \(\delta_p(M,g)\) have a finite limit as \(p \to \infty\), and if so, is this limit determined by curvature invariants or geometric features of \((M,g)\)?  
+More specifically:  
+1. Is the sign or finiteness of \(\lim_{p\to\infty} \delta_p(M,g)\) influenced by lower Ricci curvature bounds, e.g., \(\operatorname{Ric}_g \ge -K\)?  
+2. Can one give an explicit geometric interpretation of the first correction term in the asymptotic expansion
+\[
+\lambda_{1,p}(M,g)^{1/p} = \frac{2}{\operatorname{diam}(M,g)}\Big(1 + \frac{A(M,g)}{p} + o\Big(\frac{1}{p}\Big)\Big),
+\]
+for some geometric functional \(A(M,g)\) possibly related to curvature, boundary structure, or the distribution of midpoints of geodesic pairs realizing the diameter?  
+3. What is the relationship between the asymptotic profile of \(p\)-eigenfunctions and such higher-order corrections—does curvature manifest in their limiting concentration patterns as \(p\to\infty\)?  
+
+Why is it a "good" problem:  
+This problem addresses the *second-order asymptotics* of nonlinear eigenvalues, a frontier region beyond the classical \(p\to\infty\) limit known to yield only diameter information. It effectively asks whether finer geometric information—such as curvature, topology, or cut-locus structure—can be extracted from the rate at which \(\lambda_{1,p}^{1/p}\) approaches its limit.  
+
+The problem is "good" for several reasons:  
+
+1. **Conceptual depth:** It moves beyond the well-understood diameter dependence of \(\Lambda_\infty\), probing whether nonlinear spectral data encode additional geometric subtleties invisible in the limit itself.  
+
+2. **Cross-field bridge:** It naturally connects PDE asymptotics, Riemannian geometry, and geometric measure theory—analyzing how curvature affects viscosity-limit eigenfunctions of the infinity-Laplacian.  
+
+3. **Simplicity with depth:** The statement involves only one familiar operator (\(p\)-Laplacian), one metric invariant (diameter), and a simple asymptotic question, yet its resolution may require developing new geometric perturbation theories for nonlinearly elliptic spectra.  
+
+A success in this direction would initiate a theory of *nonlinear spectral asymptotics* paralleling semiclassical analysis, revealing how manifold geometry is subtly encoded in the nonlinear spectrum beyond the known diameter constraint.

@@ -1,0 +1,35 @@
+problem:  
+Let \( (M^n,g) \) be a smooth compact Riemannian manifold with smooth nonempty boundary \( \partial M \), \(n\ge3\). Denote the Steklov spectrum by \(\{\sigma_k(M,g)\}_{k\ge0}\).  
+For each \(k\), form the **scale-invariant Steklov functional**
+\[
+\mathcal{I}_{n,k}(M,g) = \sigma_k(M,g)\,\big[A(\partial M,g)\big]^{1/(n-1)}.
+\]
+Fix a smooth boundary metric \(h\) on \(\partial M\), and let
+\[
+\mathcal{G}(h) = \{\, g : g|_{\partial M} = h \,\}.
+\]
+Define
+\[
+\Sigma_k(h) = \sup_{g \in \mathcal{G}(h)} \mathcal{I}_{n,k}(M,g).
+\]
+
+**Conjecture (Higher-dimensional Steklov extremal metric conjecture).**  
+For \(n\ge3\) and a fixed boundary metric \(h\):  
+1. (**Existence**) The supremum \(\Sigma_k(h)\) is finite and realized by a smooth metric \(g_*\in\mathcal{G}(h)\); that is,
+   \[
+   \mathcal{I}_{n,k}(M,g_*) = \Sigma_k(h).
+   \]
+2. (**Geometric structure**) If such a maximizer \(g_*\) exists, then the associated first nontrivial Steklov eigenspace \(\mathcal{E}_{k}(g_*)\) determines a boundary map
+   \[
+   \Phi_{g_*}:\partial M\to S^{m-1}\subset \mathbb{R}^m,\qquad
+   \Phi_{g_*}(x)=(u_1(x),\dots,u_m(x)),\quad u_i\in\mathcal{E}_k(g_*),
+   \]
+   which is conformal and minimal.  
+   In other words, the Euler–Lagrange equations for the functional \(\mathcal{I}_{n,k}\) at \(g_*\) imply that the trace of its Steklov eigenspace realizes a minimal immersion of \((\partial M,h)\) into a round sphere.
+
+**Remarks and motivation:**  
+- In dimension \(n=2\), Fraser–Schoen proved an analogue: extremal metrics for \(\sigma_k(\Sigma,g) \cdot L(\partial\Sigma,g)\) yield free boundary minimal surfaces in balls.  
+- For \(n\ge3\), no analogous existence or minimal immersion result is known. Compactness failures, bubbling, and potential loss of regularity at the boundary are substantial analytic obstacles.
+
+Why is it a "good" problem:  
+This conjecture isolates one precise and central unknown in Steklov spectral geometry — the *existence* and *geometric nature* of extremal metrics for scale-invariant Steklov eigenvalues in higher dimensions. It is a direct and natural higher-dimensional counterpart to the Fraser–Schoen result, but completely unexplored. Proving or disproving it would not only require new boundary analytic compactness methods but could reveal a deep variational mechanism connecting boundary spectral data with minimal immersions in higher dimensions. It is simply stated, geometrically transparent, yet its resolution demands high-level integration of geometric analysis, PDE theory, and conformal geometry — a textbook example of a “narrow entrance, profound depth” good problem.

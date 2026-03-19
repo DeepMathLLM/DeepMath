@@ -1,0 +1,43 @@
+problem:  
+Let \( (M^n,g) \) be a complete noncompact Riemannian manifold satisfying the **borderline curvature bounds**
+\[
+\mathrm{Ric}(x)\ge -\frac{C}{(1+r(x))^2}, \qquad r(x)= d(x,x_0),
+\]
+together with a **noncollapsed Euclidean volume growth condition**
+\[
+\operatorname{Vol}(B(x_0,r)) \ge c\,r^n \quad \text{for all } r\ge1,
+\]
+for constants \(c,C>0\).  
+
+For a nonconstant harmonic function \(u\colon M\to\mathbb{R}\) of at most polynomial growth, define the **smoothed frequency function**
+\[
+\mathcal{N}_u(r) = \frac{r \int_{B(x_0,r)} |\nabla u|^2}{\int_{A(x_0,r,2r)} u^2},
+\]
+where \(A(x_0,r,2r)=B(x_0,2r)\setminus B(x_0,r)\) is the geodesic annulus.  
+(The use of annular integrals avoids singularities of \(\partial B\) and guarantees that the denominator is well-defined for all large \(r\).)
+
+**Question (Borderline Liouville–Frequency Rigidity Conjecture):**  
+Assume that for every harmonic function \(u\) of polynomial growth on \(M\), the limit
+\[
+\lim_{r\to\infty}\mathcal{N}_u(r)
+\]
+exists and is finite.  
+
+Does it follow that all measured Gromov–Hausdorff tangent cones at infinity of \((M,g)\) are isometric to the same metric cone \(C(Z)\)?  
+Equivalently, does **asymptotic frequency stabilization** for all polynomial-growth harmonic functions enforce **asymptotic geometric uniqueness** of tangent cones under the critical curvature decay \(O(r^{-2})\)?  
+
+Additionally, if such frequency stabilization fails, can one construct families of harmonic functions whose limiting frequencies exhibit oscillations corresponding to distinct tangent cones at infinity?
+
+Why is it a "good" problem:  
+This refined formulation preserves conceptual simplicity—“Does global stability of harmonic frequency capture asymptotic conical uniqueness?”—yet operates precisely at the analytical and geometric thresholds defining the frontier of the field.  
+
+The problem brings together three major themes in geometric analysis:
+
+1. **Almgren-type frequency analysis:** Traditionally powerful in Euclidean or Ricci-nonnegative spaces, frequency monotonicity detects homogeneity of blow-up limits. Extending this viewpoint to manifolds with borderline curvature decay is uncharted territory; the proposed averaged, annular frequency gives a framework robust under weak curvature control.
+
+2. **Liouville rigidity versus geometric uniqueness:** In the Cheeger–Colding and Colding–Minicozzi theories, spaces of harmonic functions of fixed growth encode tangent-cone structure. Here, the conjecture asks whether mere *stabilization of frequency ratios* (a quantitative analytic symptom) guarantees *uniqueness of the large-scale geometric limit*—a profound potential equivalence between analytic and geometric homogeneity.
+
+3. **Borderline curvature phenomenon:** The \(r^{-2}\) decay marks the critical edge beyond which standard comparison or monotonicity methods collapse. Establishing or disproving this equivalence would push harmonic analysis of manifolds into the precise quantitative regime where curvature, topology, and analysis interact most delicately.
+
+The problem is mathematically sound, as annular integration ensures well-defined quantities and no dependence on cut-locus regularity, yet remains open and highly nontrivial.  
+Its resolution would crystallize a new understanding of how asymptotic analytic behavior encodes global geometric rigidity, likely requiring novel hybrid techniques from PDE theory, geometric measure theory, and Riemannian asymptotics.

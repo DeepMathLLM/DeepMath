@@ -1,0 +1,29 @@
+problem:  
+Let \((M^n,g)\) be a complete, noncompact Riemannian manifold with mild curvature control at infinity—for instance, assume there exist constants \(C>0,\alpha\in[0,1)\) such that  
+\[
+|\mathrm{Ric}_g(x)|\le C(1+d(x_0,x)^2)^\alpha.
+\]  
+Let \(V\in C_c^\infty(M)\) be a nonnegative potential, and consider the semilinear wave equation  
+\[
+\partial_t^2u - \Delta_g u + V(x)u = |u|^p,\qquad u(0)=u_0,\quad \partial_t u(0)=u_1,
+\]
+with smooth, compactly supported data.  
+
+Assume that the **linear wave group** \(e^{it\sqrt{-\Delta_g+V}}\) satisfies a global dispersive bound
+\[
+\|e^{it\sqrt{-\Delta_g+V}}\|_{L^1(M)\to L^\infty(M)} \le C(1+|t|)^{-\sigma}
+\]
+for some decay rate exponent \(\sigma>0\), after projecting away bound states if necessary. In Euclidean space, \(\sigma=(n-1)/2\), but on general manifolds \(\sigma\) may reflect both geometry and spectral structure.
+
+**Problem (universal dispersion–nonlinearity correspondence for geometric wave equations):**  
+Is there a universal—and possibly *nonlinear*—law \(p_c=p_c(\sigma)\) determining the threshold between global existence and finite-time blow-up for semilinear wave equations whose linear part disperses with rate \(|t|^{-\sigma}\)? That is, does knowledge of \(\sigma\) alone (possibly together with regularity of the spectral measure near zero) suffice to determine whether the following dichotomy holds?
+
+1. For \(1<p<p_c(\sigma)\), all compactly supported nontrivial data lead to blow-up in finite time;  
+2. For \(p>p_c(\sigma)\), sufficiently small initial data lead to global decaying solutions.
+
+Further, does the **functional dependence \(p_c=p_c(\sigma)\)** recover the classical Strauss exponent when \(\sigma=(n-1)/2\), and does the same relation extend continuously to non-Euclidean manifolds where \(\sigma\) may take non-integer values induced by geometric dispersion?  
+
+In other words, can the nonlinear criticality be expressed as a *universal function of dispersive decay strength* rather than of geometric dimension, and is this functional law stable under quasi-isometries that preserve the asymptotic decay rate?
+
+Why is it a "good" problem:  
+This formulation captures a deep open direction: determining whether nonlinear critical thresholds for wave equations are fundamentally governed by the *analytic dispersive rate* of the linear operator, rather than by geometric dimension alone. It generalizes the Strauss conjecture—traditionally expressed in terms of \(n\)—into an invariant analytic form characterized by \(\sigma\), the power governing \(L^1\!-\!L^\infty\) decay. The question is logically consistent, genuinely open, and cross-disciplinary, connecting microlocal dispersive theory, spectral geometry, and nonlinear PDE dynamics. Establishing such a universal relation would reveal whether the core nonlinear threshold for wave propagation is a property of dispersion itself, not the space’s geometry—a conceptually profound unification that meets all criteria of a “good,” research-level mathematical problem.

@@ -1,0 +1,37 @@
+problem:  
+Let \(G\) be a compact, connected Lie group acting isometrically on the standard sphere \(S^n\) with cohomogeneity one, so that
+\[
+S^n = G \times_{K_0} D^{k_0+1} \cup_G G \times_{K_1} D^{k_1+1}
+\]
+for singular isotropy subgroups \(K_0, K_1\) and common principal isotropy \(H\subset K_0,K_1\).
+On the principal region \((0,1) \times G/H\), every \(G\)-invariant metric has the form
+\[
+g = dt^2 + g_t, \qquad g_t \in \mathrm{Met}^G(G/H).
+\]
+Let \(A_t = \frac{1}{2} g_t^{-1} \frac{d g_t}{dt}\) be the second fundamental form of orbits and \(R(g_t)\) the scalar curvature of the slice \((G/H,g_t)\).
+Define the mixed intrinsic–extrinsic functional
+\[
+\mathcal{E}_\alpha(g) = \int_0^1 \!\! \int_{G/H} \big(R(g_t) + \alpha |A_t|^2 \big) \, d\mu_{g_t}\, dt
+\]
+for a fixed parameter \(\alpha \in \mathbb{R}\), subject to the volume constraint \(\mathrm{Vol}(S^n, g)=1\).
+Under these conditions, the Euler–Lagrange system is a second‑order boundary ODE in \(t\), with smooth boundary conditions at \(t=0,1\) ensuring regular extension over the singular orbits.
+
+**Conjecture (Symmetry enhancement or rigidity for cohomogeneity–one sphere metrics):**  
+For a fixed cohomogeneity‑one action \(G \curvearrowright S^n\):
+1. Either every critical point \(g_*\) of \(\mathcal{E}_\alpha\) in the space of \(G\)-invariant unit-volume metrics is automatically homogeneous (i.e. its isometry group acts transitively on \(S^n\));  
+2. Or there exist specific parameters \(\alpha \neq 0\) and actions \(G\) for which a smooth \(G\)-invariant, non‑homogeneous solution \(g_*\) of the Euler–Lagrange equations satisfies
+   \[
+   \mathrm{Isom}(S^n, g_*) \supsetneq G.
+   \]
+Determine which of these two possibilities can occur, starting from explicit actions such as 
+\[
+SO(k)\times SO(n+1-k)\curvearrowright S^n
+\quad\text{or}\quad
+SU(2)\times SU(2)\curvearrowright S^7,
+\]
+and characterize analytically how the parameter \(\alpha\) influences rigidity or symmetry enhancement.
+
+Why is it a "good" problem:  
+This formulation is mathematically precise, avoiding the ambiguities of previous versions. It poses a concrete and highly non‑trivial dichotomy within a fully classified geometric setting—cohomogeneity‑one actions on spheres—where the metric ansatz and boundary smoothness conditions are explicit. The functional involves both scalar curvature and orbit‑extrinsic curvature, introducing a genuinely new analytic feature beyond the Einstein–Hilbert theory: the second fundamental form couples the evolution of orbit geometry with scalar curvature, leading to new ODE structures for invariant metrics.
+
+The question tests a fundamental principle: can a curvature functional constrained by symmetry produce *more* symmetry than imposed, or does the variational structure rigidly preserve the given action? Confirming or disproving this for even one non‑trivial action would clarify the interplay between analytic criticality and global symmetry in Riemannian geometry—an elegant, sharply stated, and conceptually rich research‑level problem.

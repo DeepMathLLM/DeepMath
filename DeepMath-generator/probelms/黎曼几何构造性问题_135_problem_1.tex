@@ -1,0 +1,35 @@
+problem:  
+Let \((S^3,g(t),u(t))\), \(t\ge 0\), evolve by the **coupled Ricci–scalar field flow**
+\[
+\begin{cases}
+\partial_t g = -2\,\mathrm{Ric}(g) + \alpha\,\nabla u \otimes \nabla u,\\[5pt]
+\partial_t u = \Delta_g u - V'(u),
+\end{cases}
+\]
+where \(V(u)=\tfrac{1}{4}u^4 - \tfrac{\beta}{2}u^2\) for \(\beta>0\), and \(\alpha>0\) is a coupling constant.  
+Assume \(g(0)=g_0\) is a smooth Riemannian metric on \(S^3\) with \(\mathrm{Ric}_{g_0}>0\) and \(u(0)=u_0\) is smooth with mean zero.
+
+Define
+\[
+\alpha_c(g_0,u_0):=\sup \{\alpha>0:\ (g(t),u(t))\text{ remains smooth for all }t\ge0\}.
+\]
+
+**Problem (precise conjectural form):**  
+1.  Does there exist a finite, positive threshold \(\alpha_c(g_0,u_0)\) such that  
+   - for \(0<\alpha<\alpha_c(g_0,u_0)\), the flow exists for all time and converges (mod diffeomorphisms) to a stationary Einstein–scalar configuration \((g_\infty,u_\infty)\) solving
+     \[
+     \mathrm{Ric}(g_\infty) = \lambda g_\infty + \tfrac{\alpha}{2}\nabla u_\infty\otimes\nabla u_\infty,\qquad
+     \Delta_{g_\infty}u_\infty = V'(u_\infty),
+     \]
+     where \(u_\infty\) is nonconstant;
+   - while for \(\alpha>\alpha_c(g_0,u_0)\), solutions develop singularities in finite time?  
+
+2.  Can one characterize \(\alpha_c(g_0,u_0)\) variationally—for instance, as the smallest coupling such that an energy or entropy functional analogous to Perelman’s \( \mathcal{F}\)-functional ceases to be monotone?
+
+3.  More generally, does small scalar coupling (\(\alpha\) small) act as a geometric regularization mechanism, suppressing curvature blow‑up that would otherwise arise in the *coupled* flow (as opposed to the uncoupled Ricci case)?
+
+Why is it a "good" problem:  
+This problem is now explicit, logically consistent, and makes no incorrect comparison with the standard 3D Ricci flow. It focuses on the analytic–geometric mechanism by which a scalar field may influence the evolution and long‑time regularity of the metric. The conjectured threshold \(\alpha_c\) is well defined and asks for a subtle global‑in‑time dichotomy between regular and singular behavior—a phenomenon reminiscent of critical phenomena in nonlinear PDEs and mean‑curvature flows.  
+
+The question thus bridges **Ricci–harmonic map flows**, **energy‑monotonicity theory**, and **nonlinear stability analysis**, connecting geometric evolution with ideas from phase transition and dynamical bifurcation theory.  
+It is simple in expression yet conceptually deep: determining whether coupling to an analytic scalar can induce new global geometric stability is an open frontier in geometric analysis. This combination of precision, depth, and cross‑disciplinary reach makes it a genuinely “good” research-level mathematical problem.

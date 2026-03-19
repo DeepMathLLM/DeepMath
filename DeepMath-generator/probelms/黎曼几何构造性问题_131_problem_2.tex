@@ -1,0 +1,37 @@
+problem:  
+Let \((M_t,g(t))_{t\ge0}\subset \mathbb{R}^{n+1}\) be a smooth family of compact, oriented hypersurfaces evolving by the **volume-preserving mean curvature flow**
+\[
+\partial_t X = (H - \bar H)\nu,
+\]
+where \(X:M_t\hookrightarrow\mathbb{R}^{n+1}\) is the embedding, \(H\) is the mean curvature, \(\bar H=\frac{1}{|M_t|}\int_{M_t}H\,d\mu_{g(t)}\), and \(\nu\) the unit normal.  
+Let \(u:M_t\times[0,\infty)\to\mathbb{R}\) be an intrinsic scalar field evolving by a **geometry-coupled reaction–diffusion equation**
+\[
+\partial_t u = \Delta_{g(t)}u - F'(u) + \beta\,H\,u,
+\]
+where \(F:\mathbb{R}\to\mathbb{R}\) is a smooth potential bounded below, and \(\beta\in\mathbb{R}\) is a fixed coupling parameter.
+
+Define the **intrinsic energy functional**
+\[
+\mathcal{E}(t)=\int_{M_t}\!\big(|\nabla_{g(t)}u|^2+2F(u)\big)d\mu_{g(t)}.
+\]
+For \(\beta=0\) and stationary geometry, \(\mathcal{E}\) is dissipative under the plain reaction–diffusion dynamics.  
+When the geometry evolves by mean curvature flow, however, the metric variation causes nontrivial evolution of both \(|\nabla u|^2\) and \(d\mu_{g(t)}\).
+
+**Open problem (Constrained entropic monotonicity for coupled mean curvature–diffusion flow):**  
+Assume Ψ is restricted to be a local scalar invariant involving only \(u,\nabla u,H,|A|^2\) and of differential order ≤2, i.e. of the form
+\[
+\Psi(g(t),u)=a_1H^2+a_2|A|^2+a_3H|\nabla u|^2+a_4H^2u^2,
+\]
+with coefficients \(a_i\in\mathbb{R}\) independent of \(t\).  
+Is there a choice of constants \((\beta,a_1,a_2,a_3,a_4)\) (possibly depending on \(n\)) such that the modified energy
+\[
+\widetilde{\mathcal{E}}(t)=\int_{M_t}\!\big(|\nabla u|^2+2F(u)+\Psi(g(t),u)\big)d\mu_{g(t)}
+\]
+is **monotone nonincreasing** along smooth solutions of the coupled system?
+
+Equivalently, can one obtain an analogue of Huisken’s or Perelman’s monotonicity formula for this mixed mean curvature–reaction–diffusion evolution, where the geometric curvature terms and the nonlinear reaction potential dynamically balance to produce a global entropy decay?
+
+If such coefficients exist, what geometric mechanisms govern them (e.g. dimensional identities, divergence-free curvature tensors)?  If no such combination works, what curvature–potential obstructions prevent entropy production cancellation?
+
+Why is it a "good" problem:  
+This formulation corrects geometric inconsistencies (u evolves intrinsically, no extrinsic derivative ambiguity) and introduces **tight structural constraints** on the functional form, ensuring the question is mathematically concrete. It probes whether there exists a **finite-order local geometric–analytic invariant** providing a Lyapunov-type monotonicity principle under a strongly coupled PDE system that simultaneously evolves geometry and matter. The problem lies precisely at the interface of **geometric analysis**, **nonlinear parabolic PDE theory**, and **entropy methods**, extending Huisken’s and Perelman’s foundational monotonicity frameworks to a new regime mixing curvature flow and nonlinear field diffusion. Any resolution—positive or negative—would clarify deep interactions between curvature evolution and dissipative variational structures, representing a simple-to-state yet profound research problem.

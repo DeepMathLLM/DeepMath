@@ -1,0 +1,36 @@
+problem:  
+Let \( (N^{n+1}, g) = (I \times_f M^n,\, dr^2 + f(r)^2 h) \) be a warped product with \(I \subset \mathbb{R}\), \(f>0\), and \((M^n, h)\) compact Einstein with \(\mathrm{Ric}_h = \lambda h\).  
+Consider smooth *radially graphical hypersurfaces* \(\Sigma_\varepsilon = \{(r,u_\varepsilon(x)) : x\in M\}\) that are small perturbations of a coordinate slice \(\{r_0\}\times M\), i.e., \(u_\varepsilon(x) = r_0 + \varepsilon\phi(x)\) for small \(\varepsilon\), where \(\phi\) is smooth and mean-zero on \(M\).  
+
+Suppose one imposes the *mean curvature matching* condition
+\[
+H_{\Sigma_\varepsilon}(x) = n\,\frac{f'(u_\varepsilon(x))}{f(u_\varepsilon(x))}
+\quad \text{for all } x \in M,
+\]
+so that \(\Sigma_\varepsilon\) has the same (pointwise) mean curvature as the corresponding coordinate sphere at radius \(u_\varepsilon(x)\).  
+
+**Problem:**  
+Does there exist a non-model warped product (i.e. \(f\) not satisfying \(f'' = c f\) for any constant \(c\)) and compact Einstein base \((M, h)\) for which the following *linearized hypersurface Ricci comparison condition* holds for all sufficiently small \(\varepsilon\) and all perturbation functions \(\phi\)?  
+\[
+\left.\frac{d}{d\varepsilon}\right|_{\varepsilon=0}
+\Big(
+\mathrm{Ric}_{\Sigma_\varepsilon}(X,X)
+- \mathrm{Ric}_{\{r=u_\varepsilon(x)\}}(X,X)
+\Big)
+\Big|_{x} \ge 0
+\quad \forall X\in T_xM.
+\]
+That is, to first order, every infinitesimal convex perturbation of the coordinate sphere preserving its mean curvature up to order \(\varepsilon\) increases (or at least does not decrease) the intrinsic Ricci curvature relative to the undeformed slice.  
+
+If such a nontrivial warping function exists, characterize the possible curvature profiles \(f\).  
+Otherwise, prove that the only such warped products are the classical space forms (with \(f''=c f\)).  
+
+Why is it a "good" problem:  
+This version formulates a precise, infinitesimal rigidity test for warped product metrics based on intrinsic curvature comparison along mean-curvature-preserving deformations of coordinate spheres. It merges tools from several deep areas:
+
+- **Geometric analysis and PDEs:** through the linearization of the prescribed mean curvature equation governing the perturbations \(u_\varepsilon\).  
+- **Intrinsic–extrinsic curvature interplay:** via the Gauss equation linking \(\mathrm{Ric}_\Sigma\) to ambient curvature and the second fundamental form.  
+- **Rigidity theory:** through seeking whether a first-order intrinsic Ricci comparison property rigidly forces \(f\) to satisfy \(f'' = c f\), i.e. constant sectional curvature of \(N\).  
+
+The problem is elegantly simple in statement yet demanding in analysis: it transforms a nonlinear geometric rigidity question into a linearized, curvature-sensitive functional inequality. Demonstrating whether only model spaces meet this infinitesimal Ricci dominance would reveal a new type of *hypersurface-based rigidity mechanism* for warped products, connecting local deformation theory, comparison geometry, and analytic stability criteria.  
+Hence, it is a "good" problem—clear, fundamental, and potentially opening a new analytic avenue in the study of geometric rigidity within warped product manifolds.

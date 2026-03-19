@@ -1,0 +1,61 @@
+problem:  
+Let \((M,g)\) be a complete, noncompact Riemannian manifold of dimension \(n\ge2\) that exhibits **two distinct diffusion regimes**:  
+- (**Local Gaussian regime**) There exist constants \(C,c>0\) such that for \(t\le1\) and all \(x,y\in M\),
+  \[
+  C^{-1}t^{-n/2}\exp\!\left(-\frac{d(x,y)^2}{ct}\right)
+  \le p_t(x,y)
+  \le Ct^{-n/2}\exp\!\left(-\frac{d(x,y)^2}{C t}\right),
+  \]
+  i.e., standard parabolic behavior and local spectral dimension \(d_s^{\text{loc}}=n\).  
+
+- (**Large-scale sub-Gaussian regime**) There exist parameters \(d_f^\infty>0, d_w^\infty>2\) and constants \(C',c'>0\) such that for \(t\ge1\) and all \(x,y\in M\),
+  \[
+  C'^{-1}t^{-d_f^\infty/d_w^\infty}
+  \exp\!\left[-c'\!\left(\frac{d(x,y)^{d_w^\infty}}{t}\right)^{\!\frac{1}{d_w^\infty-1}}\right]
+  \le p_t(x,y)
+  \le C't^{-d_f^\infty/d_w^\infty}
+  \exp\!\left[-\frac1{C'}\!\left(\frac{d(x,y)^{d_w^\infty}}{t}\right)^{\!\frac{1}{d_w^\infty-1}}\right].
+  \]
+  The corresponding large-scale spectral dimension is \(d_s^{\infty} = 2d_f^\infty / d_w^\infty\).
+
+This two-regime structure can arise, for example, on manifolds that are approximately Euclidean near a compact core but possess ends with anomalous (e.g. fractal-like or degenerate) geometry that slows diffusion at infinity.
+
+Consider the nonlinear heat equation
+\[
+u_t = \Delta_g u + u^p, \qquad u(\cdot,0) = u_0 \ge 0\in C_c^\infty(M),
+\]
+and let \(T(u_0)\) denote the maximal existence time.
+
+---
+
+**Problem (Two-scale Fujita crossover and escape-to-infinity blow-up):**  
+1. Does there exist a critical exponent \(p_c(M,g)\) separating global existence and finite-time blow-up such that  
+   \[
+   1+\frac{2}{d_s^{\infty}} \;\le p_c(M,g)\;\le 1+\frac{2}{d_s^{\text{loc}}}\,?
+   \]
+   (Since the large-scale diffusion is slower, typically \(d_s^{\infty}<d_s^{\text{loc}}\), implying \(1+2/d_s^{\infty}>1+2/d_s^{\text{loc}}\).)
+
+2. Can there be an intermediate range \(p\in(1+2/d_s^{\text{loc}},\,1+2/d_s^{\infty})\) in which *finite-time blow-up occurs but migrates to infinity*, i.e. for which \(T(u_0)<\infty\) yet
+   \[
+   \sup_{K\Subset M} |u(x,t)|<\infty \text{ for all } t<T(u_0),
+   \quad
+   \text{and}\quad \limsup_{t\uparrow T(u_0)}\sup_{d(x,x_0)>\!R}|u(x,t)|\to\infty
+   \text{ for every } R>0?
+   \]
+   Such blow-up would be driven by the geometry-induced slowdown of diffusion at infinity.
+
+3. Is there a functional or geometric invariant—e.g., involving harmonic measure of infinity, renormalized spectral dimension, or return probability tail—that exactly determines \(p_c(M,g)\) in mixed-scale settings?
+
+---
+
+**Heuristic insight:**  Local diffusion tends to suppress blow-up (strong smoothing), while large-scale anomalous diffusion at infinity weakens dissipation. A crossover exponent should thus interpolate between the local and asymptotic Fujita thresholds; the transition could produce new singularity types where energy escapes toward infinity faster than it accumulates locally.
+
+---
+
+Why is it a "good" problem:  
+This question probes a **new frontier in nonlinear geometric analysis**: how nonlinear blow-up behavior depends on the **competition between distinct diffusion scales** on a single manifold. Classical Fujita theory relies on a single diffusion dimension, but here one must analyze how small-time Gaussian heat propagation interacts with large-time sub-Gaussian slowdown. The problem unifies:
+- **Geometric analysis and heat kernel theory**, through rigorous two-regime estimates;
+- **Nonlinear PDE blow-up theory**, via scaling and concentration mechanisms;
+- **Probabilistic geometry**, since diffusion transition corresponds to different random-walk regimes.
+
+Its apparently simple question—does geometry with two diffusion regimes yield a *crossover Fujita exponent* or *escape-to-infinity blow-up*—conceals deep analytic structure. A solution would introduce new invariants measuring how geometry at infinity alters nonlinear thresholds, creating a bridge between global geometric diffusion and nonlinear singularity formation.  This synthesis, novelty, and potential impact make it a genuine “good’’ research problem.

@@ -1,0 +1,36 @@
+problem:  
+Let \((M^n,g)\) be a complete Riemannian manifold with \(\mathrm{Ric}_g \ge (n-1)K\), \(K\in\mathbb{R}\), and \(\Omega\subset M\) a smooth, mean–convex, bounded domain with boundary \(\Sigma = \partial \Omega\).  
+For \(p>1\), let \(u_p\) solve  
+\[
+\begin{cases}
+\Delta_p u_p = -1 &\text{in }\Omega,\\
+u_p = 0 &\text{on }\Sigma,
+\end{cases}
+\qquad
+\Delta_p u = \nabla\!\cdot(|\nabla u|^{p-2}\nabla u),
+\]
+and define \(T_p(\Omega)=\int_\Omega u_p\,dV\).  
+Let \(M_K^n\) be the simply connected space form of curvature \(K\), and let \(B_{K,R}\subset M_K^n\) be the geodesic ball with volume equal to that of \(\Omega\). Denote its torsional rigidity by \(T_p(B_{K,R})\), associated with its radial solution of
+\[
+\big(s_K(r)^{n-1}(v'(r))^{p-1}\big)'=-s_K(r)^{n-1},\qquad v(R)=0,
+\]
+where \(s_K(r)\) is the standard warping function.
+
+**Problem (Nonlinear torsional rigidity and curvature characterization):**  
+Suppose that for every domain \(\Omega\) in \((M,g)\) and the corresponding model ball \(B_{K,R}\), one has \(T_p(\Omega)\le T_p(B_{K,R})\).  
+Can the validity of this torsional rigidity comparison for all \(\Omega\) *alone* imply \(\mathrm{Ric}_g \ge (n-1)K\)?  
+Equivalently, do torsional rigidity inequalities characterize lower Ricci curvature bounds, in the same sense that the Bishop–Gromov and Heintze–Karcher theorems do for volume and mean curvature?  
+Further, does there exist a synthetic counterpart in the metric-measure \(CD(K,N)\) setting, where torsional rigidity comparison could provide an alternative potential-theoretic definition of curvature lower bounds?
+
+Why is it a "good" problem:  
+This version moves beyond merely extending Saint-Venant’s rigidity principle; it asks *whether torsional rigidity inequalities themselves intrinsically encode curvature bounds*.  
+It thus reimagines a well-known analytic quantity—the \(p\)-torsional rigidity—as a test functional for curvature, a nonlinear analogue of the volume comparison used in Ricci geometry.  
+
+This represents a genuinely new conceptual bridge between:  
+1. **Nonlinear potential theory** (via the \(p\)-Laplace torsion functional),  
+2. **Comparison and synthetic geometry** (characterization of Ricci bounds), and  
+3. **Geometric PDE structures** (curvature information hidden in torsion inequalities).  
+
+Unlike standard extensions, this question transcends proving inequalities under curvature assumptions—it inquires whether such inequalities *detect* curvature itself.  
+It is simple to state, yet a complete answer would open a new analytical pathway to curvature characterization and connect nonlinear PDE geometry with synthetic curvature–dimension theory.  
+Hence it satisfies the essence of a "good" problem: deceptively simple, conceptually deep, cross-field, and currently unsolved.

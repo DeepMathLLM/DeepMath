@@ -1,0 +1,30 @@
+problem:  
+Let \((X,d,\mu)\) be a complete metric measure space satisfying the **volume-doubling condition** and a **(1,2)-Poincaré inequality**, so that the associated heat semigroup \(e^{t\Delta}\) admits a symmetric heat kernel \(p_t(x,y)\) with sub-Gaussian bounds of the general form  
+\[
+p_t(x,y) \approx \frac{1}{V\big(\phi^{-1}(t)\big)}\exp\!\left[-c\,\frac{d(x,y)^{\beta}}{t^{\beta/(\beta-1)}}\right],
+\]
+where \(V(r):=\mu(B(x,r))\) and \(\phi(r)\) denotes the space–time scaling function (e.g. \(\phi(r)\sim r^{\beta}\)).  
+Assume in addition that at large scales the effective "volume dimension"  
+\[
+d_{\mathrm{eff}}(r) := \frac{d\log V(r)}{d\log r}
+\]
+oscillates between two finite constants \(d_-<d_+\), in the sense that each of these values is achieved infinitely often as \(r\to\infty\).
+
+Consider the nonlinear parabolic equation
+\[
+\partial_t u = \Delta u + u^p, \qquad u(0,x)=u_0(x)\ge0, \quad u_0\in C_c(X).
+\]
+
+**Problem (multiscale criticality conjecture on oscillatory metric-measure spaces):**  
+Assume the above analytic structure and oscillatory dimension behavior.  
+1. Does there exist a *geometric–analytic invariant* \(d_*\in[d_-,d_+]\), defined purely in terms of the long-time behavior of the heat kernel (for example via Cesàro averaging of \(d_{\mathrm{eff}}(\phi^{-1}(t))\)), such that the dichotomy between global existence and finite-time blow-up of positive solutions is governed by the law
+\[
+p_c = 1 + \frac{2}{d_*}?
+\]
+2. If not, can one construct explicit oscillatory examples (for instance, product-like or layered spaces with alternating polynomial growth regions) where the global–blow‐up behavior is truly **scale‐dependent**, so that sequences of initial data localized at different scales alternate between global and blow-up outcomes, reflecting “multiscale criticality”?
+
+Formally, the question asks whether the universality of the Fujita critical exponent persists under oscillatory large-scale geometry — or whether, in the absence of an asymptotic dimension, the critical phenomenon itself loses universality.
+
+Why is it a "good" problem:  
+This formulation is **geometrically consistent**: metric measure spaces satisfying volume-doubling and Poincaré inequalities with oscillatory volume-growth profiles are known to exist (for instance through variable-dimensional fractal constructions, graphs, or warped products). The problem focuses on the fundamental and unresolved issue of whether nonlinear diffusion retains a *universal critical power* \(p_c\) when the underlying geometry no longer has a single scaling dimension.  
+It bridges analysis on metric measure spaces, geometric heat kernel asymptotics, and nonlinear PDE theory, and touches on a new concept—**multiscale criticality**—where the thresholds for blow-up and global existence might depend on geometric scale. The statement remains simple, yet its resolution would require developing new methods to connect scale-dependent diffusion behavior with nonlinear evolution, potentially leading to a new analytic invariant of multiscale spaces. This combination of simplicity, logical consistency, and potential to unify disparate areas of mathematics qualifies it as a “good” research-level problem.

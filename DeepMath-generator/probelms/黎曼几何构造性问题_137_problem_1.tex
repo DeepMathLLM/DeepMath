@@ -1,0 +1,40 @@
+problem:  
+Let \( (M,g_0) \) be a **compact Riemannian symmetric space of rank \( r \ge 2 \)** with connected isometry group \(G = \mathrm{Isom}_0(M)\).  
+Let \(L_{g_0} = -\Delta_{g_0} + c_n R_{g_0}\) denote the conformal Laplacian, \(c_n = \frac{n-2}{4(n-1)}\).  
+The **normalized Yamabe equation**
+\[
+L_{g_0}(v) = \lambda\, v^{p-1}, \qquad v>0, \qquad \int_M v^p\, d\mu_{g_0} = 1,
+\]
+with \(p=\frac{2n}{n-2}\), admits the trivial branch \(v\equiv 1\), corresponding to parameter \(\lambda = \lambda_* = c_n R_{g_0}\).  
+Linearizing at \(v \equiv 1\) and \(\lambda = \lambda_*\) yields  
+\[
+(L_{g_0} - \lambda_* I)u = 0.
+\]  
+Let \(E_{\lambda_*} = \bigoplus_{i=1}^r V_i\) be the eigenspace corresponding to the first nontrivial eigenvalue of \(L_{g_0}\), decomposed into irreducible real \(G\)-representations.
+
+---
+
+**Problem:**  
+For such a higher-rank symmetric space, consider the Lyapunov–Schmidt reduction of the above equation near the trivial branch.  
+The reduced equation on \(E_{\lambda_*}\) is of the form  
+\[
+u = Q_2(u,u) + Q_3(u,u,u) + \cdots,
+\]
+where each \(Q_k\) is a \(G\)-equivariant multilinear map determined by the geometry of \(M\).  
+
+**Conjectural question:**  
+Is it true that for all compact symmetric spaces \(M\), the equivariance conditions and curvature symmetries enforce that every solution branch bifurcating from \(v \equiv 1\) lies entirely within a single irreducible subrepresentation \(V_i\) of \(E_{\lambda_*}\)?  
+In other words, do geometric invariants of symmetric spaces *forbid mixed bifurcations* involving nonlinear coupling between distinct irreducible components \(V_i, V_j\), \(i \neq j\)?  
+Or can explicit examples of “representation-mixing” bifurcation (requiring interaction between different \(V_i\)) occur for some higher-rank compact symmetric spaces?
+
+Formally, determine whether for every invariant homogeneous polynomial \(P\) on \(E_{\lambda_*}\) arising from the Yamabe functional, \(P(V_i,V_j)=0\) for all \(i\neq j\); equivalently, whether curvature symmetry forces the \(G\)-equivariant multilinear forms \(Q_k\) (especially \(Q_3\)) to respect the decomposition of \(E_{\lambda_*}\) into distinct irreducible summands.
+
+---
+
+Why is it a "good" problem:  
+This formulation isolates a specific and structurally meaningful **geometric-equivariant conjecture** at the frontier of geometric analysis.  
+Classical equivariant bifurcation theory allows for coupling between multiple irreducibles when the kernel is reducible, but says nothing about whether the *geometry of a symmetric space* prohibits or enforces such coupling in *geometric* PDEs derived from the conformal Laplacian.  
+This problem asks whether the deep curvature symmetries in compact symmetric spaces rigidify the bifurcation behavior beyond generic group-theoretic predictions—potentially revealing **a new rigidity phenomenon** in geometric PDEs.  
+
+If positive (no mixing), one would discover a new **geometric selection rule** governing symmetry breaking in conformal geometry; if negative, explicit mixed branches would exhibit **nontrivial interaction between representation theory and nonlinear curvature effects**.  
+Either result would connect **spectral geometry, representation theory, and nonlinear analysis**, making it a genuinely “good” problem: conceptually simple, rigorously stated, but deeply challenging and potentially transformative.

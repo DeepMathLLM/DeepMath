@@ -1,0 +1,56 @@
+problem:  
+Let \((M^n,g,\mu)\) be an \(n\)-dimensional complete weighted Riemannian manifold satisfying  
+\[
+d\mu = e^{-V}\,d\mathrm{vol}_g, \qquad \mathrm{Ric}_V := \mathrm{Ric}_g + \nabla^2 V \ge K g
+\]
+for some fixed \(K>0\).  
+Denote by \(\lambda_{\mathrm{LS}}(M,g,\mu)\) the optimal logarithmic Sobolev constant defined by  
+\[
+\int_M u^2\log u^2\,d\mu \le \frac{2}{\lambda_{\mathrm{LS}}(M,g,\mu)}\int_M |\nabla u|^2\,d\mu, 
+\quad \int_M u^2\,d\mu = 1.
+\]
+Define the *log-Sobolev deficit*  
+\[
+\delta_{\mathrm{LS}}(M,g,\mu):=\lambda_{\mathrm{LS}}(M,g,\mu)-2K.
+\]
+Equality, i.e. \(\delta_{\mathrm{LS}}=0\), occurs for the Gaussian space  
+\[
+(\mathbb{R}^n,|\cdot|,\gamma_K),\quad d\gamma_K = \left(\frac{K}{2\pi}\right)^{n/2}e^{-K|x|^2/2}\,dx.
+\]
+
+To avoid dependence on Euclidean coordinates, define for each probability space \((M,g,\mu)\):
+- the *barycenter* \(b_\mu\in M\) as the minimizer of \(x\mapsto \int_M d^2(x,y)\,d\mu(y)\);
+- the *variance radius*
+\[
+\mathrm{Var}_K(M,g,\mu) := \frac{1}{n}\int_M d^2(x,b_\mu)\,d\mu(x),
+\]
+normalized to equal \(1/K\).
+
+**Problem (Intrinsic Quantitative Gaussian Rigidity Conjecture):**  
+
+Fix \(n\in\mathbb{N}\) and \(K>0\).  
+Let \(\{(M_i^n,g_i,\mu_i)\}_{i\in\mathbb{N}}\) be a sequence of weighted manifolds satisfying  
+\[
+\mathrm{Ric}_{V_i} \ge K g_i, \quad \text{and} \quad \mathrm{Var}_K(M_i,g_i,\mu_i)=1/K,
+\]
+with uniformly bounded diameter and entropy so that a measured Gromov–Hausdorff limit exists.
+
+Conjecture:
+
+1. (**Rigidity**)  
+If \(\delta_{\mathrm{LS}}(M_i,g_i,\mu_i)\to 0\), then \((M_i,g_i,\mu_i)\) converges (up to normalization) in the measured Gromov–Hausdorff sense to the Gaussian space \((\mathbb{R}^n,|\cdot|,\gamma_K)\).
+
+2. (**Quantitative Stability**)  
+There exists a universal modulus \(\Phi_{n,K}:[0,\infty)\to[0,\infty)\), \(\Phi_{n,K}(t)\to0\) as \(t\to0\), such that for all \(i\),
+\[
+W_2^2(\mu_i,\gamma_K) \le C_{n,K}\,\Phi_{n,K}(\delta_{\mathrm{LS}}(M_i,g_i,\mu_i)),
+\]
+where \(W_2\) denotes the Wasserstein–2 distance in a canonical correspondence between \((M_i,g_i,\mu_i)\) and \((\mathbb{R}^n,\gamma_K)\).
+
+3. (**Converse**)  
+If \((M_i,g_i,\mu_i)\to (\mathbb{R}^n,|\cdot|,\gamma_K)\) in the measured Gromov–Hausdorff sense, then \(\delta_{\mathrm{LS}}(M_i,g_i,\mu_i)\to 0.\)
+
+The conjecture may also be formulated for \(\mathrm{RCD}(K,\infty)\) metric–measure spaces with the same normalization.
+
+Why is it a "good" problem:  
+This formulation removes coordinate dependence and pins down intrinsic normalization, yielding a crisp conjecture: can near-saturation of a fundamental functional inequality control global geometric convergence? Its simplicity belies its depth—it joins the geometric notion of Ricci curvature and Gromov–Hausdorff convergence with the analytic notion of a sharp log-Sobolev constant. Proving it would give a universal “functional-to-geometric stability principle,” translating infinitesimal curvature information into global metric-measure structure. It unifies multiple advanced areas—Bakry–Émery calculus, logarithmic Sobolev theory, Wasserstein geometry, and RCD analysis—in a single conjectural bridge. The statement is elementary enough to describe in a few lines but probes a foundational interface of geometry and analysis with no known resolution.

@@ -1,0 +1,49 @@
+problem:  
+Let \((M^n,g(t))\), \(t\in[0,T)\), evolve by the **Ricci flow**
+\[
+\partial_t g = -2\,\mathrm{Ric}(g),
+\]
+on a compact manifold \(M\).  
+Let \(u=u(x,t)>0\) satisfy the **nonlinear scalar parabolic equation**
+\[
+\partial_t u = \Delta_{g(t)} u - R_{g(t)}\,u + F(u),
+\]
+where \(F:\mathbb{R}_+\to\mathbb{R}\) is smooth.
+
+Define the **generalized Perelman-type entropy**
+\[
+\mathcal{E}_F(g,u) := \int_M \big(|\nabla u|_{g(t)}^2 + R_{g(t)}u^2 + \Phi_F(u)\big)\,d\mu_{g(t)},
+\]
+where \(\Phi_F'(u)=2u^{-1}F(u)\).  (Hence \(\Phi_F\) is well defined as a function of \(u\) alone.)
+
+---
+
+**Precise conjectural formulation:**
+
+1. (**Existence of nonlinear entropy couplings**)  
+   Determine whether there exists a nontrivial (i.e. nonlinear, not affine) function \(F\) such that, for every smooth solution pair \((g(t),u(t))\),
+   \[
+   \frac{d}{dt}\mathcal{E}_F(g(t),u(t)) \le 0
+   \]
+   along the Ricci flow.  
+
+   In other words, can the curvature–heat coupling be extended beyond the linear regime of Perelman’s \(\mathcal{F}\)-energy to nonlinear \(F(u)\) without losing global monotonicity?
+
+2. (**Rigidity characterization**)  
+   If such \(F\) exists, is equality in the monotonicity achieved if and only if \((g,u)\) evolves by a *generalized gradient Ricci soliton* system
+   \[
+   \mathrm{Ric} + \nabla^2(\log u) = \lambda_F(u)\, g
+   \]
+   for a scalar function \(\lambda_F(u)\) determined by the choice of \(F\)?
+
+3. (**Analytic classification problem**)  
+   Derive the ODE that \(F\) must satisfy (in terms of \(u\) and its logarithmic derivatives) to ensure all first‑order terms cancel identically in \(\tfrac{d}{dt}\mathcal{E}_F\).  Is this ODE solvable for a nontrivial \(F\), or is Perelman’s \(F(u)=\lambda u\) case the only possible one?
+
+---
+
+Why is it a "good" problem:  
+This revised problem is now mathematically consistent and sharply posed.  It asks for the **classification of all nonlinear source terms \(F(u)\)** for which a natural Perelman‑type entropy functional remains monotone under Ricci flow coupled to a nonlinear heat equation.  The definition of \(\Phi_F\) is coherent, the monotonicity condition is precise, and the conjecture is nontrivial: no known example beyond the linear theory satisfies such a global entropy identity.  
+
+Conceptually, the problem probes whether Perelman’s monotonicity—the cornerstone of modern Ricci flow theory—admits nonlinear generalization.  Its resolution would either produce entirely new entropy invariants or reveal deep rigidity of the existing ones.  Analytically, it requires unraveling how nonlinearities in \(F(u)\) interact with curvature evolution under the Bochner–Perelman identities, bridging **nonlinear parabolic PDE**, **geometric flows**, and **variational analysis**.  
+
+The question is expressed in simple terms (specify all \(F(u)\) giving monotonicity), yet its ramifications could reshape the structural understanding of Ricci–entropy theory—making it a genuinely “good” research‑level mathematical problem.

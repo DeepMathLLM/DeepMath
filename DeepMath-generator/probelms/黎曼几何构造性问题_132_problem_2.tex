@@ -1,0 +1,31 @@
+problem:  
+Let \((M^n,g_0)\) be a complete noncompact **asymptotically conical** Riemannian manifold, meaning there exists a compact set \(K \subset M\) and a diffeomorphism  
+\[
+M \setminus K \cong (R_0,\infty) \times Y
+\]
+such that, in these coordinates,  
+\[
+g_0 = dr^2 + r^2 h + O(r^{-1-\varepsilon})
+\]
+for some metric \(h\) on the cross-section \(Y\) and some \(\varepsilon>0\).  
+Let \(\Sigma_t \subset (M,g_0)\) be a properly embedded mean curvature flow defined on \([0,T)\) with polynomial area growth at each time slice.  
+
+Assume the flow develops a singularity at finite time \(T<\infty\) along a **sequence of points escaping to infinity**: there exists a sequence \((x_i,t_i)\) with \(x_i \to \infty\) and \(t_i \to T^-\) such that \(|A(x_i,t_i)| \to \infty\).  
+Consider the parabolically rescaled flows
+\[
+\tilde{\Sigma}^i_\tau := \lambda_i(\Sigma_{t_i + \lambda_i^{-2}\tau} - x_i), \qquad \lambda_i := |A(x_i,t_i)|, \quad \tau \in (-\lambda_i^2 t_i, 0],
+\]
+in the ambient metrics \(\tilde g_i := \lambda_i^2 g_0\).
+
+Suppose that, after passing to a subsequence, the ambient manifolds and flows converge in the pointed Cheeger–Gromov sense:
+\[
+(M,\tilde g_i, \tilde{\Sigma}^i_\tau, x_i) \longrightarrow (M_\infty, g_\infty, \Sigma_\infty(\tau), x_\infty),
+\]
+where \(\Sigma_\infty(\tau)\) is an ancient properly embedded flow in the complete ambient space \((M_\infty,g_\infty)\).
+
+**Conjectural Problem:**  
+Is it true that the ambient limit \((M_\infty,g_\infty)\) must coincide (up to scaling and isometry) with the **tangent cone at infinity** of \((M,g_0)\)?  
+Equivalently, do singularities of mean curvature flow that form along sequences escaping to infinity necessarily “recover” the cone at infinity as their ambient geometric limit?
+
+Why is it a "good" problem:  
+This problem isolates a deep and unresolved question at the intersection of asymptotic geometry and singularity analysis in geometric PDEs. It asks whether the large-scale geometry of a noncompact manifold manifests in the limiting structure of singularities that occur at infinity. Unlike interior blow-ups—where curvature rescaling flattens the ambient manifold—here the conjecture probes blow-ups moving toward infinity, where the asymptotic cone becomes the natural geometric environment. A positive resolution would reveal a rigidity phenomenon linking ambient asymptotic cones and ancient singularity models, connecting geometric analysis, Ricci–Cheeger–Gromov convergence, and mean curvature flow theory. The question is strikingly simple to state yet conceptually profound: *Do singularities “see” the shape of infinity?* This simplicity paired with its potential structural consequences makes it a strong “good” research-level problem.

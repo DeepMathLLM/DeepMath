@@ -1,0 +1,29 @@
+problem:  
+Let \((M,g)\) be a complete noncompact **asymptotically hyperbolic manifold** of dimension \(n\ge2\); that is, \(M = \operatorname{Int}(\overline M)\) for a compact manifold with boundary, and near the boundary the metric has the form  
+\[
+g=\rho^{-2}(d\rho^2 + h_\rho),
+\]
+for a defining function \(\rho\) satisfying \(|d\rho/\rho|_g\to 1\) and a smooth family of boundary metrics \(h_\rho\to h_0\).  The Laplacian \(\Delta_g\) then has continuous spectrum starting at some \(\lambda_0^2>0\).  
+
+Consider the nonlinear heat equation
+\[
+u_t = \Delta_g u + u^p,\qquad u(\cdot,0)=u_0\ge0,\quad u_0\in C_c^\infty(M),
+\]
+and let \(T(u_0)\) be the maximal existence time.
+
+Define **escape-to-infinity blow-up** to mean that \(u\) blows up at finite time \(T(u_0)<\infty\) while
+\[
+\sup_K|u(x,t)|<\infty \ \text{for every compact }K\Subset M,
+\qquad
+\text{but } \limsup_{t\to T^-}\sup_{\rho(x)<\varepsilon}|u(x,t)|=\infty\ \text{for all}\ \varepsilon>0.
+\]
+
+**Conjecture (Spectral control of geometric blow-up):**  
+Let \(\lambda_0=\inf\sigma(-\Delta_g)\) be the bottom of the spectrum.  
+- If the spectral gap is small, i.e. \(\lambda_0\le c_*(n,p)\) for a constant depending only on dimension and nonlinearity, then all blow-up produced by compactly supported data must occur in a bounded region (no escape-to-infinity blow-up).  
+- If \(\lambda_0 > c_*(n,p)\), the spectral gap produces sufficiently weak diffusion near infinity so that one can construct compactly supported \(u_0\) whose evolution exhibits escape-to-infinity blow-up.
+
+Here \(c_*(n,p)\) is to be identified via the spectral asymptotics of \(\Delta_g\) on \(\mathbb{H}^n\)—for instance, one might conjecture that \(c_*(n,p)=\frac{(n-1)^2}{4(p-1)}\).
+
+Why is it a "good" problem:  
+This formulation isolates a concrete spectral threshold conjecture linking **curvature, diffusion strength, and nonlinear blow-up transport.**  It asks whether geometric control of diffusion through the Laplace spectrum decisively determines the *spatial nature of singularities* in nonlinear parabolic equations.  The question builds a bridge between spectral geometry (through \(\lambda_0\)) and nonlinear PDE dynamics (through blow-up mechanisms), extending Fujita-type theory into curved contexts where the geometry at infinity warps diffusion.  Its resolution would require new insights combining spectral analysis on noncompact manifolds, asymptotic heat kernel estimates, and nonlinear rescaling methods.  The statement is simple yet profound: it proposes a single measurable geometric quantity—the spectral gap—as the gatekeeper distinguishing localized versus escaping singularities, capturing the aesthetic depth and cross-field impact characteristic of a “good” research problem.

@@ -1,0 +1,36 @@
+problem:  
+Let \((M^4,g)\) be a closed, oriented Riemannian 4‑manifold, and let \((E,h)\to M\) be a Hermitian line bundle with unitary connection \(A\) and section \(\Phi\).  
+For \(\varepsilon>0\), consider the **Ginzburg–Landau functional**  
+\[
+\mathcal{E}_\varepsilon(A,\Phi;g) = \int_M
+\Bigl(|D_A\Phi|_g^2 + \tfrac{1}{2\varepsilon^2}(1-|\Phi|_h^2)^2 + \varepsilon^2|F_A|_g^2\Bigr)\,d\mathrm{vol}_g.
+\]
+Let \((A_\varepsilon,\Phi_\varepsilon)\) be a sequence of minimizers (or near‑minimizers) in the topological class \([E]\).  
+
+Define the **defect measure**  
+\[
+\nu_\varepsilon = \frac{1}{\varepsilon^2}\bigl(|D_{A_\varepsilon}\Phi_\varepsilon|_g^2 
++ \tfrac{1}{2\varepsilon^2}(1-|\Phi_\varepsilon|^2)^2\bigr)
+\, d\mathrm{vol}_g,
+\]
+and its associated **vorticity current**
+\[
+\mathbf{J}_\varepsilon = \frac{1}{2\pi} d\, \mathrm{Im}\,\langle \Phi_\varepsilon, D_{A_\varepsilon}\Phi_\varepsilon \rangle_h
+\;\in\; \mathcal{D}'_2(M).
+\]
+These quantities capture the concentration of energy along potential vortex sheets or lines.  
+It is known for dimensional reasons that \(\mathbf{J}_\varepsilon\) weakly approximates the current associated with \(F_{A_\varepsilon}/2\pi\) and thus its homology class is always \(PD(c_1(E))\), but the **geometry and multiplicities of the limiting current** may depend on \(g\).
+
+**Problem:**  
+Assume the total energies \(\mathcal{E}_\varepsilon(A_\varepsilon,\Phi_\varepsilon;g)\) are uniformly bounded in \(\varepsilon\).  
+Do the normalized vorticity currents \(\mathbf{J}_\varepsilon\) converge (up to subsequence) to an **integral rectifiable 2‑current** \(T_g\) with \([T_g]=PD(c_1(E))\)?  
+If so:
+1. Is the *support* and *multiplicity structure* of \(T_g\) determined only by the **conformal class** \([g]\) of the metric, or does it vary under metric rescaling within the same conformal class?  
+2. Can one find geometric conditions (e.g. curvature bounds, scalar‑flat conformal representatives, or control of the stress–energy tensor’s divergence) ensuring that \(T_g\) remains invariant when \(g\mapsto e^{2u}g\)?  
+3. If invariance fails, explicitly describe how conformal deformation of \(g\) modulates the defect measure’s limiting varifold—e.g. through its mean‑curvature weighting or density functions.
+
+Why is it a "good" problem:  
+This formulation focuses on *geometrically meaningful and rigorously defined quantities*: defect measures and vorticity currents for minimizers of the Ginzburg–Landau functional in the critical dimension 4.  
+Unlike asking for automatic “conformal invariance,” it poses the subtler and realistic question of whether **the fine geometric structure of the limiting current** (its rectifiable support and multiplicity distribution) depends only on the conformal class or on the full metric geometry.  
+This addresses an unresolved interface between **elliptic system compactness**, **defect‑measure geometry**, and **conformal analysis**: in particular, how stress–energy tensor transformations under conformal rescalings influence the geometric manifestation of topological invariants.  
+Establishing even partial metric‑ or conformal‑dependence results would require new analytic tools connecting energy quantization, varifold limits, conformal tensor calculus, and vortex structures—placing the problem squarely at the forefront of modern geometric analysis.

@@ -1,0 +1,39 @@
+problem:  
+Let \((M,g)\) be a noncompact Riemannian manifold of dimension \(n\ge3\), **asymptotically conic** at infinity, but with a smooth compact region \(K\subset M\) whose geodesic flow contains a **hyperbolic trapped set** \(\Gamma\subset S^*K\).  
+Assume that the classical dynamics on \(\Gamma\) satisfy a *nonpositive topological pressure condition* \(P(1/2)<0\), so that semiclassical resolvent estimates of the form
+\[
+\|(-\Delta_g - (\lambda^2+i0))^{-1}\|\_{L^2\to L^2}\lesssim \lambda^C
+\]
+hold at high frequency (as in semiclassical scattering theory).
+
+Consider the **mass-critical focusing nonlinear Schrödinger equation**
+\[
+i u_t+\Delta_g u+|u|^{4/n}u=0,\quad u(0)=u_0\in H^1(M),
+\]
+with conserved mass and energy. Let \(T_*(u_0)\) denote its maximal lifespan.
+
+A solution \(u\) is said to exhibit **escape blow-up** if \(T_*(u_0)<\infty\) and there exists \((x_j,t_j)\) with \(d(x_j,x_0)\to\infty,\ t_j\nearrow T_*(u_0)\) such that \(|u(x_j,t_j)|\to\infty\), while \(\sup_{d(x,x_0)\le R}|u(x,t)|<\infty\) for all \(R>0\) and \(t<T_*(u_0)\).
+
+---
+
+**Conjecture (Hyperbolic-trapping barrier for migrating blow-up):**  
+Assume the asymptotic Euclidean Gagliardo–Nirenberg constant holds, \(G_M=G_{\mathbb{R}^n}\).  
+Then:
+
+1. If the trapped set \(\Gamma\) satisfies \(P(1/2)<0\) (i.e. nontrapping measure decays polynomially), every finite-time blow-up solution remains spatially localized — no escape blow-up can occur.
+
+2. If one perturbs \((M,g)\) so that \(P(1/2)=0\) (marginally stable trapping) or introduces a *metastable flat neck* where local resolvent bounds lose polynomial decay, then there exist sequences of finite-energy data \(u_0^{(j)}\) with masses \(\|u_0^{(j)}\|\_{L^2}\searrow M(Q_{\mathbb{R}^n})\) whose corresponding solutions exhibit escape blow-up.
+
+Thus, can the *dynamical pressure* \(P(1/2)\) of the trapped set (equivalently, the rate of semiclassical local energy decay) serve as the geometric invariant determining whether blow-up mass remains confined or migrates to infinity?
+
+---
+
+Why is it a "good" problem:  
+This version gives a **precise and testable conjecture**: it links a specific microlocal invariant — the **topological pressure \(P(1/2)\)** of the hyperbolic trapped set — to the **spatial behavior of nonlinear blow-up** for the critical NLS. The conjecture unites three deep areas:
+
+* **Dynamical systems and semiclassical analysis:** through the use of \(P(1/2)\) and resolvent estimates.  
+* **Nonlinear dispersive dynamics:** through mass-critical NLS blow-up and concentration–compactness.  
+* **Geometric scattering theory:** through the asymptotically conic structure controlling dispersion at infinity.
+
+It asks whether *quantitative microlocal energy decay* acts as a barrier preventing singularity migration, thereby forging a bridge between *classical dynamical stability* and *nonlinear singularity formation*.  
+The statement is simple—does the pressure sign distinguish trapped versus escaping blow-up?—yet implies a profound synthesis of ideas from spectral geometry, semiclassical dynamics, and nonlinear PDE, embodying the essence of a “good” research problem.

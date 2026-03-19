@@ -1,0 +1,28 @@
+problem:  
+Let \( (M^{2n}, g_M, J_M, \omega_M) \) be a compact Kähler manifold with **positive holomorphic bisectional curvature**, and \( (N^{2m}, g_N, J_N, \omega_N) \) a compact Kähler manifold whose **holomorphic sectional curvature** satisfies 
+\[
+-1 \le K^h_N \le 0.
+\]
+Let \( f : M \to N \) be a harmonic map, with decomposition \(df = \partial f + \bar{\partial} f\).  
+
+It is well known (Siu–Sampson) that if \(M\) has strongly positive curvature and \(N\) has nonpositive curvature, then **holomorphic** or **constant** maps are the only stable harmonic maps under certain curvature pinching conditions. However, when those conditions are relaxed, examples of harmonic maps that are not holomorphic are not known in general.
+
+**Revised problem (quantitative rigidity formulation):**  
+Assume nonholomorphic harmonic maps \(f : M \to N\) exist. Does there exist \(\varepsilon(M) > 0\) such that for every harmonic \(f: M \to N\),
+\[
+\text{either } \bar{\partial} f \equiv 0 \quad \text{(so \(f\) is holomorphic), or} \quad E^{(0,1)}(f) = \int_M |\bar{\partial} f|^2 \, \mathrm{vol}_M \ge \varepsilon(M)?
+\]
+Equivalently, does the positive bisectional curvature of \(M\) enforce **quantitative holomorphic rigidity**, in the sense that small anti-holomorphic energy is impossible unless \(f\) is strictly holomorphic?
+
+Why is it a "good" problem:  
+This restatement avoids vacuity and directly formulates a **quantitative rigidity** conjecture—an analogue of a *gap theorem* in harmonic map theory. Here the goal is not to assert the existence of nonholomorphic harmonic maps, but to ask whether curvature conditions on \(M\) create a **threshold phenomenon**: once \(E^{(0,1)}(f)\) is small enough, it must vanish identically.  
+
+The problem builds naturally upon the **Siu–Sampson Bochner formula**
+\[
+\frac12\Delta |\bar{\partial}f|^2 = |\nabla \bar{\partial} f|^2 + 
+\mathrm{Ric}_M(\bar{\partial}f,\bar{\partial}f)
+- \langle R^N(df,df)\bar{\partial}f,\bar{\partial}f\rangle,
+\]
+and seeks to determine whether global positivity of the first term (due to the positive curvature of \(M\)) can produce a global spectral gap for the operator controlling \(\bar{\partial} f\). That is, it translates qualitative rigidity (holomorphic/constant) into a **quantitative spectral bound** for the non-holomorphic component.  
+
+This question is mathematically well-posed, tied directly to central analytic identities in Kähler geometry, and invites the development of new **curvature–energy inequalities** beyond known vanishing arguments. It connects geometric analysis, complex differential geometry, and nonlinear PDE theory, and a resolution would enrich our understanding of how positivity of complex curvature manifests in energy gaps and stability for harmonic maps—meeting the criteria for a “good” research-level problem with conceptual depth and cross-disciplinary potential.

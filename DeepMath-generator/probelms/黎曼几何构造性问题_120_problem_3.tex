@@ -1,0 +1,30 @@
+problem:  
+Let \((M^n,g)\) be a complete, noncompact Riemannian manifold with nonnegative Ricci curvature.  
+Assume that there exist constants \(0 < \alpha_1 < \alpha_2 \le n\) and \(c, C > 0\) such that for all sufficiently large \(r\),
+\[
+c\,r^{\alpha_1} \le \operatorname{Vol}(B(p,r)) \le C\,r^{\alpha_2}.
+\]
+That is, \(M\) has polynomial volume growth of unknown precise order between \(\alpha_1\) and \(\alpha_2\).
+
+**Problem:**  
+> Does the following limit necessarily exist, independently of the choice of basepoint \(p\)?
+> \[
+> \alpha(M,g)\;=\;\lim_{r\to\infty}\frac{\log \operatorname{Vol}(B(p,r))}{\log r}.
+> \]
+>  
+> Equivalently, can one have 
+> \[
+> \limsup_{r\to\infty}\frac{\log \operatorname{Vol}(B(p,r))}{\log r}
+> \neq
+> \liminf_{r\to\infty}\frac{\log \operatorname{Vol}(B(p,r))}{\log r},
+> \]
+> so that different scaling sequences at infinity yield distinct “effective asymptotic dimensions”?  
+>  
+> In analytic terms, does nonnegative Ricci curvature guarantee stabilization of the polynomial volume growth exponent, or can the asymptotic dimension fluctuate along divergent sequences?
+
+Why is it a "good" problem:  
+This problem isolates a fundamental structural question about the **large‑scale geometry of Ricci ≥ 0 manifolds**. Bishop–Gromov comparison ensures monotonicity of the normalized volumes \(\operatorname{Vol}(B(p,r))/r^n\), but provides no direct mechanism to ensure convergence of the logarithmic growth exponent. Whether Ricci lower bounds rigidify the large‑scale scaling behavior enough to enforce a unique asymptotic exponent remains unknown.  
+
+A positive answer would establish a new **rigidity invariant**—a canonical “volume dimension at infinity” associated with any Ricci ≥ 0 manifold of polynomial growth—and connect local curvature inequalities to global geometric scaling. A counterexample would reveal unexpected “multiscale” phenomena compatible with nonnegative Ricci curvature, offering a new direction in the theory of Ricci bounds and volume comparison.  
+
+The question is simple to state yet conceptually deep: it lies precisely at the interface between **comparison geometry** (Bishop–Gromov monotonicity) and **metric‑measure limit theory** (tangent cones at infinity). Formulating such convergence of the asymptotic exponent would likely require new insights into the interplay between curvature control, scaling limits, and volume regularity—making this a genuinely good research problem.
