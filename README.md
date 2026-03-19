@@ -2,10 +2,12 @@
 
 ## 📅 Project Timeline
 
-
 2025.05 · Release of First Work:  [**DeepMath-Creative Benchmark**](./DeepMath-Creative/)
+
 2025.05 · Paper "DeepMath-Creative: A Benchmark for Evaluating Mathematical Creativity of Large Language Models" Published on arXiv
+
 2026.03 · Next Frontier: [**Exploring LLMs' Capacity to Originate Mathematical Research Problems**](./DeepMath-generator/)
+
 2026.03 · Historic Release: 665 Expert-Verified Research-Level Problems in Differential Geometry, Conceived by an LLM Agent — The [**DeepMath-Generator**](./DeepMath-generator/) Series
 
 
