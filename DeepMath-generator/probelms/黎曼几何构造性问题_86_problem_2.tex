@@ -1,0 +1,30 @@
+problem:  
+Let $(M^4,g(t))$, $t\in[0,T)$, be a Ricci flow on a compact oriented 4‑manifold that develops a finite‑time singularity at $T<\infty$.  
+Write $d\mu_t$ for the Riemannian measure, and define the curvature concentration measures
+\[
+\nu_t := |\mathrm{Rm}_{g(t)}|^2\, d\mu_t.
+\]
+By standard energy monotonicity, $\int_M |\mathrm{Rm}|^2\, d\mu_t$ remains uniformly bounded for $t<T$, so $\nu_t$ forms a family of finite measures.  
+
+It is known that blow‑ups of Type‑I singularities may converge to gradient shrinking solitons $(N,g_\infty,f)$, possibly with cylindrical factors.  However, the **dimensional structure of the singular set in dimension four** remains poorly understood.
+
+**Problem:**  
+Do all weak measure limits  
+\[
+\nu_\infty := \lim_{t_i\to T}\nu_{t_i}
+\]
+of curvature concentration measures under 4‑dimensional Ricci flow have **integer 2‑rectifiable support**?  Equivalently:  
+
+> Can the singular set $\Sigma:=\operatorname{spt}(\nu_\infty)$ be decomposed (up to null‑set) into a countable union of 2‑dimensional immersed surfaces (possibly with singularities in the sense of geometric measure theory)?  
+
+Further, if some tangent flow at a point $p\in\Sigma$ is a shrinker asymptotic to $\mathbb{R}^2\times S^2$, does the associated density
+\[
+\Theta(p):=\lim_{r\to 0}\frac{\nu_\infty(B_r(p))}{\pi r^2}
+\]
+depend only on the isomorphism class of the limiting soliton, i.e. is it a **universal local density**?  
+
+Why is it a "good" problem:  
+* **Analytic depth:** The question recasts the elusive 4‑dimensional singularity structure of Ricci flow in a measure‑theoretic framework, avoiding speculative geometric assumptions yet probing the true fine structure of curvature concentration.  
+* **Bridge between themes:** It unites Ricci‑flow analysis (blow‑ups, solitons) with geometric measure theory (rectifiability and tangent measures).  Understanding whether curvature blow‑up patterns correspond to 2‑rectifiable sets would connect the analytic notion of singularity to the geometric one of varifolds and minimal surfaces.  
+* **Provably open but well‑posed:** No general theorem ensures that the limit $\nu_\infty$ is rectifiable; this is an open problem akin to stratification results known in mean‑curvature flow but unresolved in Ricci flow.  The question has a precise yes/no form and clear mathematical meaning.  
+* **Simple yet far‑reaching:** Its concise formulation—"is the curvature concentration measure 2‑rectifiable?"—is easily stated but its resolution would profoundly clarify the dimensional hierarchy of Ricci‑flow singular sets in 4D, potentially revealing new curvature‑measure monotonicity or $\varepsilon$‑regularity phenomena analogous to those in harmonic map theory.

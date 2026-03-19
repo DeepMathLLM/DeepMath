@@ -1,0 +1,31 @@
+problem:  
+Let \( (M^4, g_0) \) be a smooth, closed, oriented 4‑manifold with positive isotropic curvature, and assume the existence of a family of Ricci flows with surgery \( g_k(t) \), \(t>0\), with surgery scales \( \delta_k \to 0 \), such that \( (M, g_k(t)) \) is non‑collapsing for all \(k,t\).  
+Suppose that, in the sense of **Bamler–Kleiner singular Ricci flow theory**, the space–time sequence \( (M,g_k(t)) \) converges (after passing to a subsequence) to a singular Ricci flow \( (\mathcal{X}, \{g_\infty(t)\}_{t>0}) \), where the regular subset \(\mathcal{X}_{\mathrm{reg}}\) carries a smooth Ricci flow and the singular set \(\mathcal{S} = \mathcal{X} \setminus \mathcal{X}_{\mathrm{reg}}\) has finite \(\mathcal{H}^3\)-measure.
+
+Let \(\nu_k(x,\tau) := (4\pi\tau)^{-2} e^{-\ell_k(x,\tau)}\, dV_{g_k(\tau)}\) be the reduced‑density measures associated with each smooth \(g_k(t)\), where \(\ell_k\) is the reduced distance from a fixed basepoint \((p,0)\).  
+Assume (as conjectured possible in this setting) that after passing to a subsequence, \(\nu_k(\cdot,\tau)\) converges weakly to a limit measure \(\nu_\infty(\tau)\) supported on \(\mathcal{X}_{\mathrm{reg}}\).  
+
+**Question.** —  
+1. Does there exist a natural extension of the pair \( (g_\infty(t), \nu_\infty(t)) \) as a **weak conjugate‑heat flow** across \(\mathcal{S}\), such that for all smooth test functions \(\phi\ge0\),
+   \[
+   \frac{d}{d\tau} \int_{\mathcal{X}} \phi\, d\nu_\infty(\tau)
+   = -\int_{\mathcal{X}_{\mathrm{reg}}} \langle \nabla\phi,\nabla f_\infty\rangle e^{-f_\infty}(4\pi\tau)^{-2} dV_{g_\infty(\tau)} - \mu_{\mathrm{sing}}(\phi;\tau),
+   \]
+   where the defect term \(\mu_{\mathrm{sing}}(\cdot;\tau)\) is a non‑negative measure supported on \(\mathcal{S}\)?  
+
+2. Is the total entropy dissipation at time \(\tau\),
+   \[
+   \mathcal{D}(\tau) := \int_{\mathcal{X}_{\mathrm{reg}}} \big| \mathrm{Ric}_{g_\infty(\tau)} + \nabla^2 f_\infty - \tfrac{1}{2\tau} g_\infty(\tau)\big|^2 e^{-f_\infty}(4\pi\tau)^{-2} dV_{g_\infty(\tau)} + \mu_{\mathrm{sing}}(\mathcal{X};\tau),
+   \]
+   finite for all \(\tau>0\)?  
+   Equivalently, can the entire entropy dissipation of vanishing‑surgery limits be decomposed into a **smooth analytic part** and a **singular defect measure**, analogous to energy‑defect decompositions in other geometric evolution equations?
+
+Why it is a "good" problem:  
+This problem asks whether **entropy dissipation in 4‑dimensional singular Ricci flow limits admits a measure‑theoretic decomposition**, paralleling how “defect measures’’ arise in weak limits of critical geometric PDEs (harmonic map flow, Navier–Stokes, etc.).  
+Unlike the monotonicity questions of previous attempts, this version captures a genuine unknown: whether the fundamental analytic invariant governing Ricci flow (Perelman’s entropy) retains a conservative structure that can be quantified even in the presence of singularities of co‑dimension one or higher.
+
+If such a decomposition exists, it would define a canonical **entropy‑defect measure** quantifying “how much curvature concentration escapes” as one passes to the weak flow limit. This would bridge Ricci flow, geometric measure theory, and weak PDE analysis by introducing a new analytic invariant distinguishing smooth from singular evolutions.
+
+If it fails, the precise mechanism of failure would expose fundamental obstructions to constructing 4‑dimensional singular Ricci flows—revealing the analytic “non‑closure’’ of Perelman’s entropy in higher dimensions.
+
+Because the statement is concise, conceptually anchored in the known 3D theory, and analytically challenging—it probes the intersection of flow PDEs, measure convergence, and 4‑manifold singular structure—this question exemplifies a rigorous, high‑impact, “narrow entrance, profound depth’’ research‑level problem.

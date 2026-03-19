@@ -1,0 +1,37 @@
+problem:  
+Let \( (M^n,g) \) be a **closed, simply connected** Riemannian manifold with sectional curvature satisfying
+\[
+1 \le K_g \le 1+\varepsilon, \qquad \mathrm{diam}(M,g)\le \pi.
+\]
+Define the **normalized local minimal volume** within fixed curvature and diameter constraints by
+\[
+\mathrm{MinVol}_{\text{loc}}(M,g,\eta) =
+\inf \{\operatorname{Vol}(M,g') : 1-\eta \le K_{g'} \le 1+\eta,\ \mathrm{diam}(M,g') \le \pi(1+\eta),\ d_{GH}((M,g'),(M,g)) \le \eta \}.
+\]
+
+**Question (Quantitative local volume rigidity for nearly spherical metrics):**  
+Does there exist, for each dimension \(n\), a function \( \Psi_n(\varepsilon,\eta) \to 0 \) as \( (\varepsilon,\eta)\to(0,0) \) such that, for all such metrics,
+\[
+\frac{\mathrm{MinVol}_{\mathrm{loc}}(M,g,\eta)}{\operatorname{Vol}(M,g)} \ge 1 - \Psi_n(\varepsilon,\eta)?
+\]
+In other words, among metrics that stay close (in Gromov–Hausdorff topology) and equally pinched in curvature, does the volume of a nearly round, positively curved manifold remain **quantitatively stable**?  
+Moreover, is the round sphere the only manifold for which the volume ratio asymptotically attains equality in such a bound?
+
+Why is it a "good" problem:  
+
+1. **Mathematically well-posed and non-trivial:**  
+   This version avoids the triviality introduced by bilipschitz constraints while keeping diameter and curvature normalization to preclude scaling collapse. It defines a meaningful local infimum over genuinely different nearby metrics, in a neighborhood that is small in Gromov–Hausdorff distance.
+
+2. **Balances curvature pinching, topology, and metric stability:**  
+   It probes whether *quantitative sphere-like rigidity* controls the local geometry of positively curved metrics: can one significantly reduce volume without violating near-constant curvature or GH-closeness? This is not trivially answered by metric inequalities.
+
+3. **Bridge from qualitative to quantitative rigidity:**  
+   Classical results (Toponogov, Grove–Petersen) ensure qualitative stability, but say nothing quantitative about how volume behaves under controlled curvature variation. This problem asks for an explicit asymptotic rate, extending rigidity into a metric-analytic regime akin to Colding’s Ricci-based stability, but at the sectional curvature level.
+
+4. **Implications for moduli and analytic stability:**  
+   A positive resolution would yield quantitative control on the local structure of the moduli space of positively curved metrics, showing that volume is stable under high-curvature perturbations. Conversely, counterexamples would illuminate new instabilities in the space of nearly spherical geometries.
+
+5. **Simple, yet at the frontier:**  
+   The problem involves only curvature, volume, and a standard comparison topology, making it transparent yet deeply linked to modern geometric analysis. It sits precisely between current quantitative compactness tools (Cheeger–Colding) and classical rigidity theories, suggesting both analytic and topological significance.
+
+Thus, this is a *good problem*—simple in formulation, deep in content, and asking for new mechanisms linking **positive curvature pinching** to **quantitative volume stability** within a controlled geometric neighborhood.

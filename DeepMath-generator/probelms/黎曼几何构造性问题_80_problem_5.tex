@@ -1,0 +1,40 @@
+problem:  
+Let \((V^{n}, g, J)\) be a Hermitian vector space and let \(\mathcal{R}\) denote the real vector space of **algebraic Kähler curvature tensors**, that is, \(U(n)\)-invariant tensors satisfying the usual Kähler symmetries.  The curvature operator \(R:\Lambda^{2}V\to \Lambda^{2}V\) preserves the real subspace of \((1,1)\)-forms, denoted \(\Lambda^{1,1}(V)\).  Equip \(\Lambda^{1,1}(V)\) with the inner product induced by \(g\).  Let \(\Lambda^{1,1}_0(V)\subset \Lambda^{1,1}(V)\) denote the primitive (traceless) forms, on which \(U(n)\) acts irreducibly.  Define  
+\[
+R^{\#}:\Lambda^{1,1}_0(V)\longrightarrow \Lambda^{1,1}_0(V), \qquad
+\langle R^{\#}(\alpha),\beta\rangle = \langle R(\alpha),\beta\rangle,
+\]
+as the curvature operator restricted to \(\Lambda^{1,1}_0(V)\).
+
+Call a form \(\alpha\in\Lambda^{1,1}_0(V)\) **simple** if \(\alpha=X\wedge JY-JX\wedge Y\) for some orthonormal pair \((X,Y)\).  Simple primitive \((1,1)\)-forms are the Kähler analogues of isotropic 2‑vectors in the Riemannian setting.
+
+Define the **complex isotropic–positive curvature cone**  
+\[
+\mathcal{C}_{\text{CIP}}
+   =\{\,R\in\mathcal{R}\mid 
+       \langle R^{\#}(\alpha),\alpha\rangle\ge0 
+       \text{ for all simple }\alpha\in\Lambda^{1,1}_0(V)\,\}.
+\]
+It is immediate that \(\mathcal{C}_{\text{OBC}}\subseteq \mathcal{C}_{\text{CIP}}\subseteq \mathcal{C}_{\text{Ric}}\), but whether these inclusions are strict or convexity holds globally is unknown.
+
+**Open problem:**  
+(1)  Determine whether, for every compact Kähler manifold \((M^{2n},g,J)\) satisfying \(\operatorname{Rm}(M)\in\mathcal{C}_{\text{CIP}}\) pointwise, the **Frankel intersection property** holds:
+\[
+X^p, Y^q\subset M\ \text{closed complex submanifolds with}\ p+q\ge n
+\quad\Rightarrow\quad
+X\cap Y\neq\varnothing.
+\]
+(2)  If not universally true, characterize the **maximal \(U(n)\)-invariant Frankel-effective subcone**
+\(\mathcal{C}_{\text{CIP}}^{\text{Frankel}}\subseteq\mathcal{C}_{\text{CIP}}\)
+for which the intersection property still holds.  
+(3)  Investigate whether the cone \(\mathcal{C}_{\text{CIP}}\) or its Frankel-effective part is preserved under the Kähler–Ricci flow.
+
+Why is it a "good" problem:  
+This formulation now uses a rigorously defined and intrinsically \(U(n)\)-invariant cone built from the curvature operator on \(\Lambda^{1,1}_0(V)\), eliminating ad hoc coordinate expressions.  It sits naturally within the known representation‑theoretic framework of Kähler curvature cones and links several active research directions:
+
+* **Curvature–Topology Frontier:** It aims to identify the minimal algebraic positivity ensuring global intersection rigidity, extending Frankel’s phenomenon beyond holomorphic bisectional curvature.
+* **Representation Theory and Convex Geometry:** The cone \(\mathcal{C}_{\text{CIP}}\) is defined in a representation‑theoretic manner, allowing explicit algebraic exploration of positivity domains in curvature space.
+* **Flow Invariance and Geometric Analysis:** Asking whether this cone is preserved under Kähler–Ricci flow connects complex differential geometry, analytic evolution equations, and convex‑cone dynamics.
+* **Conceptual Economy:** The problem’s statement uses only an elementary curvature positivity notion and the classical intersection property, yet resolving it would require deep interplay between curvature algebra, geodesic geometry, and global topology.
+
+Because it refines the notion of intermediate curvature positivity in a mathematically coherent, structurally founded way and connects curvature algebra to global intersection phenomena and Ricci‑flow dynamics, this problem is concise, profound, and genuinely situated at a research frontier—a “good” mathematical problem.

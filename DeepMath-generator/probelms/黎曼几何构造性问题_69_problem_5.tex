@@ -1,0 +1,45 @@
+problem:  
+Let \(G=SU(n)\) (\(n\ge4\)) with its standard root decomposition  
+\[
+\mathfrak{su}(n)=\mathfrak{t}\oplus\bigoplus_{\alpha\in\Delta_+}(\mathfrak{g}_\alpha\oplus\mathfrak{g}_{-\alpha}),
+\]
+where \(\mathfrak{t}\) is the Cartan subalgebra.  
+Let \(T^k\subset T^{n-1}\times T^{n-1}\) be a torus acting freely on \(SU(n)\) via  
+\[
+(t,g)\mapsto \operatorname{diag}(t^{A})\, g\, \operatorname{diag}(t^{B})^{-1},
+\]
+for integer matrices \(A,B\in M_{n\times k}(\mathbb{Z})\) satisfying the usual trace‑free and freeness conditions; thus we obtain a smooth compact **torus biquotient**
+\[
+E_{A,B}=T^k\backslash SU(n),
+\]
+generalizing Eschenburg spaces.  
+
+Endow \(SU(n)\) with the family of **root‑diagonal left‑invariant metrics**
+\[
+g_{\boldsymbol{\lambda}}=\lambda_0\,\langle\cdot,\cdot\rangle_0|_{\mathfrak{t}}
++ \sum_{\alpha\in\Delta_+}\lambda_\alpha\, \langle\cdot,\cdot\rangle_0|_{(\mathfrak{g}_\alpha\oplus\mathfrak{g}_{-\alpha})},
+\qquad 
+\boldsymbol{\lambda}=(\lambda_0,(\lambda_\alpha)_{\alpha\in\Delta_+})\in\mathbb{R}_{>0}^{1+|\Delta_+|}.
+\]
+The induced metric on \(E_{A,B}\) via the Riemannian submersion \(SU(n)\to E_{A,B}\) is denoted \(g^{A,B}_{\boldsymbol{\lambda}}\).  
+Define the **positivity region**  
+\[
+\mathcal{P}_{A,B}=\{\boldsymbol{\lambda}\in\mathbb{R}_{>0}^{1+|\Delta_+|}: g^{A,B}_{\boldsymbol{\lambda}}\text{ has positive sectional curvature}\}.
+\]
+
+> **Problem — Local interior of positivity in torus biquotients.**  
+> For some \(n>3\) and some free torus action \(E_{A,B}\), does the positivity region \(\mathcal{P}_{A,B}\) have nonempty interior in its parameter space—i.e. is there an open neighborhood \(U\subset\mathbb{R}_{>0}^{1+|\Delta_+|}\) such that \(U\subseteq \mathcal{P}_{A,B}\)?  
+> Equivalently, are there torus biquotients of \(SU(n)\) whose positive curvature is **robust** under small independent perturbations of at least two root‑scaling parameters, or must all positive examples lie on lower‑dimensional boundary strata where curvature inequalities are exactly saturated?
+
+Why is it a "good" problem:  
+This version eliminates prior ambiguities and logical issues by fixing a **specific, compatible subgroup type** (torus actions commuting with the root decomposition) and working within a **well‑defined finite‑dimensional metric family** where O’Neill’s curvature formulas apply explicitly.
+
+- **Logical soundness:** The manifold \(E_{A,B}\) is fixed; only the invariant metric varies.  The root‑diagonal assumption guarantees right‑\(T^k\)-invariance, so the quotient construction is consistent.  
+- **Concrete geometric target:** The question becomes: does positive curvature persist on an open set of scaling parameters, or only on measure‑zero subsets?  This directly probes the analytic geometry of positivity constraints in a manageable algebraic setting.  
+- **Depth and significance:**  
+  - A positive answer would reveal new **stable mechanisms** of positive curvature in biquotients, contrasting sharply with the fine‑tuned Eschenburg metrics.  
+  - A negative answer would indicate that positive curvature necessarily occurs on **rigid, codimension‑one varieties**, motivating new rigidity theorems.  
+- **Bridges multiple fields:** The problem intertwines Lie theory (root decomposition), Riemannian geometry (curvature formulas), and real‑algebraic geometry (the semialgebraic structure of \(\mathcal{P}_{A,B}\)).  
+- **Simple to state, profound to resolve:** Despite its succinct expression in matrix and parameter terms, answering it would reshape our understanding of how positive curvature behaves under deformations in one of geometry’s most symmetric yet mysterious settings.
+
+Hence it is a well‑posed and “good” research problem: cleanly stated, logically solid, and situated at the frontier between rigidity and flexibility in Riemannian geometry of biquotients.

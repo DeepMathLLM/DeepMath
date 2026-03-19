@@ -1,0 +1,37 @@
+problem:  
+Let \((M^n,g(t),\phi(t))\), \(t\in[0,T)\), be a smooth solution of the **harmonic–Ricci flow**  
+\[
+\begin{cases}
+\frac{\partial g}{\partial t} = -2\,\mathrm{Ric}_{g(t)} + 2\alpha\,\nabla \phi(t)\otimes \nabla \phi(t),\\[3pt]
+\frac{\partial \phi}{\partial t} = \tau_{g(t)}(\phi),
+\end{cases}
+\]
+on a closed manifold \(M\) with compact target \((N,h)\) and fixed coupling constant \(\alpha>0\).  
+
+A **harmonic–Ricci breather** is called a non-stationary solution for which there exist a constant \(\lambda>0\), a diffeomorphism \(F:M\to M\), and a time shift \(T>0\) such that  
+\[
+g(T) = \lambda\,F^*g(0), \qquad \phi(T) = F^*\phi(0).
+\]
+(A steady, shrinking, or expanding breather corresponds to \(\lambda=1\), \(\lambda<1\), or \(\lambda>1\), respectively.)
+
+---
+
+**Conjecture / Problem:**  
+For the harmonic–Ricci flow on a closed \(M\) with compact target \((N,h)\), does every breather necessarily arise from a **harmonic–Einstein soliton**, i.e. satisfy  
+\[
+\mathrm{Ric}_g - \alpha\,\nabla \phi\otimes\nabla \phi = c g,\qquad \tau_g(\phi)=0
+\]
+for some constant \(c\)? 
+
+Equivalently, are there any genuine nontrivial harmonic–Ricci breathers (steady, shrinking, or expanding) that are not solitons?
+
+If not, can one construct or identify a **monotone entropy functional** for the harmonic–Ricci flow whose strict monotonicity rules out nontrivial breathers, analogous to Perelman’s entropy in Ricci flow but incorporating the coupling term \(\alpha|\nabla \phi|^2\)?
+
+---
+
+Why is it a "good" problem:  
+This problem addresses one of the deepest structural questions in the study of coupled geometric flows: whether the harmonic–Ricci flow, which unites Ricci flow and harmonic map heat flow, inherits the rigidity phenomenon discovered by Perelman—namely that breathers must be solitons. It combines geometric analysis, differential geometry, and PDE techniques, extending Perelman’s ideas into a setting where additional fields (\(\phi\)) interact nontrivially with curvature evolution.
+
+The conjecture is **mathematically precise yet conceptually simple**: it asks whether periodic or self-similar geometries exist beyond stationary harmonic–Einstein configurations. Its resolution would illuminate whether coupling with a harmonic map breaks or preserves the entropy rigidity of Ricci flow, potentially leading to new monotonic quantities for coupled flows or to the discovery of exotic self-similar structures.  
+
+Because it lies at the intersection of geometric flow theory, analysis of nonlinear PDEs, and mathematical physics (gravity–scalar field analogs), the problem embodies depth, simplicity, and interdisciplinarity—hallmarks of a “good” and potentially seminal research problem.

@@ -1,0 +1,40 @@
+problem:  
+Let \((M_i, g_i)\) be a sequence of compact \(n\)-dimensional Riemannian manifolds satisfying  
+\[
+\mathrm{sec}_{g_i} \ge -\varepsilon_i, \qquad \varepsilon_i \to 0, \qquad \mathrm{diam}(M_i) \le 1.
+\]
+Assume that \((M_i, g_i)\) converge in the Gromov–Hausdorff sense to a compact Alexandrov space \(X\) with curvature \(\ge 0\).  
+
+For a point \(x \in X\), let  
+\[
+k(x) := \max\{\, \dim E \mid \text{every tangent cone } T_xX \text{ contains an isometric Euclidean factor } E \cong \mathbb{R}^{\dim E}\,\}
+\]
+denote the **maximal Euclidean splitting dimension** at \(x\).  Perelman showed that the subset of points with \(k(x) = k\) forms a locally finite stratification that captures regular–singular features of \(X\).
+
+**Problem (Intrinsic nilpotent stratification conjecture):**  
+Does there exist a canonical stratification  
+\[
+X = \bigsqcup_{k=0}^n X_k, \qquad X_k = \{x \in X : k(x) = k\},
+\]
+such that for all sufficiently large \(i\), the Gromov–Hausdorff approximation maps
+\[
+\pi_i \colon M_i \to X
+\]
+can be chosen so that for each stratum \(X_k\):
+
+1. the preimage \(M_{i,k} = \pi_i^{-1}(X_k)\) is a smooth submanifold (up to small perturbation) of \(M_i\);  
+2. there exist local **infranil bundle structures**
+   \[
+   N_{i,k} \longrightarrow M_{i,k} \longrightarrow X_k
+   \]
+   whose nilpotent Lie structure models the local collapse of \(M_i\) onto \(X\); and  
+3. the associated nilpotent action types stabilize in the limit and depend only on \(X_k\), not on the specific sequence \((M_i, g_i)\) realizing it.  
+
+Equivalently: is there an *intrinsic isotropy decomposition* of almost nonnegatively curved Gromov–Hausdorff limit spaces that canonically encodes the nilpotent symmetries responsible for their collapse, independent of the approximating sequence?
+
+Why is it a "good" problem:  
+This problem refines the classical Perelman–Petrunin stratification of Alexandrov spaces by asking whether the **nilpotent structure** predicted by Cheeger–Fukaya–Gromov collapse theory can be recovered *intrinsically* from the metric geometry of the limit.  In other words, can one “see” from the singular metric alone the latent Lie-theoretic symmetries driving the collapse?  
+
+The question directly connects two major frameworks in modern geometry: the metric stratification theory of Alexandrov spaces (purely intrinsic and sequence-independent) and the analytic, sequence-dependent nilpotent collapse theory of smooth manifolds.  Demonstrating that these yield the same canonical decomposition would unify distant areas—collapsing analysis, Lie group actions, and Alexandrov geometry—under a single structural paradigm.  
+
+The statement is conceptually simple, involving only limits of almost nonnegatively curved manifolds and intrinsic geometric decomposition of their limits, yet it strikes at the most intricate issues of curvature, topology, and metric structure. Whether positive or negative, a resolution would profoundly shape our understanding of how curvature bounds govern singularities in geometry. Thus, it represents a “good” problem: simple to state, deeply foundational, and bridging distinct mathematical domains.

@@ -1,0 +1,41 @@
+problem:  
+Let \( (M^n, g_0) \) be a compact, simply connected Riemannian manifold (\(n \ge 4\)) with **positive sectional curvature**.  Consider the **normalized Ricci flow**
+\[
+\frac{\partial g}{\partial t} = -2\,\mathrm{Ric}(g) + \frac{2}{n}r(g)g,
+\]
+and let \(R(t)\) denote the curvature operator of \(g(t)\).  The associated curvature ODE is
+\[
+\dot{R} = Q(R) = R^2 + R^{\#}.
+\]
+Let \(\lambda_1(R)\le \cdots \le \lambda_N(R)\) (\(N=\tfrac{n(n-1)}{2}\)) be the eigenvalues of \(R\) with respect to the canonical inner product on \(\Lambda^2\mathbb{R}^n\).
+
+**Open problem:**  
+Does there exist a nontrivial **spectral curvature entropy functional**
+\[
+\mathcal{E}(R) = \frac{1}{N}\sum_{i=1}^N F\!\left(\frac{\lambda_i(R)}{\mathrm{tr}(R)/N}\right),
+\]
+where \(F:(0,\infty)\to\mathbb{R}_{>0}\) is a smooth convex function satisfying \(F(1)=0\), such that:
+
+1. For all \(R\) with \(\mathrm{Sec}(R)>0\), the evolution of \(R\) under \(\dot{R}=Q(R)\) satisfies
+   \[
+   \frac{d}{dt}\mathcal{E}(R(t)) \le 0,
+   \]
+   with equality if and only if \(R\) has constant sectional curvature.
+
+2. The same monotonicity extends to the **Ricci flow on \(M^n\)**:
+   \[
+   t \mapsto \int_M \mathcal{E}(R_{g(t)})\,d\mu_{g(t)}
+   \quad\text{is nonincreasing.}
+   \]
+
+In other words, does there exist an **algebraically defined curvature entropy** that measures isotropization of the curvature operator and decreases strictly under Ricci flow until roundness is achieved?  
+A negative answer would imply that any Lyapunov functional controlling isotropization must necessarily involve global PDE structure rather than purely curvature-algebraic quantities.
+
+Why is it a "good" problem:  
+This formulation transforms the imprecise question of “asymptotic pinching” into a **precise search for a curvature-entropy functional** built from the **spectrum of the curvature operator**, analogous to how Perelman’s entropy functionals measure scalar or Ricci curvature dispersion.  It connects three major conceptual axes:  
+
+- **Algebraic evolution** (the ODE \(\dot{R}=Q(R)\)), controlling infinitesimal curvature dynamics;  
+- **Global analysis** (integrated monotonic functionals along Ricci flow), requiring interplay between local algebraic curvature inequalities and PDE structure;  
+- **Geometric convergence** (roundness as the unique equality case).
+
+The problem is mathematically sharp: one must either construct an explicit convex \(F\) with the claimed monotonicity or prove that no such \(F\) exists due to nonconvex evolution of the curvature spectrum.  Resolving it would clarify whether **sectional curvature isotropization** can be governed by a true Lyapunov principle—analogous to Perelman’s role for scalar curvature—thus bridging the gap between curvature-cone invariance, entropy structure in geometric flows, and algebraic spectral geometry.

@@ -1,0 +1,30 @@
+problem:  
+Let \(G = SU(3)\), and let \(P\subset G\) be the standard \(U(2)\subset SU(3)\).  
+Consider the one-parameter family of left-invariant metrics \(g_\lambda\) on \(SU(3)\) defined by
+\[
+g_\lambda(X,Y) =
+\begin{cases}
+\langle X,Y\rangle_0, & X,Y\in \mathfrak{p} = \mathrm{Lie}(P),\\
+\lambda\,\langle X,Y\rangle_0, & X,Y\in \mathfrak{p}^{\perp},
+\end{cases}
+\]
+where \(\langle\cdot,\cdot\rangle_0\) is the bi-invariant metric arising from the negative Killing form and \(0<\lambda<1\).  
+For integer triples \(p=(p_1,p_2,p_3)\), \(q=(q_1,q_2,q_3)\) with \(\sum p_i = \sum q_i\) and free circle action
+\[
+(z,g)\mapsto \operatorname{diag}(z^{p_1},z^{p_2},z^{p_3})\, g\, \operatorname{diag}(z^{-q_1},z^{-q_2},z^{-q_3}),
+\]
+let \(E_{p,q}=S^1_{p,q}\backslash SU(3)\) with the quotient metric \(g^{(\lambda)}_{p,q}\) induced from \(g_\lambda\).  
+For many parameter pairs \((p,q)\) satisfying Eschenburg’s positivity inequalities, \(g^{(\lambda)}_{p,q}\) has positive sectional curvature.
+
+Now fix some particular \(\lambda=\lambda_*\) within a positive-curvature range, and ask:
+
+> **Rigidity problem.**  
+> Suppose two Eschenburg spaces \(E_{p,q}\) and \(E_{p',q'}\) are diffeomorphic as smooth manifolds (as verified, for example, by equality of all Kreck–Stolz invariants) and each admits positive curvature for the same fixed metric parameter \(\lambda_*\).  
+> Are the corresponding canonical quotient metrics \(g^{(\lambda_*)}_{p,q}\) and \(g^{(\lambda_*)}_{p',q'}\) necessarily isometric under some automorphism of \(SU(3)\) together with reparametrization of the \(S^1\) action, or can distinct parameter pairs yield diffeomorphic manifolds that carry genuinely different (\emph{non-isometric}) canonical positively curved metrics?
+
+Why is it a "good" problem:  
+This formulation fully specifies both the metric class and the equivalence relations, eliminating earlier ambiguities. It asks a concrete rigidity question within a tightly controlled, explicit family of examples where tools from Lie groups, curvature computation, and diffeomorphism classification can all be brought to bear.  
+
+The problem sits precisely at the intersection of Riemannian geometry (uniqueness and moduli of positively curved metrics), topology (classification via Kreck–Stolz invariants), and symmetry analysis (automorphisms of \(SU(3)\)).  
+A positive resolution would reveal deep rigidity linking geometric curvature data to topological type; a negative one would expose genuine moduli of positive curvature metrics—something scarcely known to exist.  
+Because the question is cleanly stated, technically well-posed, and probes a boundary phenomenon in the theory of positive curvature, it exemplifies a “good” mathematical problem: simple to state, profound in implication, and bridging geometry, topology, and Lie theory.

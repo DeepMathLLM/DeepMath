@@ -1,0 +1,32 @@
+problem:  
+Let \( (M^n, g_0) \) be a compact, connected, smooth Riemannian manifold with nonempty boundary \( \partial M \), \( n \ge 3 \).  
+Assume that:  
+- the interior curvature operator of \(g_0\) is **positive**, and  
+- the boundary \( \partial M \) is **strictly convex**, i.e. all eigenvalues of its shape operator \(S_0\) (with respect to the inward normal) are positive.
+
+Consider the **Ricci flow with Dirichlet boundary condition**  
+\[
+\frac{\partial g}{\partial t} = -2\,\mathrm{Ric}(g), \qquad g|_{\partial M} = g_0|_{\partial M}.
+\]
+Such a flow is known to exist for a short time under suitable compatibility conditions.
+
+**Question (main):**  
+Does the Dirichlet Ricci flow preserve strict boundary convexity, that is, if \(S_0>0\), does one necessarily have \(S_t>0\) for as long as the flow exists?  
+In other words, is boundary convexity a parabolic invariant under the Ricci flow when the boundary metric is fixed?
+
+**Further motivation (secondary question):**  
+If convexity is preserved for all time and the normalized flow (rescaled to keep total volume constant)
+\[
+\frac{\partial \tilde g}{\partial t}
+   = -2\,\mathrm{Ric}(\tilde g)
+     + \tfrac{2}{n}r(\tilde g)\,\tilde g, 
+   \qquad \tilde g|_{\partial M}=g_0|_{\partial M},
+\]
+exists globally, can its limit (if any) be an **Einstein filling** of the prescribed boundary metric with **constant mean curvature boundary**?
+
+Why is it a "good" problem:  
+The principal question—preservation of strict boundary convexity under Ricci flow with Dirichlet data—is precise, well-posed, and genuinely open. Analytically, while the Dirichlet boundary condition provides short-time existence, no general mechanism ensures that positivity of the boundary shape operator persists: Hamilton’s tensor maximum principle is an interior tool and does not control evolution at the boundary. Demonstrating convexity preservation would require developing new **boundary tensor maximum principles** coupling the boundary shape operator’s evolution to interior curvature evolution—a mathematically deep challenge bridging PDE analysis and Riemannian geometry.
+
+Geometrically, the problem asks whether Ricci curvature diffusion respects a natural extrinsic condition on the boundary. Success would establish a new invariant geometric class under Ricci flow (“strictly convex Dirichlet boundaries”), while failure would indicate fundamental obstructions to controlling extrinsic geometry through intrinsic curvature evolution.
+
+The secondary question places this analytic issue in the broader context of **Einstein fillability** of a given boundary metric—a geometric motivation rather than a necessary part of the well-posed core.  Overall, the problem is simple to state yet profoundly difficult, connecting geometric flows, boundary curvature analysis, and the Einstein/CMC boundary problem, thereby exemplifying a “good” research-level mathematical problem.

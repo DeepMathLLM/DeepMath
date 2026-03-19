@@ -1,0 +1,53 @@
+problem:  
+Let \((M^n,g,\phi)\) be a compact **harmonic–Einstein pair**, i.e.  
+\[
+\mathrm{Ric}_g - \alpha\,\nabla\phi\otimes \nabla\phi = c\,g, \qquad \tau_g(\phi)=0,
+\]
+for constants \(c\in \mathbb{R}\), \(\alpha>0\).  
+Consider the harmonic–Ricci flow in DeTurck gauge:
+\[
+\begin{cases}
+\frac{\partial g}{\partial t} = -2(\mathrm{Ric}_g - \alpha\,\nabla\phi\otimes\nabla\phi)+\mathcal{L}_V g,\\[4pt]
+\frac{\partial \phi}{\partial t} = \tau_g(\phi)+\mathcal{L}_V\phi,
+\end{cases}
+\]
+where \(V=V(g)\) is the DeTurck vector field chosen so that the system is strictly parabolic.
+
+Let \((h,\psi)\) be a perturbation of \((g,\phi)\), and denote by  
+\(\mathcal{L}_{(g,\phi)}(h,\psi)\) the **linearization** of the right-hand side about \((g,\phi)\). Explicitly, in divergence-free gauge,
+\[
+\mathcal{L}_{(g,\phi)}(h,\psi)
+=\Big(\Delta_L h - 2\alpha\,(\nabla\phi\otimes\nabla\psi + \nabla\psi\otimes\nabla\phi),\; \Delta_g \psi \Big),
+\]
+where \(\Delta_L\) is the Lichnerowicz Laplacian acting on symmetric 2‑tensors.
+
+---
+
+**Revised Open Problem / Conjecture:**  
+Fix \(\alpha>0\) and a compact target manifold \((N,h)\).  
+For each harmonic–Einstein pair \((M^n,g,\phi)\), consider the spectrum of \(\mathcal{L}_{(g,\phi)}\) acting on the \(L^2\)-orthogonal complement of the infinitesimal gauge directions (infinitesimal diffeomorphisms and scalings).
+
+1. Does there exist a **Lichnerowicz-type lower bound**
+   \[
+   \langle \mathcal{L}_{(g,\phi)}(h,\psi), (h,\psi) \rangle_{L^2(g)} \le -\,\lambda_1(M,g,\phi,\alpha)\,\|(h,\psi)\|_{L^2(g)}^2,
+   \]
+   where \(\lambda_1(M,g,\phi,\alpha)>0\) depends only on geometric bounds for \((M,g,\phi)\), such as dimension, curvature, and \(\alpha\), but not on higher-order details?  
+
+2. Is there a **universal positive constant** \(\varepsilon(n,\alpha)\) such that whenever \((M,g,\phi)\) satisfies the harmonic–Einstein equations with nonnegative curvature operator and energy density \(|\nabla\phi|^2\le K(\alpha)\), one has \(\lambda_1(M,g,\phi,\alpha)\ge \varepsilon(n,\alpha)\)?  
+
+Equivalently: is there a **universal spectral gap** ensuring exponential return to equilibrium for all small perturbations of such harmonic–Einstein pairs under the DeTurck harmonic–Ricci flow?
+
+If not, can one construct examples (perhaps by varying \(\alpha\) or choosing negatively curved targets) where the gap closes, leading to marginally stable or unstable coupled geometries?
+
+---
+
+Why is it a "good" problem:  
+This formulation gives a **precisely defined operator and spectral question** central to the analytic structure of the harmonic–Ricci flow. It asks whether there exists a **uniform spectral gap phenomenon** analogous to the classical Lichnerowicz–Obata bound but for the **coupled** system of metric and harmonic map evolution.  
+
+It is a “good” problem because:
+- **Conceptual simplicity:** the statement concerns boundedness of the first positive eigenvalue of the linearized stability operator; even non-experts can grasp the idea of a minimal decay rate for small perturbations.
+- **Depth and unknown status:** while spectral gaps are known for Einstein metrics and Ricci solitons, the coupled setting introduces new tensor–scalar interactions whose spectral geometry is unexplored; even establishing sign or dependence on \(\alpha\) is wide open.
+- **Bridge between fields:** the problem connects geometric analysis (curvature and Laplacians), harmonic map theory, and spectral theory of elliptic operators. Techniques may draw from PDE analysis, geometric flow stability, and mathematical physics (Einstein–scalar field analogs).
+- **Potential impact:** a positive universal lower bound would imply **dynamical rigidity and exponential stability** of harmonic–Einstein metrics, while counterexamples would identify geometric mechanisms of instability—both outcomes yielding new insight into coupled geometric flows.
+
+Thus the problem is mathematically precise, deeply motivated, cross-disciplinary, and situated at the frontier of geometric analysis.

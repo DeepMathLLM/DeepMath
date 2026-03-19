@@ -1,0 +1,28 @@
+problem:  
+Let \( (M^n,g) \) be a compact, simply connected Riemannian manifold with positive sectional curvature \(K>0\).  
+At each point \(p\in M\), denote the curvature operator  
+\[
+R_p:\Lambda^2T_pM\to\Lambda^2T_pM
+\]
+with eigenvalues \(0<\lambda_1(p)\le\cdots\le\lambda_N(p)\), \(N=\tfrac{n(n-1)}{2}\).  
+Define, for \(a\in(0,1)\), the *traceless‑spectral cone*
+\[
+\mathcal{C}_a=\{R>0: \tfrac{\lambda_1(p)}{\operatorname{tr}(R_p)}\ge a\}.
+\]
+Note that the normalization by the trace makes \(\mathcal{C}_a\) an \(\mathrm{O}(n)\)-invariant, scale‑free subset of curvature operators, representing pinching toward constant curvature along the line spanned by \(\mathrm{Id}_{\Lambda^2}\).
+
+**Problem:**  
+For each \(n\ge4\), determine whether there exists \(a_n>0\) such that the cone \(\mathcal{C}_{a_n}\) is preserved under the Hamilton ODE  
+\[
+\partial_tR = R^2+R^\#,
+\]
+and furthermore, that if a compact \(M^n\) has curvature operators in \(\mathcal{C}_{a_n}\) at time \(0\), then the normalized Ricci flow exists for all time and converges to a constant‑curvature metric.  
+Equivalently, does a uniform lower bound on the minimum eigenvalue relative to the trace guarantee convergence of the curvature operator to the constant‑curvature ray under the flow?  
+If not, can one characterize the maximal open convex subset of positive curvature operators that both (i) contain the constant‑curvature ray and (ii) are invariant under the ODE?
+
+Why is it a "good" problem:  
+This formulation turns the spectral pinching idea into an **invariance classification** problem for the Hamilton ODE, aligning directly with the modern program pioneered by Hamilton, Böhm–Wilking, and Brendle–Schoen. It asks for a quantitative, *spectrally defined* invariant cone bridging curvature algebra and flow dynamics: a natural intermediary between known cones (positive, 2‑positive, PIC) and full constant curvature.  
+
+The problem probes how far the Ricci‑flow invariance of curvature positivity can be relaxed toward *near‑isotropy*, defined not by specific quadratic inequalities but by spectral proximity to the identity. Discovering or ruling out an invariant threshold \(a_n\) would clarify whether spectral pinching alone—without explicit algebraic curvature identities—suffices to control Ricci‑flow evolution.  
+
+It is expressible in elementary terms yet conceptually deep, asking for the *border between algebraic positivity and dynamical stability* of curvature under flow. Progress would enhance our understanding of invariant curvature cones and possibly reveal new geometric evolution principles. Hence, it stands as a meaningful and forward‑looking research problem at the geometry and analysis interface.

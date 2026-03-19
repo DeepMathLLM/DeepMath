@@ -1,0 +1,33 @@
+problem:  
+Let \( \mathfrak{C}_{\delta} \subset \mathrm{Sym}^2(\Lambda^2\mathbb{R}^n) \) denote the **algebraic cone of curvature operators with \(\delta\)-pinched positive sectional curvature**, i.e.  
+\[
+\mathfrak{C}_{\delta} = \{ R : \mathrm{Sec}(R)>0,\, \tfrac{\min_{\sigma}\mathrm{Sec}(R)}{\max_{\sigma}\mathrm{Sec}(R)} \ge \delta \}.
+\]  
+For each \(n \ge 4\), consider the curvature ODE associated with the Ricci flow,  
+\[
+\dot R = Q(R) = R^2 + R^{\#}.
+\]
+
+It is known (Brendle–Schoen) that the cone \(\mathfrak{C}_{1/4}\) is **Ricci-flow invariant** and, consequently, \(1/4\)-pinched curvature ensures convergence of the normalized Ricci flow to a constant‑curvature metric.  
+
+**Open problem:**  
+Does there exist a real number \( \delta_* \in (0,1/4) \) — possibly depending on \( n \) — such that  
+\[
+R(0)\in \mathfrak{C}_{\delta_*} \quad \Rightarrow \quad R(t)\in \mathfrak{C}_{\delta_*}\text{ for all }t\ge0,
+\]
+i.e. **\(\mathfrak{C}_{\delta_*}\)** is forward‑invariant under \( \dot R = Q(R)\)?  
+
+Equivalently:  
+
+1. In each fixed dimension \(n\ge4\), can one identify the **sharp algebraic pinching threshold** \( \delta_*^{(n)} \), with \(0 < \delta_*^{(n)} \le 1/4\), such that Ricci flow preserves positivity and curvature ratios for all \( \delta > \delta_*^{(n)} \)?  
+2. If such \( \delta_*^{(n)} \) exists for all \(n\), does it admit a **dimension‑independent limit** \( \lim_{n\to\infty} \delta_*^{(n)} > 0 \)?  
+
+A positive answer would mathematically refine the Brendle–Schoen 1/4‑pinching phenomenon to a family of invariant cones parameterized by \( \delta \), yielding an **analytic stability threshold** for isotropization of positive curvature under Ricci flow.  
+A negative answer would reveal that the \(1/4\)-pinching constant represents a true **analytic rigidity bound** arising from the nonlinear structure of \( Q(R) \).
+
+Why is it a "good" problem:  
+This formulation upgrades the vague “can the \(1/4\) constant be lowered?” question into a **precise algebraic–analytic statement**: determine the smallest curvature‑pinching constant \(\delta\) whose cone is invariant under the Ricci‑flow curvature ODE. It seeks to bridge the gap between **curvature pinching geometry** and **nonlinear invariance theory** in the space of curvature tensors.  
+
+The problem is simultaneously simple and profound: guessing whether \(\mathfrak{C}_\delta\) is invariant under \(Q(R)\) immediately connects local curvature ratio geometry with global flow dynamics. Any progress would require developing new tools to analyze the evolution of curvature cones—techniques combining **algebraic curvature inequalities**, **high‑dimensional convex analysis**, and **nonlinear PDE stability theory**.  
+
+Thus the problem directly targets the boundary between algebraic and analytic control in Ricci flow, offering a concrete question whose solution would substantially deepen our understanding of **positive curvature stability and convergence mechanisms** far beyond the classical 1/4‑pinched case.

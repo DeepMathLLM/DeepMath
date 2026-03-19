@@ -1,0 +1,48 @@
+problem:  
+Let \((M^n, g(t))_{t \in (-\infty, 0]}\) be a complete ancient solution to the Ricci flow with bounded curvature and nonnegative curvature operator.  
+For each \(t<0\), consider Perelman's \(\mathcal{W}\)-functional
+\[
+\mathcal{W}(g(t), f, \tau) = \int_M \left[\tau(|\nabla f|^2 + R) + f - n\right]
+(4\pi\tau)^{-n/2} e^{-f}\, dV_{g(t)}
+\]
+and define \(f_t\) to be an almost-minimizer of \(\mathcal{W}(g(t),\cdot,|t|)\) with \(\mu(g(t),|t|) = \mathcal{W}(g(t),f_t,|t|) + o(1)\) as \(t\to -\infty\).
+
+Assume further that for every sequence \(t_k \to -\infty\), after normalization of basepoints at approximate centers of mass \(x_k\) of \(e^{-f_{t_k}}\), the backward rescaled flows
+\[
+\tilde g_k(s) := |t_k|^{-1} g(t_k + |t_k| s), \quad s \in (-\infty, 0],
+\]
+subconverge (in the pointed Cheeger–Gromov sense) to a complete nonflat gradient shrinking Ricci soliton \((M_\infty,g_\infty(s),f_\infty)\).
+
+**Open problem:**  
+If the sequence of near-minimizing potentials \(f_t\) asymptotically satisfies
+\[
+\lim_{t\to-\infty}
+\| \nabla^2_{g(t)} f_t + \mathrm{Ric}_{g(t)} - \tfrac{1}{2|t|}g(t)\|_{L^2_{\mathrm{loc}}} = 0,
+\]
+does it follow that the entire ancient flow \((M,g(t))\) is (after time scaling and diffeomorphism) a gradient shrinking Ricci soliton?  
+Equivalently, does approximate *entropy-based soliton structure* at \(t\to-\infty\) imply actual self-similarity of the flow?
+
+---
+
+Why is it a "good" problem:  
+This formulation roots the analytic alignment condition in a natural Ricci flow structure—Perelman’s \(\mathcal{W}\)-entropy—and thereby expresses a deep and coherent research question:
+
+1. **Natural analytic source:**  
+   Rather than imposing an ad hoc "alignment," it is now assumed that \(f_t\) arises from minimizing (or almost minimizing) the canonical entropy functional. The question thus directly touches the intrinsic analytic geometry of Ricci flow.
+
+2. **Bridge between entropy and self-similarity:**  
+   Perelman’s entropy functional attains equality precisely on gradient shrinking solitons; the problem asks whether *asymptotic near-equality* in entropy is strong enough to impose genuine soliton behavior for ancient flows—a profound connection between entropy rigidity and geometric self-similarity.
+
+3. **Interaction of asymptotics and rigidity:**  
+   Known results show that in dimension three or under κ-noncollapsing, ancient noncollapsed solutions often possess self-similar limits. But it remains entirely open whether entropy rigidity alone—without collapsedness or curvature pinching—controls the global form. This problem directly probes that gap.
+
+4. **Conceptual simplicity:**  
+   The question can be summarized in simple geometric terms:  
+   “If the entropy minimizing functions make the ancient flow nearly solitonic in the distant past, must the flow actually *be* a soliton?”  
+   Yet resolving this would demand subtle new insights connecting geometric measure limits, analytic stability, and soliton rigidity.
+
+5. **Broader significance:**  
+   A positive resolution would suggest a far-reaching rigidity principle: self-similarity as an *entropy attractor* state among ancient solutions. Conversely, a counterexample would reveal new entropy-degenerate ancient geometries.  
+   Either outcome would profoundly affect the classification theory of ancient Ricci flows.
+
+Hence, the problem achieves mathematical soundness, natural motivation from within Ricci flow structure, deep conceptual connections, and broad potential impact—satisfying all criteria for a "good" research-level problem.

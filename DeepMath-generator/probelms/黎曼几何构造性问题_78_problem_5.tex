@@ -1,0 +1,50 @@
+problem:  
+Let \( (M^n,g) \) be a **closed Riemannian manifold** satisfying a **two-sided sectional curvature pinching**
+\[
+-1 \le K_g \le 1.
+\]
+Let \( h(M,g) \) denote the **volume entropy** of the universal cover,  
+\[
+h(M,g) = \lim_{r\to \infty} \frac{1}{r}\log \operatorname{Vol}_{\widetilde g}(B_{\widetilde g}(p,r)).
+\]
+For the constant-curvature metrics, \(h(S^n,g_S)=0\) and \(h(\mathbb{H}^n,g_{\mathbb{H}}) = n-1\).
+
+**Question (Two-sided curvature control and quantitative entropy–geometry rigidity):**  
+Suppose that \( (M^n,g) \) has curvature in \([-1,1]\) and that its entropy \(h(M,g)\) satisfies
+\[
+h(M,g) \ge (n-1) - \varepsilon
+\]
+for small \(\varepsilon>0\).  
+Is it true that there exists a function \(f_n(\varepsilon)\to0\) such that
+\[
+d_{GH}((M,g),(\mathbb{H}^n/\Gamma, g_{\mathbb{H}})) \le f_n(\varepsilon)
+\]
+for some cocompact lattice \(\Gamma<\mathrm{Isom}(\mathbb{H}^n)\)?  
+Equivalently, does near-saturation of the **upper entropy bound** under two-sided curvature control *quantitatively* enforce **Gromov–Hausdorff nearness** to a hyperbolic space form?
+
+Moreover, is the rate \(f_n(\varepsilon)\) universal in \(n\), and can one show that as \( \varepsilon\to0 \),
+\[
+| \operatorname{Vol}(M,g) - \operatorname{Vol}(\mathbb{H}^n/\Gamma) | = O( f_n(\varepsilon) ) ?
+\]
+That is, does near-maximal volume entropy force both metric and volumetric closeness to the hyperbolic model under bounded sectional curvature?
+
+Why is it a "good" problem:  
+
+1. **Mathematically consistent and nontrivial:**  
+   Here both positive and negative curvature directions are allowed, so entropy can vary between \(0\) (spherical) and \(n-1\) (hyperbolic). This avoids the degeneracy issues that occur under purely positive curvature; the invariant carries genuine geometric information.
+
+2. **Extends classical entropy rigidity:**  
+   The Besson–Courtois–Gallot theorem gives *exact* rigidity for locally symmetric metrics of negative curvature, but offers no explicit quantitative estimate. Introducing a two‑sided curvature window broadens the class substantially and asks for *quantitative stability*, rather than mere equality, of the entropy–volume relationship.
+
+3. **Bridges dynamics, curvature, and metric geometry:**  
+   Volume entropy is both a dynamical and a large‑scale geometric quantity. The problem connects:
+   - dynamical invariants (entropy),
+   - metric limits (Gromov–Hausdorff convergence),
+   - curvature pinching (comparison geometry).  
+   Achieving a function \(f_n(\varepsilon)\) would unify these disparate threads into a quantitative geometric framework.
+
+4. **Quantitative rigidity frontier:**  
+   The question seeks rate estimates analogous to those known in synthetic curvature or Ricci‑bound settings (e.g., Cheeger–Colding), but in the much subtler curvature‑pinched and entropy‑controlled regime. It is therefore naturally positioned at a present frontier in geometric analysis.
+
+5. **Elegant, simple statement, deep implications:**  
+   The formulation uses only curvature bounds, entropy, and Gromov–Hausdorff distance—three fundamental and intuitive geometric objects. Yet solving it would demand new analytic and dynamical techniques to control how small entropy defects govern global geometry, capturing the essence of “narrow entrance, profound depth.”

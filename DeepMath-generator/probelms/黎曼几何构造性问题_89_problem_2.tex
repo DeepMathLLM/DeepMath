@@ -1,0 +1,33 @@
+problem:  
+Let \( (M^n, g_0) \) be a compact Riemannian manifold with smooth boundary \( \partial M \), \( n \ge 3 \), such that \( \partial M \) is **minimal** (\(H(g_0|_{\partial M})=0\)) and the metric extends smoothly to a **doubled manifold** \( \hat M \) obtained by reflection across \( \partial M \).  
+Consider the **free‑boundary Ricci flow**  
+\[
+\frac{\partial g}{\partial t} = -2\,\mathrm{Ric}(g), \qquad H(g|_{\partial M})=0,\quad g|_{\partial M}\in [g_0|_{\partial M}],
+\]
+and assume that the reflection symmetry is preserved for all time so that \(g(t)\) extends smoothly to the doubled flow \( \hat g(t) \) on \( \hat M \).
+
+Let \( f:M\to\mathbb R \) satisfy the **Neumann condition** \( \partial_\nu f = 0\) on \(\partial M\), and, for a scalar parameter \(\tau>0\), define a **boundary‑modified W‑functional candidate**:
+\[
+\mathcal W_B(g,f,\tau)
+ = \int_M \Big[\tau(|\nabla f|^2 + R)
+      + f - n \Big](4\pi\tau)^{-n/2}\,e^{-f}\,dV_g
+   + \int_{\partial M}
+       \Phi(H,\,f,\,\nabla_{\!\partial M} f,\,\tau)\,(4\pi\tau)^{-(n-1)/2}e^{-f}\,dA_g,
+\]
+where \(\Phi\) is a **universal local geometric boundary term** depending on \(H\) and tangential derivatives of \(f\).
+
+**Question:**  
+Is there a choice of local, geometrically natural boundary term \(\Phi\) (for instance, polynomial in \(H\), \(|\nabla_{\!\partial M}f|\), and \(\tau\)) such that:
+
+1. the first variation of \(\mathcal W_B\) with respect to \((g,f)\), under variations preserving \(H=0\) and \(\partial_\nu f=0\), yields as gradient flow precisely the free‑boundary Ricci flow coupled to its adjoint backward heat equation for \(f\);  
+2. along the free‑boundary Ricci flow and this adjoint system, one has
+   \[
+   \frac{d}{dt}\mathcal W_B(g(t),f(t),\tau(t))\ge 0;
+   \]
+3. for metrics \(g(t)\) admitting reflection symmetry across \(\partial M\), the doubled functional \(\hat{\mathcal W}_B\) on \(\hat M\) coincides with Perelman’s classical \(\mathcal W\) functional; and  
+4. the stationary points of \(\mathcal W_B\) correspond to **shrinking Ricci solitons with totally geodesic boundary** satisfying \(\partial_\nu f=0\)?
+
+Why is it a "good" problem:  
+This problem isolates a sharp, well‑posed question at the intersection of geometric analysis and variational theory: whether Perelman’s monotone entropy can be extended to Ricci flows on manifolds with boundary in a natural, local, geometric way.  It is precise (specifying the admissible form of \(\Phi\) and boundary conditions), consistent with reflection symmetry, and anchored in the known analytic framework of the Ricci flow.  
+
+A positive result would unveil a new **boundary entropy** governing curvature diffusion and singularity formation, providing tools to classify boundary shrinkers and potentially controlling where singularities form.  A proof of impossibility would equally illuminate the essential obstacles in coupling entropy to boundaries.  Its simplicity—“find a boundary term making \(\mathcal W\) monotone”—contrasts with the analytic depth of what it requires: reconciling variational structure, Neumann boundary conditions, and monotonicity under a nonlinear geometric PDE.  This makes it a genuinely **good** problem, mathematically solid, profound, and at the frontier of Ricci‑flow theory with boundary.

@@ -1,0 +1,47 @@
+problem:  
+Let \((M^n,g(t),\phi(t))\), \(t\in[0,\infty)\), be a **complete noncompact** solution to the **harmonic–Ricci flow**
+\[
+\begin{cases}
+\partial_t g = -2\,\mathrm{Ric}_g + 2\alpha\,\nabla\phi\otimes\nabla\phi, \\[3pt]
+\partial_t \phi = \tau_g(\phi),
+\end{cases}
+\]
+for some fixed coupling constant \(\alpha>0\).  
+Assume:
+- \((M,g(t))\) has uniformly bounded curvature on every compact time interval,
+- the initial data \((M,g(0),\phi(0))\) is noncollapsed with Euclidean volume growth, and
+- the field energy density satisfies \(|\nabla \phi(0)|^2\in L^1(M,g(0))\).  
+
+For any sequence \(r_i\to\infty\) and basepoints \(p_i\in M\), define the parabolically rescaled flows
+\[
+g_i(t)=r_i^{-2}g(r_i^2t),\qquad \phi_i(t)=\phi(r_i^2t),\qquad t\in[0,\infty),
+\]
+and suppose that, up to a subsequence, the pointed manifolds \((M,g_i(t),\phi_i(t),p_i)\) converge in the Cheeger–Gromov sense on compact subsets to a pointed limit
+\((M_\infty,g_\infty(t),\phi_\infty(t),p_\infty)\).
+
+---
+
+**Conjecture (Asymptotic Rigidity of Harmonic–Ricci Flow):**  
+Under the above assumptions, every pointed blow‑down limit \((M_\infty,g_\infty(t),\phi_\infty(t))\) evolves by an **expanding harmonic–Einstein soliton**, that is,
+\[
+\mathrm{Ric}_{g_\infty}-\alpha\,\nabla\phi_\infty\otimes\nabla\phi_\infty=c_\infty g_\infty,\qquad
+\tau_{g_\infty}(\phi_\infty)=0,\qquad c_\infty>0.
+\]
+Equivalently, there exist no non‑self‑similar expanding limits ("non‑solitonic expanders") arising as blow‑down limits of complete noncollapsed harmonic–Ricci flows with bounded curvature and finite total energy.  
+
+Furthermore, can one construct a **monotone asymptotic functional** \(\mathcal{W}_\alpha^{\infty}\) for the harmonic–Ricci flow—analogous to Perelman’s entropy for Ricci flow—whose minimizers are precisely these expanding harmonic–Einstein solitons?
+
+---
+
+Why is it a "good" problem:  
+This conjecture isolates a **concise and profound question** about the large‑scale geometric structure of the harmonic–Ricci flow.  
+
+* **Conceptual sharpness:** The statement reduces to a single dichotomy—are all asymptotic limits solitonic or can genuinely new expanding geometries arise?  It is simple to state and naturally motivated by scaling considerations but requires deep techniques from analysis and geometry to approach.
+
+* **Theoretical significance:** The problem addresses a missing piece in the global picture of the harmonic–Ricci flow, paralleling how Perelman’s analysis of tangent flows and entropies completed our understanding of the Ricci flow.  A proof would reveal whether harmonic–Einstein expanders play the same “universal model” role for the coupled system.
+
+* **Interdisciplinary connections:** The conjecture links geometric analysis, PDE dynamics, and mathematical physics (Einstein–scalar field systems, renormalization flows).  Investigating possible monotone entropy‑like quantities \(\mathcal{W}_\alpha^{\infty}\) would introduce new analytical tools beyond those of Ricci flow.
+
+* **Natural hypotheses:** The Euclidean growth, noncollapsing, and finite energy assumptions ensure analytic compactness and energy dissipation, making the conjecture both plausible and structurally meaningful.
+
+Hence, the problem exemplifies a **good research problem**: it is simple, deep, cross‑disciplinary, and targets a core unknown about asymptotic self‑similarity in geometric flows, with potentially foundational consequences for coupled curvature‑field evolution.

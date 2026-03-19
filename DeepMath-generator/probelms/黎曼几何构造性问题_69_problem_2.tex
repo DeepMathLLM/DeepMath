@@ -1,0 +1,44 @@
+problem:  
+Let \(G=SU(n)\) endowed with the bi-invariant metric from the negative Killing form.  
+Write the standard root decomposition
+\[
+\mathfrak{su}(n)=\mathfrak{t}\oplus\bigoplus_{\alpha\in\Delta_+}(\mathfrak{g}_\alpha\oplus\mathfrak{g}_{-\alpha}),
+\]
+where \(\mathfrak{t}\) is the Cartan subalgebra and \(\Delta_+\) is the set of positive roots.  
+For parameters 
+\[
+\boldsymbol{\lambda}=(\lambda_0,(\lambda_\alpha)_{\alpha\in \Delta_+})\in \mathbb{R}_{>0}^{1+|\Delta_+|},
+\]
+define the **diagonal-type left-invariant metric**
+\[
+g_{\boldsymbol{\lambda}}=\lambda_0\,\langle\cdot,\cdot\rangle_0|_{\mathfrak{t}}
++ \sum_{\alpha\in\Delta_+} \lambda_\alpha\, \langle\cdot,\cdot\rangle_0|_{(\mathfrak{g}_\alpha\oplus\mathfrak{g}_{-\alpha})},
+\]
+where \(\langle\cdot,\cdot\rangle_0\) is the Killing form.  
+Let integer matrices \(A,B\in M_{n\times k}(\mathbb{Z})\) satisfy \(\sum_i A_{ij}=\sum_i B_{ij}=0\), and let
+\[
+T^{k-1}\subset (S^1)^n_L\times (S^1)^n_R,\quad (t,g)\mapsto \mathrm{diag}(t^A)\,g\,\mathrm{diag}(t^B)^{-1},
+\]
+act freely and almost effectively on \(SU(n)\).  
+Denote the biquotient \(E_{A,B}=T^{k-1}\backslash SU(n)\) equipped with the quotient metric \(g^{A,B}_{\boldsymbol{\lambda}}\) induced from \((SU(n),g_{\boldsymbol{\lambda}})\) via the Riemannian submersion.  
+
+For each fixed \((A,B)\), define the **positivity region**
+\[
+\mathcal{P}_{A,B}=\{\boldsymbol{\lambda}\in \mathbb{R}_{>0}^{1+|\Delta_+|} : g^{A,B}_{\boldsymbol{\lambda}}\ \text{has positive sectional curvature}\}.
+\]
+
+> **Open Problem — Interior Structure of the Positivity Set.**  
+> For \(n>3\), does there exist a free torus biquotient \(E_{A,B}\) such that the positivity region \(\mathcal{P}_{A,B}\) has nonempty interior in \(\mathbb{R}_{>0}^{1+|\Delta_+|}\)?  
+> Equivalently: do any higher-rank \(SU(n)\) biquotients admit robustly positive curvature — remaining positive under small perturbations of all invariant scaling parameters — or do all known positive examples occur only on lower-dimensional boundary subvarieties of the parameter space?
+
+Why is it a "good" problem:  
+This formulation eliminates ambiguities by **precisely defining the invariant metric parameter space**, including both Cartan and root-space directions, and specifying the quotient construction. It converts the notion of “stability” into a concrete geometric inquiry about the **interior of a positivity domain** within a well-defined finite-dimensional space.  
+
+The problem is research-level and conceptually deep for several reasons:
+
+1. **Core Geometric Challenge:** Determining whether positivity persists under small deformations probes the structure of curvature inequalities in the most symmetric yet flexible families of metrics.  
+2. **Bridging Fields:** The question integrates Lie group representation decompositions (algebraic structure), O’Neill’s submersion formulas (analysis of curvature), and differential-topological classification of the resulting manifolds.  
+3. **Fundamental Dichotomy:** If \(\mathcal{P}_{A,B}\) always lacks interior, positive curvature in biquotients would be shown to exist only via delicate equality conditions — suggesting intrinsic rigidity. Finding an example with nonempty interior would instead reveal a new, *stable* geometric mechanism for positive curvature.  
+4. **Elegant Simplicity:** Expressed entirely in matrix and parameter terms, the problem is accessible to any geometer familiar with biquotients, yet resolving it would advance understanding of one of geometry’s most restrictive curvature phenomena.
+
+Thus, this problem exemplifies a good research problem: lucidly stated, profoundly revealing, and balancing the geometric simplicity of its question with the depth of the analytic and topological methods it demands.

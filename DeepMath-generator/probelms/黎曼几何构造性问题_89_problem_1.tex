@@ -1,0 +1,26 @@
+problem:  
+Let \( (M^3, g_0) \) be a compact, connected, oriented Riemannian 3‑manifold with smooth boundary \( \partial M \). Assume that  
+- the interior of \(M\) has positive Ricci curvature, \(\operatorname{Ric}(g_0) > 0\), and  
+- the boundary \( \partial M \) is **minimal** in \( (M, g_0) \), i.e. its mean curvature \(H(g_0|_{\partial M}) = 0\), and totally umbilical.  
+
+Consider the Ricci flow on \(M\):  
+\[
+\frac{\partial g}{\partial t} = -2\,\operatorname{Ric}(g),
+\]
+with free boundary conditions preserving minimality and the conformal class of the boundary metric:  
+\[
+H(g|_{\partial M}) = 0,\qquad g|_{\partial M} \in [g_0|_{\partial M}].
+\]
+Assume short‑time existence and compatibility of this free boundary Ricci flow are established.
+
+**Question:**  
+Does the normalized Ricci flow (rescaled to keep total volume constant)  
+\[
+\frac{\partial \tilde g}{\partial t} = -2\operatorname{Ric}(\tilde g) + \tfrac{2}{3} r(\tilde g)\,\tilde g,
+\]
+preserve the positivity of the Ricci curvature and the minimal‑umbilical boundary condition for all time?  Moreover, does it converge (after diffeomorphism and rescaling) to a metric of **constant sectional curvature** whose boundary remains **totally geodesic** (hence still minimal)?  Equivalently: within each fixed boundary conformal class supporting a positive‑Ricci metric with totally geodesic boundary, does there exist a unique constant‑curvature representative?
+
+Why is it a "good" problem:  
+This problem refines the Ricci‑flow‑with‑boundary program into a sharply posed boundary analog of Hamilton’s convergence theorem for closed 3‑manifolds. By choosing minimal boundary conditions, the flow avoids incompatibilities between fixed mean curvature and normalization yet retains strong geometric meaning—testing whether the Ricci flow provides a canonical constant‑curvature metric for manifolds whose boundaries remain totally geodesic. It stands at the intersection of geometric analysis (Ricci flow PDE with nonlinear boundary constraints), global differential geometry (positivity and geometrization phenomena), and boundary geometry (free boundary evolution).  
+
+The question is open and mathematically coherent: even preservation of positive curvature and minimal boundary is unknown, and convergence would require discovering new boundary analogs of Perelman’s monotone functionals. Confirming or refuting the existence of a canonical constant‑curvature limit would yield deep insight into how Ricci flow interacts with boundary geometry, potentially establishing a “boundary geometrization” principle parallel to Perelman’s theory for closed manifolds.
