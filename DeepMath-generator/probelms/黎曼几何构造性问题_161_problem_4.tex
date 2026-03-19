@@ -1,0 +1,29 @@
+problem:  
+Let \( G \) be a connected, simply connected **2-step nilpotent** Lie group with Lie algebra \( \mathfrak{g} = V \oplus \mathfrak{z} \), where \( \mathfrak{z} \) is the center and \( V = \mathfrak{z}^\perp \) with respect to a left‑invariant pseudo‑Riemannian metric \( \langle \cdot , \cdot \rangle \).  
+
+For each \( Z \in \mathfrak{z} \), define the linear map \( J_Z : V \to V \) by  
+\[
+\langle J_Z X, Y \rangle = \langle Z, [X,Y] \rangle \quad \text{for all } X,Y \in V.
+\]
+The curvature operator of \( \langle \cdot , \cdot \rangle \) can be expressed algebraically via compositions of the \(J_Z\)’s. Denote this operator \( R_{\langle \cdot , \cdot \rangle} : \Lambda^2 \mathfrak{g} \to \Lambda^2 \mathfrak{g} \).
+
+A smooth family \( \{ \langle \cdot , \cdot \rangle_t \}_{t \in I} \) of left‑invariant pseudo‑Riemannian metrics on \( G \) is called a **curvature‑isospectral deformation** if, for all \( t \in I \),
+1. the multisets of complex eigenvalues of \(R_{\langle \cdot , \cdot \rangle_t}\) coincide, counted with algebraic multiplicity; and  
+2. the metrics \( \langle \cdot , \cdot \rangle_t \) are pairwise inequivalent under the natural action of \( \mathbb{R}_{>0} \times \mathrm{Aut}(\mathfrak{g}) \).
+
+**Question:**  
+Determine whether there exist nontrivial curvature‑isospectral deformations on some 2‑step nilpotent Lie algebras \( \mathfrak{g} \).  
+If such deformations exist, characterize the algebraic features of \( \mathfrak{g} \) (in terms of the structure of the maps \( J_Z \), presence of isotropic directions in \( \mathfrak{z} \), or the Jordan form of \( J_Z \)) that enable this phenomenon.  
+If no such deformations exist when the metric is **nondegenerate on the center**, does degeneracy of the central form (isotropic directions) become a necessary condition for curvature‑isospectral flexibility?
+
+Why is it a "good" problem:  
+This problem cuts to the heart of how **Lie algebraic structure** and **pseudo‑Riemannian curvature** interact. In 2‑step nilpotent geometry, curvature is determined entirely by the quadratic system of mappings \( J_Z \), meaning that questions about spectral rigidity of curvature operators directly probe the algebraic anatomy of the metric‑bracket interaction.  
+
+The question is significant because it asks whether the **curvature spectrum**—an algebraically straightforward yet geometrically meaningful invariant—captures all the geometric information up to automorphism and scaling, or whether the indefinite signature hides continuous moduli invisible to spectral data. It thereby illuminates the boundary between *rigidity* (as in the Riemannian case) and *flexibility* (special to indefinite metrics).  
+
+It is a “good” problem in the strong sense because:
+- It is **simple to state**, yet demands deep control of Lie algebra representations and curvature algebra.  
+- It **bridges fields**: algebraic geometry of endomorphisms \( J_Z \), differential geometry of homogeneous spaces, and spectral theory in indefinite signature.  
+- It maps a **concrete frontier of knowledge**: whether degeneracy of the central form is the geometric mechanism that breaks spectral rigidity in nilpotent pseudo‑Riemannian Lie groups.  
+
+Though algebraic in appearance, resolving it would clarify fundamental concepts of curvature invariants in indefinite homogeneous geometries and potentially lead to new classifications of pseudo‑Riemannian nilmanifolds with exotic moduli behavior.

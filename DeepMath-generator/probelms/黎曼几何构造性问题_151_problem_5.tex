@@ -1,0 +1,26 @@
+problem:  
+Let $(M^{2n+1}, g, \eta, \xi, \Phi)$ be a compact Sasaki–Einstein manifold with transverse Kähler–Einstein structure $(g^T, J^T, \omega^T)$ and fixed underlying CR structure $(D,J)$.  The Reeb vector $\xi$ determines the contact form $\eta$ and the Reeb cone $\mathcal{C}_R$.  The *volume functional* on $\mathcal{C}_R$,
+\[
+V(\xi') = \mathrm{Vol}(M, \xi')
+\]
+is real-analytic; at its critical point $\xi_E$ corresponding to the Sasaki–Einstein structure, $\nabla_\xi V = 0$.  The Hessian $H_V(\xi_E)$ defines a bilinear form on $\mathrm{Lie}(\mathbb{T})$, where $\mathbb{T}$ is the Reeb torus acting isometrically.
+
+Let $\mathcal{L}_B$ be the basic transverse Lichnerowicz operator acting on basic $(1,1)$-forms with respect to $\xi_E$, and denote by $\lambda_1(\mathcal{L}_B)$ its first nonzero eigenvalue.  Physically, $\lambda_1(\mathcal{L}_B)$ corresponds (in AdS/CFT) to the lowest dimension of a marginally relevant operator deforming the dual SCFT.
+
+**Open Problem (Quantitative Reeb–Lichnerowicz rigidity conjecture):**  
+For an isolated critical point $\xi_E$ of $V$ (i.e. a Sasaki–Einstein Reeb field), does there exist a universal constant $c_n > 0$, depending only on the dimension $n$ and the CR type $(D,J)$, such that
+\[
+\lambda_1(\mathcal{L}_B) \ge c_n \, \lambda_{\min}(H_V(\xi_E)),
+\]
+where $\lambda_{\min}(H_V(\xi_E))$ is the smallest positive eigenvalue of the Hessian of the volume functional restricted to $\mathcal{C}_R$?  
+
+In particular:
+- Can the spectral gap of the transverse Lichnerowicz operator be bounded below by the convexity strength of $V$ at $\xi_E$?  
+- If equality occurs, does this characterize precisely those Sasaki–Einstein manifolds admitting a continuous family of Reeb fields preserving the Einstein condition (i.e. exactly marginal deformations in the dual SCFT)?
+
+Why is it a "good" problem:  
+This problem precisely quantifies the interplay between two distinct but deeply linked structures in Sasaki–Einstein and AdS/CFT geometry: the *Reeb-cone convexity* (a purely geometric-variational object) and the *analytic spectrum* of the transverse Einstein structure (a stability and conformal-dimension object).  
+
+The question is not a restatement of any known theorem—while qualitative relations between Reeb-volume minimization and stability are known (Martelli–Sparks–Yau), **no proven quantitative inequality** linking the second variation of the Reeb functional to the Lichnerowicz spectral gap currently exists.  
+
+Establishing such a relation would create a bridge between convex geometry on the Reeb cone and elliptic spectral theory, providing the first mathematical measure of “marginality rigidity” in Sasaki–Einstein/SCFT correspondence.  Its simplicity hides deep analytic and geometric content: it asks whether curvature convexity on the cone translates into a tangible spectral lower bound.  A resolution would impact both Sasakian analysis and conformal field theory by defining a geometric criterion for the absence or emergence of exactly marginal operators.

@@ -1,0 +1,45 @@
+problem:  
+Let \( (M = G/H, g) \) be a **compact, simply connected, naturally reductive Riemannian manifold** with reductive decomposition \( \mathfrak{g} = \mathfrak{h} \oplus \mathfrak{m} \) and \(\mathrm{Ad}(H)\)-invariant inner product \( \langle \cdot , \cdot \rangle\) on \(\mathfrak m\).  
+Denote by:  
+- \( \nabla \): the Levi-Civita connection,  
+- \( \tilde{\nabla} \): the canonical connection satisfying \( T(X,Y) = -[X,Y]_{\mathfrak m} \).
+
+The curvature operators \(R^\nabla\) and \(R^{\tilde{\nabla}}\) on \(\mathfrak m\) satisfy (Nomizu, Tricerri–Vanhecke):
+\[
+R^\nabla(X,Y) = R^{\tilde{\nabla}}(X,Y) + \tfrac{1}{4}[T_X, T_Y] + \tfrac{1}{2}T_{T_XY},
+\]
+where \(T_X(Y) = T(X,Y)\).  
+
+For unit \(X \in \mathfrak m\), write the Jacobi operators
+\[
+J^\nabla_X(Y) = R^\nabla(X,Y)X,  \qquad J^{\tilde{\nabla}}_X(Y) = R^{\tilde{\nabla}}(X,Y)X,
+\]
+acting on \(X^\perp \subset \mathfrak m\).
+
+**Open problem (Torsion–spectrum rigidity):**  
+Assume that for all unit \( X \in \mathfrak m \),
+\[
+\mathrm{Spec}\big( J^\nabla_X\big|_{X^\perp}\big) = \mathrm{Spec}\big( J^{\tilde{\nabla}}_X\big|_{X^\perp}\big),
+\]
+that is, the Jacobi spectra for the Levi-Civita and canonical connections coincide in every direction.
+
+Does this force the canonical torsion \(T\) to vanish, and hence \( (M,g) \) to be **locally symmetric**?
+
+---
+
+Why is it a "good" problem:  
+
+1. **Rooted in precise and established structure, but genuinely novel:**  
+   The relation between \(R^\nabla\) and \(R^{\tilde{\nabla}}\) is well known algebraically, yet the idea of equating their *directional spectral data* has not been explored systematically. It probes the “spectral shadow” of torsion, moving beyond algebraic curvature formulas toward geometric rigidity phenomena.
+
+2. **Testable in concrete families:**  
+   Naturally reductive spaces—such as Berger spheres, flag manifolds, and Stiefel manifolds—provide explicit grounds where \(T\) is nonzero but controlled. Checking or refuting spectral equality in such settings is an accessible yet deep computational route toward progress. Hence, the problem is concrete enough to be tractable while still asking something fundamentally unknown.
+
+3. **Targets an intersection of spectral geometry, homogeneous geometry, and Lie theory:**  
+   Addressing the question requires tools from Lie algebra representation, curvature identities, and eigenvalue analysis of curvature operators. These mix perspectives from **holonomy theory**, **canonical connections**, and **spectral rigidity** into a single new condition.
+
+4. **Provides a new rigidity concept:**  
+   Traditional rigidity questions compare curvature tensors or sectional curvatures; here spectral coincidence across two canonical connections serves as a subtler and potentially more geometric invariant. Confirmation of rigidity would identify torsion-spectral equality as a diagnostic of symmetry. A counterexample would reveal new flexibility in the spectral geometry of naturally reductive metrics.
+
+5. **Simple statement, profound depth:**  
+   The question—“If two canonical curvature spectra agree in all directions, must torsion vanish?”—is conceptually elementary yet involves an intricate network of geometric, algebraic, and spectral constraints. This “narrow entrance, deep cavern” character exemplifies why the problem aligns well with the spirit of a truly good research problem.

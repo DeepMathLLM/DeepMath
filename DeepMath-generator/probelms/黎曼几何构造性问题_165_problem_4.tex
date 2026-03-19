@@ -1,0 +1,45 @@
+problem:  
+Let \( X = G_1/K_1 \) and \( Y = G_2/K_2 \) be irreducible symmetric spaces of noncompact type with \(\operatorname{rank}(X), \operatorname{rank}(Y) \ge 2\).  
+Fix basepoints \(o_X \in X\) and \(o_Y \in Y\).  
+Let \( f : X \to Y \) be a nonconstant smooth harmonic map with bounded energy density.  
+For \( R>0 \), define the **normalized energy measure**  
+\[
+\nu_R := \frac{f_*\!\big( \|df\|^2 \mathbf{1}_{B_X(o_X,R)}\, d\mathrm{vol}_X \big)}{\int_{B_X(o_X,R)} \|df\|^2\, d\mathrm{vol}_X}.
+\]
+Since the visual compactification \(\overline{Y} = Y \cup \partial_\infty Y\) is compact, any sequence \(R_i \to \infty\) admits a weak-* accumulation point \(\nu_\infty\) in \(\mathcal{M}(\overline{Y})\).
+
+Define the **radial projection**
+\[
+\pi_{o_Y} : \overline{Y} \longrightarrow \partial_\infty Y, \quad 
+\pi_{o_Y}(y) =
+\begin{cases}
+  \text{endpoint at infinity of the geodesic ray from } o_Y \text{ through } y, & y \in Y,\\[4pt]
+  y, & y \in \partial_\infty Y. 
+\end{cases}
+\]
+This extension makes \(\pi_{o_Y}\) continuous on \(\overline{Y}\).  
+We then define the corresponding **energy escape measure**
+\[
+\mu_\infty := (\pi_{o_Y})_*\nu_\infty \in \mathcal{M}(\partial_\infty Y).
+\]
+
+**Problem:**  
+Can there exist a non–totally geodesic harmonic map \( f : X \to Y \) such that **every** weak-* limit \(\mu_\infty\) of the family \(\{\pi_{o_Y*}\nu_R\}\) is supported inside a **single Weyl chamber closure** of the Tits boundary \(\partial_\infty Y\)?  
+
+Equivalently, can all asymptotic harmonic energy of a higher-rank domain \(X\) flow toward one Weyl face of the target \(Y\)’s spherical building, without forcing \(f\) to be totally geodesic?
+
+---
+
+Why is it a "good" problem:  
+This final formulation is fully rigorous—every object (measures, projections, limits) is now precisely defined. The question examines whether **harmonic maps between higher-rank symmetric spaces** can exhibit **asymptotic Weyl collapse**, where all energy at infinity concentrates in a single sector of the Tits boundary.  
+
+Conceptually, this asks whether the analytic properties of harmonic maps inherently “see” the full Weyl chamber symmetry of the target or whether purely analytic mechanisms might allow the image to degenerate to a smaller asymptotic direction.  
+
+A positive resolution would yield a new **energy–Weyl rigidity phenomenon**, establishing that harmonicity analytically enforces access to all Weyl sectors—parallel to, but distinct from, traditional algebraic or topological rigidity theorems. A counterexample would expose unexpected *analytic flexibility* in high-rank symmetric geometries.  
+
+This problem sits at the crossroads of:
+- **Geometric analysis** (energy distributions and weak-* limits of harmonic measures),
+- **Differential geometry** (curvature, rank, and flats in symmetric spaces),
+- **Lie theory and Tits geometry** (structure of Weyl chambers and spherical buildings).
+
+Its statement is simple and inherently geometric, yet its resolution would open a new line of inquiry uniting PDE analysis, asymptotic geometry, and Lie-theoretic structures—an archetypal “narrow entrance, profound depth” research problem.

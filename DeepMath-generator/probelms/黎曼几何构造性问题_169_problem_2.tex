@@ -1,0 +1,24 @@
+problem:  
+Let \( G \) be a simply connected **nilpotent** Lie group of dimension \( n \) with Lie algebra \( \mathfrak{g} \). Consider the set of all left-invariant metrics on \( G \) of volume \(1\), modulo scaling and automorphism, and denote this moduli space by  
+\[
+\mathcal{N}_n := \{ g \ \text{left-invariant on nilpotent } G,\ \mathrm{vol}(g)=1 \}/(\mathrm{Aut}(G) \times \mathbb{R}^+).
+\]
+For each \( g\in \mathcal{N}_n\), Ricci flow induces a normalized **bracket flow** on the corresponding bracket \( \mu \in V_n := \Lambda^2(\mathbb{R}^n)^* \otimes \mathbb{R}^n \), which is known (Lauret) to be the negative gradient flow of a functional \( F(\mu) = \|\mathrm{Ric}_\mu\|^2 / \|\mu\|^4 \), where \( \mu \) encodes the Lie algebra structure.
+
+**Open problem:**  
+Although this flow is strictly gradient-like, the following structural questions remain essentially unaddressed beyond concrete low dimensions:
+
+1. **Quantitative behavior**: Is there a universal, dimension-dependent polynomial rate of convergence of the normalized bracket flow toward its nilsoliton limit when it exists? That is, does there exist \(\alpha(n)>0\) and \(C(g_0,\mathfrak{g})>0\) such that for all nilpotent \(\mathfrak{g}\),  
+   \[
+   \|\mu(t)-\mu_\infty\| \leq C t^{-\alpha(n)} \quad (t\to\infty)
+   \]
+   where \(\mu_\infty\) is the limiting nilsoliton bracket?  Or can the convergence rate depend arbitrarily on the initial metric and structure constants?
+
+2. **Non-nilsoliton degenerations**: For a nilpotent Lie algebra that admits *no* nilsoliton, characterize the possible limiting **degenerate brackets** \(\bar{\mu}\) in \(\overline{GL(n,\mathbb{R})\cdot\mu}\) that can appear under bracket flow rescaling. Do such limits correspond to lower-dimensional nilsolitons (e.g., via collapsing of central directions), and can this process be interpreted geometrically as a Ricci flow collapsing to a canonical nilsoliton base?
+
+3. **Global potential landscape**: The functional \(F(\mu)=\|\mathrm{Ric}_\mu\|^2/\|\mu\|^4\) acts as a potential on the algebraic variety of nilpotent brackets.  Does the structure of its critical set and gradient flow stratify this variety into finitely many analytic strata corresponding to nilsoliton types, or can infinitely many mutually non-conjugate strata occur already in fixed finite dimension?
+
+Why is it a "good" problem:  
+This problem shifts attention from the already-settled gradient nature of the bracket flow to **quantitative and structural** properties that remain mysterious: convergence rates, degeneration behavior in the absence of solitons, and the global geometry of the potential on the moduli of nilpotent brackets. These issues connect **geometric analysis** (Ricci flow rates), **Lie algebraic geometry** (orbit closures), and **algebraic dynamics** (gradient stratification and moduli compactification).  
+Their resolution would not only clarify how Ricci flow canonically organizes the infinite diversity of nilpotent metrics but would also parallel deep questions about convergence rates and stability in gradient Ricci soliton theory.  
+The statement remains simple—concerned solely with convergence and degenerations of nilpotent bracket flow—yet demands profound understanding of analytic–algebraic interactions, making it a strong and forward-looking “good” research problem.

@@ -1,0 +1,42 @@
+problem:  
+Let \( D \subset \mathbb{C}^n \) be a fixed irreducible bounded symmetric domain of rank \( r \ge 1 \), realized in its Harish–Chandra embedding and endowed with the Bergman metric \( g_B \).  At every point \( o \in D \), the curvature operator  
+\[
+\mathcal{R} : \Lambda^{1,1}(T_o D) \to \Lambda^{1,1}(T_o D)
+\]
+defined by  
+\[
+\langle \mathcal{R}(\alpha), \beta \rangle = R_{i\bar j k \bar \ell}\, \alpha^{i\bar j}\, \overline{\beta^{k\bar \ell}},
+\]
+is Hermitian and its spectrum, consisting of finitely many real eigenvalues \( \sigma_D = \{ \lambda_1, \dots, \lambda_m \} \) with multiplicities \( (m_1,\dots,m_m) \), is independent of \(o\) by homogeneity of \( (D,g_B) \).
+
+Let \( \Omega \subset \mathbb{C}^n \) be a smoothly bounded, strongly pseudoconvex bounded domain carrying a complete Kähler–Einstein metric \( g_\Omega \) normalized by \( \mathrm{Ric}(g_\Omega) = -g_\Omega \).  
+Assume that for every \( x \in \Omega \), the Hermitian curvature operator on \( \Lambda^{1,1}(T_x \Omega) \) has the **same eigenvalue spectrum and multiplicities** as \( (\mathcal{R}_D,\sigma_D) \); that is,  
+\[
+\mathrm{Spec}(\mathcal{R}_\Omega(x)) = \sigma_D, \quad  \text{and multiplicities match those of } D.
+\]
+
+**Question:**  
+Does this spectral equivalence of the curvature operator imply that \( (\Omega,g_\Omega) \) is locally holomorphically isometric to \( (D,g_B) \)?  
+Equivalently, is an irreducible bounded symmetric domain analytically determined among all complete bounded Kähler–Einstein manifolds by the spectrum of its curvature operator on \( \Lambda^{1,1} \)?
+
+Why it is a "good" problem:  
+This **curvature–operator spectral rigidity problem** translates the geometry of Hermitian symmetric domains into a purely spectral condition on curvature, asking whether the Kähler–Einstein equation enforces uniqueness of the symmetric geometry once the curvature operator’s eigenvalue structure is fixed.  
+
+1. **Mathematical precision and novelty:**  
+   The invariant used—the spectrum of the curvature operator acting on \( \Lambda^{1,1} \)—is rigorously defined, coordinate-free, and naturally Hermitian.  No classical result asserts rigidity under invariance of this spectral data.  Known rigidity theorems (Calabi–Vesentini, Siu–Yau, Mok) involve equality of the full curvature tensor or pinching ratios, not mere equality of eigenvalues of \( \mathcal{R} \).  Thus, this condition interpolates between tensor‑level rigidity and looser curvature constraints, and its implications remain unknown.
+
+2. **Conceptual importance:**  
+   Bounded symmetric domains exhibit a rich curvature–operator structure expressible through Jordan triple systems; their curvature eigenvalues correspond to root multiplicities in the associated Lie algebra.  Determining whether these eigenvalues and their multiplicities alone fix the local biholomorphic type of the domain constitutes a subtle inverse problem bridging **complex differential geometry** and **representation theory**.
+
+3. **Interdisciplinary reach:**  
+   The problem connects:
+   - **Kähler geometry:** Einstein condition, curvature identities;  
+   - **Differential geometric spectral theory:** reconstruction from operator spectra;  
+   - **Lie / Jordan theory:** relation between eigenvalue multiplicities and algebraic structure of \( \mathrm{Aut}(D) \).  
+
+   Investigating whether distinct Kähler–Einstein structures can share the same curvature‑operator spectrum could open a new “spectral geometry” of Hermitian symmetric spaces.
+
+4. **Simplicity masking depth:**  
+   The question is short—“Does curvature‑operator spectral data determine a bounded symmetric domain?”—yet resolving it demands a profound interplay of algebra, analysis, and geometry.  Proving or disproving this rigidity would clarify the extent to which curvature spectral data encode symmetry, advancing understanding of both complex differential geometry and the analytic classification of symmetric spaces.
+
+Hence it is logically consistent, mathematically precise, and offers deep potential insight—qualifying as a truly *good* research‑level problem.

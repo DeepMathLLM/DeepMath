@@ -1,0 +1,30 @@
+problem:  
+Let \( D \subset \mathbb{C}^n \) be an irreducible bounded symmetric domain realized via its Harish–Chandra embedding, with Bergman kernel \(K_D(z,w)\) and metric \( g_B = \partial\bar\partial \log K_D(z,z) \).  
+Fix a boundary orbit \( \mathcal{O}_r \subset S(D) \) of rank \( r \) under \( \mathrm{Aut}(D) \), and a boundary point \( q \in \mathcal{O}_r \).  
+For each sequence \(z_j \in D \) approaching \( q \) within a fixed non‑tangential cone, let \( \Phi_j \in \mathrm{Aut}(D) \) satisfy \(\Phi_j(z_j)=0\) and suppose the family \( \{ \Phi_j \} \) is normalized by its Jordan–triple factorization so that the derivative at \(q\) acts as the standard parabolic scaling associated to \( \mathcal{O}_r \).  
+Define the normalized Bergman kernels
+\[
+K^{(j)}(\zeta,\eta)
+:= K_D(\Phi_j^{-1}(\zeta),\Phi_j^{-1}(\eta))\,K_D(z_j,z_j)^{-1}.
+\]
+
+**Question:**  
+Is it true that \( (K^{(j)}) \) converges locally uniformly on compact sets of some limit domain \( D_q \subset \mathbb{C}^n \) to a non‑trivial reproducing kernel \( K_q(\zeta,\eta) \), whose corresponding kernel metric \(g_q = \partial\bar\partial \log K_q(\zeta,\zeta)\) is complete and invariant under a non‑compact transitive group \(G_q\)?  
+If so, can \( (D_q,K_q) \) be identified explicitly in terms of the Jordan triple associated with \( D \), and does \( G_q \) coincide with the Levi factor of the parabolic stabilizer of \( q \)?  
+
+Why it is a "good" problem:  
+This refined problem is conceptually coherent and aligned with established geometric analysis. It frames an **analytic compactness problem** for Bergman kernels under parabolic rescalings at boundary points, asking whether one obtains well‑defined limit geometries reflecting the parabolic subgroup structure of \( \mathrm{Aut}(D) \).
+
+- **Precisely defined analytic setting:**  
+   The kernel convergence is posed in the natural topology of locally uniform convergence on compact subsets, ensuring well‑posedness within the framework of reproducing kernel Hilbert spaces.
+
+- **Compatible with known theory yet new:**  
+   Classical harmonic analysis describes invariant kernels on symmetric domains, but the *boundary rescaling and limit identification problem* has not been explicitly resolved for general rank strata. It asks whether the limiting process recovers analytic models (limit kernels and their automorphism groups) intrinsic to boundary parabolic geometry—a question extending known asymptotic results from metric and representation perspectives.
+
+- **Bridges multiple fields:**  
+   Resolving the convergence and identifying \( (D_q,K_q) \) would unite tools from several complex variables (kernel asymptotics, Bergman metric geometry), Lie theory (parabolic stabilizers, Levi factors), and functional analysis (reproducing kernel limits).
+
+- **Simplicity with depth:**  
+   The statement is succinct: “Do normalized Bergman kernels near a boundary orbit admit a geometric kernel limit, and what is it?” Yet it potentially leads to a new analytic classification of boundary geometries for Hermitian symmetric domains.
+
+Hence this problem is mathematically sound, positioned precisely at the intersection of complex geometry, analysis, and representation theory, and can stimulate profound progress in understanding how the intrinsic analytic data of symmetric domains encode their boundary orbit structure.

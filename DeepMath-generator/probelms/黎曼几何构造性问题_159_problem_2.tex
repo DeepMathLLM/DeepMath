@@ -1,0 +1,63 @@
+problem:  
+Let \((X^3,J,\omega_0)\) be a compact complex threefold endowed with a **balanced** metric (\(d(\omega_0^2)=0\)), and let \(E\to X\) be a stable holomorphic bundle with a Hermitian–Yang–Mills connection \(h\).  
+Assume that \((\omega_0,\phi_0)\) satisfies the anomaly-free limit
+\[
+i\partial\bar\partial(e^{-2\phi_0}\omega_0^2)=0.
+\]
+
+Set up the **Fu–Yau–type family**:
+\[
+\omega(\varepsilon)=e^{u(\varepsilon)}\omega_0,\qquad 
+\phi(\varepsilon)=\phi_0+\psi(\varepsilon),
+\]
+and impose
+\[
+i\partial\bar\partial(e^{-2\phi(\varepsilon)}\omega(\varepsilon)^2)
+=\varepsilon(\operatorname{Tr}(R^B_{\omega(\varepsilon)}\wedge R^B_{\omega(\varepsilon)})-
+\operatorname{Tr}(F_h\wedge F_h)),
+\tag{$\ast_\varepsilon$}
+\]
+where \(R^B_{\omega(\varepsilon)}\) is the curvature of the Bismut connection.  
+
+Write \(u(\varepsilon)=\varepsilon u_1+\varepsilon^2 u_2+O(\varepsilon^3)\),   
+\(\psi(\varepsilon)=\varepsilon \psi_1+\varepsilon^2 \psi_2+O(\varepsilon^3)\),  
+and expand \((\ast_\varepsilon)\) order by order.  
+At order \(\varepsilon\), one obtains the **linearized operator**
+\[
+L_{\omega_0,\phi_0}(u_1,\psi_1)
+= i\partial\bar\partial\big(e^{-2\phi_0}(2u_1-2\psi_1)\omega_0^2\big)
+- S_{\omega_0}, \quad
+S_{\omega_0}:=\operatorname{Tr}(R^B_{\omega_0}\wedge R^B_{\omega_0})-
+\operatorname{Tr}(F_h\wedge F_h),
+\]
+and solvability requires \(S_{\omega_0}\in \operatorname{Im}L_{\omega_0,\phi_0}\).  
+
+At second order, expanding the Bismut curvature introduces additional terms depending on the torsion \(T_0 = Jd\omega_0\) and its derivatives.  Let  
+\[
+L_{\omega_0,\phi_0}(u_2,\psi_2) = \Xi_{\omega_0}(u_1,\psi_1),
+\]
+where the source term \(\Xi_{\omega_0}(u_1,\psi_1)\) is an explicit \((2,2)\)-form quadratic in \((u_1,\psi_1)\), \(T_0\), and the curvature \(R^B_{\omega_0}\).
+
+**Problem:**  
+Formally derive \(\Xi_{\omega_0}(u_1,\psi_1)\) at order \(\varepsilon^2\) and examine whether:
+1. \(\Xi_{\omega_0}(u_1,\psi_1)\) is \(\partial\)- and \(\bar\partial\)-closed for every choice of \((u_1,\psi_1)\) solving the first-order equation (so it defines a class in \(H^{2,2}_{BC}(X)\)), and,  
+2. The vanishing of this class in \(H^{2,2}_{BC}(X)\) is equivalent to the solvability of the second-order equation—i.e. whether the Bott–Chern cohomology naturally captures the **second-order obstruction** of the Fu–Yau equation.  
+
+Equivalently, does there exist a bilinear differential expression \(\mathfrak{X}(T_0,R^B_{\omega_0})\) that is \(\partial\)- and \(\bar\partial\)-closed but not \(\partial\bar\partial\)-exact, such that
+\[
+[\Xi_{\omega_0}(u_1,\psi_1)]_{BC}
+=[\mathfrak{X}(T_0,R^B_{\omega_0})]_{BC}?
+\]
+
+---
+
+Why is it a "good" problem:  
+This version removes logical inconsistencies and replaces speculation with a concrete, verifiable structure:
+
+- **Precise analytic base:** The problem starts from the formal expansion of the Fu–Yau PDE, identifies the linearized operator, and specifies at which order a potential obstruction arises.
+- **Cohomological target:** It asks whether the obstruction source term is \(\partial\)- and \(\bar\partial\)-closed, justifying placement in \(H^{2,2}_{BC}(X)\) based on analytic linearization rather than assumption.
+- **Geometric meaning:** It challenges mathematicians to determine explicit torsion–curvature interactions that remain \((2,2)\)-closed yet not \(\partial\bar\partial\)-exact—unearthing how analytic failure of solvability reflects the complex cohomology of the manifold.
+- **Bridges fields:** The question intertwines geometric analysis (linearization and solvability conditions of complex PDEs), Hermitian geometry (Bismut and torsion structures), and cohomological algebra (Bott–Chern invariants)—a prototypical bridge between analysis and geometry.
+- **Simplicity and depth:** Stated succinctly—“does the second-order obstruction to the Fu–Yau equation live naturally in Bott–Chern cohomology?”—it encapsulates deep interrelations between curvature, torsion, and cohomology, with the potential to reveal an analogue of Kodaira–Spencer obstruction theory in the non‑Kähler setting.
+
+Thus the problem possesses the required mathematical coherence, cross‑disciplinary connections, and foundational depth that mark a “good” research‑level problem.

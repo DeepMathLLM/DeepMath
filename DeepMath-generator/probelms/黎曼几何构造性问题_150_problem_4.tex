@@ -1,0 +1,48 @@
+problem:  
+Let \((M^n,g_0,\psi_0)\) be a compact Riemannian spin manifold admitting a **real Killing spinor** with constant \(\lambda \neq 0\):  
+\[
+\nabla^{g_0}_X \psi_0 = \lambda\, X\!\cdot\!\psi_0,\quad \forall X\in TM.
+\]
+Assume \(M\) is either  
+- a **nearly Kähler** 6-manifold (so the metric cone \(C(M)\) has holonomy in \(\mathrm{SU}(3)\)), or  
+- a **nearly parallel \(G_2\)** manifold (so the cone has holonomy in \(\mathrm{Spin}(7)\)).  
+
+In such cases there exists a **canonical metric connection with skew-symmetric torsion** \(T_0\) (the characteristic or canonical \(G\)-connection) satisfying  
+\[
+\nabla^{T_0}_X \psi_0 = 0, \qquad \nabla^{T_0} = \nabla^{g_0} + \tfrac{1}{2}T_0.
+\]
+Suppose the cone \((C(M),\bar g_0=dr^2+r^2g_0)\) is Ricci-flat and admits a parallel spinor \(\bar\psi_0\) inducing the Killing spinor \(\psi_0\) on \(M\).
+
+Now consider infinitesimal deformations of the data \((g_0,T_0)\) of the form  
+\[
+g_t = g_0 + t\,h,\qquad T_t = T_0 + t\,\tau,
+\]
+so that the deformed metric \(g_t\) remains Einstein to first order, and the deformed connection \(\nabla^{T_t}\) satisfies  
+\[
+\nabla^{T_t}_X \psi_t = 0 \quad\text{for some spinor field }\psi_t = \psi_0 + t\,\dot\psi + O(t^2).
+\]
+That is, we ask that \(\psi_t\) remains **parallel with respect to the perturbed torsion connection**.  
+
+Denote by \(\mathcal{D}_T(M)\) the linear space of infinitesimal pairs \((h,\tau)\) for which such a \(\dot\psi\) exists, modulo diffeomorphisms and rescalings, and denote by \(\mathcal{D}_{\text{cone}}\) the space of infinitesimal Ricci-flat deformations \(H\) of the cone metric \(\bar g_0\) that preserve the existence of a parallel spinor \(\bar\psi_0+ t\,\dot{\bar\psi}\).
+
+**Question:**  
+Is there a natural injective or surjective correspondence  
+\[
+\mathcal{D}_T(M) \;\longleftrightarrow\; \mathcal{D}_{\text{cone}}
+\]
+induced by the cone construction, when torsion deformations on \(M\) correspond to inhomogeneous (non-scaling) infinitesimal Ricci-flat deformations on the cone?  
+
+Equivalently, do first-order deformations of the torsion connection \((g_0,T_0)\) that preserve a \(T_t\)-parallel spinor always correspond to first-order Ricci-flat deformations of the cone preserving a parallel spinor—and does the correspondence remain bijective if the torsion perturbation \(\tau\) is coclosed (\(d^*\tau=0\))?  
+
+If not, can one describe the **obstruction map** measuring the failure of this correspondence, possibly expressed in terms of the coupling of the Lichnerowicz Laplacian on the cone and the torsion Laplacian on \(M\)?  For instance,
+\[
+\mathcal{O}(h,\tau) = [\Delta_L^{\bar g_0} H]_{\text{asymptotic}} \quad \text{or} \quad D_{T_0}^2\dot\psi - \mathcal{R}(h,\tau)\psi_0,
+\]
+and determine whether its kernel corresponds to new “generalized” Killing spinor directions not visible in the classical Bär cone correspondence.
+
+Why is it a “good” problem:  
+This problem aims to rigorously extend the classical Bär correspondence between real Killing spinors and Ricci-flat cones to the case of **connections with skew-symmetric torsion** that naturally arise in nearly Kähler and nearly parallel \(G_2\) geometry.  It asks whether infinitesimal deformations that preserve a torsion-parallel spinor on the base correspond precisely to infinitesimal Ricci-flat deformations on the cone preserving a parallel spinor—or whether novel “torsion directions” exist which have no Ricci-flat analog.  
+
+The question sits at the intersection of **special holonomy, spin geometry, elliptic analysis, and torsion connections**, combining two active but typically separate deformation theories: that of special-holonomy metrics and of connections with torsion preserving \(G\)-structures.  It refines a known theorem (the Bär correspondence) into a dynamic, analytical correspondence between deformation complexes, which is not understood even in the model nearly Kähler or \(G_2\) cases.  
+
+Resolving it would reveal whether torsion serves as an infinitesimal gateway between Ricci-flat and flux-type geometries, potentially bridging Riemannian holonomy theory with generalized geometry.  The problem is narrow, precise, and foundational, yet requires deep tools from analysis, representation theory, and spin geometry—fully qualifying as a “good” research-level mathematical problem.

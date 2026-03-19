@@ -1,0 +1,34 @@
+problem:  
+Let \((M,\mathcal{D},g,\mu)\) be a compact, equiregular sub‑Riemannian manifold with Carnot–Carathéodory distance \(d_{SR}\).  
+Define the **horizontal \(L^2\)-Wasserstein distance** \(W_{2,H}\) between two absolutely continuous probability measures \(\nu_0,\nu_1\in \mathcal{P}_2(M)\) by the Benamou–Brenier functional
+\[
+W_{2,H}^2(\nu_0,\nu_1)=\inf\!\left\{ \int_0^1\!\!\int_M |v_t|^2\,d\nu_t\,dt :
+  (\nu_t,v_t)\ \text{satisfy }\partial_t\nu_t+\operatorname{div}_H(\nu_t v_t)=0,\ v_t\in\Gamma(\mathcal{D}) \right\},
+\]
+where \(\operatorname{div}_H\) is the horizontal divergence with respect to \(\mu\) and \(v_t\) takes values only in the horizontal distribution \(\mathcal{D}\).
+
+For \(W_{2,H}\)–geodesics \((\nu_t)_{t\in[0,1]}\), define the usual Boltzmann entropy functional
+\[
+\mathrm{Ent}(\nu_t) = \int_M \rho_t \log\rho_t\, d\mu, \quad \nu_t = \rho_t \mu.
+\]
+
+**Conjecture (Horizontal‑entropy rigidity):**  
+Assume there exists \(K\in\mathbb{R}\) with the following property:
+> For every absolutely continuous pair \((\nu_0,\nu_1)\), the curve \((\nu_t)\) realizing \(W_{2,H}(\nu_0,\nu_1)\) satisfies  
+> \[
+> \mathrm{Ent}(\nu_t)\le (1-t)\mathrm{Ent}(\nu_0)+t\,\mathrm{Ent}(\nu_1)-\frac{K}{2}\,t(1-t)\,W_{2,H}^2(\nu_0,\nu_1),\quad \forall t\in[0,1].
+> \]
+
+Does this synthetic “horizontal \(K\)‑convexity of entropy” force the underlying infinitesimal geometry to be Riemannian?  
+Equivalently:  
+
+> If a compact, equiregular sub‑Riemannian space satisfies entropy \(K\)-convexity with respect to \(W_{2,H}\), must every metric tangent cone be Euclidean (so that \(\mathcal{D}=TM\))?
+
+If not, characterize all possible non‑Riemannian tangent structures compatible with \(W_{2,H}\)-entropy convexity (if any exist).  
+
+Why is it a "good" problem:  
+This formulation gives a **precise rigidity conjecture**: it asks whether a natural generalization of displacement \(K\)-convexity—restricted to horizontal, sub‑Riemannian transports—already enforces infinitesimal Hilbertianity, thereby prohibiting genuine non‑Riemannian sub‑Riemannian geometries from satisfying any positive synthetic curvature bound.  
+
+It is conceptually simple (“does horizontal entropy convexity already force Euclidean tangents?”) yet deeply nontrivial: the modified transport metric \(W_{2,H}\) involves a constrained continuity equation requiring horizontal flows, merging tools from optimal transport, sub‑elliptic analysis, and differential geometry of distributions.  
+A proof or counterexample would delineate precisely **where the RCD/CD formalism breaks** and could inaugurate a rigorous synthetic theory for non‑Hilbertian geometries.  
+Thus the problem balances clarity and depth—a crisp, testable conjecture with the potential to unify or sharply separate Riemannian and sub‑Riemannian curvature concepts.

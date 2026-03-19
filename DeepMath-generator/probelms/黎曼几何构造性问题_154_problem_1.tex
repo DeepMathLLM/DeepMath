@@ -1,0 +1,30 @@
+problem:  
+Let \( (X, J, \omega, \Omega, H) \) be a compact complex threefold satisfying the **Hull–Strominger system**:
+\[
+\begin{cases}
+H = i(\bar{\partial} - \partial)\omega, \\[4pt]
+d(\|\Omega\|_\omega\, \omega^2) = 0, \\[4pt]
+dH = \dfrac{\alpha'}{4}\big(\mathrm{Tr}(R \wedge R) - \mathrm{Tr}(F \wedge F)\big),
+\end{cases}
+\]
+where \(R\) is the Chern curvature of the Hermitian metric on \(T^{1,0}X\), and \(F\) is the curvature of a Hermitian–Yang–Mills connection on a holomorphic bundle \(E \to X\).
+
+Let \(\widehat{H} \in \widehat{H}^3(X,\mathbb{Z})\) denote the **differential cohomology class** whose curvature is the 3‑form \(H\), satisfying the Bianchi identity above.  
+The quantization condition requires \(\widehat{H}\) to project to an **integral cohomology class** \([H] \in H^3(X,\mathbb{Z})\), which may have a **nontrivial torsion component**.
+
+Deformations of the Hull–Strominger system are known to be controlled by a differential graded complex \(\mathcal{Q}_{X,H}^\bullet\) (as constructed by de la Ossa–Svanes). When flux quantization is ignored, unobstructedness of deformations is governed by classes in \(H^2(\mathcal{Q}_{X,H}^\bullet)\).  
+However, enforcing the flux constraint in differential cohomology restricts admissible deformations to those \((\delta J, \delta \omega, \delta H)\) whose curvature 3‑form variation satisfies
+\[
+[\widehat{H + \delta H}] = [\widehat{H}] \ \ \text{in } \widehat{H}^3(X,\mathbb{Z}),
+\]
+so that the **integral and torsion components remain fixed** under deformation.
+
+> **Question:**  
+> When this differential‑cohomological constraint is imposed, can a nontrivial torsion component in \([H] \in H^3(X,\mathbb{Z})_{\mathrm{tors}}\) give rise to *new analytic obstruction classes* in \(H^2(\mathcal{Q}_{X,H}^\bullet)\) that would otherwise vanish?  
+> Equivalently, does discrete torsion in the quantized flux modify the unobstructedness of the analytic deformation complex for the Strominger system, once one enforces preservation of the differential cohomology class \(\widehat{H}\)?
+
+Why is it a "good" problem:  
+This question is both precise and profound. It targets a fundamental but unresolved interface between **analytic deformation theory** and **integral topology** in heterotic compactifications.  
+The deformation complex \(\mathcal{Q}_{X,H}^\bullet\) is analytic, defined over smooth forms, while the flux quantization condition lives in **differential cohomology**, capturing discrete torsion information invisible to de Rham cohomology. Determining whether torsion data can re‑enter the analytic obstruction theory once flux constraints are imposed would illuminate how **discrete topological fluxes** interact with **smooth moduli spaces** in non‑Kähler Calabi–Yau geometry.  
+A positive answer would reveal a new coupling between **differential topology** and **analysis**, influencing not only geometric flows and moduli stability but also the mathematical foundations of flux compactification.  
+Its expression is compact, logically sound, and conceptually unifying—qualities that make it an exemplary "good" research problem.

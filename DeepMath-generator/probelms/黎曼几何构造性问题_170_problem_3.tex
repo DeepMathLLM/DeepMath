@@ -1,0 +1,42 @@
+problem:  
+Let \( \mathfrak{n} \) be a nilpotent Lie algebra equipped with an inner product \( \langle \cdot,\cdot\rangle \).  
+Denote by \( \mathcal{V}(\mathfrak{n}) \) the algebraic variety of nilpotent Lie brackets on the fixed underlying vector space of \( \mathfrak{n} \).  A bracket \( [\cdot,\cdot]_0 \in \mathcal{V}(\mathfrak{n}) \) is called a **nilsoliton bracket** if there exists a constant \( c\in\mathbb R \) and a symmetric derivation \(D_E\) such that
+\[
+\mathrm{Ric}_{[\cdot,\cdot]_0} = c\,\mathrm{Id} + D_E .
+\]
+Heber and Lauret showed that such a pair \(([\cdot,\cdot]_0, D_E)\) algebraically determines a unique solvable Einstein Lie algebra \( \mathfrak{s}_0 = \mathbb R A \oplus \mathfrak{n} \) with
+\[
+[A,X] = D_E X, \qquad X\in\mathfrak{n}.
+\]
+Let \( \mathcal{E}_{\mathrm{alg}} \) denote the **algebraic extension operator** sending a nilsoliton bracket \( [\cdot,\cdot] \) with corresponding symmetric derivation \(D([\cdot,\cdot])\) to the solvable Einstein bracket
+\[
+\mathcal{E}_{\mathrm{alg}}([\cdot,\cdot])\;:=\;\big([\cdot,\cdot]_E,\ D([\cdot,\cdot])\big),
+\]
+where \( [A,X]_E = D([\cdot,\cdot])X \) and \( [X,Y]_E = [X,Y] \).
+
+Now fix a nilsoliton bracket \( [\cdot,\cdot]_0 \) producing the Einstein bracket \( \mathcal{E}_{\mathrm{alg}}([\cdot,\cdot]_0) \).  Regard \( \mathcal{V}(\mathfrak{n}) \) as a subset of a finite-dimensional vector space (via structure constants).  The tangent space \( T_{[\cdot,\cdot]_0}\mathcal{V}(\mathfrak{n}) \) is the space of skew‑symmetric bilinear maps \( \varphi:\Lambda^2\mathfrak{n}\to\mathfrak{n} \) satisfying the Jacobi‑compatibility constraints.
+
+> **Problem (Algebraic Local Injectivity of the Einstein Extension).**  
+> Consider the linearization \( D\mathcal{E}_{\mathrm{alg}}|_{[\cdot,\cdot]_0} : T_{[\cdot,\cdot]_0}\mathcal{V}(\mathfrak{n}) \to T_{\mathcal{E}_{\mathrm{alg}}([\cdot,\cdot]_0)}\mathcal{V}(\mathfrak{s}_0) \).  
+>  
+> Is its kernel modulo the natural action of \( \mathrm{Der}(\mathfrak{n}) \) and scaling trivial?  
+> Equivalently: does every infinitesimal deformation of a nilsoliton bracket that induces an isospectral infinitesimal deformation of its Einstein extension necessarily come from an infinitesimal automorphism or scaling of \( \mathfrak{n} \)?  
+
+A positive answer would mean that the algebraic mechanism passing from nilsolitons to Einstein solvmanifolds is **locally injective** at the level of Lie brackets—distinct nearby nilsoliton deformations cannot yield different Einstein extensions infinitesimally indistinguishable. A negative answer would reveal new algebraic degeneracies between Ricci soliton and Einstein moduli.
+
+Why is it a "good" problem:  
+1. **Mathematical precision:**  
+   The reformulation replaces ill‑defined moduli spaces with the explicit **variety of Lie brackets**, a classical algebraic object admitting a well‑defined tangent‑space structure. The linearization \(D\mathcal{E}_{\mathrm{alg}}\) is now concretely interpretable as a derivation‑dependent linear map between finite‑dimensional spaces of structure tensors—making the question rigorous.
+
+2. **Profound geometric insight:**  
+   Determining whether \(D\mathcal{E}_{\mathrm{alg}}\) has trivial kernel (mod automorphisms) tests an infinitesimal correspondence between two geometric fixed‑point conditions:  
+   *the Ricci soliton equation* on \(\mathfrak{n}\) and *the Einstein condition* on its solvable extension.  
+   It thus probes how rigidity in the Ricci soliton realm transfers—or fails to transfer—to Einstein solvmanifolds.
+
+3. **Bridge between fields:**  
+   It connects **Lie algebraic deformation theory** (varieties of brackets), **Ricci soliton analysis**, and **Einstein metric geometry**. Solving it may require combining algebraic geometry (local behavior of group orbits), analysis (Ricci operator differentials), and Riemannian geometry (Einstein deformation spaces).
+
+4. **Extreme simplicity, deep impact:**  
+   The question—whether any infinitesimal nilsoliton deformation disappears under Einstein extension—is compact and transparent. Yet affirmative resolution would underwrite a new algebraic rigidity principle; a counterexample would expose a subtle failure in the Lauret–Heber correspondence and enrich the taxonomy of homogeneous Einstein spaces.
+
+Hence the problem is mathematically sound, conceptually central, and connects disparate geometric frameworks—meeting all defining traits of a “good” research‑level problem.

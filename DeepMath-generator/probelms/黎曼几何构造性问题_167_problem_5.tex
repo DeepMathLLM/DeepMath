@@ -1,0 +1,34 @@
+problem:  
+Let \((M^n, g)\) be a complete, noncompact Riemannian manifold.  
+Fix a simply connected **homogeneous model** \((M_0^n, g_0)\), with curvature tensor \(R^0\) and covariant derivative \(\nabla^k R^0\) determined by its isotropy representation at a base point \(o \in M_0\).  
+
+Assume there exists a compact subset \(K \subset M\) and a vector bundle isomorphism  
+\[
+\Phi : \mathrm{Fr}(M\setminus K) \to \mathrm{Fr}(M_0\setminus B(o,R))
+\]
+between the orthonormal frame bundles, intertwining the \(\mathrm{O}(n)\)-actions, such that for each \(k \le 1\),
+\[
+\lim_{x\to\infty} \| \Phi^*(\nabla^k R^0) - \nabla^k R(x) \| = 0
+\]
+in \(C^0\) norm on \(\mathrm{Fr}(M\setminus K)\).  
+That is, \((M,g)\) is **asymptotically curvature homogeneous of order one** modeled on \((M_0,g_0)\).
+
+**Question:**  
+Does this asymptotic curvature‑homogeneity condition imply that \(M\) is *eventually locally homogeneous*, i.e. that there exists a compact set \(K'\supseteq K\) such that \(M\setminus K'\) is locally isometric to \((M_0,g_0)\)?  
+If not, can one classify or construct obstructions to such propagation of local homogeneity to infinity?  
+Equivalently: for which homogeneous models \((M_0,g_0)\) can there exist complete non‑homogeneous metrics on the complement of compact sets whose curvature jets converge (to first order) to those of \(g_0\)?
+
+Why is it a "good" problem:  
+1. **Precisely Posed Asymptotic Rigidity Question:**  
+   The problem makes mathematically precise the weak notion of *asymptotic curvature homogeneity*, clearly distinct from classical curvature‑homogeneity. It asks whether local homogeneity must appear “at infinity,” a condition with no known general theorem ensuring or forbidding it.
+
+2. **Bridges Algebraic and Analytic Geometry:**  
+   The algebraic equivalence of curvature jets is an infinitesimal symmetry condition, while the asymptotic convergence is an analytic decay statement. Understanding how these two interact probes the interface between Lie‑theoretic rigidity and geometric analysis of noncompact manifolds.
+
+3. **Potential for New Rigidity Phenomena:**  
+   Affirmative results would give rise to new *asymptotic homogeneity rigidity theorems*, similar in spirit to Cheeger–Gromov convergence or stability theorems for Einstein metrics. Negative results would identify novel geometric obstructions—possibly new asymptotic curvature invariants—extending classification theory beyond homogeneous spaces.
+
+4. **Simplicity Concealing Depth:**  
+   The question is stateable in one line:  
+   *“If the curvature jets of a complete manifold converge to those of a homogeneous model, must the geometry itself become locally homogeneous at infinity?”*  
+   Yet answering it requires integrating deep algebraic tools (isotropy representations and curvature models) with analytic techniques (curvature decay, stability of PDE systems, boundary at infinity). This simplicity paired with multidimensional reach makes it a truly “good” research‑level problem.

@@ -1,0 +1,32 @@
+problem:  
+Let \( (G/H,g) \) be a connected Riemannian homogeneous space with reductive decomposition  
+\(\mathfrak g = \mathfrak h \oplus \mathfrak m\), and \(g\) induced by an \( \mathrm{Ad}(H)\)–invariant inner product on \(\mathfrak m\).  
+
+For \(X \in \mathfrak m\), let \(\gamma_X(t)=\exp(tX)\cdot o\) denote the corresponding homogeneous geodesic whenever \(X\) satisfies the geodesic lemma. Write \(R_t\) for the Riemannian curvature operator at \(\gamma_X(t)\):
+\[
+R_t(Y,Z)W = R(Y,Z)W|_{\gamma_X(t)},
+\]
+viewed as a tensor field along \(\gamma_X\). Define \(J_t := P_t^{-1}\circ (R_t(\gamma_X'(t),\cdot)\gamma_X'(t))\circ P_t:\mathfrak m\to\mathfrak m\), where \(P_t:T_oM\to T_{\gamma_X(t)}M\) is parallel transport along \(\gamma_X\).
+
+---
+
+**Open problem:**  
+Assume that for every geodesic vector \(X\in \mathfrak m\), the spectral decomposition of the **parallel–transported Jacobi operator**
+\[
+J_t = P_t^{-1}\circ R_t(\gamma_X'(t),\cdot)\gamma_X'(t)\circ P_t
+\]
+is constant in \(t\), i.e. the eigenvalues and their multiplicities of \(J_t\) are independent of \(t\).
+
+1. Does this spectral constancy of the Jacobi operator along all homogeneous geodesics imply that \((G/H,g)\) is a geodesic orbit space?  
+2. If not, does it at least imply that the metric is naturally reductive?  
+3. Are there examples of non‑naturally‑reductive, non‑g.o. homogeneous spaces exhibiting this spectral constancy property?
+
+---
+
+Why is it a "good" problem:  
+This corrected formulation replaces the ambiguous and ill‑defined “Nomizu operator along geodesics’’ with a canonical geometric object: the **Jacobi operator**, derived from curvature and well–defined along any geodesic via parallel transport.  
+The constancy of its spectrum describes a subtle rigidity: the infinitesimal behavior of nearby geodesics along every homogeneous geodesic is spectrally invariant under parallel translation.
+
+This property sits between classical symmetric‑space curvature parallelism (\(\nabla R = 0\)) and the purely algebraic geodesic orbit condition. It brings together **Riemannian curvature evolution**, **Lie algebraic symmetries**, and **spectral geometry**, posing a compact but profound question: does spectral rigidity of curvature along homogeneous geodesics force algebraic homogeneity of geodesic flow?  
+
+An affirmative answer would reveal a new “spectral signature’’ for the g.o. condition; a negative one would suggest exotic homogeneous geometries with hidden curvature symmetries. The statement is clean and intrinsic—expressible with only the curvature tensor and parallel transport—yet it opens a deep investigation bridging **Riemannian homogeneous geometry**, **spectral analysis**, and **differential‐algebraic rigidity**, fully embodying the elegance and depth of a good research‐level mathematical problem.

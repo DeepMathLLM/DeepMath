@@ -1,0 +1,38 @@
+problem:  
+Let \((M,g_0)\) be a compact \(n\)-dimensional Riemannian spin manifold admitting a **real Killing spinor** \(\psi_0\) with constant \(\lambda \neq 0\), so that \(g_0\) is Einstein and its metric cone  
+\[
+(C(M), \bar g_0 = dr^2 + r^2 g_0)
+\]
+is **Ricci-flat** with a **parallel spinor**.  Suppose we fix a weighted Hölder space \(C^{k,\alpha}_\delta\) on symmetric 2-tensors over \(C(M)\), where \(\delta \in (2-n,0)\), and let 
+\[
+\Delta_L^{\bar g_0} h = \nabla^*\nabla h + 2\,\mathrm{Rm}_{\bar g_0}*h
+\]
+denote the **Lichnerowicz Laplacian** governing infinitesimal Ricci-flat deformations.
+
+We call a deformation \((\bar g_\epsilon = \bar g_0 + \epsilon\, h + O(\epsilon^2))\) **AC Ricci-flat** if it remains Ricci-flat up to first order, \(h \in C^{k,\alpha}_\delta\), and obeys the gauge condition \(\nabla^{\bar g_0}\!\!\cdot h = 0\).  Its **asymptotic link metric** is then \(g_\epsilon = g_0 + \epsilon\, h_\infty + O(\epsilon^2)\), where \(h_\infty\) is the homogeneous term in the large-\(r\) expansion of \(h\).
+
+Now define the **boundary linearization**  
+\[
+\beta_* : \ker(\Delta_L^{\bar g_0}) \cap C^{k,\alpha}_\delta \;\longrightarrow\; \mathcal{E}_{\mathrm{KS}}(M,g_0),
+\]
+where \(\mathcal{E}_{\mathrm{KS}}(M,g_0)\) consists of infinitesimal Einstein deformations of \(g_0\) that preserve the Killing spinor equation,
+\[
+D_{g_0}\psi_0 = \lambda \psi_0, \quad \text{up to first-order variation.}
+\]
+
+**Question:**  
+Is \(\beta_*\) surjective?  In other words, does every infinitesimal Einstein deformation \(h_\infty \in \mathcal{E}_{\mathrm{KS}}(M,g_0)\) arise as \(h_\infty = \mathrm{Asymp}_\infty(h)\) for some decaying AC Ricci-flat deformation \(h\) of the cone metric \(\bar g_0\)?  
+If not, can one describe an explicit **obstruction operator**
+\[
+\mathcal{O}: \mathcal{E}_{\mathrm{KS}}(M,g_0)\longrightarrow \mathrm{coker}(\Delta_L^{\bar g_0})_\delta
+\]
+whose kernel characterizes the extendable Killing-spinor-preserving deformations?  
+
+Furthermore, in a specific holonomy case (e.g. nearly Kähler 6-manifold \(M\) with Calabi–Yau cone, or nearly parallel \(G_2\) link with Spin(7) cone), does \(\mathcal{O}\) vanish identically or exhibit a holonomy-dependent structure?
+
+Why is it a "good" problem:  
+This problem formulates, with analytic precision, the open question of **whether intrinsic Killing-spinor-preserving Einstein deformations on a compact manifold extend to genuine asymptotically conical Ricci-flat deformations on its special-holonomy cone**. It connects **spin geometry, elliptic PDEs, and special-holonomy deformation theory** through the natural boundary map between intrinsic and extrinsic moduli spaces—a mechanism central but not yet understood even in canonical examples like Calabi–Yau and Spin(7) cones.  
+
+The investigation demands detailed analysis of the Lichnerowicz operator’s spectral behavior on conical backgrounds and its interplay with the Dirac operator governing the Killing spinor condition. Success would yield a bridge between **Killing spinor geometry** on the base and **Ricci-flat asymptotics** on the cone, illuminating how spinorial symmetries constrain or enable the existence of desingularized special-holonomy metrics.  
+
+Its statement is simple, geometric, and abstract enough to be widely applicable, yet its resolution involves deep microlocal, analytic, and topological tools, meeting the criteria of a truly “good” research problem.

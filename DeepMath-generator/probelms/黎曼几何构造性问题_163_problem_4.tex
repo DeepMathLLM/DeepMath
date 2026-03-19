@@ -1,0 +1,30 @@
+problem:  
+Let \(\mathcal{L}(n)\) denote the variety of \(n\)-dimensional real Lie brackets on \(\mathbb{R}^n\), and let \(O(n)\) act by change of orthonormal basis.  
+An **algebraic soliton** is a bracket \(\mu\in\mathcal{L}(n)\) satisfying  
+\[
+\mathrm{Ric}_\mu = c\, I + S(D_\mu), \qquad D_\mu \in \mathrm{Der}(\mu),\ c\in \mathbb{R}.
+\]
+Denote by \(\mathcal{S}_n\subset \mathcal{L}(n)\) the (real algebraic) set of such brackets.
+
+For each algebraic soliton \(\mu\), consider its normalized **bracket flow** evolution
+\[
+\frac{d}{dt}\mu_t = -2\,\pi_{\mu_t}(\mathrm{Ric}_{\mu_t}) + 2c\,\mu_t
+\]
+with \(\mu_0=\mu\).  It is known that \(\mu_t\) remains in the \(GL(n)\)-orbit of \(\mu\).
+
+**Question:**  
+Although the single trajectory \(\{\mu_t\}\) of a given soliton stays within one orbit, the **closure of bracket flow trajectories** in \(\mathcal{L}(n)\) can a priori accumulate on non‑isomorphic brackets.  
+
+Investigate whether the **closure of the union of normalized soliton trajectories**
+\[
+\overline{\, \bigcup_{\mu\in\mathcal{S}_n}\{\mu_t:t\ge0\}\,}
+\subseteq \mathcal{L}(n)
+\]
+contains **infinitely many** non‑isomorphic algebraic soliton brackets.  
+Equivalently:  
+Can there exist a sequence of algebraic solitons \(\mu^{(k)}\) (each a fixed point up to scaling of its own bracket flow) such that \(\mu^{(k)} \to \mu^{(\infty)}\) in \(\mathcal{L}(n)\) where \(\mu^{(\infty)}\) defines a *different* algebra type which is also an algebraic soliton?  
+If so, characterize the algebraic or spectral conditions on the corresponding derivations \(D_{\mu^{(k)}}\) enabling such solitonic degeneration chains.  
+If not, what mechanism forces the set of algebraic soliton Lie brackets to be **closed and discrete up to isomorphism** under bracket‑flow degeneration?
+
+Why is it a "good" problem:  
+This formulation avoids the orbit‑invariance obstruction and captures a deep, open issue concerning the **limit behavior and moduli structure of homogeneous Ricci solitons** under the bracket flow.  It asks whether algebraic solitons form a rigid, isolated subset or instead accumulate through non‑isomorphic degenerations, paralleling phenomena in geometric invariant theory.  Resolving it would clarify whether the homogeneous Ricci flow can link distinct soliton types through limit processes, directly connecting **Lie algebra deformation theory**, **Ricci flow dynamics**, and **moment–map geometry**.  The statement is concise and logically sound, yet any progress would have strong consequences for our understanding of soliton moduli and structural rigidity—an archetype of a "narrow entry, deep consequence" research problem.

@@ -1,0 +1,33 @@
+problem:  
+Let \( X = G_1/K_1 \) and \( Y = G_2/K_2 \) be irreducible symmetric spaces of noncompact type, possibly of different ranks.  Fix basepoints \(o_X \in X\) and \(o_Y \in Y\).  
+
+For a smooth harmonic map \( f : X \to Y \), define for each \(R > 0\) the **normalized energy distribution measure**
+\[
+\nu_R := \frac{f_*\!\left( \|df\|^2 \cdot \mathbf{1}_{B_X(o_X,R)} \, d\mathrm{vol}_X \right)}{\int_{B_X(o_X,R)} \|df\|^2 \, d\mathrm{vol}_X}.
+\]
+By compactness of the visual compactification \(\overline{Y}=Y\cup\partial_\infty Y\), the measures \(\nu_R\) have weak-* accumulation points as \(R\to\infty\).  
+
+Let \(\pi : \overline{Y} \to \partial_\infty Y\) be the radial projection sending points in \(Y\) to their ideal endpoints at infinity.  For any weak-* limit \(\nu_\infty\) of the \(\nu_R\), define the **energy escape measure**
+\[
+\mu_\infty := \pi_* \nu_\infty,
+\]
+which records the asymptotic directions along which the energy of \(f\) escapes to infinity.
+
+**Problem:**  
+For an irreducible symmetric space \(Y\) of higher rank, can there exist a nonconstant harmonic map \( f: X \to Y \) such that *every* accumulation point of its energy escape measures \( \mu_\infty \) is supported inside a **proper spherical simplex** of the Tits boundary \( \partial_\infty Y \)?  
+
+Equivalently, does harmonicity alone rule out “asymptotic rank-deficient energy escape,” enforcing that some fraction of energy must reach every rank direction in \(Y\)?  
+
+---
+
+Why is it a "good" problem:  
+This version defines the analytic objects rigorously, fixing the logical gap in earlier formulations by introducing the boundary projection \(\pi_*\). It poses a well-defined and deep question about whether the **energy distribution of harmonic maps** asymptotically detects the full rank structure of the target symmetric space.
+
+The problem draws together:
+- **Geometric analysis**: studying weak limits of energy densities and their asymptotic distributions.
+- **Differential geometry and Lie theory**: relating these measures to the geometry of the Tits boundary and its simplicial structure.
+- **Probability and ergodic theory**: echoing constructions such as Patterson–Sullivan measures and Brownian exit distributions, now recast in the deterministic, analytic setting of harmonic map energy.
+
+A positive result would uncover a new analytic rigidity principle—an “energy-theoretic Tits rigidity”—suggesting that harmonicity enforces full-rank energy escape. A negative result would reveal an unexpected analytic flexibility inside higher-rank geometry.
+
+The statement remains geometrically simple—asking where the energy of a harmonic map “goes” at infinity—yet probes a deep and uncharted connection between PDE behavior, energy concentration, and the algebraic stratification of higher-rank symmetric spaces. It thus fulfills the ideal of a **“narrow entrance, profound depth”** research problem.

@@ -1,0 +1,98 @@
+problem:  
+Let \((M^n,g,\psi)\) be a compact Riemannian spin manifold admitting a **real Killing spinor** with constant \(\lambda \neq 0\):  
+\[
+\nabla_X^g\psi = \lambda\, X\!\cdot\!\psi, \qquad \forall X \in TM,
+\]
+so that \(g\) is Einstein with \(\mathrm{Ric}(g) = 4\lambda^2(n-1)g\).  
+We consider infinitesimal variations of the pair \((g,\psi)\):
+\[
+g_t = g + t\,h + O(t^2), \qquad \psi_t = \psi + t\,\dot\psi + O(t^2),\qquad \lambda_t = \lambda + t\,\dot\lambda + O(t^2),
+\]
+where \(h\in \Gamma(\mathrm{Sym}^2 T^*M)\) and \(\dot\psi \in \Gamma(S)\).
+
+---
+
+**Step 1: Linearized equations.**  
+The infinitesimal form of the Killing spinor equation is obtained by differentiating
+\(\nabla^{g_t}_X \psi_t = \lambda_t\, X\!\cdot_{g_t}\! \psi_t\):
+\[
+\nabla_X^g \dot\psi
++ \tfrac{1}{4}(\nabla_X h)_{ab}\, e^a\!\cdot\! e^b\!\cdot\!\psi
+- \lambda\, X\!\cdot\!\dot\psi
+- \dot\lambda\, X\!\cdot\!\psi = 0, \qquad \forall X,
+\]
+where \(\{e_a\}\) is a local orthonormal frame, and \((\nabla_X h)_{ab}\) is contracted via Clifford multiplication.
+
+Define the **linearized Killing-spinor operator**
+\[
+L_{(g,\psi)}(h,\dot\psi) := \nabla\dot\psi - \lambda\,(\cdot)\!\cdot\!\dot\psi - \tfrac{1}{4}(\nabla(\cdot) h)_{ab}\, e^a\!\cdot\! e^b\!\cdot\!\psi.
+\]
+Then \((h,\dot\psi)\) solves the linearized equation iff \(L_{(g,\psi)}(h,\dot\psi) + \dot\lambda\,(\cdot)\!\cdot\!\psi = 0\).
+
+---
+
+**Step 2: Diffeomorphism invariance and gauge fixing.**  
+The action of an infinitesimal diffeomorphism \(X \in \Gamma(TM)\) on the pair \((g,\psi)\) is
+\[
+\delta_X g = L_X g, \qquad
+\delta_X \psi = \nabla_X \psi + \tfrac{1}{4}(dX^\flat)\!\cdot\!\psi.
+\]
+To fix this gauge, impose the **Bianchi condition**
+\[
+\delta h + \tfrac{1}{2}d(\mathrm{tr}\,h)=0,
+\]
+ensuring ellipticity of the linearized Einstein operator
+\[
+E_g(h) = \tfrac{1}{2}\Delta_L h - 2\lambda^2(n-1)\,h,
+\]
+where \(\Delta_L\) is the Lichnerowicz Laplacian.
+
+---
+
+**Step 3: Coupled operator and complex.**  
+Define the combined operator
+\[
+\mathfrak{P}_{(g,\psi)} =
+(E_g, L_{(g,\psi)}):
+\Gamma(\mathrm{Sym}^2 T^*M)\oplus \Gamma(S)
+\longrightarrow
+\Gamma(\mathrm{Sym}^2 T^*M)\oplus \Gamma(T^*M\!\otimes\! S).
+\]
+Consider the infinitesimal complex
+\[
+0 \longrightarrow \Gamma(TM)
+\xrightarrow{\;\mathcal{L}_{(g,\psi)}\;}
+\Gamma(\mathrm{Sym}^2 T^*M)\oplus \Gamma(S)
+\xrightarrow{\;\mathfrak{P}_{(g,\psi)}\;}
+\Gamma(\mathrm{Sym}^2 T^*M)\oplus \Gamma(T^*M\!\otimes\! S)
+\longrightarrow 0,
+\]
+where \(\mathcal{L}_{(g,\psi)}(X) = (L_X g,\, \nabla_X \psi + \tfrac{1}{4}(dX^\flat)\!\cdot\!\psi)\).
+
+---
+
+**Question:**  
+Determine whether the complex above is **elliptic** in the sense of Atiyah–Singer, i.e. whether the induced symbol sequence
+\[
+0 \longrightarrow (T_xM) \xrightarrow{\;\sigma_\xi(\mathcal{L})\;}
+\mathrm{Sym}^2(T_x^*M)\oplus S_x
+\xrightarrow{\;\sigma_\xi(\mathfrak{P})\;}
+\mathrm{Sym}^2(T_x^*M)\oplus (T_x^*M\!\otimes\!S_x)
+\longrightarrow 0,
+\]
+is exact for all nonzero covectors \(\xi\).  
+
+If ellipticity fails generally, characterize its geometric obstruction—does failure correspond to specific **Lichnerowicz, Dirac, or cone spectral resonances**?  
+Conversely, if the complex is elliptic for certain classes (e.g. 6D nearly Kähler, 7D nearly parallel \(G_2\)), can one describe the corresponding **finite-dimensional moduli** space of Killing-spinor-preserving Einstein deformations?
+
+---
+
+Why is it a "good" problem:  
+This problem isolates a fundamental analytic question: *does Killing-spinor geometry admit an elliptic deformation theory parallel to the special-holonomy case?* It is compelling because:
+
+- It builds a concrete **coupled geometric-analytic complex** intertwining the Einstein operator and the spinorial Killing equation—making it accessible yet profound.  
+- Establishing ellipticity would yield an analytic foundation for moduli of Einstein metrics with real Killing spinors, analogous to the deformation complexes for Calabi–Yau or \(G_2\) structures.  
+- Failure of ellipticity would identify deep spectral or holonomy obstructions linked to the cone’s geometry, revealing structural constraints connecting spinorial fields and curvature.  
+- The formulation bridges **spin geometry**, **elliptic operator theory**, **Einstein deformation analysis**, and **holonomy theory**, offering a genuinely interdisciplinary research direction.  
+
+Its elegant simplicity—“is there an elliptic deformation complex for Killing spinor geometry?”—conceals significant analytical and geometric depth, fulfilling all the hallmarks of a *“good” research-level mathematical problem*.

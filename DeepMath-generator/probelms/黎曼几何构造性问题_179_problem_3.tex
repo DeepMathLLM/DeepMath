@@ -1,0 +1,34 @@
+problem:  
+Let \( (S^3,g_\lambda) \) be the Berger family of metrics obtained by shrinking the Hopf fibration circles by factor \(\lambda>0\).  
+Each \( (S^3,g_\lambda)\) defines a Riemannian submersion
+\[
+\pi_\lambda:(S^3,g_\lambda)\to (S^2,h_\lambda),
+\]
+with totally geodesic \(S^1\)-fibers of length \(2\pi\lambda\).  Let \(T_\lambda\) be the O’Neill tensor describing the deviation from integrability of the horizontal distribution of \(\pi_\lambda\).
+
+Now consider arbitrary one‑parameter families of Riemannian metrics \(g'_\lambda\) on \(S^3\) satisfying:
+
+1. each \( (S^3,g'_\lambda)\) is an \(S^1\)-bundle over \(S^2\) with smooth submersion \(\pi'_\lambda\);  
+2. the fiber length is \(O(\lambda)\);  
+3. the curvature operator of \(g'_\lambda\) is uniformly bounded as \(\lambda\to0\);  
+4. the Euler class of \(\pi'_\lambda\) equals \(+1\), i.e. the fibration topology is that of the Hopf bundle; and  
+5. \(\int_{S^3} |R_{g'_\lambda}|\,dV_{g'_\lambda} > 0\) (so a normalization below is well‑defined).
+
+Define the \emph{normalized pushforward scalar curvature measure} on the base \(S^2\),
+\[
+\nu'_\lambda := 
+\frac{(\pi'_\lambda)_*\!\big(|R_{g'_\lambda}|\,dV_{g'_\lambda}\big)}
+      {\int_{S^3} |R_{g'_\lambda}|\,dV_{g'_\lambda}}.
+\]
+
+**Problem (O’Neill–Curvature Stability Conjecture for Hopf‑type Collapse).**  
+Assume the sequence \(g'_\lambda\) satisfies the above properties.  
+Is the family of measures \(\nu'_\lambda\) precompact in the weak topology as \(\lambda\to0\)?  
+Moreover, must every possible weak limit of \(\nu'_\lambda\) be absolutely continuous with respect to the Lebesgue (Riemannian) measure on \(S^2\)?  
+Equivalently, can bounded‑curvature circle‑bundle collapses of \(S^3\) produce singular measure‑valued curvature distributions on the base via concentration in the O’Neill tensor, or is scalar curvature density forced to remain uniformly spread at the limit?
+
+Why is it a "good" problem:  
+This problem highlights an analytic phenomenon that lies beyond the scope of existing results in **Riemannian collapse theory**. Classical theorems (Cheeger–Gromov, Fukaya) describe metric convergence and structural rigidity of collapsing manifolds, but they do not address the fine behavior of nonlinear curvature measures under such collapse. The question isolates whether uniformly bounded curvature suffices to prevent scalar‑curvature “spikes” or singular distributions after pushing forward to the base under the Hopf fibration.  
+
+Resolving the conjecture would deepen understanding of how local geometric oscillations interact with global collapse, potentially leading to new measure‑theoretic invariants or rigidity principles in geometric analysis. It stands at the interface of **Riemannian submersion geometry (O’Neill’s formulas)**, **bounded‑curvature collapse**, and **geometric measure theory**.  
+Its statement is simple—just about curvature measures in the collapsing Hopf fibration—but its implications would be profound: either identifying a new rigidity of scalar curvature under topologically fixed collapse or revealing unseen fine‑scale instability mechanisms.

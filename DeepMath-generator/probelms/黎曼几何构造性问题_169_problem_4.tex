@@ -1,0 +1,40 @@
+problem:  
+Let \( G \) be a simply connected **nilpotent Lie group** of dimension \( n \) with Lie algebra \( \mathfrak{g} \). Each left-invariant Riemannian metric \( g \) on \( G \) determines a Ricci operator \( \mathrm{Ric}_g \!:\! \mathfrak{g} \to \mathfrak{g} \). Let \( g(t) \) evolve by **normalized Ricci flow** so that  
+\[
+\frac{\partial g}{\partial t} = -2 \big( \mathrm{Ric}_g - \tfrac{r_g}{n} g \big),
+\]
+and let \( \mathrm{Ric}_t \) denote the corresponding time-\(t\) Ricci operator, viewed as a symmetric operator with respect to \( g(t) \).
+
+For a nilpotent \( \mathfrak{g} \), the corresponding normalized **bracket flow** in Lauret’s sense is known to converge, up to automorphisms, to a **limiting bracket** \( \mu_\infty \) which is a nilsoliton bracket when one exists.  In such a case the nilsoliton Ricci operator satisfies  
+\[
+\mathrm{Ric}_{\infty} = c I + D_\infty,
+\]
+where \( D_\infty \) is a derivation of \( \mathfrak{g} \) uniquely determined up to scaling and inner derivations.
+
+**Open problem:**  
+Let \( g(t) \) be the normalized Ricci flow on a nilpotent \( G \).  Denote by \( \{\lambda_i(t)\}_{i=1}^n \) the ordered eigenvalues of \( \mathrm{Ric}_t \) and by \( E_i(t) \subset \mathfrak{g} \) the associated eigenspaces (each \(E_i(t)\) determined up to orientation).  Consider the Grassmannian topology on the set of subspaces of \( \mathfrak{g} \).
+
+1. (**Eigenflag alignment**)  When the flow converges algebraically to a nilsoliton bracket \( \mu_\infty \), does there exist a canonical filtration  
+   \[
+   0 \subsetneq V_1 \subsetneq \cdots \subsetneq V_k = \mathfrak{g},
+   \]
+   determined only by the Lie algebraic data of \( (\mathfrak{g}, D_\infty) \), such that the evolving eigenspaces \( E_i(t) \) become asymptotically tangent to these \( V_j \) in the Grassmannian, i.e.  
+   \[
+   \mathrm{dist}(E_i(t),V_j)\to 0 \quad \text{for suitable assignments } i\mapsto j?
+   \]
+   Can such a flag be characterized purely in terms of the **weight-space decomposition** of the derivation \(D_\infty\), independent of the initial metric?
+
+2. (**Spectral detection of non-solitons**)  When \(\mathfrak{g}\) admits no nilsoliton, do the trajectories of the renormalized eigenvalue ratios
+   \[
+   \rho_i(t) := \frac{\lambda_i(t)-\frac{1}{n}\sum_j \lambda_j(t)}{\big(\sum_j (\lambda_j(t)-\frac{1}{n}\sum_k \lambda_k(t))^2\big)^{1/2}}
+   \]
+   converge to characteristic limit points determined by the orbit closure of \([\mu]\) under \(GL(n,\mathbb{R})\)?  Equivalently, can one detect the degeneration direction of the bracket flow purely from the limiting spectrum of \(\mathrm{Ric}_t\)?
+
+3. (**Universality of spectral asymptotics**)  Are the asymptotic ratios \(\rho_i(t)/\rho_j(t)\) rational functions of the eigenvalues of the pre‑Einstein derivation of \(\mathfrak{g}\)?  If so, this would endow the Ricci‑flow phase space with a canonical **spectral stratification** unifying geometric and algebraic Ricci data.
+
+Why is it a "good" problem:  
+This formulation links the **spectral geometry** of the Ricci operator to **algebraic derivation structures** intrinsic to the nilpotent Lie algebra, focusing on rigorously defined objects—eigenvalue ratios, Grassmannian convergence of eigenspaces, and derivation gradings.  
+
+It asks whether the Ricci flow dynamically reconstructs, from analytical evolution alone, the canonical flag determined by the nilsoliton or pre‑Einstein derivation.  The question is simple to state (tracking eigenstructures of a symmetric operator under an evolution equation) but probes deeply into the intersection of **geometric analysis**, **representation theory of Lie algebras**, and **algebraic dynamics of moment‑map flows**.  
+
+A positive resolution would reveal that the Ricci flow "learns" the internal grading of a Lie algebra through its spectral evolution; a negative one would highlight new types of degenerations invisible to algebraic derivations.  Either outcome would substantially extend our conceptual understanding of homogeneous Ricci dynamics, making this a genuinely “good” and forward‑looking research problem.
